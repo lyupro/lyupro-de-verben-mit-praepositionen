@@ -31,6 +31,8 @@ app.get('/', (req, res) => {
     res.render('index', { title: 'Добро пожаловать!' });
 });
 
+
+// Route /verb and all it's requires
 // Маршрут для получения случайного глагола и предложений
 app.get('/verb', async (req, res) => {
     const count = await Verb.countDocuments();
@@ -38,11 +40,6 @@ app.get('/verb', async (req, res) => {
     const verb = await Verb.findOne().skip(random);
     //res.json(verb);
     res.render('verb', { verb });
-});
-
-app.get('/verb-list', async (req, res) => {
-    const verbs = await Verb.find({});
-    res.render('verb-list', { verbs });
 });
 
 app.post('/check', async (req, res) => {
@@ -58,6 +55,44 @@ app.post('/check', async (req, res) => {
         res.send(`Неверно. "${sentence}" не является верным предложением для глагола "${verb}".`);
     }
 });
+
+
+// Route /verb-list and all it's requires
+app.get('/verb-list', async (req, res) => {
+    const verbs = await Verb.find({});
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+    res.render('verb-list', { verbs, alphabet });
+});
+
+app.get('/search', async (req, res) => {
+    const query = req.query.q.toLowerCase();
+    const verbs = await Verb.find({
+        $or: [
+            { verb: { $regex: `^${query}`, $options: 'i' } },
+            { translation: { $regex: `${query}`, $options: 'i' } }
+        ]
+    }).limit(5);
+    res.json(verbs);
+});
+
+app.get('/verb-list/:letter', async (req, res) => {
+    const letter = req.params.letter.toUpperCase();
+    const regex = new RegExp(`^${letter}`, 'i');
+    const verbs = await Verb.find({ verb: regex });
+    res.render('letter', { letter, verbs });
+});
+
+app.get('/verb-list/:letter/:verb', async (req, res) => {
+    const letter = req.params.letter.toUpperCase();
+    const verb = req.params.verb;
+    const verbData = await Verb.findOne({ verb });
+    if (verbData) {
+        res.render('verb', { verb: verbData });
+    } else {
+        res.status(404).send('Глагол не найден');
+    }
+});
+
 
 // Запуск сервера
 app.listen(3000, () => {

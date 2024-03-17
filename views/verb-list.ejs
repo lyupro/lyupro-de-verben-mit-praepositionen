@@ -39,10 +39,35 @@
         transform: rotateY(180deg);
         background-color: #f0f0f0; /* Добавляем фоновый цвет для обратной стороны */
       }
+
+      /* Styles for Alphabetic containers */
+      .alphabet {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      .alphabet a {
+        background-color: #f0f0f0;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: #333;
+      }
     </style>
   </head>
   <body>
     <h1>Выберите глагол</h1>
+    <input type="text" id="searchInput" placeholder="Поиск глагола" />
+    <div id="searchResults"></div>
+
+    <div class="alphabet">
+      <% alphabet.forEach(letter => { %>
+        <a href="/verb-list/<%= letter %>"><%= letter %></a>
+      <% }) %>
+    </div>
+
     <div>
       <% verbs.forEach(verb => { %>
         <div class="card">
@@ -58,5 +83,39 @@
       <% }) %>
     </div>
     <a href="/">Главная страница</a>
+
+    <script>
+      const searchInput = document.getElementById('searchInput');
+      const searchResults = document.getElementById('searchResults');
+
+      searchInput.addEventListener('input', async () => {
+        const query = searchInput.value.trim();
+        if (query) {
+          const response = await fetch(`/search?q=${query}`);
+          const verbs = await response.json();
+          displaySearchResults(verbs);
+        } else {
+          searchResults.innerHTML = '';
+        }
+      });
+
+      function displaySearchResults(verbs) {
+        searchResults.innerHTML = '';
+        if (verbs.length > 0) {
+          const resultList = document.createElement('ul');
+          verbs.forEach(verb => {
+            const listItem = document.createElement('li');
+            const link = document.createElement('a');
+            link.href = `/verb-list/${verb.verb.charAt(0)}/${verb.verb}`;
+            link.textContent = `${verb.verb} - ${verb.translation}`;
+            listItem.appendChild(link);
+            resultList.appendChild(listItem);
+          });
+          searchResults.appendChild(resultList);
+        } else {
+          searchResults.textContent = 'Ничего не найдено';
+        }
+      }
+    </script>
   </body>
 </html>

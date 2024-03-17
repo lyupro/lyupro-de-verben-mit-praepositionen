@@ -1,0 +1,32 @@
+<!-- views/letter.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Глаголы на букву <%= letter %></title>
+    <style>
+      .verb-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+      }
+
+      .verb-card {
+        background-color: #f0f0f0;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Глаголы на букву <%= letter %></h1>
+    <div class="verb-list">
+      <% verbs.forEach(verb => { %>
+        <div class="verb-card">
+          <a href="/verb-list/<%= verb.verb.charAt(0) %>/<%= verb.verb %>">
+            <%= verb.verb %> - <%= verb.translation %>
+          </a>
+        </div>
+      <% }) %>
+    </div>
+  </body>
+</html>
