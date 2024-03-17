@@ -5,6 +5,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const path = require('path');
+const config = require('./config');
 
 
 // Настройка шаблонизатора EJS
@@ -15,7 +16,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: true }));
 
 // Подключение к MongoDB
-mongoose.connect('mongodb://localhost/deVerbsMitPraepApp', {
+mongoose.connect(config.mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
