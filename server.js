@@ -20,6 +20,7 @@ mongoose.connect('mongodb://localhost/deVerbsMitPraepApp', {
 // Определение схемы MongoDB
 const verbSchema = new mongoose.Schema({
     verb: String,
+    translation: String, // Новое поле для перевода
     sentences: [String]
 });
 
@@ -37,6 +38,11 @@ app.get('/verb', async (req, res) => {
     const verb = await Verb.findOne().skip(random);
     //res.json(verb);
     res.render('verb', { verb });
+});
+
+app.get('/verb-list', async (req, res) => {
+    const verbs = await Verb.find({});
+    res.render('verb-list', { verbs });
 });
 
 app.post('/check', async (req, res) => {
