@@ -8,6 +8,9 @@ const path = require('path');
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+// Парсинг тела запроса
+app.use(express.urlencoded({ extended: true }));
+
 // Подключение к MongoDB
 mongoose.connect('mongodb://localhost/deVerbsMitPraepApp', {
     useNewUrlParser: true,
@@ -34,6 +37,20 @@ app.get('/verb', async (req, res) => {
     const verb = await Verb.findOne().skip(random);
     //res.json(verb);
     res.render('verb', { verb });
+});
+
+app.post('/check', async (req, res) => {
+    const verb = req.body.verb;
+    const sentence = req.body.sentence;
+
+    const verbData = await Verb.findOne({ verb });
+    const correctSentences = verbData.sentences;
+
+    if (correctSentences.includes(sentence)) {
+        res.send(`Правильно! "${sentence}" является верным предложением для глагола "${verb}".`);
+    } else {
+        res.send(`Неверно. "${sentence}" не является верным предложением для глагола "${verb}".`);
+    }
 });
 
 // Запуск сервера
