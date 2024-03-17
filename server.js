@@ -61,7 +61,27 @@ app.post('/check', async (req, res) => {
 app.get('/verb-list', async (req, res) => {
     const verbs = await Verb.find({});
     const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-    res.render('verb-list', { verbs, alphabet });
+
+    // Получаем параметр "enableLetterFilter" из query string
+    const enableLetterFilter = req.query.enableLetterFilter === 'true';
+
+    // Создаем объект для хранения информации о доступности букв
+    const letterAvailability = {};
+
+    if (enableLetterFilter) {
+        // Проверяем доступность каждой буквы
+        for (const letter of alphabet) {
+            const count = await Verb.countDocuments({ verb: new RegExp(`^${letter}`, 'i') });
+            letterAvailability[letter] = count > 0;
+        }
+    } else {
+        // Если фильтр отключен, помечаем все буквы как доступные
+        alphabet.forEach(letter => {
+            letterAvailability[letter] = true;
+        });
+    }
+
+    res.render('verb-list', { verbs, alphabet, letterAvailability, enableLetterFilter });
 });
 
 app.get('/search', async (req, res) => {

@@ -55,6 +55,14 @@
         text-decoration: none;
         color: #333;
       }
+
+      .alphabet span.disabled {
+          background-color: #ccc;
+          color: #999;
+          padding: 10px;
+          text-align: center;
+          cursor: not-allowed;
+      }
     </style>
   </head>
   <body>
@@ -64,7 +72,15 @@
 
     <div class="alphabet">
       <% alphabet.forEach(letter => { %>
-        <a href="/verb-list/<%= letter %>"><%= letter %></a>
+        <% if (letterAvailability[letter] || !enableLetterFilter) { %>
+          <a href="/verb-list/<%= letter %>">
+            <%= letter %>
+          </a>
+        <% } else { %>
+          <span class="disabled">
+            <%= letter %>
+          </span>
+        <% } %>
       <% }) %>
     </div>
 
