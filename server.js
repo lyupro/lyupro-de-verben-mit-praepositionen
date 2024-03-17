@@ -1,8 +1,11 @@
 // server.js
+require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const path = require('path');
+
 
 // Настройка шаблонизатора EJS
 app.set('view engine', 'ejs');
@@ -62,8 +65,8 @@ app.get('/verb-list', async (req, res) => {
     const verbs = await Verb.find({});
     const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
-    // Получаем параметр "enableLetterFilter" из query string
-    const enableLetterFilter = req.query.enableLetterFilter === 'true';
+    // Получаем параметр "enableLetterFilter" из .env файла
+    const enableLetterFilter = process.env.ENABLE_LETTER_FILTER === 'true';
 
     // Создаем объект для хранения информации о доступности букв
     const letterAvailability = {};
