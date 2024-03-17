@@ -22,12 +22,18 @@ const verbSchema = new mongoose.Schema({
 
 const Verb = mongoose.model('Verb', verbSchema);
 
+// Маршрут для стартовой страницы
+app.get('/', (req, res) => {
+    res.render('index', { title: 'Добро пожаловать!' });
+});
+
 // Маршрут для получения случайного глагола и предложений
 app.get('/verb', async (req, res) => {
     const count = await Verb.countDocuments();
     const random = Math.floor(Math.random() * count);
     const verb = await Verb.findOne().skip(random);
-    res.json(verb);
+    //res.json(verb);
+    res.render('verb', { verb });
 });
 
 // Запуск сервера

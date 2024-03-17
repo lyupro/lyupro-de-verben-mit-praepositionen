@@ -1,0 +1,16 @@
+<!-- views/verb.ejs -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Изучение немецких глаголов</title>
+  </head>
+  <body>
+    <h1>Глагол: <%= verb.verb %></h1>
+    <ul>
+      <% verb.sentences.forEach(sentence => { %>
+        <li><%= sentence %></li>
+      <% }) %>
+    </ul>
+    <a href="/verb">Следующий глагол</a>
+  </body>
+</html>
