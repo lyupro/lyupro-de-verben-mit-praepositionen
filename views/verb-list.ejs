@@ -107,7 +107,7 @@
       searchInput.addEventListener('input', async () => {
         const query = searchInput.value.trim();
         if (query) {
-          const response = await fetch(`/search?q=${query}`);
+          const response = await fetch(`/verb-list/search?q=${query}`);
           const verbs = await response.json();
           displaySearchResults(verbs);
         } else {

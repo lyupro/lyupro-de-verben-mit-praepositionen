@@ -11,7 +11,7 @@
         <li><%= sentence %></li>
       <% }) %>
     </ul>
-    <form method="POST" action="/check">
+    <form method="POST" action="/verb/check">
       <input type="hidden" name="verb" value="<%= verb.verb %>">
       <input type="text" name="sentence" placeholder="Введите предложение">
       <button type="submit">Проверить</button>
