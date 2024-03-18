@@ -31,6 +31,22 @@ app.use('/verb', verbRoute);
 app.use('/verb-list', verbListRoute);
 
 
+// Обработка ошибок try/catch и next(error) с помощью middleware после всех маршрутов
+// Блок catch получает ошибку в параметре error и передает ее в middleware обработки ошибок с помощью next(error)
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+
+    // Устанавливаем код состояния ошибки
+    res.status(err.status || 500);
+
+    // Рендерим страницу ошибки и передаем информацию об ошибке
+    res.render('error', {
+        message: err.message,
+        error: err
+    });
+});
+
+
 // Запуск сервера
 app.listen(3000, () => {
     console.log('Server started on port 3000');
