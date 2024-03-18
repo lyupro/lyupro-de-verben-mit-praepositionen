@@ -2,10 +2,11 @@
 require('dotenv').config();
 
 const express = require('express');
-const mongoose = require('mongoose');
 const app = express();
 const path = require('path');
-const config = require('./config');
+//const db = require('./db');
+require('./db');
+const Verb = require('./models/verb');
 
 
 // Настройка шаблонизатора EJS
@@ -14,21 +15,6 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Парсинг тела запроса
 app.use(express.urlencoded({ extended: true }));
-
-// Подключение к MongoDB
-mongoose.connect(config.mongoURI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
-
-// Определение схемы MongoDB
-const verbSchema = new mongoose.Schema({
-    verb: String,
-    translation: String, // Новое поле для перевода
-    sentences: [String]
-});
-
-const Verb = mongoose.model('Verb', verbSchema);
 
 // Маршрут для стартовой страницы
 app.get('/', (req, res) => {
