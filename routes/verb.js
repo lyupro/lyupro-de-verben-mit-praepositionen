@@ -4,15 +4,19 @@ const router = express.Router();
 const Verb = require('../models/verb');
 
 // Маршрут для получения случайного глагола и предложений
-router.get('/', async (req, res) => {
-    const count = await Verb.countDocuments();
-    const random = Math.floor(Math.random() * count);
-    const verb = await Verb.findOne().skip(random);
-    res.render('verb', { verb });
+router.get('/', async (req, res, next) => {
+    try{
+        const count = await Verb.countDocuments();
+        const random = Math.floor(Math.random() * count);
+        const verb = await Verb.findOne().skip(random);
+        res.render('verb', { verb });
+    } catch (error) {
+        next(error);
+    }
 });
 
 // Маршрут для проверки предложения
-router.post('/check', async (req, res) => {
+router.post('/check', async (req, res, next) => {
     const verb = req.body.verb;
     const sentence = req.body.sentence;
 
@@ -20,7 +24,9 @@ router.post('/check', async (req, res) => {
         const verbData = await Verb.findOne({ verb });
 
         if (!verbData) {
-            return res.send(`Глагол "${verb}" не найден в базе данных.`);
+            const error = new Error(`Глагол "${verb}" не найден в базе данных.`)
+            error.status = 404;
+            throw error;
         }
 
         const correctSentences = verbData.sentences;
@@ -31,8 +37,7 @@ router.post('/check', async (req, res) => {
             res.send(`Неверно. "${sentence}" не является верным предложением для глагола "${verb}".`);
         }
     } catch (error) {
-        console.error('Ошибка при проверке предложения:', error);
-        res.status(500).send('Внутренняя ошибка сервера');
+        next(error);
     }
 });
 
