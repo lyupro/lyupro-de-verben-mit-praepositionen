@@ -18,15 +18,17 @@
     </style>
   </head>
   <body>
-    <h1>Глаголы на букву <%= letter %></h1>
-    <div class="verb-list">
-      <% verbs.forEach(verb => { %>
-        <div class="verb-card">
-          <a href="/verb-list/<%= verb.verb.charAt(0) %>/<%= verb.verb %>">
-            <%= verb.verb %> - <%= verb.translation %>
-          </a>
-        </div>
-      <% }) %>
-    </div>
+
+      <h1>Глаголы на букву <%= letter %></h1>
+      <div class="verb-list">
+        <% verbs.forEach(verb => { %>
+          <div class="verb-card">
+           <a href="/verb-list/letter/<%= letter %>/<%= verb.verb %>">
+             <%= verb.verb %> - <%= verb.translation %>
+            </a>
+          </div>
+        <% }) %>
+      </div>
+      <a href="/verb-list">Вернуться к списку глаголов</a>
   </body>
 </html>

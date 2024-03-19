@@ -36,8 +36,32 @@
       }
 
       .card-back {
-        transform: rotateY(180deg);
-        background-color: #f0f0f0; /* Добавляем фоновый цвет для обратной стороны */
+          transform: rotateY(180deg);
+          background-color: #f0f0f0; /* Добавляем фоновый цвет для обратной стороны */
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 10px;
+          text-align: center;
+      }
+
+      .card-back h2 {
+          margin-bottom: 10px;
+      }
+
+      .card-back a {
+          display: inline-block;
+          background-color: #007bff;
+          color: #fff;
+          padding: 8px 16px;
+          text-decoration: none;
+          border-radius: 4px;
+          transition: background-color 0.3s;
+      }
+
+      .card-back a:hover {
+          background-color: #0056b3;
       }
 
       /* Styles for Alphabetic containers */
@@ -71,17 +95,13 @@
     <div id="searchResults"></div>
 
     <div class="alphabet">
-      <% alphabet.forEach(letter => { %>
-        <% if (letterAvailability[letter] || !enableLetterFilter) { %>
-          <a href="/verb-list/<%= letter %>">
-            <%= letter %>
-          </a>
-        <% } else { %>
-          <span class="disabled">
-            <%= letter %>
-          </span>
-        <% } %>
-      <% }) %>
+        <% alphabet.forEach(letter => { %>
+            <% if (letterAvailability[letter]) { %>
+                <a href="/verb-list/letter/<%= letter %>"><%= letter %></a>
+            <% } else { %>
+                <span class="disabled"><%= letter %></span>
+            <% } %>
+        <% }) %>
     </div>
 
     <div>
@@ -92,13 +112,32 @@
               <h2><%= verb.verb %></h2>
             </div>
             <div class="card-back">
-              <h2><%= verb.translation %></h2>
+                <h2><%= verb.translation %></h2>
+                <a href="/verb-list/letter/<%= verb.verb.charAt(0).toUpperCase() %>/<%= verb.verb %>">Подробнее</a>
             </div>
           </div>
         </div>
       <% }) %>
     </div>
     <a href="/">Главная страница</a>
+
+    <% if (typeof currentPage !== 'undefined' && typeof totalPages !== 'undefined') { %>
+        <div class="pagination">
+            <% if (currentPage > 1) { %>
+                <a href="/verb-list/page/<%= currentPage - 1 %>">Назад</a>
+            <% } %>
+            <% for (let i = 1; i <= totalPages; i++) { %>
+                <% if (i === currentPage) { %>
+                    <span><%= i %></span>
+                <% } else { %>
+                    <a href="/verb-list/page/<%= i %>"><%= i %></a>
+                <% } %>
+            <% } %>
+            <% if (currentPage < totalPages) { %>
+                <a href="/verb-list/page/<%= currentPage + 1 %>">Вперед</a>
+            <% } %>
+        </div>
+    <% } %>
 
     <script>
       const searchInput = document.getElementById('searchInput');
@@ -122,7 +161,7 @@
           verbs.forEach(verb => {
             const listItem = document.createElement('li');
             const link = document.createElement('a');
-            link.href = `/verb-list/${verb.verb.charAt(0)}/${verb.verb}`;
+            link.href = `/verb-list/letter/${verb.verb.charAt(0).toUpperCase()}/${verb.verb}`;
             link.textContent = `${verb.verb} - ${verb.translation}`;
             listItem.appendChild(link);
             resultList.appendChild(listItem);
@@ -131,6 +170,23 @@
         } else {
           searchResults.textContent = 'Ничего не найдено';
         }
+      }
+
+      document.querySelector('.pagination').addEventListener('click', function (event) {
+          if (event.target.tagName === 'A') {
+              event.preventDefault();
+              const page = event.target.getAttribute('href').split('/').pop();
+              loadVerbs(page);
+          }
+      });
+
+      async function loadVerbs(page) {
+          const response = await fetch(`/verb-list/page/${page}`);
+          const html = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, 'text/html');
+          document.querySelector('body').innerHTML = doc.querySelector('body').innerHTML;
+          history.pushState(null, null, `/verb-list/page/${page}`);
       }
     </script>
   </body>
