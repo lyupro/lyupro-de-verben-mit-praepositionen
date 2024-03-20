@@ -3,154 +3,85 @@
 <html>
   <head>
     <title>Список глаголов</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
     <style>
-      .card {
-        width: 200px;
-        height: 100px;
-        perspective: 1000px;
-        margin: 10px;
-        display: inline-block;
-      }
-
-      .card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-      }
-
-      .card:hover .card-inner {
-        transform: rotateY(180deg);
-      }
-
-      .card-front, .card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .card-back {
-          transform: rotateY(180deg);
-          background-color: #f0f0f0; /* Добавляем фоновый цвет для обратной стороны */
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding: 10px;
-          text-align: center;
-      }
-
-      .card-back h2 {
-          margin-bottom: 10px;
-      }
-
-      .card-back a {
-          display: inline-block;
-          background-color: #007bff;
-          color: #fff;
-          padding: 8px 16px;
-          text-decoration: none;
-          border-radius: 4px;
-          transition: background-color 0.3s;
-      }
-
-      .card-back a:hover {
-          background-color: #0056b3;
-      }
-
-      /* Styles for Alphabetic containers */
-      .alphabet {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
-        margin-bottom: 20px;
-      }
-
-      .alphabet a {
-        background-color: #f0f0f0;
-        padding: 10px;
-        text-align: center;
-        text-decoration: none;
-        color: #333;
-      }
-
-      .alphabet span.disabled {
-          background-color: #ccc;
-          color: #999;
-          padding: 10px;
-          text-align: center;
-          cursor: not-allowed;
-      }
+        /* Здесь можно добавить дополнительные стили для этой страницы */
     </style>
   </head>
   <body>
-    <h1>Выберите глагол</h1>
-    <input type="text" id="searchInput" placeholder="Поиск глагола" />
-    <div id="searchResults"></div>
-
-    <div class="alphabet">
-        <% alphabet.forEach(letter => { %>
-            <% if (letterAvailability[letter]) { %>
-                <a href="/verb-list/letter/<%= letter %>"><%= letter %></a>
-            <% } else { %>
-                <span class="disabled"><%= letter %></span>
-            <% } %>
-        <% }) %>
-    </div>
-
-    <div>
-      <% verbs.forEach(verb => { %>
-        <div class="card">
-          <div class="card-inner">
-            <div class="card-front">
-              <h2><%= verb.verb %></h2>
-            </div>
-            <div class="card-back">
-                <h2><%= verb.translation %></h2>
-                <a href="/verb-list/letter/<%= verb.verb.charAt(0).toUpperCase() %>/<%= verb.verb %>">Подробнее</a>
-            </div>
-          </div>
+    <div class="container">
+        <h1>Выберите глагол</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Поиск глагола">
         </div>
-      <% }) %>
-    </div>
-    <a href="/">Главная страница</a>
+        <div class="search-results-container">
+            <div id="searchResults"></div>
+        </div>
 
-    <% if (typeof currentPage !== 'undefined' && typeof totalPages !== 'undefined') { %>
-        <div class="pagination">
-            <% if (currentPage > 1) { %>
-                <a href="/verb-list/page/<%= currentPage - 1 %>">Назад</a>
-            <% } %>
-            <% for (let i = 1; i <= totalPages; i++) { %>
-                <% if (i === currentPage) { %>
-                    <span><%= i %></span>
+        <div class="alphabet">
+            <% alphabet.forEach(letter => { %>
+                <% if (letterAvailability[letter]) { %>
+                    <a href="/verb-list/letter/<%= letter %>"><%= letter %></a>
                 <% } else { %>
-                    <a href="/verb-list/page/<%= i %>"><%= i %></a>
+                    <span class="disabled"><%= letter %></span>
                 <% } %>
-            <% } %>
-            <% if (currentPage < totalPages) { %>
-                <a href="/verb-list/page/<%= currentPage + 1 %>">Вперед</a>
-            <% } %>
+            <% }) %>
         </div>
-    <% } %>
+
+        <div class="verb-list">
+            <% verbs.forEach(verb => { %>
+                <div class="card">
+                    <div class="card-front">
+                        <h2><%= verb.verb %></h2>
+                    </div>
+                    <div class="card-back">
+                        <h2><%= verb.translation %></h2>
+                        <a href="/verb-list/letter/<%= verb.verb.charAt(0).toUpperCase() %>/<%= verb.verb %>">Подробнее</a>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+
+        <a href="/">Главная страница</a>
+
+        <% if (typeof currentPage !== 'undefined' && typeof totalPages !== 'undefined') { %>
+            <div class="pagination">
+                <% if (currentPage > 1) { %>
+                    <a href="/verb-list/page/<%= currentPage - 1 %>">Назад</a>
+                <% } %>
+                <% for (let i = 1; i <= totalPages; i++) { %>
+                    <% if (i === currentPage) { %>
+                        <span><%= i %></span>
+                    <% } else { %>
+                        <a href="/verb-list/page/<%= i %>"><%= i %></a>
+                    <% } %>
+                <% } %>
+                <% if (currentPage < totalPages) { %>
+                    <a href="/verb-list/page/<%= currentPage + 1 %>">Вперед</a>
+                <% } %>
+            </div>
+        <% } %>
+        </div>
+    </div>
 
     <script>
       const searchInput = document.getElementById('searchInput');
       const searchResults = document.getElementById('searchResults');
 
+      // Добавляем класс 'hidden' по умолчанию
+      searchResults.classList.add('hidden');
+
       searchInput.addEventListener('input', async () => {
         const query = searchInput.value.trim();
         if (query) {
+            // Удаляем класс 'hidden' при вводе текста
+            searchResults.classList.remove('hidden');
           const response = await fetch(`/verb-list/search?q=${query}`);
           const verbs = await response.json();
           displaySearchResults(verbs);
         } else {
-          searchResults.innerHTML = '';
+            // Добавляем класс 'hidden' при пустом поле поиска
+            searchResults.classList.add('hidden');
         }
       });
 

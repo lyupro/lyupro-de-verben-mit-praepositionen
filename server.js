@@ -10,6 +10,9 @@ const Verb = require('./models/verb');
 const verbRoute = require('./routes/verb');
 const verbListRoute = require('./routes/verbList');
 
+// Обслуживания статических файлов из директории public (для styles и других)
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 // Настройка шаблонизатора EJS
 app.set('view engine', 'ejs');
