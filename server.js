@@ -33,6 +33,10 @@ app.use('/verb', verbRoute);
 // Маршрут для работы со списком глаголов
 app.use('/verb-list', verbListRoute);
 
+app.get('/about', (req, res) => {
+    res.render('about', { title: 'О Нас!' });
+});
+
 
 // Обработка ошибок try/catch и next(error) с помощью middleware после всех маршрутов
 // Блок catch получает ошибку в параметре error и передает ее в middleware обработки ошибок с помощью next(error)
