@@ -65,3 +65,7 @@
 #searchResults.hidden {
     display: none;
 }
+
+#searchResults:empty {
+    display: none;
+}
