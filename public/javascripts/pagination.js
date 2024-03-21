@@ -6,7 +6,16 @@ async function loadVerbs(page) {
     const html = await response.text();
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, 'text/html');
-    document.querySelector('body').innerHTML = doc.querySelector('body').innerHTML;
+
+    // Обновляем только содержимое контейнера с глаголами
+    const verbListContainer = document.querySelector('.verb-list');
+    verbListContainer.innerHTML = doc.querySelector('.verb-list').innerHTML;
+
+    // Обновляем блок пагинации
+    const paginationContainer = document.querySelector('.pagination');
+    paginationContainer.innerHTML = doc.querySelector('.pagination').innerHTML;
+
+    // Обновляем URL-адрес страницы без перезагрузки
     history.pushState(null, null, `/verb-list/page/${page}`);
 
     // Сбрасываем состояние поля поиска и окна результатов
@@ -15,9 +24,6 @@ async function loadVerbs(page) {
     searchInput.value = '';
     searchResults.innerHTML = '';
     searchResults.classList.add('hidden');
-
-    // Добавляем обработчики событий к новым элементам
-    addSearchEventListeners();
 }
 
 // Обработчик события 'click' для пагинации
