@@ -70,60 +70,101 @@
     </div>
 
     <script>
-      const searchInput = document.getElementById('searchInput');
-      const searchResults = document.getElementById('searchResults');
+        // Получаем ссылки на элементы поля поиска и окна результатов
+        let searchInput = document.getElementById('searchInput');
+        let searchResults = document.getElementById('searchResults');
 
-      // Добавляем класс 'hidden' по умолчанию
-      searchResults.classList.add('hidden');
+        // Добавляем класс 'hidden' по умолчанию, чтобы скрыть окно результатов
+        searchResults.classList.add('hidden');
 
-      searchInput.addEventListener('input', async () => {
-        const query = searchInput.value.trim();
-        if (query) {
-            // Удаляем класс 'hidden' при вводе текста
-            searchResults.classList.remove('hidden');
-          const response = await fetch(`/verb-list/search?q=${query}`);
-          const verbs = await response.json();
-          displaySearchResults(verbs);
-        } else {
-            // Добавляем класс 'hidden' при пустом поле поиска
+        // Функция для отображения результатов поиска
+        function displaySearchResults(verbs) {
+            searchResults.innerHTML = '';
+            if (verbs.length > 0) {
+                const resultList = document.createElement('ul');
+                verbs.forEach(verb => {
+                    const listItem = document.createElement('li');
+                    const link = document.createElement('a');
+                    link.href = `/verb-list/letter/${verb.verb.charAt(0).toUpperCase()}/${verb.verb}`;
+                    link.textContent = `${verb.verb} - ${verb.translation}`;
+                    listItem.appendChild(link);
+                    resultList.appendChild(listItem);
+                });
+                searchResults.appendChild(resultList);
+            } else {
+                searchResults.textContent = 'Ничего не найдено';
+            }
+        }
+
+        // Функция для добавления обработчиков событий к полю поиска
+        function addSearchEventListeners() {
+            // Обработчик события 'input' для поля поиска
+            searchInput.addEventListener('input', async () => {
+                const query = searchInput.value.trim();
+                if (query) {
+                    // Если есть введенный текст, выполняем поиск
+                    const response = await fetch(`/verb-list/search?q=${query}`);
+                    const verbs = await response.json();
+                    displaySearchResults(verbs);
+                    // Показываем окно результатов при вводе текста
+                    searchResults.classList.remove('hidden');
+                } else {
+                    // Если поле поиска пустое, скрываем окно результатов
+                    searchResults.classList.add('hidden');
+                }
+            });
+
+            // Обработчик события 'blur' для поля поиска
+            searchInput.addEventListener('blur', () => {
+                // Добавляем задержку перед скрытием окна результатов поиска
+                setTimeout(() => {
+                    searchResults.classList.add('hidden');
+                }, 200);
+            });
+
+            // Обработчик события 'focus' для поля поиска
+            searchInput.addEventListener('focus', () => {
+                const query = searchInput.value.trim();
+                if (query) {
+                    // Если есть введенный текст и поле поиска в фокусе, показываем окно результатов
+                    searchResults.classList.remove('hidden');
+                }
+            });
+        }
+
+        // Вызываем функцию для добавления обработчиков событий при загрузке страницы
+        addSearchEventListeners();
+
+        // Обработчик события 'click' для пагинации
+        document.querySelector('.pagination').addEventListener('click', function (event) {
+            if (event.target.tagName === 'A') {
+                event.preventDefault();
+                const page = event.target.getAttribute('href').split('/').pop();
+                loadVerbs(page);
+            }
+        });
+
+        // Функция для загрузки глаголов при переходе на другую страницу через пагинацию
+        async function loadVerbs(page) {
+            const response = await fetch(`/verb-list/page/${page}`);
+            const html = await response.text();
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            document.querySelector('body').innerHTML = doc.querySelector('body').innerHTML;
+            history.pushState(null, null, `/verb-list/page/${page}`);
+
+            // Сбрасываем состояние поля поиска и окна результатов
+            searchInput.value = '';
+            searchResults.innerHTML = '';
             searchResults.classList.add('hidden');
+
+            // Привязываем обработчики событий к новым элементам (получаем новые ссылки на элементы после загрузки новой страницы)
+            searchInput = document.getElementById('searchInput');
+            searchResults = document.getElementById('searchResults');
+
+            // Добавляем обработчики событий к новым элементам
+            addSearchEventListeners();
         }
-      });
-
-      function displaySearchResults(verbs) {
-        searchResults.innerHTML = '';
-        if (verbs.length > 0) {
-          const resultList = document.createElement('ul');
-          verbs.forEach(verb => {
-            const listItem = document.createElement('li');
-            const link = document.createElement('a');
-            link.href = `/verb-list/letter/${verb.verb.charAt(0).toUpperCase()}/${verb.verb}`;
-            link.textContent = `${verb.verb} - ${verb.translation}`;
-            listItem.appendChild(link);
-            resultList.appendChild(listItem);
-          });
-          searchResults.appendChild(resultList);
-        } else {
-          searchResults.textContent = 'Ничего не найдено';
-        }
-      }
-
-      document.querySelector('.pagination').addEventListener('click', function (event) {
-          if (event.target.tagName === 'A') {
-              event.preventDefault();
-              const page = event.target.getAttribute('href').split('/').pop();
-              loadVerbs(page);
-          }
-      });
-
-      async function loadVerbs(page) {
-          const response = await fetch(`/verb-list/page/${page}`);
-          const html = await response.text();
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(html, 'text/html');
-          document.querySelector('body').innerHTML = doc.querySelector('body').innerHTML;
-          history.pushState(null, null, `/verb-list/page/${page}`);
-      }
     </script>
   </body>
 </html>

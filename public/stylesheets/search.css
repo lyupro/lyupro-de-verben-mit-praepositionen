@@ -23,45 +23,6 @@
 }
 
 /* Стили для результатов поиска */
-.search-results {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-    max-height: 300px;
-    overflow-y: auto;
-}
-
-.search-results ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.search-results li {
-    margin-bottom: 10px;
-}
-
-.search-results a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.search-results a:hover {
-    text-decoration: underline;
-}
-
-/* Класс для скрытия результатов поиска */
-.search-results.hidden {
-    display: none;
-}
-
-/* Стили для результатов поиска */
 #searchResults {
     position: absolute;
     top: 100%;
@@ -87,16 +48,17 @@
 }
 
 #searchResults a {
-    color: #007bff;
+    background-color: #007bff;
+    color: #fff;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     padding: 5px;
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
 #searchResults a:hover {
-    background-color: #f0f0f0;
+    background-color: #0056b3;
     text-decoration: none;
 }
 
