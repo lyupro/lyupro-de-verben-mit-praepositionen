@@ -3,19 +3,23 @@
 <html>
   <head>
     <title>Изучение немецких глаголов</title>
+    <link rel="stylesheet" href="/stylesheets/base.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
   </head>
   <body>
-    <h1>Глагол: <%= verb.verb %></h1>
-    <ul>
-      <% verb.sentences.forEach(sentence => { %>
-        <li><%= sentence %></li>
-      <% }) %>
-    </ul>
-    <form method="POST" action="/verb/check">
-      <input type="hidden" name="verb" value="<%= verb.verb %>">
-      <input type="text" name="sentence" placeholder="Введите предложение">
-      <button type="submit">Проверить</button>
-    </form>
-    <a href="/">Главная страница</a>
+    <div class="container">
+      <h1>Глагол: <%= verb.verb %></h1>
+      <ul>
+        <% verb.sentences.forEach(sentence => { %>
+          <li><%= sentence %></li>
+        <% }) %>
+      </ul>
+      <form method="POST" action="/verb/check">
+        <input type="hidden" name="verb" value="<%= verb.verb %>">
+        <input type="text" name="sentence" placeholder="Введите предложение">
+        <button type="submit">Проверить</button>
+      </form>
+      <a href="/">Главная страница</a>
+    </div>
   </body>
 </html>
