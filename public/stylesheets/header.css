@@ -1,0 +1,6 @@
+/* Стили для заголовка h1 */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}

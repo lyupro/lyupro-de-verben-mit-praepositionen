@@ -1,0 +1,105 @@
+/* Стили для поля поиска */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для контейнера результатов поиска */
+.search-results-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрируем контейнер */
+}
+
+/* Стили для результатов поиска */
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.search-results ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-results li {
+    margin-bottom: 10px;
+}
+
+.search-results a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.search-results a:hover {
+    text-decoration: underline;
+}
+
+/* Класс для скрытия результатов поиска */
+.search-results.hidden {
+    display: none;
+}
+
+/* Стили для результатов поиска */
+#searchResults {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    max-height: 300px; /* Максимальная высота для результатов */
+    overflow-y: auto; /* Добавляем скролл при превышении высоты */
+}
+
+#searchResults ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#searchResults li {
+    margin-bottom: 10px;
+}
+
+#searchResults a {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#searchResults a:hover {
+    background-color: #f0f0f0;
+    text-decoration: none;
+}
+
+#searchResults.hidden {
+    display: none;
+}

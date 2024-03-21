@@ -1,0 +1,33 @@
+/* Стили для алфавита */
+.alphabet {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.alphabet a {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.alphabet a:hover {
+    background-color: #f0f0f0;
+}
+
+.alphabet span.disabled {
+    display: inline-block;
+    background-color: #ccc;
+    color: #999;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: not-allowed;
+}
