@@ -8,6 +8,7 @@
   </head>
   <body>
     <div class="container">
+      <%- include('partials/header') %>
       <h1>Глагол: <%= verb.verb %></h1>
       <ul>
         <% verb.sentences.forEach(sentence => { %>
@@ -19,7 +20,6 @@
         <input type="text" name="sentence" placeholder="Введите предложение">
         <button type="submit">Проверить</button>
       </form>
-      <a href="/">Главная страница</a>
     </div>
   </body>
 </html>
