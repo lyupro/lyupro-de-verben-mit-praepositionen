@@ -48,22 +48,24 @@
             <% }) %>
         </div>
 
-        <a href="/">Главная страница</a>
-
         <% if (typeof currentPage !== 'undefined' && typeof totalPages !== 'undefined') { %>
             <div class="pagination">
                 <% if (currentPage > 1) { %>
-                    <a href="/verb-list/page/<%= currentPage - 1 %>">Назад</a>
+                    <a href="/verb-list/page/<%= currentPage - 1 %>" class="pagination-link">Назад</a>
+                <% } else { %>
+                    <span class="pagination-disabled">Назад</span>
                 <% } %>
                 <% for (let i = 1; i <= totalPages; i++) { %>
                     <% if (i === currentPage) { %>
-                        <span><%= i %></span>
+                        <span class="pagination-current"><%= i %></span>
                     <% } else { %>
-                        <a href="/verb-list/page/<%= i %>"><%= i %></a>
+                        <a href="/verb-list/page/<%= i %>" class="pagination-link"><%= i %></a>
                     <% } %>
                 <% } %>
                 <% if (currentPage < totalPages) { %>
-                    <a href="/verb-list/page/<%= currentPage + 1 %>">Вперед</a>
+                    <a href="/verb-list/page/<%= currentPage + 1 %>" class="pagination-link">Вперед</a>
+                <% } else { %>
+                    <span class="pagination-disabled">Вперед</span>
                 <% } %>
             </div>
         <% } %>
