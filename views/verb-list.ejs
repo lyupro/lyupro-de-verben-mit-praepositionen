@@ -17,64 +17,23 @@
     <div class="container">
         <%- include('layout') -%>
         <h1>Список глаголов</h1>
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Поиск глагола">
-        </div>
-        <div class="search-results-container">
-            <div id="searchResults" class="search-results"></div>
-        </div>
 
-        <div class="alphabet">
-            <% alphabet.forEach(letter => { %>
-                <% if (letterAvailability[letter]) { %>
-                    <a href="/verb-list/letter/<%= letter %>"><%= letter %></a>
-                <% } else { %>
-                    <span class="disabled"><%= letter %></span>
-                <% } %>
-            <% }) %>
-        </div>
+        <%- include('partials/verb-list/search') %>
+        <%- include('partials/verb-list/alphabet') %>
 
         <div class="verb-list">
             <% verbs.forEach(verb => { %>
-                <div class="card">
-                    <div class="card-front">
-                        <h2><%= verb.verb %></h2>
-                    </div>
-                    <div class="card-back">
-                        <h2><%= verb.translation %></h2>
-                        <a href="/verb-list/letter/<%= verb.verb.charAt(0).toUpperCase() %>/<%= verb.verb %>">Подробнее</a>
-                    </div>
-                </div>
+                <%- include('partials/verb-list/card', { verb: verb }) %>
             <% }) %>
         </div>
 
-        <% if (typeof currentPage !== 'undefined' && typeof totalPages !== 'undefined') { %>
-            <div class="pagination">
-                <% if (currentPage > 1) { %>
-                    <a href="/verb-list/page/<%= currentPage - 1 %>" class="pagination-link">Назад</a>
-                <% } else { %>
-                    <span class="pagination-disabled">Назад</span>
-                <% } %>
-                <% for (let i = 1; i <= totalPages; i++) { %>
-                    <% if (i === currentPage) { %>
-                        <span class="pagination-current"><%= i %></span>
-                    <% } else { %>
-                        <a href="/verb-list/page/<%= i %>" class="pagination-link"><%= i %></a>
-                    <% } %>
-                <% } %>
-                <% if (currentPage < totalPages) { %>
-                    <a href="/verb-list/page/<%= currentPage + 1 %>" class="pagination-link">Вперед</a>
-                <% } else { %>
-                    <span class="pagination-disabled">Вперед</span>
-                <% } %>
-            </div>
-        <% } %>
-        </div>
+        <%- include('partials/verb-list/pagination') %>
     </div>
 
     <script src="/javascripts/search.js"></script>
     <script src="/javascripts/pagination.js"></script>
     <script src="/javascripts/verbCard.js"></script>
+    <script src="/javascripts/alphabet.js"></script>
     <script>
         // Получаем ссылку на элемент окна результатов поиска
         const searchResults = document.getElementById('searchResults');

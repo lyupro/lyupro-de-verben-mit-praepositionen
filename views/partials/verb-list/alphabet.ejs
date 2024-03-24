@@ -1,0 +1,10 @@
+<!-- views/partials/verb-list/alphabet.ejs -->
+<div class="alphabet">
+    <% alphabet.forEach(letter => { %>
+        <% if (letterAvailability[letter]) { %>
+            <a href="/verb-list/letter/<%= letter %>"><%= letter %></a>
+        <% } else { %>
+            <span class="disabled"><%= letter %></span>
+        <% } %>
+    <% }) %>
+</div>

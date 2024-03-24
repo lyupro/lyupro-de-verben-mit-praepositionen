@@ -1,38 +1,14 @@
 <!-- views/letter.ejs -->
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Глаголы на букву <%= letter %></title>
-      <link rel="stylesheet" href="/stylesheets/base.css">
-      <link rel="stylesheet" href="/stylesheets/header.css">
-    <style>
-      .verb-list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
-      }
-
-      .verb-card {
-        background-color: #f0f0f0;
-        padding: 10px;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-  <div class="container">
-  <%- include('partials/header') %>
-
-      <h1>Глаголы на букву <%= letter %></h1>
-      <div class="verb-list">
-        <% verbs.forEach(verb => { %>
-          <div class="verb-card">
-           <a href="/verb-list/letter/<%= letter %>/<%= verb.verb %>">
-             <%= verb.verb %> - <%= verb.translation %>
-            </a>
-          </div>
-        <% }) %>
-      </div>
-  </div>
-  </body>
-</html>
+<div class="verb-list">
+    <% verbs.forEach(verb => { %>
+        <div class="card">
+            <div class="card-front">
+                <h2><%= verb.verb %></h2>
+            </div>
+            <div class="card-back">
+                <h2><%= verb.translation %></h2>
+                <a href="/verb-list/letter/<%= verb.verb.charAt(0).toUpperCase() %>/<%= verb.verb %>">Подробнее</a>
+            </div>
+        </div>
+    <% }) %>
+</div>

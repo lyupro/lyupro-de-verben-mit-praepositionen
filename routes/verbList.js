@@ -53,7 +53,7 @@ router.get('/letter/:letter', async (req, res, next) => {
 
         const regex = new RegExp(`^${letter}`, 'i');
         const verbs = await Verb.find({ verb: regex });
-        res.render('letter', { letter, verbs });
+        res.render('letter', { letter, verbs, layout: false });
     } catch (error) {
         next(error);
     }
