@@ -3,6 +3,7 @@ const express = require('express');
 const router = express.Router();
 const Verb = require('../models/verb');
 const { getAlphabetWithAvailability, renderVerbList } = require('../utils/verbUtils');
+const { renderVerbsByLetter } = require('../utils/letterUtils');
 
 
 // Маршрут для отображения списка глаголов с пагинацией (по умолчанию - первая страница)
@@ -40,23 +41,16 @@ router.get('/search', async (req, res, next) => {
 });
 
 // Маршрут для отображения глаголов по выбранной букве
-router.get('/letter/:letter', async (req, res, next) => {
-    try {
+router.get('/letter/:letter', async (req, res, next, page = 1) => {
         const letter = req.params.letter.toUpperCase();
+        renderVerbsByLetter(req, res, next, letter, page);
+});
 
-        // Проверяем, соответствует ли переданная буква алфавиту
-        if (!/^[A-Z]$/.test(letter)) {
-            const error = new Error('Недопустимая буква. Пожалуйста, выберите букву от A до Z.');
-            error.status = 400;
-            throw error;
-        }
-
-        const regex = new RegExp(`^${letter}`, 'i');
-        const verbs = await Verb.find({ verb: regex });
-        res.render('letter', { letter, verbs, layout: false });
-    } catch (error) {
-        next(error);
-    }
+// Маршрут для отображения глаголов по выбранной букве (указанная страница)
+router.get('/letter/:letter/page/:page', async (req, res, next) => {
+    const letter = req.params.letter.toUpperCase();
+    const page = parseInt(req.params.page) || 1;
+    renderVerbsByLetter(req, res, next, letter, page);
 });
 
 // Маршрут для отображения выбранного глагола

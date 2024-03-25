@@ -1,36 +1,67 @@
 // public/javascripts/pagination.js
 
 // Функция для загрузки глаголов при переходе на другую страницу через пагинацию
-async function loadVerbs(page) {
-    const response = await fetch(`/verb-list/page/${page}`);
-    const html = await response.text();
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
+async function loadVerbs(url) {
+    try {
+        console.log('Загрузка глаголов с URL:', url);
 
-    // Обновляем только содержимое контейнера с глаголами
-    const verbListContainer = document.querySelector('.verb-list');
-    verbListContainer.innerHTML = doc.querySelector('.verb-list').innerHTML;
+        const response = await fetch(url);
+        console.log('Ответ получен:', response);
 
-    // Обновляем блок пагинации
-    const paginationContainer = document.querySelector('.pagination');
-    paginationContainer.innerHTML = doc.querySelector('.pagination').innerHTML;
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
 
-    // Обновляем URL-адрес страницы без перезагрузки
-    history.pushState(null, null, `/verb-list/page/${page}`);
+        const html = await response.text();
+        console.log('HTML получен:', html);
 
-    // Сбрасываем состояние поля поиска и окна результатов
-    const searchInput = document.getElementById('searchInput');
-    const searchResults = document.getElementById('searchResults');
-    searchInput.value = '';
-    searchResults.innerHTML = '';
-    searchResults.classList.add('hidden');
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        console.log('HTML разобран:', doc);
+
+        // Обновляем только содержимое контейнера с глаголами
+        const verbListContainer = document.querySelector('.verb-list');
+        if (verbListContainer) {
+            verbListContainer.innerHTML = doc.querySelector('.verb-list').innerHTML;
+            console.log('Контейнер с глаголами обновлен');
+        } else {
+            console.warn('Контейнер с глаголами не найден');
+        }
+
+        // Обновляем блок пагинации
+        const paginationContainer = document.querySelector('.pagination');
+        if (paginationContainer) {
+            paginationContainer.innerHTML = doc.querySelector('.pagination').innerHTML;
+            console.log('Блок пагинации обновлен');
+        } else {
+            console.warn('Блок пагинации не найден');
+        }
+
+        // Обновляем URL-адрес страницы без перезагрузки
+        history.pushState(null, null, url);
+        console.log('URL-адрес страницы обновлен:', url);
+
+        // Сбрасываем состояние поля поиска и окна результатов
+        const searchInput = document.getElementById('searchInput');
+        const searchResults = document.getElementById('searchResults');
+        if (searchInput && searchResults) {
+            searchInput.value = '';
+            searchResults.innerHTML = '';
+            searchResults.classList.add('hidden');
+            console.log('Состояние поля поиска и окна результатов сброшено');
+        } else {
+            console.warn('Поле поиска или окно результатов не найдены');
+        }
+    } catch (error) {
+        console.error('Ошибка при загрузке глаголов:', error);
+    }
 }
 
 // Обработчик события 'click' для пагинации
-document.querySelector('.pagination').addEventListener('click', function (event) {
-    if (event.target.tagName === 'A') {
+document.addEventListener('click', function (event) {
+    if (event.target.matches('.pagination a')) {
         event.preventDefault();
-        const page = event.target.getAttribute('href').split('/').pop();
-        loadVerbs(page);
+        const url = event.target.getAttribute('href');
+        loadVerbs(url);
     }
 });

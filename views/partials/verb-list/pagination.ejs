@@ -2,7 +2,11 @@
 <% if (typeof currentPage !== 'undefined' && typeof totalPages !== 'undefined') { %>
     <div class="pagination">
         <% if (currentPage > 1) { %>
-            <a href="/verb-list/page/<%= currentPage - 1 %>" class="pagination-link">Назад</a>
+            <% if (typeof letter !== 'undefined') { %>
+                <a href="/verb-list/letter/<%= letter %>/page/<%= currentPage - 1 %>" class="pagination-link">Назад</a>
+            <% } else { %>
+                <a href="/verb-list/page/<%= currentPage - 1 %>" class="pagination-link">Назад</a>
+            <% } %>
         <% } else { %>
             <span class="pagination-disabled">Назад</span>
         <% } %>
@@ -10,11 +14,19 @@
             <% if (i === currentPage) { %>
                 <span class="pagination-current"><%= i %></span>
             <% } else { %>
-                <a href="/verb-list/page/<%= i %>" class="pagination-link"><%= i %></a>
+                <% if (typeof letter !== 'undefined') { %>
+                    <a href="/verb-list/letter/<%= letter %>/page/<%= i %>" class="pagination-link"><%= i %></a>
+                <% } else { %>
+                    <a href="/verb-list/page/<%= i %>" class="pagination-link"><%= i %></a>
+                <% } %>
             <% } %>
         <% } %>
         <% if (currentPage < totalPages) { %>
-            <a href="/verb-list/page/<%= currentPage + 1 %>" class="pagination-link">Вперед</a>
+            <% if (typeof letter !== 'undefined') { %>
+                <a href="/verb-list/letter/<%= letter %>/page/<%= currentPage + 1 %>" class="pagination-link">Вперед</a>
+            <% } else { %>
+                <a href="/verb-list/page/<%= currentPage + 1 %>" class="pagination-link">Вперед</a>
+            <% } %>
         <% } else { %>
             <span class="pagination-disabled">Вперед</span>
         <% } %>
