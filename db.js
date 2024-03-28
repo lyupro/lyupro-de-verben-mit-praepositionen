@@ -11,7 +11,7 @@ async function connectToDatabase() {
         });
 
         if (process.env.APP_ENV === 'development' && process.env.APP_DEBUG === 'true') {
-            console.log('Mongoose connected to', config.mongoURI);
+            console.log('Mongoose connect to', config.mongoURI);
         } else {
             console.log('Mongoose connected');
         }
