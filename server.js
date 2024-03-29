@@ -4,9 +4,8 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const path = require('path');
-//const db = require('./db');
-require('./db');
-const Verb = require('./models/verb');
+const { connectToDatabase } = require('./db');
+const { createModels } = require('./models/verb');
 const verbRoute = require('./routes/verb');
 const verbListRoute = require('./routes/verbList');
 
@@ -20,6 +19,17 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Парсинг тела запроса (middleware for parsing) in verb.js line 16: 'const verb = req.body.verb;'
 app.use(express.urlencoded({ extended: true }));
+
+// Подключение к базе данных и создание моделей
+connectToDatabase()
+    .then(() => {
+        createModels();
+        console.log('Models created');
+    })
+    .catch((err) => {
+        console.error('Failed to create models:', err);
+        process.exit(1);
+    });
 
 
 // Маршрут для стартовой страницы
