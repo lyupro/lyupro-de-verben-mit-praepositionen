@@ -50,9 +50,12 @@ async function renderVerbs(req, res, next, page = 1) {
         let totalVerbs = 0;
         const verbs = [];
 
+        const letterCounts = {};
         for (const letter of alphabetConfig.letters) {
             const VerbModel = getVerbModel(letter);
-            totalVerbs += await VerbModel.countDocuments();
+            const count = await VerbModel.countDocuments();
+            letterCounts[letter] = count;
+            totalVerbs += count;
         }
 
         const totalPages = Math.ceil(totalVerbs / limit);
@@ -64,15 +67,17 @@ async function renderVerbs(req, res, next, page = 1) {
         }
 
         let currentCount = 0;
+        let currentSkip = skip;
         for (const letter of alphabetConfig.letters) {
             if (currentCount >= limit) {
                 break;
             }
 
             const VerbModel = getVerbModel(letter);
-            const verbsForLetter = await VerbModel.find({}).skip(skip - currentCount).limit(limit - currentCount);
+            const verbsForLetter = await VerbModel.find({}).skip(currentSkip).limit(limit - currentCount);
             verbs.push(...verbsForLetter);
             currentCount += verbsForLetter.length;
+            currentSkip = Math.max(0, currentSkip - letterCounts[letter]);
         }
 
         const { alphabet, letterAvailability } = await getAlphabetWithAvailability();
