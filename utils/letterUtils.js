@@ -1,12 +1,15 @@
 // utils/letterUtils.js
-const Verb = require('../models/verb');
+const { getVerbModel } = require('../models/verb');
+const alphabetConfig = require('../config/alphabet');
 
 async function renderVerbsByLetter(req, res, next, letter, page) {
     try {
+        // Приводим букву к нижнему регистру
+        const lowerCaseLetter = letter.toLowerCase();
 
         // Проверяем, соответствует ли переданная буква алфавиту
-        if (!/^[A-Z]$/.test(letter)) {
-            const error = new Error('Недопустимая буква. Пожалуйста, выберите букву от A до Z.');
+        if (!alphabetConfig.letters.includes(lowerCaseLetter)) {
+            const error = new Error('Недопустимая буква. Пожалуйста, выберите букву из алфавита.');
             error.status = 400;
             throw error;
         }
@@ -18,8 +21,9 @@ async function renderVerbsByLetter(req, res, next, letter, page) {
         }
 
         const limit = 10;
-        const regex = new RegExp(`^${letter}`, 'i');
-        const totalVerbs = await Verb.countDocuments({ verb: regex });
+        const VerbModel = getVerbModel(lowerCaseLetter);
+        const regex = new RegExp(`^${lowerCaseLetter}`, 'i');
+        const totalVerbs = await VerbModel.countDocuments({ verb: regex });
         const totalPages = Math.ceil(totalVerbs / limit);
 
         if (page < 1 || page > totalPages) {
@@ -29,11 +33,17 @@ async function renderVerbsByLetter(req, res, next, letter, page) {
         }
 
         const skip = (page - 1) * limit;
+        //const verbs = await VerbModel.find({ verb: regex }).skip(skip).limit(limit);
+        const verbs = await VerbModel.aggregate([
+            { $match: { verb: regex } },
+            { $sample: { size: totalVerbs } },
+            { $skip: skip },
+            { $limit: limit }
+        ]);
+        //console.log("letterUtils.js | renderVerbsByLetter() verbs = "+ verbs);
 
-        const verbs = await Verb.find({ verb: regex }).skip(skip).limit(limit);
-        console.log("letterUtils.js | renderVerbsByLetter() verbs = "+ verbs);
         res.render('letter', {
-            letter,
+            letter: lowerCaseLetter,
             verbs,
             currentPage: page,
             totalPages,
