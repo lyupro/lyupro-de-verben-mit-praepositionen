@@ -16,9 +16,9 @@ async function loadVerbs(url) {
         const doc = parser.parseFromString(html, 'text/html');
 
         // Обновляем только содержимое контейнера с глаголами
-        const verbListContainer = document.querySelector('.verb-list');
+        const verbListContainer = document.querySelector('.verbs');
         if (verbListContainer) {
-            verbListContainer.innerHTML = doc.querySelector('.verb-list').innerHTML;
+            verbListContainer.innerHTML = doc.querySelector('.verbs').innerHTML;
         } else {
         }
 

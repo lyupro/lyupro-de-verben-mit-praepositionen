@@ -35,7 +35,7 @@ async function getAlphabetWithAvailability() {
     }
 }
 
-async function renderVerbList(req, res, next, page = 1) {
+async function renderVerbs(req, res, next, page = 1) {
     try {
 
         if (isNaN(page) || page < 1) {
@@ -59,7 +59,7 @@ async function renderVerbList(req, res, next, page = 1) {
         const verbs = await Verb.find({}).skip(skip).limit(limit);
         const { alphabet, letterAvailability } = await getAlphabetWithAvailability();
 
-        res.render('verb-list', {
+        res.render('verbs', {
             verbs,
             alphabet,
             letterAvailability,
@@ -74,5 +74,5 @@ async function renderVerbList(req, res, next, page = 1) {
 
 module.exports = {
     getAlphabetWithAvailability,
-    renderVerbList
+    renderVerbs
 };

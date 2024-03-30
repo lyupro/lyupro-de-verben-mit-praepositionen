@@ -1,20 +1,20 @@
-// routes/verbList.js
+// routes/verbs.js
 const express = require('express');
 const router = express.Router();
 const Verb = require('../models/verb');
-const { getAlphabetWithAvailability, renderVerbList } = require('../utils/verbUtils');
+const { getAlphabetWithAvailability, renderVerbs } = require('../utils/verbUtils');
 const { renderVerbsByLetter } = require('../utils/letterUtils');
 
 
 // Маршрут для отображения списка глаголов с пагинацией (по умолчанию - первая страница)
 router.get('/', (req, res, next) => {
-    renderVerbList(req, res, next);
+    renderVerbs(req, res, next);
 });
 
 // Маршрут для отображения списка глаголов с пагинацией (указанная страница)
 router.get('/page/:page', (req, res, next) => {
     const page = parseInt(req.params.page);
-    renderVerbList(req, res, next, page);
+    renderVerbs(req, res, next, page);
 });
 
 // Маршрут для поиска глаголов

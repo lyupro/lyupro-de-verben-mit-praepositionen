@@ -7,7 +7,7 @@ const path = require('path');
 const { connectToDatabase } = require('./db');
 const { createModels } = require('./models/verb');
 const verbRoute = require('./routes/verb');
-const verbListRoute = require('./routes/verbList');
+const verbsRoute = require('./routes/verbs');
 
 // Обслуживания статических файлов из директории public (для styles и других)
 app.use(express.static(path.join(__dirname, 'public')));
@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
 app.use('/verb', verbRoute);
 
 // Маршрут для работы со списком глаголов
-app.use('/verb-list', verbListRoute);
+app.use('/verbs', verbsRoute);
 
 app.get('/about', (req, res) => {
     res.render('about', { title: 'О Нас!' });

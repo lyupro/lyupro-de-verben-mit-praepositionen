@@ -9,7 +9,7 @@ function displaySearchResults(verbs) {
         verbs.forEach(verb => {
             const listItem = document.createElement('li');
             const link = document.createElement('a');
-            link.href = `/verb-list/letter/${verb.verb.charAt(0).toUpperCase()}/${verb.verb}`;
+            link.href = `/verbs/letter/${verb.verb.charAt(0).toUpperCase()}/${verb.verb}`;
             link.textContent = `${verb.verb} - ${verb.translation}`;
             listItem.appendChild(link);
             resultList.appendChild(listItem);
@@ -30,7 +30,7 @@ function addSearchEventListeners() {
         const query = searchInput.value.trim();
         if (query) {
             // Если есть введенный текст, выполняем поиск
-            const response = await fetch(`/verb-list/search?q=${query}`);
+            const response = await fetch(`/verbs/search?q=${query}`);
             const verbs = await response.json();
             displaySearchResults(verbs);
             // Показываем окно результатов при вводе текста

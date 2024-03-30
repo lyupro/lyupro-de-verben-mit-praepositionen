@@ -1,4 +1,4 @@
-<!-- views/verb-list.ejs -->
+<!-- views/verbs.ejs -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/stylesheets/header.css">
     <link rel="stylesheet" href="/stylesheets/search.css">
     <link rel="stylesheet" href="/stylesheets/alphabet.css">
-    <link rel="stylesheet" href="/stylesheets/verb-list.css">
+    <link rel="stylesheet" href="/stylesheets/verbs.css">
     <link rel="stylesheet" href="/stylesheets/pagination.css">
     <style>
         /* Здесь можно добавить дополнительные стили для этой страницы */
@@ -18,16 +18,16 @@
         <%- include('layout') -%>
         <h1>Список глаголов</h1>
 
-        <%- include('partials/verb-list/search') %>
-        <%- include('partials/verb-list/alphabet') %>
+        <%- include('partials/verbs/search') %>
+        <%- include('partials/verbs/alphabet') %>
 
-        <div class="verb-list">
+        <div class="verbs">
             <% verbs.forEach(verb => { %>
-                <%- include('partials/verb-list/card', { verb: verb }) %>
+                <%- include('partials/verbs/card', { verb: verb }) %>
             <% }) %>
         </div>
 
-        <%- include('partials/verb-list/pagination') %>
+        <%- include('partials/verbs/pagination') %>
     </div>
 
     <script src="/javascripts/search.js"></script>

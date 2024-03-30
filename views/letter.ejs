@@ -1,5 +1,5 @@
 <!-- views/letter.ejs -->
-<div class="verb-list">
+<div class="verbs">
     <% verbs.forEach(verb => { %>
         <div class="card">
             <div class="card-front">
@@ -7,10 +7,10 @@
             </div>
             <div class="card-back">
                 <h2><%= verb.translation %></h2>
-                <a href="/verb-list/letter/<%= verb.verb.charAt(0).toUpperCase() %>/<%= verb.verb %>">Подробнее</a>
+                <a href="/verbs/letter/<%= verb.verb.charAt(0).toUpperCase() %>/<%= verb.verb %>">Подробнее</a>
             </div>
         </div>
     <% }) %>
 </div>
 
-<%- include('partials/verb-list/pagination', { currentPage: currentPage, totalPages: totalPages, letter: letter }) %>
+<%- include('partials/verbs/pagination', { currentPage: currentPage, totalPages: totalPages, letter: letter }) %>

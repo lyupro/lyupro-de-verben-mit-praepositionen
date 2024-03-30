@@ -8,19 +8,19 @@ document.addEventListener('DOMContentLoaded', function() {
         const letter = this.getAttribute('href').split('/').pop();
         const page = 1;
 
-        fetch(`/verb-list/letter/${letter}/page/${page}`)
+        fetch(`/verbs/letter/${letter}/page/${page}`)
             .then(response => response.text())
             .then(html => {
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(html, 'text/html');
 
-                const verbList = document.querySelector('.verb-list');
+                const verbList = document.querySelector('.verbs');
                 const paginationContainer = document.querySelector('.pagination');
 
                 if (verbList && paginationContainer) {
-                    verbList.innerHTML = doc.querySelector('.verb-list').innerHTML;
+                    verbList.innerHTML = doc.querySelector('.verbs').innerHTML;
                     paginationContainer.innerHTML = doc.querySelector('.pagination').innerHTML;
-                    history.pushState(null, null, `/verb-list/letter/${letter}/page/${page}`);
+                    history.pushState(null, null, `/verbs/letter/${letter}/page/${page}`);
 
                     // Обновляем обработчики событий для пагинации
                     const paginationLinks = paginationContainer.querySelectorAll('a');
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         link.addEventListener('click', paginationClickHandler);
                     });
                 } else {
-                    console.error('Elements .verb-list or .pagination not found');
+                    console.error('Elements .verbs or .pagination not found');
                 }
             })
             .catch(error => console.error('Error loading verbs:', error));
