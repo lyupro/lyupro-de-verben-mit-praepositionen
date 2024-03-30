@@ -38,7 +38,6 @@ async function getAlphabetWithAvailability() {
 
 async function renderVerbs(req, res, next, page = 1) {
     try {
-
         if (isNaN(page) || page < 1) {
             const error = new Error('Неверный номер страницы');
             error.status = 400;
@@ -53,8 +52,6 @@ async function renderVerbs(req, res, next, page = 1) {
 
         for (const letter of alphabetConfig.letters) {
             const VerbModel = getVerbModel(letter);
-            const verbsForLetter = await VerbModel.find({}).skip(skip).limit(limit);
-            verbs.push(...verbsForLetter);
             totalVerbs += await VerbModel.countDocuments();
         }
 
@@ -64,6 +61,18 @@ async function renderVerbs(req, res, next, page = 1) {
             const error = new Error('Страница не найдена');
             error.status = 404;
             throw error;
+        }
+
+        let currentCount = 0;
+        for (const letter of alphabetConfig.letters) {
+            if (currentCount >= limit) {
+                break;
+            }
+
+            const VerbModel = getVerbModel(letter);
+            const verbsForLetter = await VerbModel.find({}).skip(skip - currentCount).limit(limit - currentCount);
+            verbs.push(...verbsForLetter);
+            currentCount += verbsForLetter.length;
         }
 
         const { alphabet, letterAvailability } = await getAlphabetWithAvailability();
