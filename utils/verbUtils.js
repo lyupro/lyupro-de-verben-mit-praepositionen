@@ -1,5 +1,6 @@
 // utils/verbUtils.js
-const Verb = require('../models/verb');
+const { getVerbModel } = require('../models/verb');
+const alphabetConfig = require('../config/alphabet');
 
 async function getAlphabetWithAvailability() {
     try {
@@ -10,25 +11,25 @@ async function getAlphabetWithAvailability() {
             error.status = 500;
             throw error;
         }
-        const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
         // Создаем объект для хранения информации о доступности букв
         const letterAvailability = {};
 
         if (enableLetterFilter) {
             // Проверяем доступность каждой буквы
-            for (const letter of alphabet) {
-                const count = await Verb.countDocuments({ verb: new RegExp(`^${letter}`, 'i') });
+            for (const letter of alphabetConfig.letters) {
+                const VerbModel = getVerbModel(letter);
+                const count = await VerbModel.countDocuments();
                 letterAvailability[letter] = count > 0;
             }
         } else {
             // Если фильтр отключен, помечаем все буквы как доступные
-            alphabet.forEach(letter => {
+            alphabetConfig.letters.forEach(letter => {
                 letterAvailability[letter] = true;
             });
         }
 
-        return { alphabet, letterAvailability };
+        return { alphabet: alphabetConfig.letters, letterAvailability };
     } catch (error) {
         console.error('Ошибка при получении доступности букв алфавита:', error);
         throw error;
@@ -47,7 +48,16 @@ async function renderVerbs(req, res, next, page = 1) {
         const limit = 10;
         const skip = (page - 1) * limit;
 
-        const totalVerbs = await Verb.countDocuments();
+        let totalVerbs = 0;
+        const verbs = [];
+
+        for (const letter of alphabetConfig.letters) {
+            const VerbModel = getVerbModel(letter);
+            const verbsForLetter = await VerbModel.find({}).skip(skip).limit(limit);
+            verbs.push(...verbsForLetter);
+            totalVerbs += await VerbModel.countDocuments();
+        }
+
         const totalPages = Math.ceil(totalVerbs / limit);
 
         if (page < 1 || page > totalPages) {
@@ -56,7 +66,6 @@ async function renderVerbs(req, res, next, page = 1) {
             throw error;
         }
 
-        const verbs = await Verb.find({}).skip(skip).limit(limit);
         const { alphabet, letterAvailability } = await getAlphabetWithAvailability();
 
         res.render('verbs', {
