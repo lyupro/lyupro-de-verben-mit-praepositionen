@@ -1,9 +1,10 @@
 // routes/verbs.js
 const express = require('express');
 const router = express.Router();
-const Verb = require('../models/verb');
+const { getVerbModel, getVerbSentencesModel } = require('../models/verb');
 const { getAlphabetWithAvailability, renderVerbs } = require('../utils/verbUtils');
 const { renderVerbsByLetter } = require('../utils/letterUtils');
+const alphabetConfig = require('../config/alphabet');
 
 
 // Маршрут для отображения списка глаголов с пагинацией (по умолчанию - первая страница)
@@ -28,12 +29,14 @@ router.get('/search', async (req, res, next) => {
             throw error;
         }
 
-        const verbs = await Verb.find({
-            $or: [
-                { verb: { $regex: `^${query}`, $options: 'i' } },
-                { translation: { $regex: `${query}`, $options: 'i' } }
-            ]
-        }).limit(5);
+        const verbs = [];
+
+        for (const letter of alphabetConfig.letters) {
+            const VerbModel = getVerbModel(letter);
+            const verbsForLetter = await VerbModel.find({ verb: { $regex: `^${query}`, $options: 'i' } }).limit(5);
+            verbs.push(...verbsForLetter);
+        }
+
         res.json(verbs);
     } catch (error) {
         next(error);
@@ -56,11 +59,15 @@ router.get('/letter/:letter/page/:page', async (req, res, next) => {
 // Маршрут для отображения выбранного глагола
 router.get('/letter/:letter/:verb', async (req, res, next) => {
     try{
-        const letter = req.params.letter.toUpperCase();
+        const letter = req.params.letter.toLowerCase();
         const verb = req.params.verb;
-        const verbData = await Verb.findOne({ verb });
+        const verbModel = getVerbModel(letter);
+        const verbSentencesModel = getVerbSentencesModel(letter, 'present');
+
+        const verbData = await verbModel.findOne({ verb: verb });
         if (verbData) {
-            res.render('verb', { verb: verbData });
+            const sentences = await verbSentencesModel.findOne({ verb_id: verb.verb_id }).distinct('sentences');
+            res.render('verb', { verb, sentences });
         } else {
             const error = new Error('Глагол не найден');
             error.status = 404;
