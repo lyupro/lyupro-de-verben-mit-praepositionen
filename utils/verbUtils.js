@@ -1,5 +1,5 @@
 // utils/verbUtils.js
-const { getVerbModel } = require('../models/verb');
+const { getVerbModel, getVerbTranslationModel } = require('../models/verb');
 const alphabetConfig = require('../config/alphabet');
 
 async function getAlphabetWithAvailability() {
@@ -80,10 +80,19 @@ async function renderVerbs(req, res, next, page = 1) {
             currentSkip = Math.max(0, currentSkip - letterCounts[letter]);
         }
 
+        const verbsWithTranslations = await Promise.all(
+            verbs.map(async (verb) => {
+                const letter = verb.verb.charAt(0).toLowerCase();
+                const VerbTranslationModel = getVerbTranslationModel(letter, 'ru');
+                const translation = await VerbTranslationModel.findOne({ verb_id: verb.verb_id });
+                return { ...verb.toObject(), translation: translation.verb };
+            })
+        );
+
         const { alphabet, letterAvailability } = await getAlphabetWithAvailability();
 
         res.render('verbs', {
-            verbs,
+            verbs: verbsWithTranslations,
             alphabet,
             letterAvailability,
             currentPage: page,

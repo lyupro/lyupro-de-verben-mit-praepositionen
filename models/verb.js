@@ -2,6 +2,7 @@
 const mongoose = require('mongoose');
 const verbTensesConfig = require('../config/verbTenses');
 const alphabetConfig = require('../config/alphabet');
+const languagesConfig = require('../config/languages');
 
 // Схема для модели Verb
 const verbSchema = new mongoose.Schema({
@@ -60,10 +61,26 @@ const verbSentenceSchema = new mongoose.Schema({
     },
 });
 
+// Схема для модели VerbTranslation
+const verbTranslationSchema = new mongoose.Schema({
+    verb_id: {
+        type: Number,
+        ref: 'Verb',
+        required: true,
+    },
+    verb: {
+        type: String,
+        required: true,
+        trim: true,
+        lowercase: true,
+    },
+});
+
 // Создание объектов моделей для каждой буквы алфавита
 const VerbModel = {};
 const VerbTensesModel = {};
 const VerbSentenceModel = {};
+const VerbTranslationModel = {};
 
 // Функция для создания моделей Mongoose
 function createModels() {
@@ -91,6 +108,15 @@ function createModels() {
                 `de_verbs_${letter}_sentences_${tense}`
             );
         });
+
+        VerbTranslationModel[letter] = {};
+        languagesConfig.languages.forEach((language) => {
+            VerbTranslationModel[letter][language] = mongoose.model(
+                `Verb_${letter}_Translation_${language}`,
+                verbTranslationSchema,
+                `de_verbs_${letter}_translations_${language}`
+            );
+        });
     });
 }
 
@@ -116,10 +142,18 @@ function getVerbSentencesModel(letter, tense) {
     return VerbSentenceModel[letter][tense];
 }
 
+function getVerbTranslationModel(letter, language) {
+    if (!VerbTranslationModel[letter] || !VerbTranslationModel[letter][language]) {
+        throw new Error(`Модель перевода глагола для буквы "${letter}" и языка "${language}" не найдена.`);
+    }
+    return VerbTranslationModel[letter][language];
+}
+
 // Экспорт функций и моделей
 module.exports = {
     createModels,
     getVerbModel,
     getVerbTensesModel,
     getVerbSentencesModel,
+    getVerbTranslationModel,
 };

@@ -1,7 +1,7 @@
 // routes/verbs.js
 const express = require('express');
 const router = express.Router();
-const { getVerbModel, getVerbSentencesModel } = require('../models/verb');
+const { getVerbModel, getVerbSentencesModel, getVerbTranslationModel } = require('../models/verb');
 const { getAlphabetWithAvailability, renderVerbs } = require('../utils/verbUtils');
 const { renderVerbsByLetter } = require('../utils/letterUtils');
 const alphabetConfig = require('../config/alphabet');
@@ -63,11 +63,13 @@ router.get('/letter/:letter/:verb', async (req, res, next) => {
         const verb = req.params.verb;
         const verbModel = getVerbModel(letter);
         const verbSentencesModel = getVerbSentencesModel(letter, 'present');
+        const VerbTranslationModel = getVerbTranslationModel(letter, 'ru');
 
         const verbData = await verbModel.findOne({ verb: verb });
         if (verbData) {
             const sentences = await verbSentencesModel.findOne({ verb_id: verb.verb_id }).distinct('sentences');
-            res.render('verb', { verb, sentences });
+            const translation = await VerbTranslationModel.findOne({ verb_id: verb.verb_id });
+            res.render('verb', { verb, sentences, translation });
         } else {
             const error = new Error('Глагол не найден');
             error.status = 404;
