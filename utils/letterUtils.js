@@ -33,13 +33,16 @@ async function renderVerbsByLetter(req, res, next, letter, page) {
         }
 
         const skip = (page - 1) * limit;
-        //const verbs = await VerbModel.find({ verb: regex }).skip(skip).limit(limit);
-        const verbs = await VerbModel.aggregate([
-            { $match: { verb: regex } },
-            { $sample: { size: totalVerbs } },
-            { $skip: skip },
-            { $limit: limit }
-        ]);
+        // Static verbs on page (alphabet order)
+        const verbs = await VerbModel.find({ verb: regex }).skip(skip).limit(limit);
+
+        // Random verbs on page
+        //const verbs = await VerbModel.aggregate([
+        //    { $match: { verb: regex } },
+        //    { $sample: { size: totalVerbs } },
+        //    { $skip: skip },
+        //    { $limit: limit }
+        //]);
         //console.log("letterUtils.js | renderVerbsByLetter() verbs = "+ verbs);
 
         res.render('letter', {
