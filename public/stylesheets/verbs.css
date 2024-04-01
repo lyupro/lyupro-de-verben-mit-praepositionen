@@ -1,3 +1,4 @@
+/* public/stylesheets/verbs.css */
 /* Стили для списка глаголов */
 .verbs {
     display: grid;
@@ -69,6 +70,16 @@
     hyphens: auto;
 }
 
+.card-front h2,
+.card-back h2 {
+    color: #333;
+    margin: 0;
+    font-size: 18px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
 .card-back a {
     display: inline-block;
     background-color: #007bff;
@@ -78,16 +89,6 @@
     border-radius: 4px;
     transition: background-color 0.3s ease;
     margin-top: 10px; /* Добавляем отступ сверху для ссылки */
-}
-
-.card-front h2,
-.card-back h2 {
-    color: #333;
-    margin: 0;
-    font-size: 18px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
 }
 
 .card-back a:hover {
@@ -115,4 +116,48 @@
         display: flex;
         transform: none;
     }
+}
+
+.translation-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.translation-wrapper h2 {
+    margin-right: 5px;
+}
+
+.tooltip-icon {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.tooltip-icon:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 16px;
+    white-space: normal;
+    z-index: 1000;
+    margin-bottom: 5px;
+    max-width: 200px;
+    text-align: center;
+    word-wrap: break-word;
 }

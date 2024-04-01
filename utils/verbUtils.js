@@ -80,12 +80,22 @@ async function renderVerbs(req, res, next, page = 1) {
             currentSkip = Math.max(0, currentSkip - letterCounts[letter]);
         }
 
+        //console.log('utils/verbUtils.js | renderVerbs() | //////////////////');
         const verbsWithTranslations = await Promise.all(
             verbs.map(async (verb) => {
                 const letter = verb.verb.charAt(0).toLowerCase();
                 const VerbTranslationModel = getVerbTranslationModel(letter, 'ru');
                 const translation = await VerbTranslationModel.findOne({ verb_id: verb.verb_id });
-                return { ...verb.toObject(), translation: translation.verb };
+                //console.log('utils/verbUtils.js | renderVerbs() | translation: ', translation);
+                const translations = translation.verb;
+                const firstTranslation = translation.verb[0];
+                //console.log('utils/verbUtils.js | renderVerbs() | firstTranslation: ', firstTranslation);
+                const [mainTranslation, additionalInfo] = firstTranslation.split(/\s+(?=\()/);
+                const displayTranslation = mainTranslation.trim();
+                //console.log('utils/verbUtils.js | renderVerbs() | displayTranslation: ', displayTranslation);
+                const tooltipText = additionalInfo ? additionalInfo.replace(/[()]/g, '').trim() : '';
+                //console.log('utils/verbUtils.js | renderVerbs() | tooltipText: ', tooltipText);
+                return { ...verb.toObject(), translation: displayTranslation, tooltipText, translations };
             })
         );
 

@@ -68,8 +68,11 @@ router.get('/letter/:letter/:verb', async (req, res, next) => {
         const verbData = await verbModel.findOne({ verb: verb });
         if (verbData) {
             const sentences = await verbSentencesModel.findOne({ verb_id: verb.verb_id }).distinct('sentences');
+            //console.log('routes/verbs.js | /letter/:letter/:verb | sentences: ', sentences);
             const translation = await VerbTranslationModel.findOne({ verb_id: verb.verb_id });
-            res.render('verb', { verb, sentences, translation });
+            //console.log('routes/verbs.js | /letter/:letter/:verb | translation: ', translation);
+
+            res.render('verb', { verb, sentences, translations: translation.verb });
         } else {
             const error = new Error('Глагол не найден');
             error.status = 404;

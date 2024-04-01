@@ -68,11 +68,11 @@ const verbTranslationSchema = new mongoose.Schema({
         ref: 'Verb',
         required: true,
     },
-    verb: {
-        type: String,
-        required: true,
-        trim: true,
-        lowercase: true,
+        verb: {
+            type: [String],
+            required: true,
+            trim: true,
+            lowercase: true,
     },
 });
 
