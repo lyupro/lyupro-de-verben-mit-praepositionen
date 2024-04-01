@@ -1,13 +1,4 @@
-/* public/stylesheets/verbs.css */
-/* Стили для списка глаголов */
-.verbs {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
-    margin-bottom: 30px;
-    min-height: 400px;
-}
-
+/* public/stylesheets/verbs/card.css */
 /* Стили для карточек глаголов */
 .card {
     background-color: #fff;
@@ -80,19 +71,22 @@
     hyphens: auto;
 }
 
-.card-back a {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
+.card .card-front a,
+.card .card-back a {
+    display: inline;
+    background-color: transparent;
+    color: inherit;
     text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    margin-top: 10px; /* Добавляем отступ сверху для ссылки */
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    transition: none;
 }
 
-.card-back a:hover {
-    background-color: #0056b3;
+.card .card-front a:hover,
+.card .card-back a:hover {
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {

@@ -1,15 +1,18 @@
 <!-- views/partials/verbs/card.ejs -->
 <div class="card">
     <div class="card-front">
-        <h2><%= verb.verb %></h2>
+        <a href="/verbs/letter/<%= verb.verb.charAt(0).toLowerCase() %>/<%= verb.verb %>">
+            <h2><%= verb.verb %></h2>
+        </a>
     </div>
     <div class="card-back">
         <div class="translation-wrapper">
-            <h2><%= verb.translation %><% if (verb.translations.length > 1) { %>...<% } %></h2>
+            <a href="/verbs/letter/<%= verb.verb.charAt(0).toLowerCase() %>/<%= verb.verb %>">
+                <h2><%= verb.translation %><% if (verb.translations.length > 1) { %>...<% } %></h2>
+            </a>
             <% if (verb.tooltipText) { %>
                 <span class="tooltip-icon" data-tooltip="<%= verb.tooltipText %>">?</span>
             <% } %>
         </div>
-        <a href="/verbs/letter/<%= verb.verb.charAt(0).toLowerCase() %>/<%= verb.verb %>">Подробнее</a>
     </div>
 </div>
