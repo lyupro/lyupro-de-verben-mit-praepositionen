@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "war gegangen",
+            "du": "warst gegangen",
+            "er/sie/es": "war gegangen",
+            "wir": "waren gegangen",
+            "ihr": "wart gegangen",
+            "sie/Sie": "waren gegangen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte geglaubt",
+            "du": "hattest geglaubt",
+            "er/sie/es": "hatte geglaubt",
+            "wir": "hatten geglaubt",
+            "ihr": "hattet geglaubt",
+            "sie/Sie": "hatten geglaubt"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte gegeben",
+            "du": "hattest gegeben",
+            "er/sie/es": "hatte gegeben",
+            "wir": "hatten gegeben",
+            "ihr": "hattet gegeben",
+            "sie/Sie": "hatten gegeben"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte gratuliert",
+            "du": "hattest gratuliert",
+            "er/sie/es": "hatte gratuliert",
+            "wir": "hatten gratuliert",
+            "ihr": "hattet gratuliert",
+            "sie/Sie": "hatten gratuliert"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte gegrüßt",
+            "du": "hattest gegrüßt",
+            "er/sie/es": "hatte gegrüßt",
+            "wir": "hatten gegrüßt",
+            "ihr": "hattet gegrüßt",
+            "sie/Sie": "hatten gegrüßt"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte gewonnen",
+            "du": "hattest gewonnen",
+            "er/sie/es": "hatte gewonnen",
+            "wir": "hatten gewonnen",
+            "ihr": "hattet gewonnen",
+            "sie/Sie": "hatten gewonnen"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte gegrillt",
+            "du": "hattest gegrillt",
+            "er/sie/es": "hatte gegrillt",
+            "wir": "hatten gegrillt",
+            "ihr": "hattet gegrillt",
+            "sie/Sie": "hatten gegrillt"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte genossen",
+            "du": "hattest genossen",
+            "er/sie/es": "hatte genossen",
+            "wir": "hatten genossen",
+            "ihr": "hattet genossen",
+            "sie/Sie": "hatten genossen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte gestanden",
+            "du": "hattest gestanden",
+            "er/sie/es": "hatte gestanden",
+            "wir": "hatten gestanden",
+            "ihr": "hattet gestanden",
+            "sie/Sie": "hatten gestanden"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte geguckt",
+            "du": "hattest geguckt",
+            "er/sie/es": "hatte geguckt",
+            "wir": "hatten geguckt",
+            "ihr": "hattet geguckt",
+            "sie/Sie": "hatten geguckt"
+        }
+    }
+]

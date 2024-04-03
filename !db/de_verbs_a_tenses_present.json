@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "arbeite",
+            "du": "arbeitest",
+            "er/sie/es": "arbeitet",
+            "wir": "arbeiten",
+            "ihr": "arbeitet",
+            "sie/Sie": "arbeiten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "angeln",
+            "du": "angelst",
+            "er/sie/es": "angelt",
+            "wir": "angeln",
+            "ihr": "angelt",
+            "sie/Sie": "angeln"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "analysiere",
+            "du": "analysierst",
+            "er/sie/es": "analysiert",
+            "wir": "analysieren",
+            "ihr": "analysiert",
+            "sie/Sie": "analysieren"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "argumentiere",
+            "du": "argumentierst",
+            "er/sie/es": "argumentiert",
+            "wir": "argumentieren",
+            "ihr": "argumentiert",
+            "sie/Sie": "argumentieren"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "assimiliere",
+            "du": "assimilierst",
+            "er/sie/es": "assimiliert",
+            "wir": "assimilieren",
+            "ihr": "assimiliert",
+            "sie/Sie": "assimilieren"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "wärme auf",
+            "du": "wärmst auf",
+            "er/sie/es": "wärmt auf",
+            "wir": "wärmen auf",
+            "ihr": "wärmt auf",
+            "sie/Sie": "wärmen auf"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "probiere aus",
+            "du": "probierst aus",
+            "er/sie/es": "probiert aus",
+            "wir": "probieren aus",
+            "ihr": "probiert aus",
+            "sie/Sie": "probieren aus"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "komme an",
+            "du": "kommst an",
+            "er/sie/es": "kommt an",
+            "wir": "kommen an",
+            "ihr": "kommt an",
+            "sie/Sie": "kommen an"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "ziehe an",
+            "du": "ziehst an",
+            "er/sie/es": "zieht an",
+            "wir": "ziehen an",
+            "ihr": "zieht an",
+            "sie/Sie": "ziehen an"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "wasche ab",
+            "du": "wäschst ab",
+            "er/sie/es": "wäscht ab",
+            "wir": "waschen ab",
+            "ihr": "wascht ab",
+            "sie/Sie": "waschen ab"
+        }
+    }
+]

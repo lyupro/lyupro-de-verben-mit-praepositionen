@@ -1,0 +1,42 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "fahren"
+    },
+    {
+        "verb_id": 2,
+        "verb": "feiern"
+    },
+    {
+        "verb_id": 3,
+        "verb": "fotografieren"
+    },
+    {
+        "verb_id": 4,
+        "verb": "frieren"
+    },
+    {
+        "verb_id": 5,
+        "verb": "fühlen"
+    },
+    {
+        "verb_id": 6,
+        "verb": "finden"
+    },
+    {
+        "verb_id": 7,
+        "verb": "fliegen"
+    },
+    {
+        "verb_id": 8,
+        "verb": "fragen"
+    },
+    {
+        "verb_id": 9,
+        "verb": "frohlocken"
+    },
+    {
+        "verb_id": 10,
+        "verb": "folgen"
+    }
+]

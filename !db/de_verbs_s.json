@@ -1,0 +1,42 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "sagen"
+    },
+    {
+        "verb_id": 2,
+        "verb": "saugen"
+    },
+    {
+        "verb_id": 3,
+        "verb": "schaffen"
+    },
+    {
+        "verb_id": 4,
+        "verb": "schauen"
+    },
+    {
+        "verb_id": 5,
+        "verb": "schicken"
+    },
+    {
+        "verb_id": 6,
+        "verb": "schlafen"
+    },
+    {
+        "verb_id": 7,
+        "verb": "schmecken"
+    },
+    {
+        "verb_id": 8,
+        "verb": "schneiden"
+    },
+    {
+        "verb_id": 9,
+        "verb": "schreiben"
+    },
+    {
+        "verb_id": 10,
+        "verb": "schwimmen"
+    }
+]

@@ -1,0 +1,162 @@
+[
+    {
+        "verb_id": 1,
+        "sentences":
+        [
+            "Ich sage die Wahrheit.",
+            "Sie sagt ihm Bescheid.",
+            "Wir sagen ihnen unsere Meinung.",
+            "Du sagst immer die richtigen Dinge.",
+            "Ihr sagt nichts dazu.",
+            "Sie sagen mir alles.",
+            "Sagst du gerne deine Meinung?",
+            "Sagen Sie ihm, er soll kommen.",
+            "Sagen wir es ihnen jetzt?",
+            "Sagen ist einfach."
+        ]
+    },
+    {
+        "verb_id": 2,
+        "sentences":
+        [
+            "Ich sauge den Teppich.",
+            "Sie saugt den Staubsauger.",
+            "Wir saugen den Schmutz auf.",
+            "Du saugst den Schmutz auf.",
+            "Ihr saugt den Teppich regelmäßig.",
+            "Sie saugen die Polster.",
+            "Saugst du oft?",
+            "Saugen Sie den Staub weg.",
+            "Saugen wir jetzt?",
+            "Saugen kann anstrengend sein."
+        ]
+    },
+    {
+        "verb_id": 3,
+        "sentences":
+        [
+            "Ich schaffe meine Arbeit rechtzeitig.",
+            "Sie schafft die Aufgabe alleine.",
+            "Wir schaffen das Projekt pünktlich.",
+            "Du schaffst es sicher.",
+            "Ihr schafft es gemeinsam.",
+            "Sie schaffen die Prüfung.",
+            "Schaffst du es heute?",
+            "Schaffen Sie es bis morgen?",
+            "Schaffen wir es zusammen?",
+            "Schaffen kann man alles."
+        ]
+    },
+    {
+        "verb_id": 4,
+        "sentences":
+        [
+            "Ich schaue mir den Film an.",
+            "Sie schaut durch das Fenster.",
+            "Wir schauen uns die Landschaft an.",
+            "Du schaust auf dein Handy.",
+            "Ihr schaut auf den Bildschirm.",
+            "Sie schauen in die Ferne.",
+            "Schaust du gerne Filme?",
+            "Schauen Sie auf das Bild.",
+            "Schauen wir mal nach.",
+            "Schauen ist entspannend."
+        ]
+    },
+    {
+        "verb_id": 5,
+        "sentences":
+        [
+            "Ich schicke dir eine Nachricht.",
+            "Sie schickt ihm eine Einladung.",
+            "Wir schicken ihnen ein Geschenk.",
+            "Du schickst eine E-Mail.",
+            "Ihr schickt einen Brief.",
+            "Sie schicken Pakete.",
+            "Schickst du oft Nachrichten?",
+            "Schicken Sie es per Post.",
+            "Schicken wir es ihnen später?",
+            "Schicken ist einfach."
+        ]
+    },
+    {
+        "verb_id": 6,
+        "sentences":
+        [
+            "Ich schlafe nachts gut.",
+            "Sie schläft früh ein.",
+            "Wir schlafen im selben Bett.",
+            "Du schläfst auf dem Sofa.",
+            "Ihr schlaft im Schlafzimmer.",
+            "Sie schlafen auf der Matratze.",
+            "Schläfst du gerne?",
+            "Schlafen Sie gut?",
+            "Schlafen wir zusammen?",
+            "Schlafen ist wichtig."
+        ]
+    },
+    {
+        "verb_id": 7,
+        "sentences":
+        [
+            "Ich schmecke das Essen.",
+            "Sie schmeckt den Kuchen.",
+            "Wir schmecken das Getränk.",
+            "Du schmeckst den Tee.",
+            "Ihr schmeckt die Suppe.",
+            "Sie schmecken die Früchte.",
+            "Schmeckst du das Salz?",
+            "Schmecken Sie den Kaffee?",
+            "Schmecken wir den Wein?",
+            "Schmecken kann unterschiedlich sein."
+        ]
+    },
+    {
+        "verb_id": 8,
+        "sentences":
+        [
+            "Ich schneide das Gemüse.",
+            "Sie schneidet das Fleisch.",
+            "Wir schneiden den Käse.",
+            "Du schneidest die Zwiebeln.",
+            "Ihr schneidet die Tomaten.",
+            "Sie schneiden die Paprika.",
+            "Schneidest du oft?",
+            "Schneiden Sie es in kleine Stücke.",
+            "Schneiden wir die Karotten?",
+            "Schneiden ist wichtig in der Küche."
+        ]
+    },
+    {
+        "verb_id": 9,
+        "sentences":
+        [
+            "Ich schreibe einen Brief.",
+            "Sie schreibt eine Geschichte.",
+            "Wir schreiben einen Bericht.",
+            "Du schreibst ein Gedicht.",
+            "Ihr schreibt eine E-Mail.",
+            "Sie schreiben eine Nachricht.",
+            "Schreibst du oft?",
+            "Schreiben Sie mir bitte.",
+            "Schreiben wir einen Artikel?",
+            "Schreiben kann Spaß machen."
+        ]
+    },
+    {
+        "verb_id": 10,
+        "sentences":
+        [
+            "Ich schwimme im Pool.",
+            "Sie schwimmt im Meer.",
+            "Wir schwimmen im See.",
+            "Du schwimmst im Fluss.",
+            "Ihr schwimmt im Schwimmbad.",
+            "Sie schwimmen im Ozean.",
+            "Schwimmst du gerne?",
+            "Schwimmen Sie gut?",
+            "Schwimmen wir heute?",
+            "Schwimmen ist eine gute Übung."
+        ]
+    }
+]

@@ -1,0 +1,162 @@
+[
+    {
+        "verb_id": 1,
+        "sentences":
+        [
+            "Ich nehme den Zug zur Arbeit.",
+            "Er nimmt eine Auszeit.",
+            "Sie nimmt das Buch mit.",
+            "Wir nehmen den ersten Platz ein.",
+            "Du nimmst den Tee mit Zucker.",
+            "Ihr nehmt den kürzesten Weg.",
+            "Nimmst du auch den Bus?",
+            "Nehmen Sie das Angebot an?",
+            "Nehmen wir das Risiko auf uns?",
+            "Nehmen ist ein wichtiger Schritt."
+        ]
+    },
+    {
+        "verb_id": 2,
+        "sentences":
+        [
+            "Ich nenne ihn meinen Freund.",
+            "Er nennt sie seine Kollegin.",
+            "Sie nennt das Kind beim Namen.",
+            "Wir nennen die Katze Felix.",
+            "Du nennst ihn einen Experten.",
+            "Ihr nennt das Projekt um.",
+            "Nennst du ihn auch so?",
+            "Nennen Sie die Gründe.",
+            "Nennen wir die Fakten beim Namen?",
+            "Nennen ist einfacher als raten."
+        ]
+    },
+    {
+        "verb_id": 3,
+        "sentences":
+        [
+            "Ich nähere mich dem Ziel.",
+            "Er nähert sich dem Gebäude.",
+            "Sie nähert sich langsam.",
+            "Wir nähern uns dem Ende.",
+            "Du näherst dich dem Ergebnis.",
+            "Ihr nähert euch dem Gipfel.",
+            "Näherst du dich auch an?",
+            "Nähern Sie sich vorsichtig.",
+            "Nähern wir uns der Lösung?",
+            "Nähern bringt Verständnis."
+        ]
+    },
+    {
+        "verb_id": 4,
+        "sentences":
+        [
+            "Ich nutze die Gelegenheit.",
+            "Er nutzt seine Fähigkeiten.",
+            "Sie nutzt die Ressourcen.",
+            "Wir nutzen die Technologie.",
+            "Du nutzt die Chance.",
+            "Ihr nutzt die Zeit effizient.",
+            "Nutzt du das Angebot?",
+            "Nutzen Sie die Möglichkeiten.",
+            "Nutzen wir die Situation?",
+            "Nutzen bringt Vorteile."
+        ]
+    },
+    {
+        "verb_id": 5,
+        "sentences":
+        [
+            "Ich nicke zustimmend.",
+            "Er nickt freundlich.",
+            "Sie nickt verlegen.",
+            "Wir nicken einander zu.",
+            "Du nickst lächelnd.",
+            "Ihr nickt als Zeichen der Anerkennung.",
+            "Nickst du oft?",
+            "Nicken Sie als Antwort.",
+            "Nicken wir als Vereinbarung?",
+            "Nicken zeigt Zustimmung."
+        ]
+    },
+    {
+        "verb_id": 6,
+        "sentences":
+        [
+            "Ich nasche gerne Süßigkeiten.",
+            "Er nascht heimlich.",
+            "Sie nascht Obst.",
+            "Wir naschen Schokolade.",
+            "Du naschst zwischendurch.",
+            "Ihr nascht gemeinsam.",
+            "Naschst du auch?",
+            "Naschen Sie bewusst?",
+            "Naschen wir gesund?",
+            "Naschen ist eine Belohnung."
+        ]
+    },
+    {
+        "verb_id": 7,
+        "sentences":
+        [
+            "Ich nähe meine Kleidung selbst.",
+            "Er näht eine neue Tasche.",
+            "Sie näht eine Decke.",
+            "Wir nähen Vorhänge.",
+            "Du nähst einen Knopf an.",
+            "Ihr näht Kostüme für das Theaterstück.",
+            "Nähst du oft?",
+            "Nähen Sie Ihr eigenes Design?",
+            "Nähen wir zusammen?",
+            "Nähen ist eine Kunst."
+        ]
+    },
+    {
+        "verb_id": 8,
+        "sentences":
+        [
+            "Ich nage am Bleistift.",
+            "Er nagt an seinem Fingernagel.",
+            "Sie nagt am Strohhalm.",
+            "Wir nagen an den Resten.",
+            "Du nagst am Holz.",
+            "Ihr nagt an der Wahrheit.",
+            "Nagst du aus Langeweile?",
+            "Nagen Sie nicht daran.",
+            "Nagen wir an der Idee?",
+            "Nagen bringt keine Lösung."
+        ]
+    },
+    {
+        "verb_id": 9,
+        "sentences":
+        [
+            "Ich niese in mein Taschentuch.",
+            "Er niest plötzlich.",
+            "Sie niest laut.",
+            "Wir niesen in die Armbeuge.",
+            "Du niest in deine Hand.",
+            "Ihr niest hintereinander.",
+            "Niesst du oft?",
+            "Niesen Sie in die Tasche.",
+            "Niesen wir uns an?",
+            "Niesen ist unvermeidlich."
+        ]
+    },
+    {
+        "verb_id": 10,
+        "sentences":
+        [
+            "Ich nicke ihm zu.",
+            "Er nickt als Antwort.",
+            "Sie nickt freundlich.",
+            "Wir nicken als Zeichen der Zustimmung.",
+            "Du nickst verlegen.",
+            "Ihr nickt synchron.",
+            "Nickst du auch?",
+            "Nicken Sie zurück.",
+            "Nicken wir uns zu?",
+            "Nicken kann Missverständnisse vermeiden."
+        ]
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "rase",
+            "du": "rast",
+            "er/sie/es": "rast",
+            "wir": "rasen",
+            "ihr": "rast",
+            "sie/Sie": "rasen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "rauche",
+            "du": "rauchst",
+            "er/sie/es": "raucht",
+            "wir": "rauchen",
+            "ihr": "raucht",
+            "sie/Sie": "rauchen"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "rechne",
+            "du": "rechnest",
+            "er/sie/es": "rechnet",
+            "wir": "rechnen",
+            "ihr": "rechnet",
+            "sie/Sie": "rechnen"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "regn' ",
+            "du": "regnest",
+            "er/sie/es": "regnet",
+            "wir": "regnen",
+            "ihr": "regnet",
+            "sie/Sie": "regnen"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "reiße",
+            "du": "reißt",
+            "er/sie/es": "reißt",
+            "wir": "reißen",
+            "ihr": "reißt",
+            "sie/Sie": "reißen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "reite",
+            "du": "reitest",
+            "er/sie/es": "reitet",
+            "wir": "reiten",
+            "ihr": "reitet",
+            "sie/Sie": "reiten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "renne",
+            "du": "rennst",
+            "er/sie/es": "rennt",
+            "wir": "rennen",
+            "ihr": "rennt",
+            "sie/Sie": "rennen"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "repariere",
+            "du": "reparierst",
+            "er/sie/es": "repariert",
+            "wir": "reparieren",
+            "ihr": "repariert",
+            "sie/Sie": "reparieren"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "reserviere",
+            "du": "reservierst",
+            "er/sie/es": "reserviert",
+            "wir": "reservieren",
+            "ihr": "reserviert",
+            "sie/Sie": "reservieren"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "riskiere",
+            "du": "riskierst",
+            "er/sie/es": "riskiert",
+            "wir": "riskieren",
+            "ihr": "riskiert",
+            "sie/Sie": "riskieren"
+        }
+    }
+]

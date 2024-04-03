@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "quakte",
+            "du": "quaktest",
+            "er/sie/es": "quakte",
+            "wir": "quakten",
+            "ihr": "quaktet",
+            "sie/Sie": "quakten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "quoll",
+            "du": "quollst",
+            "er/sie/es": "quoll",
+            "wir": "quollen",
+            "ihr": "quollt",
+            "sie/Sie": "quollen"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "quengelte",
+            "du": "quengeltest",
+            "er/sie/es": "quengelte",
+            "wir": "quengelten",
+            "ihr": "quengeltet",
+            "sie/Sie": "quengelten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "querstellte",
+            "du": "querstelltest",
+            "er/sie/es": "querstellte",
+            "wir": "querstellten",
+            "ihr": "querstelltet",
+            "sie/Sie": "querstellten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "quittierte",
+            "du": "quittiertest",
+            "er/sie/es": "quittierte",
+            "wir": "quittierten",
+            "ihr": "quittiertet",
+            "sie/Sie": "quittierten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "quotierte",
+            "du": "quotiertest",
+            "er/sie/es": "quotierte",
+            "wir": "quotierten",
+            "ihr": "quotiertet",
+            "sie/Sie": "quotierten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "quasselte",
+            "du": "quasseltest",
+            "er/sie/es": "quasselte",
+            "wir": "quasselten",
+            "ihr": "quasseltet",
+            "sie/Sie": "quasselten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "quälte",
+            "du": "quältest",
+            "er/sie/es": "quälte",
+            "wir": "quälten",
+            "ihr": "quältet",
+            "sie/Sie": "quälten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "querging",
+            "du": "quergingst",
+            "er/sie/es": "querging",
+            "wir": "quergingen",
+            "ihr": "quergingt",
+            "sie/Sie": "quergingen"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "quittmachte",
+            "du": "quittmachtest",
+            "er/sie/es": "quittmachte",
+            "wir": "quittmachten",
+            "ihr": "quittmachtet",
+            "sie/Sie": "quittmachten"
+        }
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte gecampt",
+            "du": "hattest gecampt",
+            "er/sie/es": "hatte gecampt",
+            "wir": "hatten gecampt",
+            "ihr": "hattet gecampt",
+            "sie/Sie": "hatten gecampt"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte gechattet",
+            "du": "hattest gechattet",
+            "er/sie/es": "hatte gechattet",
+            "wir": "hatten gechattet",
+            "ihr": "hattet gechattet",
+            "sie/Sie": "hatten gechattet"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte gechillt",
+            "du": "hattest gechillt",
+            "er/sie/es": "hatte gechillt",
+            "wir": "hatten gechillt",
+            "ihr": "hattet gechillt",
+            "sie/Sie": "hatten gechillt"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte gecrawlt",
+            "du": "hattest gecrawlt",
+            "er/sie/es": "hatte gecrawlt",
+            "wir": "hatten gecrawlt",
+            "ihr": "hattet gecrawlt",
+            "sie/Sie": "hatten gecrawlt"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte gecremt",
+            "du": "hattest gecremt",
+            "er/sie/es": "hatte gecremt",
+            "wir": "hatten gecremt",
+            "ihr": "hattet gecremt",
+            "sie/Sie": "hatten gecremt"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte gecruist",
+            "du": "hattest gecruist",
+            "er/sie/es": "hatte gecruist",
+            "wir": "hatten gecruist",
+            "ihr": "hattet gecruist",
+            "sie/Sie": "hatten gecruist"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte gecurlet",
+            "du": "hattest gecurlet",
+            "er/sie/es": "hatte gecurlet",
+            "wir": "hatten gecurlet",
+            "ihr": "hattet gecurlet",
+            "sie/Sie": "hatten gecurlet"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte gecoacht",
+            "du": "hattest gecoacht",
+            "er/sie/es": "hatte gecoacht",
+            "wir": "hatten gecoacht",
+            "ihr": "hattet gecoacht",
+            "sie/Sie": "hatten gecoacht"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte gecovered",
+            "du": "hattest gecovered",
+            "er/sie/es": "hatte gecovered",
+            "wir": "hatten gecovered",
+            "ihr": "hattet gecovered",
+            "sie/Sie": "hatten gecovered"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte codiert",
+            "du": "hattest codiert",
+            "er/sie/es": "hatte codiert",
+            "wir": "hatten codiert",
+            "ihr": "hattet codiert",
+            "sie/Sie": "hatten codiert"
+        }
+    }
+]

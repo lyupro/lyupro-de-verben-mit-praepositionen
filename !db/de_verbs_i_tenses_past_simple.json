@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "infiltrierte",
+            "du": "infiltriertest",
+            "er/sie/es": "infiltrierte",
+            "wir": "infiltrierten",
+            "ihr": "infiltriertet",
+            "sie/Sie": "infiltrierten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "informierte",
+            "du": "informiertest",
+            "er/sie/es": "informierte",
+            "wir": "informierten",
+            "ihr": "informiertet",
+            "sie/Sie": "informierten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "installierte",
+            "du": "installiertest",
+            "er/sie/es": "installierte",
+            "wir": "installierten",
+            "ihr": "installiertet",
+            "sie/Sie": "installierten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "interessierte",
+            "du": "interessiertest",
+            "er/sie/es": "interessierte",
+            "wir": "interessierten",
+            "ihr": "interessiertet",
+            "sie/Sie": "interessierten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "investierte",
+            "du": "investiertest",
+            "er/sie/es": "investierte",
+            "wir": "investierten",
+            "ihr": "investiertet",
+            "sie/Sie": "investierten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "inspirierte",
+            "du": "inspiriertest",
+            "er/sie/es": "inspirierte",
+            "wir": "inspirierten",
+            "ihr": "inspiriertet",
+            "sie/Sie": "inspirierten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "inszenierte",
+            "du": "inszeniertest",
+            "er/sie/es": "inszenierte",
+            "wir": "inszenierten",
+            "ihr": "inszeniertet",
+            "sie/Sie": "inszenierten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "interpolierte",
+            "du": "interpoliertest",
+            "er/sie/es": "interpolierte",
+            "wir": "interpolierten",
+            "ihr": "interpoliertet",
+            "sie/Sie": "interpolierten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "improvisierte",
+            "du": "improvisiertest",
+            "er/sie/es": "improvisierte",
+            "wir": "improvisierten",
+            "ihr": "improvisiertet",
+            "sie/Sie": "improvisierten"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "isolierte",
+            "du": "isoliertest",
+            "er/sie/es": "isolierte",
+            "wir": "isolierten",
+            "ihr": "isoliertet",
+            "sie/Sie": "isolierten"
+        }
+    }
+]

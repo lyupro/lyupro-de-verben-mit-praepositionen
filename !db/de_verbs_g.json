@@ -1,0 +1,42 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "gehen"
+    },
+    {
+        "verb_id": 2,
+        "verb": "glauben"
+    },
+    {
+        "verb_id": 3,
+        "verb": "geben"
+    },
+    {
+        "verb_id": 4,
+        "verb": "gratulieren"
+    },
+    {
+        "verb_id": 5,
+        "verb": "grüßen"
+    },
+    {
+        "verb_id": 6,
+        "verb": "gewinnen"
+    },
+    {
+        "verb_id": 7,
+        "verb": "grillen"
+    },
+    {
+        "verb_id": 8,
+        "verb": "genießen"
+    },
+    {
+        "verb_id": 9,
+        "verb": "gestehen"
+    },
+    {
+        "verb_id": 10,
+        "verb": "gucken"
+    }
+]

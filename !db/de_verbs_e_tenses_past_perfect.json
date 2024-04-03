@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte gegessen",
+            "du": "hattest gegessen",
+            "er/sie/es": "hatte gegessen",
+            "wir": "hatten gegessen",
+            "ihr": "hattet gegessen",
+            "sie/Sie": "hatten gegessen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte erklärt",
+            "du": "hattest erklärt",
+            "er/sie/es": "hatte erklärt",
+            "wir": "hatten erklärt",
+            "ihr": "hattet erklärt",
+            "sie/Sie": "hatten erklärt"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte geerntet",
+            "du": "hattest geerntet",
+            "er/sie/es": "hatte geerntet",
+            "wir": "hatten geerntet",
+            "ihr": "hattet geerntet",
+            "sie/Sie": "hatten geerntet"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte erhöht",
+            "du": "hattest erhöht",
+            "er/sie/es": "hatte erhöht",
+            "wir": "hatten erhöht",
+            "ihr": "hattet erhöht",
+            "sie/Sie": "hatten erhöht"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte erstellt",
+            "du": "hattest erstellt",
+            "er/sie/es": "hatte erstellt",
+            "wir": "hatten erstellt",
+            "ihr": "hattet erstellt",
+            "sie/Sie": "hatten erstellt"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte erwartet",
+            "du": "hattest erwartet",
+            "er/sie/es": "hatte erwartet",
+            "wir": "hatten erwartet",
+            "ihr": "hattet erwartet",
+            "sie/Sie": "hatten erwartet"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte entwickelt",
+            "du": "hattest entwickelt",
+            "er/sie/es": "hatte entwickelt",
+            "wir": "hatten entwickelt",
+            "ihr": "hattet entwickelt",
+            "sie/Sie": "hatten entwickelt"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte ergänzt",
+            "du": "hattest ergänzt",
+            "er/sie/es": "hatte ergänzt",
+            "wir": "hatten ergänzt",
+            "ihr": "hattet ergänzt",
+            "sie/Sie": "hatten ergänzt"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte entdeckt",
+            "du": "hattest entdeckt",
+            "er/sie/es": "hatte entdeckt",
+            "wir": "hatten entdeckt",
+            "ihr": "hattet entdeckt",
+            "sie/Sie": "hatten entdeckt"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte erfahren",
+            "du": "hattest erfahren",
+            "er/sie/es": "hatte erfahren",
+            "wir": "hatten erfahren",
+            "ihr": "hattet erfahren",
+            "sie/Sie": "hatten erfahren"
+        }
+    }
+]

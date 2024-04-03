@@ -1,0 +1,42 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "infiltrieren"
+    },
+    {
+        "verb_id": 2,
+        "verb": "informieren"
+    },
+    {
+        "verb_id": 3,
+        "verb": "installieren"
+    },
+    {
+        "verb_id": 4,
+        "verb": "interessieren"
+    },
+    {
+        "verb_id": 5,
+        "verb": "investieren"
+    },
+    {
+        "verb_id": 6,
+        "verb": "inspirieren"
+    },
+    {
+        "verb_id": 7,
+        "verb": "inszenieren"
+    },
+    {
+        "verb_id": 8,
+        "verb": "interpolieren"
+    },
+    {
+        "verb_id": 9,
+        "verb": "improvisieren"
+    },
+    {
+        "verb_id": 10,
+        "verb": "isolieren"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "campen"
+    },
+    {
+        "verb_id": 2,
+        "verb": "chatten"
+    },
+    {
+        "verb_id": 3,
+        "verb": "chillen"
+    },
+    {
+        "verb_id": 4,
+        "verb": "crawlen"
+    },
+    {
+        "verb_id": 5,
+        "verb": "cremen"
+    },
+    {
+        "verb_id": 6,
+        "verb": "cruisen"
+    },
+    {
+        "verb_id": 7,
+        "verb": "curlen"
+    },
+    {
+        "verb_id": 8,
+        "verb": "coach"
+    },
+    {
+        "verb_id": 9,
+        "verb": "covern"
+    },
+    {
+        "verb_id": 10,
+        "verb": "codieren"
+    }
+]

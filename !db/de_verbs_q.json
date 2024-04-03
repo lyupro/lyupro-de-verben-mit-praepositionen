@@ -1,0 +1,42 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "quaken"
+    },
+    {
+        "verb_id": 2,
+        "verb": "quellen"
+    },
+    {
+        "verb_id": 3,
+        "verb": "quengeln"
+    },
+    {
+        "verb_id": 4,
+        "verb": "querstellen"
+    },
+    {
+        "verb_id": 5,
+        "verb": "quittieren"
+    },
+    {
+        "verb_id": 6,
+        "verb": "quotieren"
+    },
+    {
+        "verb_id": 7,
+        "verb": "quasseln"
+    },
+    {
+        "verb_id": 8,
+        "verb": "quälen"
+    },
+    {
+        "verb_id": 9,
+        "verb": "quergehen"
+    },
+    {
+        "verb_id": 10,
+        "verb": "quittmachen"
+    }
+]

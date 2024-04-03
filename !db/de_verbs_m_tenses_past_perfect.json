@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte gemacht",
+            "du": "hattest gemacht",
+            "er/sie/es": "hatte gemacht",
+            "wir": "hatten gemacht",
+            "ihr": "hattet gemacht",
+            "sie/Sie": "hatten gemacht"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte gemocht",
+            "du": "hattest gemocht",
+            "er/sie/es": "hatte gemocht",
+            "wir": "hatten gemocht",
+            "ihr": "hattet gemocht",
+            "sie/Sie": "hatten gemocht"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte gemalt",
+            "du": "hattest gemalt",
+            "er/sie/es": "hatte gemalt",
+            "wir": "hatten gemalt",
+            "ihr": "hattet gemalt",
+            "sie/Sie": "hatten gemalt"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte gemessen",
+            "du": "hattest gemessen",
+            "er/sie/es": "hatte gemessen",
+            "wir": "hatten gemessen",
+            "ihr": "hattet gemessen",
+            "sie/Sie": "hatten gemessen"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte gemeldet",
+            "du": "hattest gemeldet",
+            "er/sie/es": "hatte gemeldet",
+            "wir": "hatten gemeldet",
+            "ihr": "hattet gemeldet",
+            "sie/Sie": "hatten gemeldet"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte gemieden",
+            "du": "hattest gemieden",
+            "er/sie/es": "hatte gemieden",
+            "wir": "hatten gemieden",
+            "ihr": "hattet gemieden",
+            "sie/Sie": "hatten gemieden"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte mitgebracht",
+            "du": "hattest mitgebracht",
+            "er/sie/es": "hatte mitgebracht",
+            "wir": "hatten mitgebracht",
+            "ihr": "hattet mitgebracht",
+            "sie/Sie": "hatten mitgebracht"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte musiziert",
+            "du": "hattest musiziert",
+            "er/sie/es": "hatte musiziert",
+            "wir": "hatten musiziert",
+            "ihr": "hattet musiziert",
+            "sie/Sie": "hatten musiziert"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte gemurmelt",
+            "du": "hattest gemurmelt",
+            "er/sie/es": "hatte gemurmelt",
+            "wir": "hatten gemurmelt",
+            "ihr": "hattet gemurmelt",
+            "sie/Sie": "hatten gemurmelt"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte gemunkelt",
+            "du": "hattest gemunkelt",
+            "er/sie/es": "hatte gemunkelt",
+            "wir": "hatten gemunkelt",
+            "ihr": "hattet gemunkelt",
+            "sie/Sie": "hatten gemunkelt"
+        }
+    }
+]

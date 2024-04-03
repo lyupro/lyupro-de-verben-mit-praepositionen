@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "xte",
+            "du": "xtest",
+            "er/sie/es": "xte",
+            "wir": "xten",
+            "ihr": "xtet",
+            "sie/Sie": "xten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "xeniete",
+            "du": "xenietest",
+            "er/sie/es": "xenietete",
+            "wir": "xenieteten",
+            "ihr": "xenietet",
+            "sie/Sie": "xenieteten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "xerographierte",
+            "du": "xerographiertest",
+            "er/sie/es": "xerographierte",
+            "wir": "xerographierten",
+            "ihr": "xerographiertet",
+            "sie/Sie": "xerographierten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "xerothermierte",
+            "du": "xerothermiertest",
+            "er/sie/es": "xerothermierte",
+            "wir": "xerothermierten",
+            "ihr": "xerothermiertet",
+            "sie/Sie": "xerothermierten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "xylolierte",
+            "du": "xyloliertest",
+            "er/sie/es": "xylolierte",
+            "wir": "xylolierten",
+            "ihr": "xyloliertet",
+            "sie/Sie": "xylolierten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "xylographierte",
+            "du": "xylographiertest",
+            "er/sie/es": "xylographierte",
+            "wir": "xylographierten",
+            "ihr": "xylographiertet",
+            "sie/Sie": "xylographierten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "x-rayte",
+            "du": "x-raytest",
+            "er/sie/es": "x-rayte",
+            "wir": "x-rayten",
+            "ihr": "x-raytet",
+            "sie/Sie": "x-rayten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "x-te",
+            "du": "x-test",
+            "er/sie/es": "x-te",
+            "wir": "x-ten",
+            "ihr": "x-tet",
+            "sie/Sie": "x-ten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "xenogenisierte",
+            "du": "xenogenisiertest",
+            "er/sie/es": "xenogenisierte",
+            "wir": "xenogenisierten",
+            "ihr": "xenogenisiertet",
+            "sie/Sie": "xenogenisierten"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "xerografierte",
+            "du": "xerografiertest",
+            "er/sie/es": "xerografierte",
+            "wir": "xerografierten",
+            "ihr": "xerografiertet",
+            "sie/Sie": "xerografierten"
+        }
+    }
+]

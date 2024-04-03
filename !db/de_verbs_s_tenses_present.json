@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "sage",
+            "du": "sagst",
+            "er/sie/es": "sagt",
+            "wir": "sagen",
+            "ihr": "sagt",
+            "sie/Sie": "sagen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "sauge",
+            "du": "saugst",
+            "er/sie/es": "saugt",
+            "wir": "saugen",
+            "ihr": "saugt",
+            "sie/Sie": "saugen"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "schaffe",
+            "du": "schaffst",
+            "er/sie/es": "schafft",
+            "wir": "schaffen",
+            "ihr": "schafft",
+            "sie/Sie": "schaffen"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "schaue",
+            "du": "schaust",
+            "er/sie/es": "schaut",
+            "wir": "schauen",
+            "ihr": "schaut",
+            "sie/Sie": "schauen"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "schicke",
+            "du": "schickst",
+            "er/sie/es": "schickt",
+            "wir": "schicken",
+            "ihr": "schickt",
+            "sie/Sie": "schicken"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "schlafe",
+            "du": "schläfst",
+            "er/sie/es": "schläft",
+            "wir": "schlafen",
+            "ihr": "schlaft",
+            "sie/Sie": "schlafen"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "schmecke",
+            "du": "schmeckst",
+            "er/sie/es": "schmeckt",
+            "wir": "schmecken",
+            "ihr": "schmeckt",
+            "sie/Sie": "schmecken"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "schneide",
+            "du": "schneidest",
+            "er/sie/es": "schneidet",
+            "wir": "schneiden",
+            "ihr": "schneidet",
+            "sie/Sie": "schneiden"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "schreibe",
+            "du": "schreibst",
+            "er/sie/es": "schreibt",
+            "wir": "schreiben",
+            "ihr": "schreibt",
+            "sie/Sie": "schreiben"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "schwimme",
+            "du": "schwimmst",
+            "er/sie/es": "schwimmt",
+            "wir": "schwimmen",
+            "ihr": "schwimmt",
+            "sie/Sie": "schwimmen"
+        }
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "verabschiedete",
+            "du": "verabschiedetest",
+            "er/sie/es": "verabschiedete",
+            "wir": "verabschiedeten",
+            "ihr": "verabschiedetet",
+            "sie/Sie": "verabschiedeten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "veränderte",
+            "du": "verändertest",
+            "er/sie/es": "veränderte",
+            "wir": "veränderten",
+            "ihr": "verändertet",
+            "sie/Sie": "veränderten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "verbrachte",
+            "du": "verbrachtest",
+            "er/sie/es": "verbrachte",
+            "wir": "verbrachten",
+            "ihr": "verbrachtet",
+            "sie/Sie": "verbrachten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "verdiente",
+            "du": "verdientest",
+            "er/sie/es": "verdiente",
+            "wir": "verdienten",
+            "ihr": "verdientet",
+            "sie/Sie": "verdienten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "vergaß",
+            "du": "vergaßt",
+            "er/sie/es": "vergaß",
+            "wir": "vergaßen",
+            "ihr": "vergaßt",
+            "sie/Sie": "vergaßen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "verglich",
+            "du": "verglichst",
+            "er/sie/es": "verglich",
+            "wir": "verglichen",
+            "ihr": "verglicht",
+            "sie/Sie": "verglichen"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "verließ",
+            "du": "verließt",
+            "er/sie/es": "verließ",
+            "wir": "verließen",
+            "ihr": "verließt",
+            "sie/Sie": "verließen"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "verlor",
+            "du": "verlorst",
+            "er/sie/es": "verlor",
+            "wir": "verloren",
+            "ihr": "verlort",
+            "sie/Sie": "verloren"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "versprach",
+            "du": "versprachst",
+            "er/sie/es": "versprach",
+            "wir": "versprachen",
+            "ihr": "verspracht",
+            "sie/Sie": "versprachen"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "verteidigte",
+            "du": "verteidigtest",
+            "er/sie/es": "verteidigte",
+            "wir": "verteidigten",
+            "ihr": "verteidigtet",
+            "sie/Sie": "verteidigten"
+        }
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "ging",
+            "du": "gingst",
+            "er/sie/es": "ging",
+            "wir": "gingen",
+            "ihr": "gingt",
+            "sie/Sie": "gingen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "glaubte",
+            "du": "glaubtest",
+            "er/sie/es": "glaubte",
+            "wir": "glaubten",
+            "ihr": "glaubtet",
+            "sie/Sie": "glaubten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "gab",
+            "du": "gabst",
+            "er/sie/es": "gab",
+            "wir": "gaben",
+            "ihr": "gabt",
+            "sie/Sie": "gaben"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "gratulierte",
+            "du": "gratuliertest",
+            "er/sie/es": "gratulierte",
+            "wir": "gratulierten",
+            "ihr": "gratuliertet",
+            "sie/Sie": "gratulierten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "grüßte",
+            "du": "grüßtest",
+            "er/sie/es": "grüßte",
+            "wir": "grüßten",
+            "ihr": "grüßtet",
+            "sie/Sie": "grüßten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "gewann",
+            "du": "gewannst",
+            "er/sie/es": "gewann",
+            "wir": "gewannen",
+            "ihr": "gewannt",
+            "sie/Sie": "gewannen"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "grillte",
+            "du": "grilltest",
+            "er/sie/es": "grillte",
+            "wir": "grillten",
+            "ihr": "grilltet",
+            "sie/Sie": "grillten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "genoss",
+            "du": "genosst",
+            "er/sie/es": "genoss",
+            "wir": "genossen",
+            "ihr": "genosst",
+            "sie/Sie": "genossen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "gestand",
+            "du": "gestandest",
+            "er/sie/es": "gestand",
+            "wir": "gestanden",
+            "ihr": "gestandet",
+            "sie/Sie": "gestanden"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "guckte",
+            "du": "gucktest",
+            "er/sie/es": "guckte",
+            "wir": "guckten",
+            "ihr": "gucktet",
+            "sie/Sie": "guckten"
+        }
+    }
+]

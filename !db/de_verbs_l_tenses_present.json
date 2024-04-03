@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "laufe",
+            "du": "läufst",
+            "er/sie/es": "läuft",
+            "wir": "laufen",
+            "ihr": "lauft",
+            "sie/Sie": "laufen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "lerne",
+            "du": "lernst",
+            "er/sie/es": "lernt",
+            "wir": "lernen",
+            "ihr": "lernt",
+            "sie/Sie": "lernen"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "liebe",
+            "du": "liebst",
+            "er/sie/es": "liebt",
+            "wir": "lieben",
+            "ihr": "liebt",
+            "sie/Sie": "lieben"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "lächle",
+            "du": "lächelst",
+            "er/sie/es": "lächelt",
+            "wir": "lächeln",
+            "ihr": "lächelt",
+            "sie/Sie": "lächeln"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "lüge",
+            "du": "lügst",
+            "er/sie/es": "lügt",
+            "wir": "lügen",
+            "ihr": "lügt",
+            "sie/Sie": "lügen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "lebe",
+            "du": "lebst",
+            "er/sie/es": "lebt",
+            "wir": "leben",
+            "ihr": "lebt",
+            "sie/Sie": "leben"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "lehre",
+            "du": "lehrst",
+            "er/sie/es": "lehrt",
+            "wir": "lehren",
+            "ihr": "lehrt",
+            "sie/Sie": "lehren"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "lese",
+            "du": "liest",
+            "er/sie/es": "liest",
+            "wir": "lesen",
+            "ihr": "lest",
+            "sie/Sie": "lesen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "lösche",
+            "du": "löschst",
+            "er/sie/es": "löscht",
+            "wir": "löschen",
+            "ihr": "löscht",
+            "sie/Sie": "löschen"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "leihe",
+            "du": "leihst",
+            "er/sie/es": "leiht",
+            "wir": "leihen",
+            "ihr": "leiht",
+            "sie/Sie": "leihen"
+        }
+    }
+]

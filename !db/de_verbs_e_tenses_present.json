@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "esse",
+            "du": "isst",
+            "er/sie/es": "isst",
+            "wir": "essen",
+            "ihr": "esst",
+            "sie/Sie": "essen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "erkläre",
+            "du": "erklärst",
+            "er/sie/es": "erklärt",
+            "wir": "erklären",
+            "ihr": "erklärt",
+            "sie/Sie": "erklären"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "ernte",
+            "du": "erntest",
+            "er/sie/es": "erntet",
+            "wir": "ernten",
+            "ihr": "erntet",
+            "sie/Sie": "ernten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "erhöhe",
+            "du": "erhöhst",
+            "er/sie/es": "erhöht",
+            "wir": "erhöhen",
+            "ihr": "erhöht",
+            "sie/Sie": "erhöhen"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "erstelle",
+            "du": "erstellst",
+            "er/sie/es": "erstellt",
+            "wir": "erstellen",
+            "ihr": "erstellt",
+            "sie/Sie": "erstellen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "erwarte",
+            "du": "erwartest",
+            "er/sie/es": "erwartet",
+            "wir": "erwarten",
+            "ihr": "erwartet",
+            "sie/Sie": "erwarten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "entwickle",
+            "du": "entwickelst",
+            "er/sie/es": "entwickelt",
+            "wir": "entwickeln",
+            "ihr": "entwickelt",
+            "sie/Sie": "entwickeln"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "ergänze",
+            "du": "ergänzst",
+            "er/sie/es": "ergänzt",
+            "wir": "ergänzen",
+            "ihr": "ergänzt",
+            "sie/Sie": "ergänzen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "entdecke",
+            "du": "entdeckst",
+            "er/sie/es": "entdeckt",
+            "wir": "entdecken",
+            "ihr": "entdeckt",
+            "sie/Sie": "entdecken"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "erfahre",
+            "du": "erfährst",
+            "er/sie/es": "erfährt",
+            "wir": "erfahren",
+            "ihr": "erfahrt",
+            "sie/Sie": "erfahren"
+        }
+    }
+]

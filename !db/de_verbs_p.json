@@ -1,0 +1,42 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "packen"
+    },
+    {
+        "verb_id": 2,
+        "verb": "parken"
+    },
+    {
+        "verb_id": 3,
+        "verb": "partizipieren"
+    },
+    {
+        "verb_id": 4,
+        "verb": "passieren"
+    },
+    {
+        "verb_id": 5,
+        "verb": "patentieren"
+    },
+    {
+        "verb_id": 6,
+        "verb": "peitschen"
+    },
+    {
+        "verb_id": 7,
+        "verb": "pendeln"
+    },
+    {
+        "verb_id": 8,
+        "verb": "perfektionieren"
+    },
+    {
+        "verb_id": 9,
+        "verb": "pfeifen"
+    },
+    {
+        "verb_id": 10,
+        "verb": "pflanzen"
+    }
+]

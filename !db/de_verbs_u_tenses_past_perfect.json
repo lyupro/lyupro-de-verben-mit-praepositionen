@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte überlegt",
+            "du": "hattest überlegt",
+            "er/sie/es": "hatte überlegt",
+            "wir": "hatten überlegt",
+            "ihr": "hattet überlegt",
+            "sie/Sie": "hatten überlegt"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte übernommen",
+            "du": "hattest übernommen",
+            "er/sie/es": "hatte übernommen",
+            "wir": "hatten übernommen",
+            "ihr": "hattet übernommen",
+            "sie/Sie": "hatten übernommen"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte überquert",
+            "du": "hattest überquert",
+            "er/sie/es": "hatte überquert",
+            "wir": "hatten überquert",
+            "ihr": "hattet überquert",
+            "sie/Sie": "hatten überquert"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte überredet",
+            "du": "hattest überredet",
+            "er/sie/es": "hatte überredet",
+            "wir": "hatten überredet",
+            "ihr": "hattet überredet",
+            "sie/Sie": "hatten überredet"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte überwiesen",
+            "du": "hattest überwiesen",
+            "er/sie/es": "hatte überwiesen",
+            "wir": "hatten überwiesen",
+            "ihr": "hattet überwiesen",
+            "sie/Sie": "hatten überwiesen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte umarmt",
+            "du": "hattest umarmt",
+            "er/sie/es": "hatte umarmt",
+            "wir": "hatten umarmt",
+            "ihr": "hattet umarmt",
+            "sie/Sie": "hatten umarmt"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte umgebogen",
+            "du": "hattest umgebogen",
+            "er/sie/es": "hatte umgebogen",
+            "wir": "hatten umgebogen",
+            "ihr": "hattet umgebogen",
+            "sie/Sie": "hatten umgebogen"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte umfahren",
+            "du": "hattest umfahren",
+            "er/sie/es": "hatte umfahren",
+            "wir": "hatten umfahren",
+            "ihr": "hattet umfahren",
+            "sie/Sie": "hatten umfahren"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte umgeben",
+            "du": "hattest umgeben",
+            "er/sie/es": "hatte umgeben",
+            "wir": "hatten umgeben",
+            "ihr": "hattet umgeben",
+            "sie/Sie": "hatten umgeben"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte umgezogen",
+            "du": "hattest umgezogen",
+            "er/sie/es": "hatte umgezogen",
+            "wir": "hatten umgezogen",
+            "ihr": "hattet umgezogen",
+            "sie/Sie": "hatten umgezogen"
+        }
+    }
+]

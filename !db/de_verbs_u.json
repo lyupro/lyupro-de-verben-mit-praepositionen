@@ -1,0 +1,42 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "überlegen"
+    },
+    {
+        "verb_id": 2,
+        "verb": "übernehmen"
+    },
+    {
+        "verb_id": 3,
+        "verb": "überqueren"
+    },
+    {
+        "verb_id": 4,
+        "verb": "überreden"
+    },
+    {
+        "verb_id": 5,
+        "verb": "überweisen"
+    },
+    {
+        "verb_id": 6,
+        "verb": "umarmen"
+    },
+    {
+        "verb_id": 7,
+        "verb": "umbiegen"
+    },
+    {
+        "verb_id": 8,
+        "verb": "umfahren"
+    },
+    {
+        "verb_id": 9,
+        "verb": "umgeben"
+    },
+    {
+        "verb_id": 10,
+        "verb": "umziehen"
+    }
+]

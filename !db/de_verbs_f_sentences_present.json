@@ -1,0 +1,162 @@
+[
+    {
+        "verb_id": 1,
+        "sentences":
+        [
+            "Ich fahre gerne Fahrrad.",
+            "Sie fährt mit dem Zug.",
+            "Wir fahren in den Urlaub.",
+            "Du fährst vorsichtig.",
+            "Ihr fahrt schnell.",
+            "Sie fahren gemeinsam.",
+            "Fährst du auch?",
+            "Fahren Sie oft Auto?",
+            "Fahren wir zusammen?",
+            "Fahren macht Spaß."
+        ]
+    },
+    {
+        "verb_id": 2,
+        "sentences":
+        [
+            "Ich feiere meinen Geburtstag.",
+            "Sie feiert ein Fest.",
+            "Wir feiern Silvester.",
+            "Du feierst deine Erfolge.",
+            "Ihr feiert das Leben.",
+            "Sie feiern das Jubiläum.",
+            "Feierst du auch?",
+            "Feiern Sie gerne?",
+            "Feiern wir zusammen?",
+            "Feiern verbindet Menschen."
+        ]
+    },
+    {
+        "verb_id": 3,
+        "sentences":
+        [
+            "Ich fotografiere Landschaften.",
+            "Sie fotografiert Porträts.",
+            "Wir fotografieren Events.",
+            "Du fotografierst gerne Tiere.",
+            "Ihr fotografiert Städte.",
+            "Sie fotografieren Natur.",
+            "Fotografierst du auch?",
+            "Fotografieren Sie professionell?",
+            "Fotografieren wir zusammen?",
+            "Fotografieren erfasst Momente."
+        ]
+    },
+    {
+        "verb_id": 4,
+        "sentences":
+        [
+            "Ich friere im Winter.",
+            "Sie friert leicht.",
+            "Wir frieren draußen.",
+            "Du frierst in der Kälte.",
+            "Ihr friert schnell.",
+            "Sie frieren am Nordpol.",
+            "Frierst du auch?",
+            "Frieren Sie oft?",
+            "Frieren wir zusammen?",
+            "Frieren ist unangenehm."
+        ]
+    },
+    {
+        "verb_id": 5,
+        "sentences":
+        [
+            "Ich fühle mich wohl.",
+            "Sie fühlt sich glücklich.",
+            "Wir fühlen uns frei.",
+            "Du fühlst dich müde.",
+            "Ihr fühlt euch gestresst.",
+            "Sie fühlen sich entspannt.",
+            "Fühlst du auch so?",
+            "Fühlen Sie sich gut?",
+            "Fühlen wir uns zusammen?",
+            "Fühlen ist wichtig."
+        ]
+    },
+    {
+        "verb_id": 6,
+        "sentences":
+        [
+            "Ich finde meinen Schlüssel.",
+            "Sie findet die Lösung.",
+            "Wir finden den Weg.",
+            "Du findest das Buch.",
+            "Ihr findet den Schatz.",
+            "Sie finden die Antwort.",
+            "Findest du es auch?",
+            "Finden Sie oft Dinge?",
+            "Finden wir zusammen?",
+            "Finden bringt Erfolg."
+        ]
+    },
+    {
+        "verb_id": 7,
+        "sentences":
+        [
+            "Ich fliege in den Urlaub.",
+            "Sie fliegt nach Amerika.",
+            "Wir fliegen mit dem Flugzeug.",
+            "Du fliegst gerne.",
+            "Ihr fliegt geschäftlich.",
+            "Sie fliegen zum Mond.",
+            "Fliegst du auch?",
+            "Fliegen Sie oft?",
+            "Fliegen wir zusammen?",
+            "Fliegen ist aufregend."
+        ]
+    },
+    {
+        "verb_id": 8,
+        "sentences":
+        [
+            "Ich frage nach dem Weg.",
+            "Sie fragt nach dem Preis.",
+            "Wir fragen nach dem Grund.",
+            "Du fragst nach dem Wetter.",
+            "Ihr fragt nach dem Namen.",
+            "Sie fragen nach der Zeit.",
+            "Fragst du auch?",
+            "Fragen Sie gerne?",
+            "Fragen wir zusammen?",
+            "Fragen ist der Anfang."
+        ]
+    },
+    {
+        "verb_id": 9,
+        "sentences":
+        [
+            "Ich frohlocke vor Freude.",
+            "Sie frohlockt über den Sieg.",
+            "Wir frohlocken laut.",
+            "Du frohlockst leise.",
+            "Ihr frohlockt gemeinsam.",
+            "Sie frohlocken vor Glück.",
+            "Frohlockst du auch?",
+            "Frohlocken Sie oft?",
+            "Frohlocken wir zusammen?",
+            "Frohlocken macht Spaß."
+        ]
+    },
+    {
+        "verb_id": 10,
+        "sentences":
+        [
+            "Ich folge deinen Anweisungen.",
+            "Sie folgt ihrem Instinkt.",
+            "Wir folgen den Regeln.",
+            "Du folgst dem Trend.",
+            "Ihr folgt eurem Chef.",
+            "Sie folgen dem Plan.",
+            "Folgst du auch?",
+            "Folgen Sie mir?",
+            "Folgen wir zusammen?",
+            "Folgen bringt Sicherheit."
+        ]
+    }
+]

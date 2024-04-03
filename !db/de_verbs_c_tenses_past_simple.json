@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "camped",
+            "du": "campedest",
+            "er/sie/es": "camped",
+            "wir": "camped",
+            "ihr": "campedet",
+            "sie/Sie": "camped"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "chattete",
+            "du": "chattetest",
+            "er/sie/es": "chattete",
+            "wir": "chatteten",
+            "ihr": "chattetet",
+            "sie/Sie": "chatteten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "chillte",
+            "du": "chilltest",
+            "er/sie/es": "chillte",
+            "wir": "chillten",
+            "ihr": "chilltet",
+            "sie/Sie": "chillten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "crawlte",
+            "du": "crawltest",
+            "er/sie/es": "crawlte",
+            "wir": "crawlten",
+            "ihr": "crawltet",
+            "sie/Sie": "crawlten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "cremte",
+            "du": "cremtest",
+            "er/sie/es": "cremte",
+            "wir": "cremten",
+            "ihr": "cremtet",
+            "sie/Sie": "cremten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "cruiste",
+            "du": "cruistest",
+            "er/sie/es": "cruiste",
+            "wir": "cruisten",
+            "ihr": "cruistet",
+            "sie/Sie": "cruisten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "curlte",
+            "du": "curltest",
+            "er/sie/es": "curlte",
+            "wir": "curlten",
+            "ihr": "curltet",
+            "sie/Sie": "curlten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "coachte",
+            "du": "coachte",
+            "er/sie/es": "coachte",
+            "wir": "coachten",
+            "ihr": "coachtet",
+            "sie/Sie": "coachten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "coverte",
+            "du": "covertest",
+            "er/sie/es": "coverte",
+            "wir": "coverten",
+            "ihr": "covertet",
+            "sie/Sie": "coverten"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "codierte",
+            "du": "codiertest",
+            "er/sie/es": "codierte",
+            "wir": "codierten",
+            "ihr": "codiertet",
+            "sie/Sie": "codierten"
+        }
+    }
+]

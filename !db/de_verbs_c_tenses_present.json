@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "campe",
+            "du": "campst",
+            "er/sie/es": "campt",
+            "wir": "campen",
+            "ihr": "campt",
+            "sie/Sie": "campen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "chatte",
+            "du": "chattest",
+            "er/sie/es": "chattet",
+            "wir": "chatten",
+            "ihr": "chattet",
+            "sie/Sie": "chatten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "chille",
+            "du": "chillst",
+            "er/sie/es": "chillt",
+            "wir": "chillen",
+            "ihr": "chillt",
+            "sie/Sie": "chillen"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "crawle",
+            "du": "crawlst",
+            "er/sie/es": "crawlt",
+            "wir": "crawlen",
+            "ihr": "crawlt",
+            "sie/Sie": "crawlen"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "creme",
+            "du": "cremst",
+            "er/sie/es": "cremt",
+            "wir": "cremen",
+            "ihr": "cremt",
+            "sie/Sie": "cremen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "cruise",
+            "du": "cruisest",
+            "er/sie/es": "cruiset",
+            "wir": "cruisen",
+            "ihr": "cruiset",
+            "sie/Sie": "cruisen"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "curle",
+            "du": "curlest",
+            "er/sie/es": "curlet",
+            "wir": "curlen",
+            "ihr": "curlet",
+            "sie/Sie": "curlen"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "coache",
+            "du": "coachst",
+            "er/sie/es": "coacht",
+            "wir": "coachen",
+            "ihr": "coacht",
+            "sie/Sie": "coachen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "covere",
+            "du": "coverst",
+            "er/sie/es": "covert",
+            "wir": "covern",
+            "ihr": "covert",
+            "sie/Sie": "covern"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "codiere",
+            "du": "codierst",
+            "er/sie/es": "codiert",
+            "wir": "codieren",
+            "ihr": "codiert",
+            "sie/Sie": "codieren"
+        }
+    }
+]

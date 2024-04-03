@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "gehe",
+            "du": "gehst",
+            "er/sie/es": "geht",
+            "wir": "gehen",
+            "ihr": "geht",
+            "sie/Sie": "gehen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "glaube",
+            "du": "glaubst",
+            "er/sie/es": "glaubt",
+            "wir": "glauben",
+            "ihr": "glaubt",
+            "sie/Sie": "glauben"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "gebe",
+            "du": "gibst",
+            "er/sie/es": "gibt",
+            "wir": "geben",
+            "ihr": "gebt",
+            "sie/Sie": "geben"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "gratuliere",
+            "du": "gratulierst",
+            "er/sie/es": "gratuliert",
+            "wir": "gratulieren",
+            "ihr": "gratuliert",
+            "sie/Sie": "gratulieren"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "grüße",
+            "du": "grüßt",
+            "er/sie/es": "grüßt",
+            "wir": "grüßen",
+            "ihr": "grüßt",
+            "sie/Sie": "grüßen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "gewinne",
+            "du": "gewinnst",
+            "er/sie/es": "gewinnt",
+            "wir": "gewinnen",
+            "ihr": "gewinnt",
+            "sie/Sie": "gewinnen"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "grille",
+            "du": "grillst",
+            "er/sie/es": "grillt",
+            "wir": "grillen",
+            "ihr": "grillt",
+            "sie/Sie": "grillen"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "genieße",
+            "du": "genießt",
+            "er/sie/es": "genießt",
+            "wir": "genießen",
+            "ihr": "genießt",
+            "sie/Sie": "genießen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "gestehe",
+            "du": "gestehst",
+            "er/sie/es": "gesteht",
+            "wir": "gestehen",
+            "ihr": "gesteht",
+            "sie/Sie": "gestehen"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "gucke",
+            "du": "guckst",
+            "er/sie/es": "guckt",
+            "wir": "gucken",
+            "ihr": "guckt",
+            "sie/Sie": "gucken"
+        }
+    }
+]

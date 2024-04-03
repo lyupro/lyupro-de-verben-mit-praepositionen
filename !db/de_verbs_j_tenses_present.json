@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "jage",
+            "du": "jagst",
+            "er/sie/es": "jagt",
+            "wir": "jagen",
+            "ihr": "jagt",
+            "sie/Sie": "jagen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "jammer",
+            "du": "jammerst",
+            "er/sie/es": "jammert",
+            "wir": "jammern",
+            "ihr": "jammert",
+            "sie/Sie": "jammern"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "juble",
+            "du": "jubelst",
+            "er/sie/es": "jubelt",
+            "wir": "jubeln",
+            "ihr": "jubelt",
+            "sie/Sie": "jubeln"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "jodle",
+            "du": "jodelst",
+            "er/sie/es": "jodelt",
+            "wir": "jodeln",
+            "ihr": "jodelt",
+            "sie/Sie": "jodeln"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "jongliere",
+            "du": "jonglierst",
+            "er/sie/es": "jongliert",
+            "wir": "jonglieren",
+            "ihr": "jongliert",
+            "sie/Sie": "jonglieren"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "jucke",
+            "du": "juckst",
+            "er/sie/es": "juckt",
+            "wir": "jucken",
+            "ihr": "juckt",
+            "sie/Sie": "jucken"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "justiere",
+            "du": "justierst",
+            "er/sie/es": "justiert",
+            "wir": "justieren",
+            "ihr": "justiert",
+            "sie/Sie": "justieren"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "jauchze",
+            "du": "jauchzt",
+            "er/sie/es": "jauchzt",
+            "wir": "jauchzen",
+            "ihr": "jauchzt",
+            "sie/Sie": "jauchzen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "jubiliere",
+            "du": "jubilierst",
+            "er/sie/es": "jubiliert",
+            "wir": "jubilieren",
+            "ihr": "jubiliert",
+            "sie/Sie": "jubilieren"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "jugendworte",
+            "du": "jugendwortest",
+            "er/sie/es": "jugendwortet",
+            "wir": "jugendworten",
+            "ihr": "jugendwortet",
+            "sie/Sie": "jugendworten"
+        }
+    }
+]
