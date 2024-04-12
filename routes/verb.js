@@ -1,7 +1,7 @@
 // routes/verb.js
 const express = require('express');
 const router = express.Router();
-const { getVerbModel, getVerbSentencesModel } = require('../models/verb');
+const { getVerbModel, getVerbSentencesModel, getVerbTranslationModel } = require('../models/verb');
 const alphabetConfig = require('../config/alphabet');
 const { getAvailableAlphabetLetters } = require('../utils/alphabetUtils');
 
@@ -45,7 +45,10 @@ router.get('/', async (req, res, next) => {
         const sentences = await VerbSentenceModel.find({ verb_id: verb.verb_id }).distinct('sentences');
         //console.log('Found sentences:', sentences);
 
-        res.render('verb', { verb, sentences });
+        const VerbTranslationModel = getVerbTranslationModel(randomLetter, 'ru');
+        const translation = await VerbTranslationModel.findOne({ verb_id: verb.verb_id });
+
+        res.render('verb', { verb, sentences, translation });
     } catch (error) {
         next(error);
     }
