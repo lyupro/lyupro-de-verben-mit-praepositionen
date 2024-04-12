@@ -20,6 +20,21 @@ const verbSchema = new mongoose.Schema({
     },
 });
 
+// Схема для модели VerbTranslation
+const verbTranslationSchema = new mongoose.Schema({
+    verb_id: {
+        type: Number,
+        ref: 'Verb',
+        required: true,
+    },
+    verb: {
+        type: [String],
+        required: true,
+        trim: true,
+        lowercase: true,
+    },
+});
+
 // Схема для модели VerbTenses
 const verbTensesSchema = new mongoose.Schema({
     verb_id: {
@@ -50,7 +65,16 @@ const verbSentenceSchema = new mongoose.Schema({
         required: true,
     },
     sentences: {
-        type: [String],
+        type: [{
+            sentence_id: {
+                type: Number,
+                required: true,
+            },
+            sentence: {
+                type: String,
+                required: true,
+            },
+        }],
         required: true,
         validate: {
             validator: function (sentences) {
@@ -61,26 +85,40 @@ const verbSentenceSchema = new mongoose.Schema({
     },
 });
 
-// Схема для модели VerbTranslation
-const verbTranslationSchema = new mongoose.Schema({
+// Схема для модели VerbSentenceTranslation
+const verbSentenceTranslationSchema = new mongoose.Schema({
     verb_id: {
         type: Number,
         ref: 'Verb',
         required: true,
     },
-        verb: {
-            type: [String],
-            required: true,
-            trim: true,
-            lowercase: true,
+    sentences: {
+        type: [{
+            sentence_id: {
+                type: Number,
+                required: true,
+            },
+            sentence: {
+                type: String,
+                required: true,
+            },
+        }],
+        required: true,
+        validate: {
+            validator: function (sentences) {
+                return sentences.length >= 1;
+            },
+            message: 'At least one sentence translation is required.',
+        },
     },
 });
 
 // Создание объектов моделей для каждой буквы алфавита
 const VerbModel = {};
+const VerbTranslationModel = {};
 const VerbTensesModel = {};
 const VerbSentenceModel = {};
-const VerbTranslationModel = {};
+const VerbSentenceTranslationModel = {};
 
 // Функция для создания моделей Mongoose
 function createModels() {
@@ -90,6 +128,15 @@ function createModels() {
             verbSchema,
             `de_verbs_${letter}`
         );
+
+        VerbTranslationModel[letter] = {};
+        languagesConfig.languages.forEach((language) => {
+            VerbTranslationModel[letter][language] = mongoose.model(
+                `Verb_${letter}_Translation_${language}`,
+                verbTranslationSchema,
+                `de_verbs_${letter}_translations_${language}`
+            );
+        });
 
         VerbTensesModel[letter] = {};
         verbTensesConfig.tenses.forEach((tense) => {
@@ -109,13 +156,16 @@ function createModels() {
             );
         });
 
-        VerbTranslationModel[letter] = {};
-        languagesConfig.languages.forEach((language) => {
-            VerbTranslationModel[letter][language] = mongoose.model(
-                `Verb_${letter}_Translation_${language}`,
-                verbTranslationSchema,
-                `de_verbs_${letter}_translations_${language}`
-            );
+        VerbSentenceTranslationModel[letter] = {};
+        verbTensesConfig.tenses.forEach((tense) => {
+            VerbSentenceTranslationModel[letter][tense] = {};
+            languagesConfig.languages.forEach((language) => {
+                VerbSentenceTranslationModel[letter][tense][language] = mongoose.model(
+                    `Verb_${letter}_Sentence_${tense}_${language}`,
+                    verbSentenceTranslationSchema,
+                    `de_verbs_${letter}_sentences_${tense}_${language}`
+                );
+            });
         });
     });
 }
@@ -126,6 +176,13 @@ function getVerbModel(letter) {
         throw new Error(`Модель глагола для буквы "${letter}" не найдена.`);
     }
     return VerbModel[letter];
+}
+
+function getVerbTranslationModel(letter, language) {
+    if (!VerbTranslationModel[letter] || !VerbTranslationModel[letter][language]) {
+        throw new Error(`Модель перевода глагола для буквы "${letter}" и языка "${language}" не найдена.`);
+    }
+    return VerbTranslationModel[letter][language];
 }
 
 function getVerbTensesModel(letter, tense) {
@@ -142,18 +199,19 @@ function getVerbSentencesModel(letter, tense) {
     return VerbSentenceModel[letter][tense];
 }
 
-function getVerbTranslationModel(letter, language) {
-    if (!VerbTranslationModel[letter] || !VerbTranslationModel[letter][language]) {
-        throw new Error(`Модель перевода глагола для буквы "${letter}" и языка "${language}" не найдена.`);
+function getVerbSentencesTranslationModel(letter, tense, language) {
+    if (!VerbSentenceTranslationModel[letter] || !VerbSentenceTranslationModel[letter][tense] || !VerbSentenceTranslationModel[letter][tense][language]) {
+        throw new Error(`Модель перевода предложений для буквы "${letter}", времени "${tense}" и языка "${language}" не найдена.`);
     }
-    return VerbTranslationModel[letter][language];
+    return VerbSentenceTranslationModel[letter][tense][language];
 }
 
 // Экспорт функций и моделей
 module.exports = {
     createModels,
     getVerbModel,
+    getVerbTranslationModel,
     getVerbTensesModel,
     getVerbSentencesModel,
-    getVerbTranslationModel,
+    getVerbSentencesTranslationModel,
 };

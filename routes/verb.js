@@ -1,7 +1,7 @@
 // routes/verb.js
 const express = require('express');
 const router = express.Router();
-const { getVerbModel, getVerbSentencesModel, getVerbTranslationModel } = require('../models/verb');
+const { getVerbModel, getVerbTranslationModel, getVerbSentencesModel, getVerbSentencesTranslationModel } = require('../models/verb');
 const alphabetConfig = require('../config/alphabet');
 const { getAvailableAlphabetLetters } = require('../utils/alphabetUtils');
 
@@ -41,14 +41,20 @@ router.get('/', async (req, res, next) => {
         }
         //console.log('Selected verb:', verb);
 
-        const VerbSentenceModel = getVerbSentencesModel(randomLetter, 'present');
-        const sentences = await VerbSentenceModel.find({ verb_id: verb.verb_id }).distinct('sentences');
-        //console.log('Found sentences:', sentences);
-
         const VerbTranslationModel = getVerbTranslationModel(randomLetter, 'ru');
         const translation = await VerbTranslationModel.findOne({ verb_id: verb.verb_id });
 
-        res.render('verb', { verb, sentences, translation });
+        const VerbSentenceModel = getVerbSentencesModel(randomLetter, 'present');
+        const sentencesData = await VerbSentenceModel.findOne({ verb_id: verb.verb_id });
+        const sentences = sentencesData ? sentencesData.sentences : [];
+        //console.log('Found sentences:', sentences);
+
+        const VerbSentenceTranslationModel = getVerbSentencesTranslationModel(randomLetter, 'present', 'ru');
+        console.log('Found VerbSentenceTranslationModel: ', VerbSentenceTranslationModel);
+        const sentenceTranslations = await VerbSentenceTranslationModel.findOne({ verb_id: verb.verb_id });
+        console.log('Found sentenceTranslations: ', sentenceTranslations);
+
+        res.render('verb', { verb, translation, sentences, sentenceTranslations });
     } catch (error) {
         next(error);
     }
@@ -77,9 +83,12 @@ router.post('/check', async (req, res, next) => {
             throw error;
         }
 
-        const correctSentences = await VerbSentenceModel.findOne({ verb_id: verb.verb_id }).distinct('sentences');
+        const sentencesData = await VerbSentenceModel.findOne({ verb_id: verb.verb_id });
+        const correctSentences = sentencesData ? sentencesData.sentences : [];
 
-        if (correctSentences.includes(sentence)) {
+        const isCorrect = correctSentences.some(sentenceObj => sentenceObj.sentence === sentence);
+
+        if (isCorrect) {
             res.send(`Правильно! "${sentence}" является верным предложением для глагола "${verbText}".`);
         } else {
             res.send(`Неверно. "${sentence}" не является верным предложением для глагола "${verbText}".`);

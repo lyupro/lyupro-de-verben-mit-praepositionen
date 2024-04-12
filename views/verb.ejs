@@ -2,39 +2,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Изучение немецких глаголов</title>
-  <link rel="stylesheet" href="/stylesheets/base.css">
-  <link rel="stylesheet" href="/stylesheets/header.css">
+    <title>Изучение немецких глаголов</title>
+    <link rel="stylesheet" href="/stylesheets/base.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
 </head>
 <body>
 <div class="container">
-  <%- include('partials/header') %>
-  <h1>Глагол: <%= verb.verb %></h1>
-  <% if (translation) { %>
-    <h2>Перевод:</h2>
-    <ul>
-      <% translation.verb.forEach(translationVariant => { %>
-        <li><%= translationVariant %></li>
-      <% }) %>
-    </ul>
-  <% } else { %>
-    <p>Перевод недоступен для этого глагола.</p>
-  <% } %>
-  <h2>Предложения:</h2>
-  <% if (sentences && sentences.length > 0) { %>
-    <ul>
-      <% sentences.forEach(sentence => { %>
-        <li><%= sentence %></li>
-      <% }) %>
-    </ul>
-  <% } else { %>
-    <p>Нет доступных предложений для этого глагола.</p>
-  <% } %>
-  <form method="POST" action="/verb/check">
-    <input type="hidden" name="verb" value="<%= verb.verb %>">
-    <input type="text" name="sentence" placeholder="Введите предложение">
-    <button type="submit">Проверить</button>
-  </form>
+    <%- include('partials/header') %>
+    <h1>Глагол: <%= verb.verb %></h1>
+    <% if (translation) { %>
+        <h2>Перевод:</h2>
+        <ul>
+            <% translation.verb.forEach(translationVariant => { %>
+                <li><%= translationVariant %></li>
+            <% }) %>
+        </ul>
+    <% } else { %>
+        <p>Перевод недоступен для этого глагола.</p>
+    <% } %>
+    <h2>Предложения:</h2>
+    <% if (sentences && sentences.length > 0) { %>
+        <ul>
+            <% sentences.forEach(sentenceObj => { %>
+                <li>
+                    <%= sentenceObj.sentence %>
+                    <% if (sentenceTranslations && sentenceTranslations.sentences) { %>
+                        <% const translationObj = sentenceTranslations.sentences.find(translation => translation.sentence_id === sentenceObj.sentence_id) %>
+                        <% if (translationObj) { %>
+                            <br>
+                            <em><%= translationObj.sentence %></em>
+                        <% } else { %>
+                            <br>
+                            <em>Перевод не найден</em>
+                        <% } %>
+                    <% } else { %>
+                        <br>
+                        <em>Перевод недоступен</em>
+                    <% } %>
+                </li>
+            <% }) %>
+        </ul>
+    <% } else { %>
+        <p>Нет доступных предложений для этого глагола.</p>
+    <% } %>
+    <form method="POST" action="/verb/check">
+        <input type="hidden" name="verb" value="<%= verb.verb %>">
+        <input type="text" name="sentence" placeholder="Введите предложение">
+        <button type="submit">Проверить</button>
+    </form>
 </div>
 </body>
 </html>
