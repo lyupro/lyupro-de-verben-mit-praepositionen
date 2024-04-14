@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/stylesheets/base.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <!-- Добавьте дополнительные стили для страницы глагола -->
+</head>
+<body>
+<div class="container">
+    <%- include('../partials/header') %>
+    <h1><%= pageHeader %></h1>
+
+    <%- include('../partials/verb/verbDetails', { verb, translation, sentences, sentenceTranslations }) %>
+
+    <%- include('../partials/verb/checkSentence', { verb }) %>
+</div>
+
+<script src="/javascripts/checkSentence.js"></script>
+</body>
+</html>

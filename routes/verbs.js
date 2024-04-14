@@ -1,7 +1,7 @@
 // routes/verbs.js
 const express = require('express');
 const router = express.Router();
-const { getVerbModel, getVerbSentencesModel, getVerbTranslationModel } = require('../models/verb');
+const { getVerbModel, getVerbSentencesModel, getVerbTranslationModel, getVerbSentencesTranslationModel } = require('../models/verb');
 const { getAlphabetWithAvailability, renderVerbs } = require('../utils/verbUtils');
 const { renderVerbsByLetter } = require('../utils/letterUtils');
 const alphabetConfig = require('../config/alphabet');
@@ -60,19 +60,30 @@ router.get('/letter/:letter/page/:page', async (req, res, next) => {
 router.get('/letter/:letter/:verb', async (req, res, next) => {
     try{
         const letter = req.params.letter.toLowerCase();
-        const verb = req.params.verb;
+        const verbText = req.params.verb;
         const verbModel = getVerbModel(letter);
         const verbSentencesModel = getVerbSentencesModel(letter, 'present');
-        const VerbTranslationModel = getVerbTranslationModel(letter, 'ru');
+        const verbTranslationModel = getVerbTranslationModel(letter, 'ru');
+        const verbSentencesTranslationModel = getVerbSentencesTranslationModel(letter, 'present', 'ru');
 
-        const verbData = await verbModel.findOne({ verb: verb });
-        if (verbData) {
-            const sentences = await verbSentencesModel.findOne({ verb_id: verb.verb_id }).distinct('sentences');
+        const verb  = await verbModel.findOne({ verb: verbText });
+        if (verb) {
+            const sentencesData = await verbSentencesModel.findOne({ verb_id: verb.verb_id });
+            const sentences = sentencesData ? sentencesData.sentences : [];
             //console.log('routes/verbs.js | /letter/:letter/:verb | sentences: ', sentences);
-            const translation = await VerbTranslationModel.findOne({ verb_id: verb.verb_id });
+            const translation = await verbTranslationModel.findOne({ verb_id: verb.verb_id });
             //console.log('routes/verbs.js | /letter/:letter/:verb | translation: ', translation);
+            const sentenceTranslations = await verbSentencesTranslationModel.findOne({ verb_id: verb.verb_id });
+            //console.log('routes/verbs.js | /letter/:letter/:verb | sentenceTranslations: ', sentenceTranslations);
 
-            res.render('verb', { verb, sentences, translations: translation.verb });
+            res.render('verb', {
+                verb,
+                sentences: sentences ? sentences.sentences : [],
+                translation,
+                sentenceTranslations,
+                pageTitle: `Глагол: ${verb.verb}`,
+                pageHeader: `Глагол: ${verb.verb}`,
+            });
         } else {
             const error = new Error('Глагол не найден');
             error.status = 404;

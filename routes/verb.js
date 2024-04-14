@@ -44,31 +44,40 @@ router.get('/', async (req, res, next) => {
         const VerbTranslationModel = getVerbTranslationModel(randomLetter, 'ru');
         const translation = await VerbTranslationModel.findOne({ verb_id: verb.verb_id });
 
-        const VerbSentenceModel = getVerbSentencesModel(randomLetter, 'present');
-        const sentencesData = await VerbSentenceModel.findOne({ verb_id: verb.verb_id });
+        const verbSentencesModel = getVerbSentencesModel(randomLetter, 'present');
+        const sentencesData = await verbSentencesModel.findOne({ verb_id: verb.verb_id });
         const sentences = sentencesData ? sentencesData.sentences : [];
         //console.log('Found sentences:', sentences);
 
         const VerbSentenceTranslationModel = getVerbSentencesTranslationModel(randomLetter, 'present', 'ru');
-        console.log('Found VerbSentenceTranslationModel: ', VerbSentenceTranslationModel);
+        //console.log('Found VerbSentenceTranslationModel: ', VerbSentenceTranslationModel);
         const sentenceTranslations = await VerbSentenceTranslationModel.findOne({ verb_id: verb.verb_id });
-        console.log('Found sentenceTranslations: ', sentenceTranslations);
+        //console.log('Found sentenceTranslations: ', sentenceTranslations);
 
-        res.render('verb', { verb, translation, sentences, sentenceTranslations });
+        //res.render('verb', { verb, translation, sentences, sentenceTranslations });
+
+        res.render('verb', {
+            verb,
+            translation,
+            sentences,
+            sentenceTranslations,
+            pageTitle: `Случайный глагол: ${verb.verb}`,
+            pageHeader: `Случайный глагол: ${verb.verb}`,
+        });
     } catch (error) {
         next(error);
     }
 });
 
 // Маршрут для проверки предложения
-router.post('/check', async (req, res, next) => {
+router.post('/check', express.json(), async (req, res, next) => {
     const { verb: verbText, sentence } = req.body;
 
     try {
+        //console.log('routes/verb.js | /check | verbText: ', verbText);
+        //console.log('routes/verb.js | /check | sentence: ', sentence);
         if (!verbText || !sentence) {
-            const error = new Error('Глагол и предложение обязательны для проверки.');
-            error.status = 400;
-            throw error;
+            return res.status(400).send('Глагол и предложение обязательны для проверки.');
         }
 
         const letter = verbText.charAt(0).toLowerCase();
@@ -78,9 +87,7 @@ router.post('/check', async (req, res, next) => {
         const verb = await VerbModel.findOne({ verb: verbText });
 
         if (!verb) {
-            const error = new Error(`Глагол "${verbText}" не найден в базе данных.`);
-            error.status = 404;
-            throw error;
+            return res.status(404).send(`Глагол "${verbText}" не найден в базе данных.`);
         }
 
         const sentencesData = await VerbSentenceModel.findOne({ verb_id: verb.verb_id });

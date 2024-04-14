@@ -1,0 +1,37 @@
+<!-- views/partials/verb/verbDetails.ejs -->
+<% if (translation) { %>
+    <h2>Перевод:</h2>
+    <ul>
+        <% translation.verb.forEach(translationVariant => { %>
+            <li><%= translationVariant %></li>
+        <% }) %>
+    </ul>
+<% } else { %>
+    <p>Перевод недоступен для этого глагола.</p>
+<% } %>
+
+<h2>Предложения:</h2>
+<% if (sentences && sentences.length > 0) { %>
+    <ul>
+        <% sentences.forEach(sentenceObj => { %>
+            <li>
+                <%= sentenceObj.sentence %>
+                <% if (sentenceTranslations && sentenceTranslations.sentences) { %>
+                    <% const translationObj = sentenceTranslations.sentences.find(translation => translation.sentence_id === sentenceObj.sentence_id) %>
+                    <% if (translationObj) { %>
+                        <br>
+                        <em><%= translationObj.sentence %></em>
+                    <% } else { %>
+                        <br>
+                        <em>Перевод не найден</em>
+                    <% } %>
+                <% } else { %>
+                    <br>
+                    <em>Перевод недоступен</em>
+                <% } %>
+            </li>
+        <% }) %>
+    </ul>
+<% } else { %>
+    <p>Нет доступных предложений для этого глагола.</p>
+<% } %>
