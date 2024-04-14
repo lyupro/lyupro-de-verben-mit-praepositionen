@@ -1,16 +1,63 @@
 <!-- views/index.ejs -->
 <!DOCTYPE html>
+<html lang="ru">
 <html>
   <head>
-    <title><%= title %></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/stylesheets/base.css">
     <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title><%= title %></title>
   </head>
   <body>
+  <%- include('partials/header') %>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Добро пожаловать на Deutsch Trainer!</h1>
+        <p>Ваш онлайн тренажер для изучения немецкого языка</p>
+      </div>
+    </section>
+    <section class="features">
+      <div class="container">
+        <h2>Почему Deutsch Trainer?</h2>
+        <div class="feature">
+          <img src="/images/index/laptop.png" alt="Удобный интерфейс">
+          <!--<i class="fas fa-user-group fa-3x"></i>-->
+          <h3>Удобный интерфейс</h3>
+          <p>Наш интуитивно понятный интерфейс делает изучение немецкого языка простым и увлекательным.</p>
+        </div>
+        <div class="feature">
+          <img src="/images/index/headphones.png" alt="Эффективные методики">
+          <!--<i class="fas fa-book-reader fa-3x"></i>-->
+          <h3>Эффективные методики</h3>
+          <p>Мы используем проверенные методики обучения, которые помогут вам быстро освоить немецкий язык.</p>
+        </div>
+        <div class="feature">
+          <img src="/images/index/desk.png" alt="Интерактивные упражнения">
+          <!--<i class="fas fa-puzzle-piece fa-3x"></i>-->
+          <h3>Интерактивные упражнения</h3>
+          <p>Наши интерактивные упражнения и тесты сделают процесс обучения увлекательным и эффективным.</p>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="container">
+        <h2>Начните изучать немецкий язык прямо сейчас!</h2>
+        <a href="/verbs" class="button">Изучать глаголы</a>
+      </div>
+    </section>
+  </main>
+  <footer>
     <div class="container">
-      <%- include('partials/header') %>
-      <h1><%= title %></h1>
-      <p>Добро пожаловать в приложение для изучения немецких глаголов!</p>
+      <p>&copy; 2024 Deutsch Trainer. Все права защищены.</p>
+      <ul>
+        <li><a href="/privacy">Политика конфиденциальности</a></li>
+        <li><a href="/terms">Условия использования</a></li>
+      </ul>
     </div>
+  </footer>
   </body>
 </html>

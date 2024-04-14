@@ -1,0 +1,63 @@
+/* public/stylesheets/index.css */
+
+.hero {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features {
+    padding: 50px 0;
+}
+
+.feature {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+    text-align: center;
+}
+
+.feature i {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.feature img {
+    min-width: 100px;
+    height: 100px;
+    /*border-radius: 50%;*/ /* Makes round circle */
+    margin-bottom: 20px;
+}
+
+.cta {
+    background-color: #007bff;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
