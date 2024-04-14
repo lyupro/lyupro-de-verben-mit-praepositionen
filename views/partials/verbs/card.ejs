@@ -8,7 +8,7 @@
     <div class="card-back">
         <div class="translation-wrapper">
             <a href="/verbs/letter/<%= verb.verb.charAt(0).toLowerCase() %>/<%= verb.verb %>">
-                <h2><%= verb.translation %><% if (verb.translations.length > 1) { %>...<% } %></h2>
+                <h2><%= verb.translation %><% if (verb.translations && verb.translations.length > 1) { %>...<% } %></h2>
             </a>
             <% if (verb.tooltipText) { %>
                 <span class="tooltip-icon" data-tooltip="<%= verb.tooltipText %>">?</span>
