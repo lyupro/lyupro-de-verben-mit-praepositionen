@@ -35,6 +35,25 @@ async function getAlphabetWithAvailability() {
         throw error;
     }
 }
+async function getVerbsWithTranslations(verbs) {
+    return await Promise.all(
+        verbs.map(async (verb) => {
+            const letter = verb.verb.charAt(0).toLowerCase();
+            const VerbTranslationModel = getVerbTranslationModel(letter, 'ru');
+            const translation = await VerbTranslationModel.findOne({ verb_id: verb.verb_id });
+            //console.log('utils/verbUtils.js | renderVerbs() | translation: ', translation);
+            const translations = translation.verb;
+            const firstTranslation = translation.verb[0];
+            //console.log('utils/verbUtils.js | renderVerbs() | firstTranslation: ', firstTranslation);
+            const [mainTranslation, additionalInfo] = firstTranslation.split(/\s+(?=\()/);
+            const displayTranslation = mainTranslation.trim();
+            //console.log('utils/verbUtils.js | renderVerbs() | displayTranslation: ', displayTranslation);
+            const tooltipText = additionalInfo ? additionalInfo.replace(/[()]/g, '').trim() : '';
+            //console.log('utils/verbUtils.js | renderVerbs() | tooltipText: ', tooltipText);
+            return { ...verb.toObject(), translation: displayTranslation, tooltipText, translations };
+        })
+    );
+}
 
 async function renderVerbs(req, res, next, page = 1) {
     try {
@@ -81,23 +100,7 @@ async function renderVerbs(req, res, next, page = 1) {
         }
 
         //console.log('utils/verbUtils.js | renderVerbs() | //////////////////');
-        const verbsWithTranslations = await Promise.all(
-            verbs.map(async (verb) => {
-                const letter = verb.verb.charAt(0).toLowerCase();
-                const VerbTranslationModel = getVerbTranslationModel(letter, 'ru');
-                const translation = await VerbTranslationModel.findOne({ verb_id: verb.verb_id });
-                //console.log('utils/verbUtils.js | renderVerbs() | translation: ', translation);
-                const translations = translation.verb;
-                const firstTranslation = translation.verb[0];
-                //console.log('utils/verbUtils.js | renderVerbs() | firstTranslation: ', firstTranslation);
-                const [mainTranslation, additionalInfo] = firstTranslation.split(/\s+(?=\()/);
-                const displayTranslation = mainTranslation.trim();
-                //console.log('utils/verbUtils.js | renderVerbs() | displayTranslation: ', displayTranslation);
-                const tooltipText = additionalInfo ? additionalInfo.replace(/[()]/g, '').trim() : '';
-                //console.log('utils/verbUtils.js | renderVerbs() | tooltipText: ', tooltipText);
-                return { ...verb.toObject(), translation: displayTranslation, tooltipText, translations };
-            })
-        );
+        const verbsWithTranslations = await getVerbsWithTranslations(verbs);
 
         const { alphabet, letterAvailability } = await getAlphabetWithAvailability();
 
@@ -116,5 +119,6 @@ async function renderVerbs(req, res, next, page = 1) {
 
 module.exports = {
     getAlphabetWithAvailability,
+    getVerbsWithTranslations,
     renderVerbs
 };

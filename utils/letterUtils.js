@@ -1,6 +1,7 @@
 // utils/letterUtils.js
 const { getVerbModel } = require('../models/verb');
 const alphabetConfig = require('../config/alphabet');
+const { getVerbsWithTranslations } = require('./verbUtils');
 
 async function renderVerbsByLetter(req, res, next, letter, page) {
     try {
@@ -36,18 +37,11 @@ async function renderVerbsByLetter(req, res, next, letter, page) {
         // Static verbs on page (alphabet order)
         const verbs = await VerbModel.find({ verb: regex }).skip(skip).limit(limit);
 
-        // Random verbs on page
-        //const verbs = await VerbModel.aggregate([
-        //    { $match: { verb: regex } },
-        //    { $sample: { size: totalVerbs } },
-        //    { $skip: skip },
-        //    { $limit: limit }
-        //]);
-        //console.log("letterUtils.js | renderVerbsByLetter() verbs = "+ verbs);
+        const verbsWithTranslations = await getVerbsWithTranslations(verbs);
 
         res.render('letter', {
             letter: lowerCaseLetter,
-            verbs,
+            verbs: verbsWithTranslations,
             currentPage: page,
             totalPages,
             layout: false
