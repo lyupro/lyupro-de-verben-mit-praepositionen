@@ -1,7 +1,7 @@
 // utils/letterUtils.js
 const { getVerbModel } = require('../models/verb');
 const alphabetConfig = require('../config/alphabet');
-const { getVerbsWithTranslations } = require('./verbUtils');
+const { getVerbsWithTranslations, getAlphabetWithAvailability } = require('./verbUtils');
 
 async function renderVerbsByLetter(req, res, next, letter, page) {
     try {
@@ -38,13 +38,17 @@ async function renderVerbsByLetter(req, res, next, letter, page) {
         const verbs = await VerbModel.find({ verb: regex }).skip(skip).limit(limit);
 
         const verbsWithTranslations = await getVerbsWithTranslations(verbs);
+        const { alphabet, letterAvailability } = await getAlphabetWithAvailability();
 
-        res.render('letter', {
+        res.render('partials/verbs/letterVerbs', {
             letter: lowerCaseLetter,
             verbs: verbsWithTranslations,
             currentPage: page,
             totalPages,
-            layout: false
+            alphabet,
+            letterAvailability,
+            pageTitle: `Список глаголов на букву ${lowerCaseLetter}`,
+            pageHeader: `Список глаголов на букву ${lowerCaseLetter}`,
         });
     } catch (error) {
         next(error);

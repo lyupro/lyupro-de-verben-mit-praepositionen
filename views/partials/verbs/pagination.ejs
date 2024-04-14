@@ -2,7 +2,7 @@
 <% if (typeof currentPage !== 'undefined' && typeof totalPages !== 'undefined') { %>
     <div class="pagination">
         <% if (currentPage > 1) { %>
-            <% if (typeof letter !== 'undefined') { %>
+            <% if (letter) { %>
                 <a href="/verbs/letter/<%= letter %>/page/<%= currentPage - 1 %>" class="pagination-link">Назад</a>
             <% } else { %>
                 <a href="/verbs/page/<%= currentPage - 1 %>" class="pagination-link">Назад</a>
@@ -14,7 +14,7 @@
             <% if (i === currentPage) { %>
                 <span class="pagination-current"><%= i %></span>
             <% } else { %>
-                <% if (typeof letter !== 'undefined') { %>
+                <% if (letter) { %>
                     <a href="/verbs/letter/<%= letter %>/page/<%= i %>" class="pagination-link"><%= i %></a>
                 <% } else { %>
                     <a href="/verbs/page/<%= i %>" class="pagination-link"><%= i %></a>
@@ -22,7 +22,7 @@
             <% } %>
         <% } %>
         <% if (currentPage < totalPages) { %>
-            <% if (typeof letter !== 'undefined') { %>
+            <% if (letter) { %>
                 <a href="/verbs/letter/<%= letter %>/page/<%= currentPage + 1 %>" class="pagination-link">Вперед</a>
             <% } else { %>
                 <a href="/verbs/page/<%= currentPage + 1 %>" class="pagination-link">Вперед</a>

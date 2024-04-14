@@ -16,10 +16,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 const verbList = document.querySelector('.verbs');
                 const paginationContainer = document.querySelector('.pagination');
+                const titleElement = document.querySelector('title');
+                const headerElement = document.querySelector('h1');
 
-                if (verbList && paginationContainer) {
+                if (verbList && paginationContainer && titleElement && headerElement) {
                     verbList.innerHTML = doc.querySelector('.verbs').innerHTML;
                     paginationContainer.innerHTML = doc.querySelector('.pagination').innerHTML;
+                    titleElement.textContent = doc.querySelector('title').textContent;
+                    headerElement.textContent = doc.querySelector('h1').textContent;
                     history.pushState(null, null, `/verbs/letter/${letter}/page/${page}`);
 
                     // Обновляем обработчики событий для пагинации

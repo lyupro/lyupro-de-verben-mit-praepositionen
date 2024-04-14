@@ -1,0 +1,46 @@
+<!-- views/layouts/verbsLayout.ejs -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= pageTitle %></title>
+        <link rel="stylesheet" href="/stylesheets/base.css">
+        <link rel="stylesheet" href="/stylesheets/header.css">
+        <link rel="stylesheet" href="/stylesheets/verbs/alphabet.css">
+        <link rel="stylesheet" href="/stylesheets/verbs/card.css">
+        <link rel="stylesheet" href="/stylesheets/verbs/pagination.css">
+        <link rel="stylesheet" href="/stylesheets/verbs/search.css">
+        <link rel="stylesheet" href="/stylesheets/verbs/verbs.css">
+    </head>
+    <body>
+        <div class="container">
+            <%- include('../layout') -%>
+            <h1><%= pageHeader %></h1>
+
+            <%- include('../partials/verbs/search') %>
+            <%- include('../partials/verbs/alphabet') %>
+
+            <div class="verbs">
+                <% verbs.forEach(verb => { %>
+                    <%- include('../partials/verbs/card', { verb: verb }) %>
+                <% }) %>
+            </div>
+
+            <%- include('../partials/verbs/pagination', { currentPage: currentPage, totalPages: totalPages, letter: letter }) %>
+        </div>
+
+        <script src="/javascripts/search.js"></script>
+        <script src="/javascripts/pagination.js"></script>
+        <script src="/javascripts/verbCard.js"></script>
+        <script src="/javascripts/alphabet.js"></script>
+        <script>
+            // Получаем ссылку на элемент окна результатов поиска
+            const searchResults = document.getElementById('searchResults');
+
+            // Добавляем класс 'hidden' по умолчанию, чтобы скрыть окно результатов
+            searchResults.classList.add('hidden');
+
+            // Вызываем функцию для добавления обработчиков событий при загрузке страницы
+            addSearchEventListeners();
+        </script>
+    </body>
+</html>

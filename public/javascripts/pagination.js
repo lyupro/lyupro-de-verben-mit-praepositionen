@@ -29,6 +29,14 @@ async function loadVerbs(url) {
         } else {
         }
 
+        // Получаем значения pageTitle и pageHeader
+        const titleElement = document.querySelector('title');
+        const headerElement = document.querySelector('h1');
+        if (titleElement && headerElement) {
+            titleElement.textContent = doc.querySelector('title').textContent;
+            headerElement.textContent = doc.querySelector('h1').textContent;
+        }
+
         // Обновляем URL-адрес страницы без перезагрузки
         history.pushState(null, null, url);
 

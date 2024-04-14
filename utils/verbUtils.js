@@ -110,7 +110,9 @@ async function renderVerbs(req, res, next, page = 1) {
             letterAvailability,
             currentPage: page,
             totalPages,
-            limit
+            limit,
+            pageTitle: 'Список глаголов',
+            pageHeader: 'Список глаголов',
         });
     } catch (error) {
         next(error);
