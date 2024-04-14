@@ -1,8 +1,0 @@
-<!-- views/letter.ejs -->
-<div class="verbs">
-    <% verbs.forEach(verb => { %>
-        <%- include('partials/verbs/card', { verb: verb }) %>
-    <% }) %>
-</div>
-
-<%- include('partials/verbs/pagination', { currentPage: currentPage, totalPages: totalPages, letter: letter }) %>
