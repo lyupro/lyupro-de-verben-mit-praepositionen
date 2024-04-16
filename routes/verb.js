@@ -4,6 +4,7 @@ const router = express.Router();
 const { getVerbModel, getVerbTranslationModel, getVerbSentencesModel, getVerbSentencesTranslationModel } = require('../models/verb');
 const alphabetConfig = require('../config/alphabet');
 const { getAvailableAlphabetLetters } = require('../utils/alphabetUtils');
+const { getVerbData } = require('../utils/verbUtils');
 
 // Маршрут для получения случайного глагола и предложений
 router.get('/', async (req, res, next) => {
@@ -17,50 +18,15 @@ router.get('/', async (req, res, next) => {
         }
 
         const randomLetter = availableAlphabetLetters [Math.floor(Math.random() * availableAlphabetLetters .length)];
-        const VerbModel = getVerbModel(randomLetter);
-        //console.log('routes/verb.js | / | VerbModel: '+ VerbModel);
-        if (!VerbModel) {
-            const error = new Error(`Модель глагола для буквы "${randomLetter}" не найдена.`);
-            error.status = 404;
-            throw error;
-        }
+        const verbData = await getVerbData(randomLetter, '', true);
 
-        const count = await VerbModel.countDocuments();
-        if (count === 0) {
-            const error = new Error(`Нет доступных глаголов для буквы "${randomLetter}".`);
-            error.status = 404;
-            throw error;
-        }
-
-        const random = Math.floor(Math.random() * count);
-        const verb = await VerbModel.findOne().skip(random);
-        if (!verb) {
-            const error = new Error(`Не удалось найти случайный глагол для буквы "${randomLetter}".`);
-            error.status = 500;
-            throw error;
-        }
-        //console.log('Selected verb:', verb);
-
-        const VerbTranslationModel = getVerbTranslationModel(randomLetter, 'ru');
-        const translation = await VerbTranslationModel.findOne({ verb_id: verb.verb_id });
-
-        const verbSentencesModel = getVerbSentencesModel(randomLetter, 'present');
-        const sentencesData = await verbSentencesModel.findOne({ verb_id: verb.verb_id });
-        const sentences = sentencesData ? sentencesData.sentences : [];
-        //console.log('Found sentences:', sentences);
-
-        const VerbSentenceTranslationModel = getVerbSentencesTranslationModel(randomLetter, 'present', 'ru');
-        //console.log('Found VerbSentenceTranslationModel: ', VerbSentenceTranslationModel);
-        const sentenceTranslations = await VerbSentenceTranslationModel.findOne({ verb_id: verb.verb_id });
-        //console.log('Found sentenceTranslations: ', sentenceTranslations);
-
-        //res.render('verb', { verb, translation, sentences, sentenceTranslations });
+        const { verb, translation, sentences, sentencesTranslation } = verbData;
 
         res.render('verb', {
             verb,
             translation,
             sentences,
-            sentenceTranslations,
+            sentenceTranslations: sentencesTranslation,
             pageTitle: `Случайный глагол: ${verb.verb}`,
             pageHeader: `Случайный глагол: ${verb.verb}`,
         });

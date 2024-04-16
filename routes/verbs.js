@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const { getVerbModel, getVerbSentencesModel, getVerbTranslationModel, getVerbSentencesTranslationModel } = require('../models/verb');
-const { getAlphabetWithAvailability, renderVerbs } = require('../utils/verbUtils');
+const { getAlphabetWithAvailability, renderVerbs, getVerbData } = require('../utils/verbUtils');
 const { renderVerbsByLetter } = require('../utils/letterUtils');
 const alphabetConfig = require('../config/alphabet');
 
@@ -61,34 +61,18 @@ router.get('/letter/:letter/:verb', async (req, res, next) => {
     try{
         const letter = req.params.letter.toLowerCase();
         const verbText = req.params.verb;
-        const verbModel = getVerbModel(letter);
-        const verbSentencesModel = getVerbSentencesModel(letter, 'present');
-        const verbTranslationModel = getVerbTranslationModel(letter, 'ru');
-        const verbSentencesTranslationModel = getVerbSentencesTranslationModel(letter, 'present', 'ru');
 
-        const verb  = await verbModel.findOne({ verb: verbText });
-        if (verb) {
-            const sentencesData = await verbSentencesModel.findOne({ verb_id: verb.verb_id });
-            const sentences = sentencesData ? sentencesData.sentences : [];
-            //console.log('routes/verbs.js | /letter/:letter/:verb | sentences: ', sentences);
-            const translation = await verbTranslationModel.findOne({ verb_id: verb.verb_id });
-            //console.log('routes/verbs.js | /letter/:letter/:verb | translation: ', translation);
-            const sentenceTranslations = await verbSentencesTranslationModel.findOne({ verb_id: verb.verb_id });
-            //console.log('routes/verbs.js | /letter/:letter/:verb | sentenceTranslations: ', sentenceTranslations);
+        const verbData = await getVerbData(letter, verbText);
+        const { verb, translation, sentences, sentencesTranslation } = verbData;
 
-            res.render('verb', {
-                verb,
-                sentences: sentences ? sentences.sentences : [],
-                translation,
-                sentenceTranslations,
-                pageTitle: `Глагол: ${verb.verb}`,
-                pageHeader: `Глагол: ${verb.verb}`,
-            });
-        } else {
-            const error = new Error('Глагол не найден');
-            error.status = 404;
-            throw error;
-        }
+        res.render('verb', {
+            verb,
+            translation,
+            sentences,
+            sentenceTranslations: sentencesTranslation,
+            pageTitle: `Глагол: ${verb.verb}`,
+            pageHeader: `Глагол: ${verb.verb}`,
+        });
     } catch (error) {
         next(error)
     }

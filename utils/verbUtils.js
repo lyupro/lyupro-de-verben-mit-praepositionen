@@ -1,5 +1,5 @@
 // utils/verbUtils.js
-const { getVerbModel, getVerbTranslationModel } = require('../models/verb');
+const { getVerbModel, getVerbTranslationModel, getVerbSentencesModel, getVerbSentencesTranslationModel } = require('../models/verb');
 const alphabetConfig = require('../config/alphabet');
 
 async function getAlphabetWithAvailability() {
@@ -119,8 +119,75 @@ async function renderVerbs(req, res, next, page = 1) {
     }
 }
 
+async function getVerbData(letter, verbText, random = false) {
+    try {
+        const verbModel = getVerbModel(letter);
+        if (!verbModel) {
+            const error = new Error(`Модель глагола для буквы "${letter}" не найдена.`);
+            error.status = 404;
+            throw error;
+        }
+
+        let verb;
+        if (random) {
+            const count = await verbModel.countDocuments();
+            if (count === 0) {
+                const error = new Error(`Нет доступных глаголов для буквы "${letter}".`);
+                error.status = 404;
+                throw error;
+            }
+            const randomIndex = Math.floor(Math.random() * count);
+            verb = await verbModel.findOne().skip(randomIndex);
+            //console.log('Selected Random verb:', verb);
+            if (!verb) {
+                throw new Error(`Не удалось найти случайный глагол "${verbText}" для буквы "${letter}".`);
+            }
+        } else {
+            verb = await verbModel.findOne({ verb: verbText });
+            //console.log('Selected verb:', verb);
+            if (!verb) {
+                throw new Error(`Глагол "${verbText}" не найден.`);
+            }
+        }
+
+        const verbTranslationModel = getVerbTranslationModel(letter, 'ru');
+        const verbSentencesModel = getVerbSentencesModel(letter, 'present');
+        const verbSentencesTranslationModel = getVerbSentencesTranslationModel(letter, 'present', 'ru');
+
+        const [translation, sentencesData, sentencesTranslationData] = await Promise.all([
+            verbTranslationModel.findOne({ verb_id: verb.verb_id }),
+            verbSentencesModel.findOne({ verb_id: verb.verb_id }),
+            verbSentencesTranslationModel.findOne({ verb_id: verb.verb_id })
+        ]);
+
+        if (!translation) {
+            throw new Error(`Перевод для глагола "${verbText}" не найден.`);
+        }
+
+        const sentences = sentencesData ? sentencesData.sentences : [];
+        //console.log('Found sentences:', sentences);
+        const sentencesTranslation = sentencesTranslationData ? sentencesTranslationData.sentences : [];
+        //console.log('Found sentencesTranslation:', sentencesTranslation);
+
+        // Alternative without Sentences Translation result and throw new Error()
+        //if (!sentencesTranslation) {
+        //    throw new Error(`Перевод предложений для глагола "${verbText}" не найден.`);
+        //}
+
+        return {
+            verb,
+            translation,
+            sentences,
+            sentencesTranslation,
+        };
+    } catch (error) {
+        throw new Error(`Ошибка при получении данных для глагола "${verbText}": ${error.message}`);
+    }
+}
+
 module.exports = {
     getAlphabetWithAvailability,
     getVerbsWithTranslations,
-    renderVerbs
+    renderVerbs,
+    getVerbData,
 };
