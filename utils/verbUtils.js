@@ -4,10 +4,15 @@ const alphabetConfig = require('../config/alphabet');
 
 async function getAlphabetWithAvailability() {
     try {
-        const enableLetterFilter = process.env.ENABLE_LETTER_FILTER === 'true';
+        const enableLetterFilter = process.env.ENABLE_LETTER_FILTER;
+        if (enableLetterFilter === undefined) {
+            const error = new Error('Переменная окружения ENABLE_LETTER_FILTER не установлена');
+            error.status = 500;
+            throw error;
+        }
 
-        if (enableLetterFilter !== true && enableLetterFilter !== false) {
-            const error = new Error('Некорректное значение параметра ENABLE_LETTER_FILTER');
+        if (enableLetterFilter !== 'true' && enableLetterFilter !== 'false') {
+            const error = new Error('Некорректное значение переменной окружения ENABLE_LETTER_FILTER');
             error.status = 500;
             throw error;
         }
