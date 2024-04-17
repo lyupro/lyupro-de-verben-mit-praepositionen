@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const { getVerbModel, getVerbSentencesModel, getVerbTranslationModel, getVerbSentencesTranslationModel } = require('../models/verb');
-const { getAlphabetWithAvailability, renderVerbs, getVerbData } = require('../utils/verbUtils');
+const { getAlphabetWithAvailability, getVerbTranslation, renderVerbs, getVerbData } = require('../utils/verbUtils');
 const { renderVerbsByLetter } = require('../utils/letterUtils');
 const alphabetConfig = require('../config/alphabet');
 
@@ -32,9 +32,13 @@ router.get('/search', async (req, res, next) => {
         const verbs = [];
 
         for (const letter of alphabetConfig.letters) {
-            const VerbModel = getVerbModel(letter);
-            const verbsForLetter = await VerbModel.find({ verb: { $regex: `^${query}`, $options: 'i' } }).limit(5);
-            verbs.push(...verbsForLetter);
+            const verbModel = getVerbModel(letter);
+            const verbsForLetter = await verbModel.find({ verb: { $regex: `^${query}`, $options: 'i' } }).limit(5);
+
+            for (const verb of verbsForLetter) {
+                const { displayTranslation } = await getVerbTranslation(letter, verb.verb_id);
+                verbs.push({ ...verb.toObject(), translation: displayTranslation });
+            }
         }
 
         res.json(verbs);

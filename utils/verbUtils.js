@@ -35,21 +35,32 @@ async function getAlphabetWithAvailability() {
         throw error;
     }
 }
+
+async function getVerbTranslation(letter, verbId) {
+    const VerbTranslationModel = getVerbTranslationModel(letter, 'ru');
+    const translation = await VerbTranslationModel.findOne({ verb_id: verbId });
+
+    if (translation && translation.verb.length > 0) {
+        const translations = translation.verb;
+        //console.log('utils/verbUtils.js | getVerbTranslation() | translations: ', translations);
+        const firstTranslation = translation.verb[0];
+        //console.log('utils/verbUtils.js | getVerbTranslation() | firstTranslation: ', firstTranslation);
+        const [mainTranslation, additionalInfo] = firstTranslation.split(/\s+(?=\()/);
+        const displayTranslation = mainTranslation.trim();
+        //console.log('utils/verbUtils.js | getVerbTranslation() | displayTranslation: ', displayTranslation);
+        const tooltipText = additionalInfo ? additionalInfo.replace(/[()]/g, '').trim() : '';
+        //console.log('utils/verbUtils.js | getVerbTranslation() | tooltipText: ', tooltipText);
+        return { displayTranslation, tooltipText, translations: translations };
+    } else {
+        return { displayTranslation: 'Перевод недоступен', tooltipText: '', translations: [] };
+    }
+}
+
 async function getVerbsWithTranslations(verbs) {
     return await Promise.all(
         verbs.map(async (verb) => {
             const letter = verb.verb.charAt(0).toLowerCase();
-            const VerbTranslationModel = getVerbTranslationModel(letter, 'ru');
-            const translation = await VerbTranslationModel.findOne({ verb_id: verb.verb_id });
-            //console.log('utils/verbUtils.js | renderVerbs() | translation: ', translation);
-            const translations = translation.verb;
-            const firstTranslation = translation.verb[0];
-            //console.log('utils/verbUtils.js | renderVerbs() | firstTranslation: ', firstTranslation);
-            const [mainTranslation, additionalInfo] = firstTranslation.split(/\s+(?=\()/);
-            const displayTranslation = mainTranslation.trim();
-            //console.log('utils/verbUtils.js | renderVerbs() | displayTranslation: ', displayTranslation);
-            const tooltipText = additionalInfo ? additionalInfo.replace(/[()]/g, '').trim() : '';
-            //console.log('utils/verbUtils.js | renderVerbs() | tooltipText: ', tooltipText);
+            const { displayTranslation, tooltipText, translations } = await getVerbTranslation(letter, verb.verb_id);
             return { ...verb.toObject(), translation: displayTranslation, tooltipText, translations };
         })
     );
@@ -187,6 +198,7 @@ async function getVerbData(letter, verbText, random = false) {
 
 module.exports = {
     getAlphabetWithAvailability,
+    getVerbTranslation,
     getVerbsWithTranslations,
     renderVerbs,
     getVerbData,
