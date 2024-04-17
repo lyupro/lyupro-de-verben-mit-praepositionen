@@ -36,7 +36,7 @@ router.get('/search', async (req, res, next) => {
             const verbsForLetter = await verbModel.find({ verb: { $regex: `^${query}`, $options: 'i' } }).limit(5);
 
             for (const verb of verbsForLetter) {
-                const { displayTranslation } = await getVerbTranslation(letter, verb.verb_id);
+                const { displayTranslation } = await getVerbTranslation(letter, 'ru', verb.verb_id);
                 verbs.push({ ...verb.toObject(), translation: displayTranslation });
             }
         }
@@ -73,7 +73,7 @@ router.get('/letter/:letter/:verb', async (req, res, next) => {
             verb,
             translation,
             sentences,
-            sentenceTranslations: sentencesTranslation,
+            sentencesTranslation: sentencesTranslation,
             pageTitle: `Глагол: ${verb.verb}`,
             pageHeader: `Глагол: ${verb.verb}`,
         });

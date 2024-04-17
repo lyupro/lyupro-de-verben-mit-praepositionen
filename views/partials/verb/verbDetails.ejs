@@ -1,8 +1,7 @@
-<!-- views/partials/verb/verbDetails.ejs -->
 <% if (translation) { %>
     <h2>Перевод:</h2>
     <ul>
-        <% translation.verb.forEach(translationVariant => { %>
+        <% translation.translations.forEach(translationVariant => { %>
             <li><%= translationVariant %></li>
         <% }) %>
     </ul>
@@ -16,15 +15,10 @@
         <% sentences.forEach(sentenceObj => { %>
             <li>
                 <%= sentenceObj.sentence %>
-                <% if (sentenceTranslations && sentenceTranslations.sentences) { %>
-                    <% const translationObj = sentenceTranslations.sentences.find(translation => translation.sentence_id === sentenceObj.sentence_id) %>
-                    <% if (translationObj) { %>
-                        <br>
-                        <em><%= translationObj.sentence %></em>
-                    <% } else { %>
-                        <br>
-                        <em>Перевод не найден</em>
-                    <% } %>
+                <% const translationObj = sentencesTranslation.find(translation => translation.sentence_id === sentenceObj.sentence_id) %>
+                <% if (translationObj) { %>
+                    <br>
+                    <em><%= translationObj.sentence %></em>
                 <% } else { %>
                     <br>
                     <em>Перевод недоступен</em>

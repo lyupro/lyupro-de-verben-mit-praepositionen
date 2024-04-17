@@ -26,7 +26,7 @@ router.get('/', async (req, res, next) => {
             verb,
             translation,
             sentences,
-            sentenceTranslations: sentencesTranslation,
+            sentencesTranslation: sentencesTranslation,
             pageTitle: `Случайный глагол: ${verb.verb}`,
             pageHeader: `Случайный глагол: ${verb.verb}`,
         });

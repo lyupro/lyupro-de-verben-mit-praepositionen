@@ -36,8 +36,8 @@ async function getAlphabetWithAvailability() {
     }
 }
 
-async function getVerbTranslation(letter, verbId) {
-    const VerbTranslationModel = getVerbTranslationModel(letter, 'ru');
+async function getVerbTranslation(letter, language, verbId) {
+    const VerbTranslationModel = getVerbTranslationModel(letter, language);
     const translation = await VerbTranslationModel.findOne({ verb_id: verbId });
 
     if (translation && translation.verb.length > 0) {
@@ -56,11 +56,59 @@ async function getVerbTranslation(letter, verbId) {
     }
 }
 
+async function getVerbSentences(letter, tense, verbId) {
+    try {
+        const verbSentencesModel = getVerbSentencesModel(letter, tense);
+        if (!verbSentencesModel) {
+            const error = new Error(`Модель предложений для буквы "${letter}" и времени "${tense}" не найдена.`);
+            error.status = 404;
+            throw error;
+        }
+
+        const sentencesData = await verbSentencesModel.findOne({ verb_id: verbId });
+        // Alternative without Sentences result and throw new Error()
+        //if (!sentencesData) {
+        //    throw new Error(`Предложения для глагола с ID "${verbId}" не найдены.`);
+        //}
+
+        const sentences = sentencesData ? sentencesData.sentences : [];
+        //console.log('Found sentences:', sentences);
+
+        return sentences;
+    } catch (error) {
+        throw new Error(`Ошибка при получении предложений для глагола с ID "${verbId}": ${error.message}`);
+    }
+}
+
+async function getVerbSentencesTranslation(letter, tense, language, verbId) {
+    try {
+        const verbSentencesTranslationModel = getVerbSentencesTranslationModel(letter, tense, language);
+        if (!verbSentencesTranslationModel) {
+            const error = new Error(`Модель переводов предложений для буквы "${letter}", времени "${tense}" и языка "${language}" не найдена.`);
+            error.status = 404;
+            throw error;
+        }
+
+        const sentencesTranslationData = await verbSentencesTranslationModel.findOne({ verb_id: verbId });
+        // Alternative without Sentences Translation result and throw new Error()
+        //if (!sentencesTranslationData) {
+        //    throw new Error(`Переводы предложений для глагола с ID "${verbId}" не найдены.`);
+        //}
+
+        const sentencesTranslation = sentencesTranslationData ? sentencesTranslationData.sentences : [];
+        //console.log('Found sentencesTranslation:', sentencesTranslation);
+
+        return sentencesTranslation;
+    } catch (error) {
+        throw new Error(`Ошибка при получении переводов предложений для глагола с ID "${verbId}": ${error.message}`);
+    }
+}
+
 async function getVerbsWithTranslations(verbs) {
     return await Promise.all(
         verbs.map(async (verb) => {
             const letter = verb.verb.charAt(0).toLowerCase();
-            const { displayTranslation, tooltipText, translations } = await getVerbTranslation(letter, verb.verb_id);
+            const { displayTranslation, tooltipText, translations } = await getVerbTranslation(letter, 'ru', verb.verb_id);
             return { ...verb.toObject(), translation: displayTranslation, tooltipText, translations };
         })
     );
@@ -154,6 +202,10 @@ async function getVerbData(letter, verbText, random = false) {
                 throw new Error(`Не удалось найти случайный глагол "${verbText}" для буквы "${letter}".`);
             }
         } else {
+            if (!verbText) {
+                throw new Error('Текст глагола не указан.');
+            }
+
             verb = await verbModel.findOne({ verb: verbText });
             //console.log('Selected verb:', verb);
             if (!verb) {
@@ -161,29 +213,15 @@ async function getVerbData(letter, verbText, random = false) {
             }
         }
 
-        const verbTranslationModel = getVerbTranslationModel(letter, 'ru');
-        const verbSentencesModel = getVerbSentencesModel(letter, 'present');
-        const verbSentencesTranslationModel = getVerbSentencesTranslationModel(letter, 'present', 'ru');
-
-        const [translation, sentencesData, sentencesTranslationData] = await Promise.all([
-            verbTranslationModel.findOne({ verb_id: verb.verb_id }),
-            verbSentencesModel.findOne({ verb_id: verb.verb_id }),
-            verbSentencesTranslationModel.findOne({ verb_id: verb.verb_id })
-        ]);
-
+        const translation = await getVerbTranslation(letter, 'ru', verb.verb_id);
         if (!translation) {
             throw new Error(`Перевод для глагола "${verbText}" не найден.`);
         }
 
-        const sentences = sentencesData ? sentencesData.sentences : [];
-        //console.log('Found sentences:', sentences);
-        const sentencesTranslation = sentencesTranslationData ? sentencesTranslationData.sentences : [];
-        //console.log('Found sentencesTranslation:', sentencesTranslation);
-
-        // Alternative without Sentences Translation result and throw new Error()
-        //if (!sentencesTranslation) {
-        //    throw new Error(`Перевод предложений для глагола "${verbText}" не найден.`);
-        //}
+        const sentences = await getVerbSentences(letter, 'present', verb.verb_id);
+        //console.log('sentences: ', sentences);
+        const sentencesTranslation = await getVerbSentencesTranslation(letter, 'present', 'ru', verb.verb_id);
+        //console.log('sentencesTranslation: ', sentencesTranslation);
 
         return {
             verb,
@@ -199,6 +237,8 @@ async function getVerbData(letter, verbText, random = false) {
 module.exports = {
     getAlphabetWithAvailability,
     getVerbTranslation,
+    getVerbSentences,
+    getVerbSentencesTranslation,
     getVerbsWithTranslations,
     renderVerbs,
     getVerbData,
