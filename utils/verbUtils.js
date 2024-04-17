@@ -44,6 +44,9 @@ async function getAlphabetWithAvailability() {
 async function getVerbTranslation(letter, language, verbId) {
     const VerbTranslationModel = getVerbTranslationModel(letter, language);
     const translation = await VerbTranslationModel.findOne({ verb_id: verbId });
+    if (!translation) {
+        throw new Error(`Перевод для глагола с ID "${verbId}" не найден`);
+    }
 
     if (translation && translation.verb.length > 0) {
         const translations = translation.verb;
