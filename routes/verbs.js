@@ -22,9 +22,8 @@ router.get('/page/:page', (req, res, next) => {
 router.get('/search', async (req, res, next) => {
     try {
         const query = req.query.q.toLowerCase();
-
         if (!query) {
-            const error = new Error('Запрос поиска не может быть пустым');
+            const error = new Error('Запрос поиска не может быть пустым. Параметр запроса "q" отсутствует или пустой');
             error.status = 400;
             throw error;
         }
@@ -49,13 +48,25 @@ router.get('/search', async (req, res, next) => {
 
 // Маршрут для отображения глаголов по выбранной букве
 router.get('/letter/:letter', async (req, res, next, page = 1) => {
-        const letter = req.params.letter.toUpperCase();
-        renderVerbsByLetter(req, res, next, letter, page);
+    const letter = req.params.letter.toUpperCase();
+    if (!alphabetConfig.letters.includes(letter)) {
+        const error = new Error('Некорректная буква алфавита');
+        error.status = 400;
+        throw error;
+    }
+
+    renderVerbsByLetter(req, res, next, letter, page);
 });
 
 // Маршрут для отображения глаголов по выбранной букве (указанная страница)
 router.get('/letter/:letter/page/:page', async (req, res, next) => {
     const letter = req.params.letter.toUpperCase();
+    if (!alphabetConfig.letters.includes(letter)) {
+        const error = new Error('Некорректная буква алфавита');
+        error.status = 400;
+        throw error;
+    }
+
     const page = parseInt(req.params.page) || 1;
     renderVerbsByLetter(req, res, next, letter, page);
 });
@@ -64,7 +75,18 @@ router.get('/letter/:letter/page/:page', async (req, res, next) => {
 router.get('/letter/:letter/:verb', async (req, res, next) => {
     try{
         const letter = req.params.letter.toLowerCase();
+        if (!alphabetConfig.letters.includes(letter)) {
+            const error = new Error('Некорректная буква алфавита');
+            error.status = 400;
+            throw error;
+        }
+
         const verbText = req.params.verb;
+        if (!verbText) {
+            const error = new Error('Текст глагола не указан');
+            error.status = 400;
+            throw error;
+        }
 
         const verbData = await getVerbData(letter, verbText);
         const { verb, translation, sentences, sentencesTranslation } = verbData;
