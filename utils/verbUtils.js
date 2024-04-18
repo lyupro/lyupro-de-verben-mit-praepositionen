@@ -1,21 +1,27 @@
 // utils/verbUtils.js
-const { getVerbModel, getVerbTranslationModel, getVerbSentencesModel, getVerbSentencesTranslationModel } = require('../models/verb');
+const { getVerbModel,
+    getVerbTranslationModel,
+    getVerbSentencesModel,
+    getVerbSentencesTranslationModel
+} = require('../models/verb');
 const alphabetConfig = require('../config/alphabet');
+const { validateLetter,
+    validateLetterFilter,
+    validateTense,
+    validateVerbId,
+    validateVerbText,
+    validateVerbTranslation,
+    validatePage,
+    validatePageRange,
+    validateVerbModel,
+    validateVerbSentencesModel,
+    validateVerbSentencesTranslationModel,
+    validateAvailableVerbsForLetter, validateVerb
+} = require('./validationUtils');
 
 async function getAlphabetWithAvailability() {
     try {
-        const enableLetterFilter = process.env.ENABLE_LETTER_FILTER;
-        if (enableLetterFilter === undefined) {
-            const error = new Error('Переменная окружения ENABLE_LETTER_FILTER не установлена');
-            error.status = 500;
-            throw error;
-        }
-
-        if (enableLetterFilter !== 'true' && enableLetterFilter !== 'false') {
-            const error = new Error('Некорректное значение переменной окружения ENABLE_LETTER_FILTER');
-            error.status = 500;
-            throw error;
-        }
+        const enableLetterFilter = validateLetterFilter();
 
         // Создаем объект для хранения информации о доступности букв
         const letterAvailability = {};
@@ -66,12 +72,16 @@ async function getVerbTranslation(letter, language, verbId) {
 
 async function getVerbSentences(letter, tense, verbId) {
     try {
+        validateLetter(letter);
+        validateTense(tense);
+        validateVerbId(verbId);
+
         const verbSentencesModel = getVerbSentencesModel(letter, tense);
-        if (!verbSentencesModel) {
-            const error = new Error(`Модель предложений для буквы "${letter}" и времени "${tense}" не найдена.`);
-            error.status = 404;
-            throw error;
-        }
+        validateVerbSentencesModel({
+            verbSentencesModel,
+            letter,
+            tense,
+        });
 
         const sentencesData = await verbSentencesModel.findOne({ verb_id: verbId });
         // Alternative without Sentences result and throw new Error()
@@ -91,11 +101,13 @@ async function getVerbSentences(letter, tense, verbId) {
 async function getVerbSentencesTranslation(letter, tense, language, verbId) {
     try {
         const verbSentencesTranslationModel = getVerbSentencesTranslationModel(letter, tense, language);
-        if (!verbSentencesTranslationModel) {
-            const error = new Error(`Модель переводов предложений для буквы "${letter}", времени "${tense}" и языка "${language}" не найдена.`);
-            error.status = 404;
-            throw error;
-        }
+
+        validateVerbSentencesTranslationModel({
+            verbSentencesTranslationModel,
+            letter,
+            tense,
+            language,
+        });
 
         const sentencesTranslationData = await verbSentencesTranslationModel.findOne({ verb_id: verbId });
         // Alternative without Sentences Translation result and throw new Error()
@@ -124,11 +136,7 @@ async function getVerbsWithTranslations(verbs) {
 
 async function renderVerbs(req, res, next, page = 1) {
     try {
-        if (isNaN(page) || page < 1) {
-            const error = new Error('Неверный номер страницы');
-            error.status = 400;
-            throw error;
-        }
+        validatePage(page);
 
         const limit = 10;
         const skip = (page - 1) * limit;
@@ -146,11 +154,7 @@ async function renderVerbs(req, res, next, page = 1) {
 
         const totalPages = Math.ceil(totalVerbs / limit);
 
-        if (page < 1 || page > totalPages) {
-            const error = new Error('Страница не найдена');
-            error.status = 404;
-            throw error;
-        }
+        validatePageRange(page, totalPages);
 
         let currentCount = 0;
         let currentSkip = skip;
@@ -189,42 +193,27 @@ async function renderVerbs(req, res, next, page = 1) {
 async function getVerbData(letter, verbText, random = false) {
     try {
         const verbModel = getVerbModel(letter);
-        if (!verbModel) {
-            const error = new Error(`Модель глагола для буквы "${letter}" не найдена.`);
-            error.status = 404;
-            throw error;
-        }
+        validateVerbModel(verbModel, letter);
 
         let verb;
         if (random) {
             const count = await verbModel.countDocuments();
-            if (count === 0) {
-                const error = new Error(`Нет доступных глаголов для буквы "${letter}".`);
-                error.status = 404;
-                throw error;
-            }
+            validateAvailableVerbsForLetter(letter, count);
+
             const randomIndex = Math.floor(Math.random() * count);
             verb = await verbModel.findOne().skip(randomIndex);
             //console.log('Selected Random verb:', verb);
-            if (!verb) {
-                throw new Error(`Не удалось найти случайный глагол "${verbText}" для буквы "${letter}".`);
-            }
+            validateVerb({ verb, verbText, letter });
         } else {
-            if (!verbText) {
-                throw new Error('Текст глагола не указан.');
-            }
+            validateVerbText(verbText);
 
             verb = await verbModel.findOne({ verb: verbText });
             //console.log('Selected verb:', verb);
-            if (!verb) {
-                throw new Error(`Глагол "${verbText}" не найден.`);
-            }
+            validateVerb({ verb, verbText});
         }
 
         const translation = await getVerbTranslation(letter, 'ru', verb.verb_id);
-        if (!translation) {
-            throw new Error(`Перевод для глагола "${verbText}" не найден.`);
-        }
+        validateVerbTranslation(translation);
 
         const sentences = await getVerbSentences(letter, 'present', verb.verb_id);
         //console.log('sentences: ', sentences);

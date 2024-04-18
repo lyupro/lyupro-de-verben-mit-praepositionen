@@ -2,24 +2,15 @@
 const { getVerbModel } = require('../models/verb');
 const alphabetConfig = require('../config/alphabet');
 const { getVerbsWithTranslations, getAlphabetWithAvailability } = require('./verbUtils');
+const { validateLetter, validateQuery, validateVerbText, validatePage } = require('../utils/validationUtils');
+const {validatePageRange} = require("./validationUtils");
 
 async function renderVerbsByLetter(req, res, next, letter, page) {
     try {
         // Приводим букву к нижнему регистру
         const lowerCaseLetter = letter.toLowerCase();
-
-        // Проверяем, соответствует ли переданная буква алфавиту
-        if (!alphabetConfig.letters.includes(lowerCaseLetter)) {
-            const error = new Error('Недопустимая буква. Пожалуйста, выберите букву из алфавита.');
-            error.status = 400;
-            throw error;
-        }
-
-        if (isNaN(page) || page < 1) {
-            const error = new Error('Неверный номер страницы');
-            error.status = 400;
-            throw error;
-        }
+        validateLetter(letter);
+        validatePage(page);
 
         const limit = 10;
         const VerbModel = getVerbModel(lowerCaseLetter);
@@ -27,11 +18,7 @@ async function renderVerbsByLetter(req, res, next, letter, page) {
         const totalVerbs = await VerbModel.countDocuments({ verb: regex });
         const totalPages = Math.ceil(totalVerbs / limit);
 
-        if (page < 1 || page > totalPages) {
-            const error = new Error('Страница не найдена');
-            error.status = 404;
-            throw error;
-        }
+        validatePageRange(page, totalPages);
 
         const skip = (page - 1) * limit;
         // Static verbs on page (alphabet order)

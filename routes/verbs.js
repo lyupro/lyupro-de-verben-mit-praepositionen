@@ -5,6 +5,7 @@ const { getVerbModel, getVerbSentencesModel, getVerbTranslationModel, getVerbSen
 const { getAlphabetWithAvailability, getVerbTranslation, renderVerbs, getVerbData } = require('../utils/verbUtils');
 const { renderVerbsByLetter } = require('../utils/letterUtils');
 const alphabetConfig = require('../config/alphabet');
+const { validateLetter, validateQuery, validateVerbText } = require('../utils/validationUtils');
 
 
 // Маршрут для отображения списка глаголов с пагинацией (по умолчанию - первая страница)
@@ -22,11 +23,7 @@ router.get('/page/:page', (req, res, next) => {
 router.get('/search', async (req, res, next) => {
     try {
         const query = req.query.q.toLowerCase();
-        if (!query) {
-            const error = new Error('Запрос поиска не может быть пустым. Параметр запроса "q" отсутствует или пустой');
-            error.status = 400;
-            throw error;
-        }
+        validateQuery(query);
 
         const verbs = [];
 
@@ -49,11 +46,7 @@ router.get('/search', async (req, res, next) => {
 // Маршрут для отображения глаголов по выбранной букве
 router.get('/letter/:letter', async (req, res, next, page = 1) => {
     const letter = req.params.letter.toUpperCase();
-    if (!alphabetConfig.letters.includes(letter)) {
-        const error = new Error('Некорректная буква алфавита');
-        error.status = 400;
-        throw error;
-    }
+    validateLetter(letter);
 
     renderVerbsByLetter(req, res, next, letter, page);
 });
@@ -61,11 +54,7 @@ router.get('/letter/:letter', async (req, res, next, page = 1) => {
 // Маршрут для отображения глаголов по выбранной букве (указанная страница)
 router.get('/letter/:letter/page/:page', async (req, res, next) => {
     const letter = req.params.letter.toUpperCase();
-    if (!alphabetConfig.letters.includes(letter)) {
-        const error = new Error('Некорректная буква алфавита');
-        error.status = 400;
-        throw error;
-    }
+    validateLetter(letter);
 
     const page = parseInt(req.params.page) || 1;
     renderVerbsByLetter(req, res, next, letter, page);
@@ -75,18 +64,10 @@ router.get('/letter/:letter/page/:page', async (req, res, next) => {
 router.get('/letter/:letter/:verb', async (req, res, next) => {
     try{
         const letter = req.params.letter.toLowerCase();
-        if (!alphabetConfig.letters.includes(letter)) {
-            const error = new Error('Некорректная буква алфавита');
-            error.status = 400;
-            throw error;
-        }
+        validateLetter(letter);
 
         const verbText = req.params.verb;
-        if (!verbText) {
-            const error = new Error('Текст глагола не указан');
-            error.status = 400;
-            throw error;
-        }
+        validateVerbText(verbText);
 
         const verbData = await getVerbData(letter, verbText);
         const { verb, translation, sentences, sentencesTranslation } = verbData;
