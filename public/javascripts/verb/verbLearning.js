@@ -8,26 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const letter = verbContainer.dataset.letter;
             const verb = verbContainer.dataset.verb;
 
-            // Отправляем AJAX-запрос для получения данных о слове
-            fetch(`/verbs/letter/${letter}/${verb}/learn/visually`)
-                .then(response => response.json())
+            fetchVerbData(letter, verb)
                 .then(data => {
                     console.log('verbLearning.js | data: ', data);
-
-                    // Скрываем основное содержимое страницы
-                    verbContainer.style.display = 'none';
-
-                    // Отображаем игровой контейнер
-                    gameContainer.style.display = 'block';
-
-                    // Сбрасываем содержимое игрового контейнера
-                    gameContainer.innerHTML = `
-                        <button id="backBtn" class="btn btn-secondary">Назад</button>
-                        <button id="stopBtn" class="btn btn-danger">Стоп</button>
-                        <div id="cardContainer" class="card-container"></div>
-                    `;
-
-                    // Запускаем игру с полученными данными
+                    hideVerbContainer();
+                    showGameContainer();
+                    resetGameContainer();
                     startGame(data.verb, data.translation);
                 })
                 .catch(error => {
@@ -38,10 +24,31 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    function fetchVerbData(letter, verb) {
+        return fetch(`/verbs/letter/${letter}/${verb}/learn/visually`)
+            .then(response => response.json());
+    }
+
+    function hideVerbContainer() {
+        verbContainer.style.display = 'none';
+    }
+
+    function showGameContainer() {
+        gameContainer.style.display = 'block';
+    }
+
+    function resetGameContainer() {
+        gameContainer.innerHTML = `
+            <!--<button id="backBtn" class="btn btn-secondary">Назад</button>-->
+            <button id="stopBtn" class="btn btn-danger">Стоп</button>
+            <div id="cardContainer" class="card-container"></div>
+        `;
+    }
+
     function startGame(verb, translation) {
         const gameContainer = document.getElementById('gameContainer');
         const cardContainer = document.getElementById('cardContainer');
-        const backBtn = document.getElementById('backBtn');
+        //const backBtn = document.getElementById('backBtn');
         const stopBtn = document.getElementById('stopBtn');
 
         let currentWord = verb;
@@ -87,29 +94,31 @@ document.addEventListener('DOMContentLoaded', () => {
         function endGame() {
             clearInterval(timer);
             clearTimeout(waveTimer);
+            showEndGameScreen();
+            addEndGameEventListeners(verb, translation);
+        }
 
+        function showEndGameScreen() {
             gameContainer.innerHTML = `
                 <h3>Упражнение завершено!</h3>
                 <button id="restartBtn" class="btn btn-primary">Повторить</button>
                 <button id="exitBtn" class="btn btn-secondary">Выйти</button>
             `;
+        }
 
+        function addEndGameEventListeners(verb, translation) {
             const restartBtn = document.getElementById('restartBtn');
             const exitBtn = document.getElementById('exitBtn');
 
             restartBtn.addEventListener('click', () => {
                 currentWaveIndex = 0;
-                gameContainer.innerHTML = `
-                    <button id="backBtn" class="btn btn-secondary">Назад</button>
-                    <button id="stopBtn" class="btn btn-danger">Стоп</button>
-                    <div id="cardContainer" class="card-container"></div>
-                `;
+                resetGameContainer();
                 startGame(verb, translation);
             });
 
             exitBtn.addEventListener('click', () => {
-                gameContainer.style.display = 'none';
-                verbContainer.style.display = 'block';
+                hideGameContainer();
+                showVerbContainer();
             });
         }
 
@@ -119,19 +128,33 @@ document.addEventListener('DOMContentLoaded', () => {
             endGame();
         }
 
-        if (backBtn) {
-            backBtn.addEventListener('click', () => {
-                clearInterval(timer);
-                clearTimeout(waveTimer);
-                gameContainer.style.display = 'none';
-                verbContainer.style.display = 'block';
-            });
+        //function addBackButtonEventListener() {
+        //    if (backBtn) {
+        //        backBtn.addEventListener('click', () => {
+        //            clearInterval(timer);
+        //            clearTimeout(waveTimer);
+        //            hideGameContainer();
+        //            showVerbContainer();
+        //        });
+        //    }
+        //}
+
+        function addStopButtonEventListener() {
+            if (stopBtn) {
+                stopBtn.addEventListener('click', stopGame);
+            }
         }
 
-        if (stopBtn) {
-            stopBtn.addEventListener('click', stopGame);
-        }
-
+        //addBackButtonEventListener();
+        addStopButtonEventListener();
         startWave();
+    }
+
+    function hideGameContainer() {
+        gameContainer.style.display = 'none';
+    }
+
+    function showVerbContainer() {
+        verbContainer.style.display = 'block';
     }
 });
