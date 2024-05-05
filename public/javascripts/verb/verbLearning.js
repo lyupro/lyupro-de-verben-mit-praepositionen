@@ -20,6 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Отображаем игровой контейнер
                     gameContainer.style.display = 'block';
 
+                    // Сбрасываем содержимое игрового контейнера
+                    gameContainer.innerHTML = `
+                        <button id="backBtn" class="btn btn-secondary">Назад</button>
+                        <button id="stopBtn" class="btn btn-danger">Стоп</button>
+                        <div id="cardContainer" class="card-container"></div>
+                    `;
+
                     // Запускаем игру с полученными данными
                     startGame(data.verb, data.translation);
                 })
@@ -35,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const gameContainer = document.getElementById('gameContainer');
         const cardContainer = document.getElementById('cardContainer');
         const backBtn = document.getElementById('backBtn');
+        const stopBtn = document.getElementById('stopBtn');
 
         let currentWord = verb;
         let isShowingVerb = true;
@@ -53,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let currentWaveIndex = 0;
         let timer;
+        let waveTimer;
 
         function startWave() {
             const { duration, interval } = waves[currentWaveIndex];
@@ -63,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 cardContainer.textContent = currentWord;
             }, interval);
 
-            setTimeout(() => {
+            waveTimer = setTimeout(() => {
                 clearInterval(timer);
                 currentWaveIndex++;
 
@@ -76,18 +85,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function endGame() {
+            clearInterval(timer);
+            clearTimeout(waveTimer);
+
             gameContainer.innerHTML = `
-            <h3>Упражнение завершено!</h3>
-            <button id="restartBtn" class="btn btn-primary">Повторить</button>
-            <button id="exitBtn" class="btn btn-secondary">Выйти</button>
-        `;
+                <h3>Упражнение завершено!</h3>
+                <button id="restartBtn" class="btn btn-primary">Повторить</button>
+                <button id="exitBtn" class="btn btn-secondary">Выйти</button>
+            `;
 
             const restartBtn = document.getElementById('restartBtn');
             const exitBtn = document.getElementById('exitBtn');
 
             restartBtn.addEventListener('click', () => {
                 currentWaveIndex = 0;
-                startWave();
+                gameContainer.innerHTML = `
+                    <button id="backBtn" class="btn btn-secondary">Назад</button>
+                    <button id="stopBtn" class="btn btn-danger">Стоп</button>
+                    <div id="cardContainer" class="card-container"></div>
+                `;
+                startGame(verb, translation);
             });
 
             exitBtn.addEventListener('click', () => {
@@ -96,11 +113,24 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        backBtn.addEventListener('click', () => {
+        function stopGame() {
             clearInterval(timer);
-            gameContainer.style.display = 'none';
-            verbContainer.style.display = 'block';
-        });
+            clearTimeout(waveTimer);
+            endGame();
+        }
+
+        if (backBtn) {
+            backBtn.addEventListener('click', () => {
+                clearInterval(timer);
+                clearTimeout(waveTimer);
+                gameContainer.style.display = 'none';
+                verbContainer.style.display = 'block';
+            });
+        }
+
+        if (stopBtn) {
+            stopBtn.addEventListener('click', stopGame);
+        }
 
         startWave();
     }
