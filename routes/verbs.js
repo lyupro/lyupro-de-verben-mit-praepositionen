@@ -45,7 +45,7 @@ router.get('/search', async (req, res, next) => {
 
 // Маршрут для отображения глаголов по выбранной букве
 router.get('/letter/:letter', async (req, res, next, page = 1) => {
-    const letter = req.params.letter.toUpperCase();
+    const letter = req.params.letter.toLowerCase();
     validateLetter(letter);
 
     renderVerbsByLetter(req, res, next, letter, page);
@@ -53,7 +53,7 @@ router.get('/letter/:letter', async (req, res, next, page = 1) => {
 
 // Маршрут для отображения глаголов по выбранной букве (указанная страница)
 router.get('/letter/:letter/page/:page', async (req, res, next) => {
-    const letter = req.params.letter.toUpperCase();
+    const letter = req.params.letter.toLowerCase();
     validateLetter(letter);
 
     const page = parseInt(req.params.page) || 1;
