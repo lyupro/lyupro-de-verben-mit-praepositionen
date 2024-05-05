@@ -85,4 +85,18 @@ router.get('/letter/:letter/:verb', async (req, res, next) => {
     }
 });
 
+router.get('/letter/:letter/:verb/learn/visually', async (req, res, next) => {
+    try {
+        const letter = req.params.letter.toLowerCase();
+        const verbText = req.params.verb;
+
+        const verbData = await getVerbData(letter, verbText);
+        const { verb, translation } = verbData;
+
+        res.json({ verb: verb.verb, translation: translation.translations[0] });
+    } catch (error) {
+        next(error);
+    }
+});
+
 module.exports = router;

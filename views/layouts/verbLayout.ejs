@@ -6,17 +6,30 @@
     <link rel="stylesheet" href="/stylesheets/header.css">
     <link rel="stylesheet" href="/stylesheets/layout.css">
     <!-- Добавьте дополнительные стили для страницы глагола -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 <div class="container">
     <%- include('../partials/header') %>
     <h1><%= pageHeader %></h1>
 
-    <%- include('../partials/verb/verbDetails', { verb, translation, sentences, sentencesTranslation }) %>
+    <div class="verbContainer" data-letter="<%= verb.verb.charAt(0).toLowerCase() %>" data-verb="<%= verb.verb %>">
+        <%- include('../partials/verb/verbDetails', { verb, translation, sentences, sentencesTranslation }) %>
+
+        <button id="startLearningBtn" class="btn btn-primary">
+            <i class="fas fa-eye"></i> Учить слово
+        </button>
+    </div>
+
+    <div id="gameContainer" style="display: none;">
+        <button id="backBtn" class="btn btn-secondary">Назад</button>
+        <div id="cardContainer" class="card-container"></div>
+    </div>
 
     <%- include('../partials/verb/checkSentence', { verb }) %>
 </div>
 
 <script src="/javascripts/checkSentence.js"></script>
+<script src="/javascripts/verb/verbLearning.js"></script>
 </body>
 </html>
