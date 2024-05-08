@@ -31,3 +31,15 @@
     font-style: italic;
     color: #888;
 }
+
+.verbDetails input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.verbDetails #checkResult {
+    margin-top: 10px;
+    font-weight: bold;
+}
