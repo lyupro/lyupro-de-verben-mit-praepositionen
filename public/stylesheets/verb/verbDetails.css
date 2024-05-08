@@ -1,0 +1,33 @@
+/* public/stylesheets/verb/verbDetails.css */
+
+.verbDetails {
+    margin-bottom: 20px;
+}
+
+.verbDetails h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.verbDetails ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.verbDetails li {
+    margin-bottom: 5px;
+}
+
+.verbDetails .translation {
+    font-style: italic;
+    color: #888;
+}
+
+.verbDetails .sentence {
+    margin-bottom: 10px;
+}
+
+.verbDetails .sentenceTranslation {
+    font-style: italic;
+    color: #888;
+}

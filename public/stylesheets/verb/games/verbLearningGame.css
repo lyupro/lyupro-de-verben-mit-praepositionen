@@ -1,0 +1,49 @@
+/* public/stylesheets/verb/games/verbLearningGame.css */
+
+.verbLearningGame {
+    margin-bottom: 20px;
+}
+
+.verbLearningGame .btn {
+    margin-right: 10px;
+}
+
+.verbLearningGame .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.verbLearningGame .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.verbLearningGame .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.verbLearningGame .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.verbLearningGame .card-container {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.verbLearningGame .endGameScreen {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.verbLearningGame .endGameScreen h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.verbLearningGame .endGameScreen .btn {
+    margin-right: 10px;
+}
