@@ -1,9 +1,8 @@
 // public/javascripts/verb/verbLearning.js
 
-import { startGame, hideGameContainer, showVerbDetails, hideVerbDetails, showGameContainer, resetGameContainer } from './games/verbLearningGameVisually.js';
+import { startGame, hideGameContainer, showVerbDetails, hideVerbDetails, showGameContainer, resetGameContainer, showGameSettings } from './games/verbLearningGameVisually.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    return;
     const startLearningBtn = document.getElementById('startLearningBtn');
     const verbDetails = document.querySelector('.verbDetails');
 
@@ -15,16 +14,20 @@ document.addEventListener('DOMContentLoaded', () => {
             fetchVerbData(letter, verb)
                 .then(data => {
                     console.log('verbLearning.js | data: ', data);
-                    hideVerbDetails();
-                    showGameContainer();
-                    resetGameContainer();
-                    startGame(data.verb, data.translation);
+                    if (data.translation && data.translation.translations) {
+                        hideVerbDetails();
+                        showGameContainer();
+                        resetGameContainer();
+                        showGameSettings(data.verb, data.translation.translations);
+                    } else {
+                        console.error('Отсутствует перевод или варианты перевода');
+                    }
                 })
                 .catch(error => {
                     console.error('Ошибка при получении данных:', error);
                 });
         } else {
-            console.error('Элемент .verb-container не найден');
+            console.error('Элемент .verbDetails не найден');
         }
     });
 

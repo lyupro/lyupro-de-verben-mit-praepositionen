@@ -93,7 +93,7 @@ router.get('/letter/:letter/:verb/learn/visually', async (req, res, next) => {
         const verbData = await getVerbData(letter, verbText);
         const { verb, translation } = verbData;
 
-        res.json({ verb: verb.verb, translation: translation.translations[0] });
+        res.json({ verb: verb.verb, translation });
     } catch (error) {
         next(error);
     }

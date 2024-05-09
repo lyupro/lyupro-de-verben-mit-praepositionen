@@ -1,6 +1,6 @@
 // public/javascripts/verb/games/verbLearningGameVisually.js
 
-export function startGame(verb, translation) {
+export function startGame(verb, translations, selectedTranslation, repetitions) {
     const gameContainer = document.getElementById('gameContainer');
     const cardContainer = document.getElementById('cardContainer');
     //const backBtn = document.getElementById('backBtn');
@@ -29,7 +29,7 @@ export function startGame(verb, translation) {
         const { duration, interval } = waves[currentWaveIndex];
 
         timer = setInterval(() => {
-            currentWord = isShowingVerb ? verb : translation;
+            currentWord = isShowingVerb ? verb : selectedTranslation;
             isShowingVerb = !isShowingVerb;
             cardContainer.textContent = currentWord;
         }, interval);
@@ -49,19 +49,54 @@ export function startGame(verb, translation) {
     function endGame() {
         clearInterval(timer);
         clearTimeout(waveTimer);
-        showEndGameScreen();
-        addEndGameEventListeners(verb, translation);
+
+        repetitions--;
+        if (repetitions > 0) {
+            showEndGameScreen(verb, translations, selectedTranslation, repetitions);
+        } else {
+            showFinalEndGameScreen();
+        }
     }
 
-    function showEndGameScreen() {
+    function showEndGameScreen(verb, translations, selectedTranslation, repetitions) {
         const gameContainer = document.getElementById('gameContainer');
         gameContainer.innerHTML = `
         <div class="endGameScreen">
             <h3>Упражнение завершено!</h3>
+            <p>Осталось повторений: ${repetitions}</p>
             <button id="restartBtn" class="btn btn-primary">Повторить</button>
             <button id="exitBtn" class="btn btn-secondary">Выйти</button>
         </div>
     `;
+
+        const restartBtn = document.getElementById('restartBtn');
+        const exitBtn = document.getElementById('exitBtn');
+
+        restartBtn.addEventListener('click', () => {
+            resetGameContainer();
+            startGame(verb, translations, selectedTranslation, repetitions);
+        });
+
+        exitBtn.addEventListener('click', () => {
+            hideGameContainer();
+            showVerbDetails();
+        });
+    }
+
+    function showFinalEndGameScreen() {
+        const gameContainer = document.getElementById('gameContainer');
+        gameContainer.innerHTML = `
+        <div class="endGameScreen">
+            <h3>Игра окончена!</h3>
+            <button id="exitBtn" class="btn btn-secondary">Выйти</button>
+        </div>
+    `;
+
+        const exitBtn = document.getElementById('exitBtn');
+        exitBtn.addEventListener('click', () => {
+            hideGameContainer();
+            showVerbDetails();
+        });
     }
 
     function addEndGameEventListeners(verb, translation) {
@@ -106,6 +141,42 @@ export function startGame(verb, translation) {
     //addBackButtonEventListener();
     addStopButtonEventListener();
     startWave();
+}
+
+export function showGameSettings(verb, translations) {
+    const gameContainer = document.getElementById('gameContainer');
+
+    let translationOptions = '';
+    translations.forEach((translation, index) => {
+        translationOptions += `<option value="${translation}">${translation}</option>`;
+    });
+
+    gameContainer.innerHTML = `
+        <div class="gameSettings">
+            <h3>Настройки игры</h3>
+            <div>
+                <label for="translationSelect">Выберите перевод:</label>
+                <select id="translationSelect">${translationOptions}</select>
+            </div>
+            <div>
+                <label for="repetitionsInput">Количество повторений:</label>
+                <input type="number" id="repetitionsInput" min="1" max="10" value="1">
+            </div>
+            <button id="startGameBtn" class="btn btn-primary">Начать игру</button>
+        </div>
+    `;
+
+    const startGameBtn = document.getElementById('startGameBtn');
+    startGameBtn.addEventListener('click', () => {
+        const translationSelect = document.getElementById('translationSelect');
+        const repetitionsInput = document.getElementById('repetitionsInput');
+
+        const selectedTranslation = translationSelect.value;
+        const repetitions = parseInt(repetitionsInput.value, 10);
+
+        resetGameContainer();
+        startGame(verb, translations, selectedTranslation, repetitions);
+    });
 }
 
 export function showGameContainer() {
