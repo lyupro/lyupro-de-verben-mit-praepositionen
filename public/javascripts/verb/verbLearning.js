@@ -1,11 +1,11 @@
 // public/javascripts/verb/verbLearning.js
 
-import { startGame, hideGameContainer, showVerbDetails, showGameContainer, resetGameContainer } from './games/verbLearningGameVisually.js';
+import { startGame, hideGameContainer, showVerbDetails, hideVerbDetails, showGameContainer, resetGameContainer } from './games/verbLearningGameVisually.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+    return;
     const startLearningBtn = document.getElementById('startLearningBtn');
     const verbDetails = document.querySelector('.verbDetails');
-    const gameContainer = document.getElementById('gameContainer');
 
     startLearningBtn.addEventListener('click', () => {
         if (verbDetails) {
@@ -31,9 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
     function fetchVerbData(letter, verb) {
         return fetch(`/verbs/letter/${letter}/${verb}/learn/visually`)
             .then(response => response.json());
-    }
-
-    function hideVerbDetails() {
-        verbDetails.style.display = 'none';
     }
 });

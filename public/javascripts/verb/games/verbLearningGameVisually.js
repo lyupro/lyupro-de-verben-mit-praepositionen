@@ -108,19 +108,24 @@ export function startGame(verb, translation) {
     startWave();
 }
 
-export function hideGameContainer() {
-    const gameContainer = document.getElementById('gameContainer');
-    gameContainer.style.display = 'none';
-}
-
-export function showVerbDetails() {
-    const verbDetails = document.querySelector('.verbDetails');
-    verbDetails.style.display = 'block';
-}
-
 export function showGameContainer() {
+    const verbLearningGameContainer = document.getElementById('verbLearningGameContainer');
+    const startLearningBtn = document.getElementById('startLearningBtn');
     const gameContainer = document.getElementById('gameContainer');
+
+    startLearningBtn.style.display = 'none';
     gameContainer.style.display = 'block';
+    verbLearningGameContainer.style.display = 'block';
+}
+
+export function hideGameContainer() {
+    const verbLearningGameContainer = document.getElementById('verbLearningGameContainer');
+    const gameContainer = document.getElementById('gameContainer');
+    const startLearningBtn = document.getElementById('startLearningBtn');
+
+    gameContainer.style.display = 'none';
+    verbLearningGameContainer.style.display = 'block';
+    startLearningBtn.style.display = 'block';
 }
 
 export function resetGameContainer() {
@@ -130,4 +135,17 @@ export function resetGameContainer() {
         <button id="stopBtn" class="btn btn-danger">Стоп</button>
         <div id="cardContainer" class="card-container"></div>
     `;
+}
+
+export function showVerbDetails() {
+    const verbDetails = document.querySelector('.verbDetails');
+    const startLearningBtn = document.getElementById('startLearningBtn');
+
+    verbDetails.style.display = 'block';
+    startLearningBtn.style.display = 'block';
+}
+
+export function hideVerbDetails() {
+    const verbDetails = document.querySelector('.verbDetails');
+    verbDetails.style.display = 'none';
 }
