@@ -5,17 +5,15 @@
     verbScripts: verbScripts,
     content: `
         <div class="container">
-        <h1>${pageHeader}</h1>
+            <h1>${pageHeader}</h1>
             <div class="verbDetails" data-letter="${verb.verb.charAt(0).toLowerCase()}" data-verb="${verb.verb}">
                 ${include('../partials/verb/verbDetails', { verb: verb, translation: translation, sentences: sentences, sentencesTranslation: sentencesTranslation })}
             </div>
             <div class="verbLearningGame" id="verbLearningGameContainer">
-                <button id="startLearningBtn" class="btn btn-primary">
-                <i class="fas fa-eye"></i> Учить слово
-            </button>
-            <div id="gameContainer" style="display: none;">
-                <button id="stopBtn" class="btn btn-danger">Стоп</button>
-                <div id="cardContainer" class="card-container"></div>
+                <div id="gameContainer" style="display: none;">
+                    <button id="stopBtn" class="btn btn-danger">Стоп</button>
+                    <button id="backBtn" class="btn btn-secondary">Назад</button>
+                    <div id="cardContainer" class="card-container"></div>
                 </div>
             </div>
             <div class="verbCheckSentence">
