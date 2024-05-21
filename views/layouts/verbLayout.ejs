@@ -1,42 +1,26 @@
 <!-- views/layouts/verbLayout.ejs -->
-<!DOCTYPE html>
-<html>
-<head>
-    <title><%= pageTitle %></title>
-    <link rel="stylesheet" href="/stylesheets/header.css">
-    <link rel="stylesheet" href="/stylesheets/layout.css">
-    <link rel="stylesheet" href="/stylesheets/verb/verbDetails.css">
-    <link rel="stylesheet" href="/stylesheets/verb/games/verbLearningGame.css">
-    <!-- Добавьте дополнительные стили для страницы глагола -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <%- include('../partials/header') %>
-    <div class="container">
-        <h1><%= pageHeader %></h1>
-
-        <div class="verbDetails" data-letter="<%= verb.verb.charAt(0).toLowerCase() %>" data-verb="<%= verb.verb %>">
-            <%- include('../partials/verb/verbDetails', { verb, translation, sentences, sentencesTranslation }) %>
-        </div>
-
-        <div class="verbLearningGame" id="verbLearningGameContainer">
-            <button id="startLearningBtn" class="btn btn-primary">
+<%- include('../layout', {
+    title: title,
+    verbStyles: verbStyles,
+    verbScripts: verbScripts,
+    content: `
+        <div class="container">
+        <h1>${pageHeader}</h1>
+            <div class="verbDetails" data-letter="${verb.verb.charAt(0).toLowerCase()}" data-verb="${verb.verb}">
+                ${include('../partials/verb/verbDetails', { verb: verb, translation: translation, sentences: sentences, sentencesTranslation: sentencesTranslation })}
+            </div>
+            <div class="verbLearningGame" id="verbLearningGameContainer">
+                <button id="startLearningBtn" class="btn btn-primary">
                 <i class="fas fa-eye"></i> Учить слово
             </button>
-
             <div id="gameContainer" style="display: none;">
-                <!--<button id="backBtn" class="btn btn-secondary">Назад</button>-->
                 <button id="stopBtn" class="btn btn-danger">Стоп</button>
                 <div id="cardContainer" class="card-container"></div>
+                </div>
+            </div>
+            <div class="verbCheckSentence">
+                ${include('../partials/verb/checkSentence', { verb: verb })}
             </div>
         </div>
-
-        <div class="verbCheckSentence">
-            <%- include('../partials/verb/checkSentence', { verb }) %>
-        </div>
-    </div>
-
-    <script src="/javascripts/checkSentence.js"></script>
-    <script src="/javascripts/dist/verbLearning.bundle.js"></script>
-</body>
-</html>
+    `
+}) %>

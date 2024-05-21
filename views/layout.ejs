@@ -1,12 +1,52 @@
 <!-- views/layout.ejs -->
 <!DOCTYPE html>
+<html lang="ru">
 <html>
-<head>
-    <!-- ... -->
-    <link rel="stylesheet" href="/stylesheets/header.css">
-</head>
-<body>
-<%- include('partials/header') %>
-<!-- ... -->
-</body>
+    <head>
+        <title><%= title %></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/stylesheets/header.css">
+        <link rel="stylesheet" href="/stylesheets/layout.css">
+        <link rel="stylesheet" href="/stylesheets/index.css">
+        <link rel="stylesheet" href="/stylesheets/footer.css">
+        <link rel="stylesheet" href="/stylesheets/dark-theme.css" id="dark-theme-link" disabled>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <% if (typeof indexStyles !== 'undefined' && indexStyles) { %>
+            <link rel="stylesheet" href="/stylesheets/index.css">
+        <% } %>
+        <% if (typeof verbStyles !== 'undefined' && verbStyles) { %>
+            <link rel="stylesheet" href="/stylesheets/verb/verbDetails.css">
+            <link rel="stylesheet" href="/stylesheets/verb/games/verbLearningGame.css">
+            <link rel="stylesheet" href="/stylesheets/verb/checkSentence.css">
+        <% } %>
+        <% if (typeof verbsStyles !== 'undefined' && verbsStyles) { %>
+            <link rel="stylesheet" href="/stylesheets/verbs/alphabet.css">
+            <link rel="stylesheet" href="/stylesheets/verbs/card.css">
+            <link rel="stylesheet" href="/stylesheets/verbs/pagination.css">
+            <link rel="stylesheet" href="/stylesheets/verbs/search.css">
+            <link rel="stylesheet" href="/stylesheets/verbs/verbs.css">
+        <% } %>
+        <% if (typeof aboutStyles !== 'undefined' && aboutStyles) { %>
+            <link rel="stylesheet" href="/stylesheets/about.css">
+        <% } %>
+    </head>
+    <body>
+        <%- include('partials/header') %>
+        <div class="container">
+            <%- content %>
+        </div>
+        <%- include('partials/footer') %>
+        <script src="/javascripts/themeSwitch.js"></script>
+        <% if (typeof verbScripts !== 'undefined' && verbScripts) { %>
+            <script src="/javascripts/checkSentence.js"></script>
+            <script src="/javascripts/dist/verbLearning.bundle.js"></script>
+        <% } %>
+        <% if (typeof verbsScripts !== 'undefined' && verbsScripts) { %>
+            <script src="/javascripts/search.js"></script>
+            <script src="/javascripts/pagination.js"></script>
+            <script src="/javascripts/verbCard.js"></script>
+            <script src="/javascripts/alphabet.js"></script>
+        <% } %>
+    </body>
 </html>

@@ -34,7 +34,7 @@ connectToDatabase()
 
 // Маршрут для стартовой страницы
 app.get('/', (req, res) => {
-    res.render('index', { title: 'Онлайн тренажер по немецкому языку' });
+    res.render('index', { title: 'Онлайн тренажер по немецкому языку', indexStyles: true });
 });
 
 // Маршрут для работы с глаголами
@@ -44,7 +44,7 @@ app.use('/verb', verbRoute);
 app.use('/verbs', verbsRoute);
 
 app.get('/about', (req, res) => {
-    res.render('about', { title: 'О Нас!' });
+    res.render('about', { title: 'О Нас!', aboutStyles: true });
 });
 
 
@@ -58,8 +58,9 @@ app.use((err, req, res, next) => {
 
     // Рендерим страницу ошибки и передаем информацию об ошибке
     res.render('error', {
+        title: 'Ошибка',
         message: err.message,
-        error: err
+        error: process.env.APP_ENV === 'development' && process.env.APP_DEBUG === 'true' ? err : {},
     });
 });
 

@@ -1,14 +1,13 @@
 <!-- views/error.ejs -->
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Ошибка</title>
-  </head>
-  <body>
-    <h1>Ошибка</h1>
-    <p><%= message %></p>
-    <p><%= error.status %></p>
-    <pre><%= error.stack %></pre>
-    <a href="/">Вернуться на главную страницу</a>
-  </body>
-</html>
+<%- include('layout', {
+    title: 'Ошибка',
+    content: `
+        <div class="container">
+            <h1>Ошибка</h1>
+            <p>${message}</p>
+            <p>${error.status}</p>
+            <pre>${message}</pre>
+            <a href="/">Вернуться на главную страницу</a>
+        </div>
+    `
+}) %>
