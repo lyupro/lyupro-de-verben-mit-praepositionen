@@ -1,14 +1,24 @@
 <!-- views/partials/header.ejs -->
 <header>
     <nav class="container">
-        <ul>
-            <li><strong>Deutsch Trainer</strong></li>
-        </ul>
-        <ul>
-            <li><a href="/">Главная</a></li>
-            <li><a href="/verb">Случайный Глагол</a></li>
-            <li><a href="/verbs">Глаголы</a></li>
-            <li><a href="/about">О нас</a></li>
-        </ul>
+        <div class="header-left">
+            <ul>
+                <li><strong>Deutsch Trainer</strong></li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/verb">Случайный Глагол</a></li>
+                <li><a href="/verbs">Глаголы</a></li>
+                <li><a href="/about">О нас</a></li>
+            </ul>
+            <div class="theme-switch-container">
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-switch-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
     </nav>
 </header>

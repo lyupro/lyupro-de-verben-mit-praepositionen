@@ -1,0 +1,120 @@
+/* public/stylesheets/dark-theme.css */
+
+
+body {
+    background-color: #2C2B28;
+    color: #D9D9D9;
+}
+
+header {
+    background-color: #1F1E1C;
+}
+
+nav ul li a {
+    color: #D9D9D9;
+}
+
+nav ul li a:hover {
+    background-color: #3C3B38;
+}
+
+.theme-switch .slider {
+    background-color: #3C3B38;
+}
+
+.theme-switch input:checked + .slider {
+    background-color: #2C2B28;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #F0F0F0;
+}
+
+.hero {
+    background-color: #2C2B28;
+}
+
+.hero h1 {
+    color: #F0F0F0;
+}
+
+.hero p {
+    color: #D9D9D9;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: #F0F0F0;
+    border-color: #4CAF50;
+}
+
+.btn:hover {
+    background-color: #3E8E41;
+    border-color: #3E8E41;
+}
+
+.btn-primary {
+    background-color: #2E7D32;
+    border-color: #2E7D32;
+}
+
+.btn-primary:hover {
+    background-color: #1B5E20;
+    border-color: #1B5E20;
+}
+
+.btn-danger {
+    background-color: #C62828;
+    border-color: #C62828;
+}
+
+.btn-danger:hover {
+    background-color: #B71C1C;
+    border-color: #B71C1C;
+}
+
+.btn-secondary {
+    background-color: #3C3B38;
+    border-color: #3C3B38;
+}
+
+.btn-secondary:hover {
+    bac    border-color: #2C2B28;
+}
+
+.verbLearningGame .card-container {
+    background-color: #1F1E1C;
+    color: #D9D9D9;
+}
+
+.verbDetails {
+    background-color: #1F1E1C;
+    color}
+
+.verbDetails .translation,
+.verbDetails .sentenceTranslation {
+    color: #BDBDBD;
+}
+
+.verbCheckSentence input[type="text"] {
+    background-color: #3C3B38;
+    color: #D9D9D9;
+    border-color: #3C3B38;
+}
+
+.verbCheckSentence #checkResult {
+    color: #D9D9D9;
+}
+
+footer {
+    background-color: #1F1E1C;
+    color: #D9D9D9;
+}
+
+footer a {
+    color: #D9D9D9;
+}
+
+footer a:hover {
+    color: #F0F0F0;
+}

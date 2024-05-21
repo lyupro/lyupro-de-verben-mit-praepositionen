@@ -15,25 +15,35 @@ header {
     z-index: 100;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
+.header-left ul,
+.header-right ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right ul {
+    margin-right: 20px;
+}
+
+.header-right ul li {
     display: inline;
     margin-right: 10px;
 }
 
-nav ul li:last-child {
+.header-right ul li:last-child {
     margin-right: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul li a {
@@ -49,4 +59,69 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #0056b3;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li .theme-switch-container {
+    margin-left: 10px;
+}
+
+.theme-switch-container {
+    margin-left: 10px;
+}
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2C2B28;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.theme-switch .slider {
+    background-color: #ccc;
+}
+
+.theme-switch input:checked + .slider {
+    background-color: #2196F3;
 }

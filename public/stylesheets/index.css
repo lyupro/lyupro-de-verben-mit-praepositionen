@@ -1,7 +1,7 @@
 /* public/stylesheets/index.css */
 
 .hero {
-    background-color: #f0f0f0;
+    /*background-color: #f0f0f0;*/
     padding: 50px 0;
     text-align: center;
 }
@@ -46,18 +46,18 @@
     margin-top: 20px;
 }
 
-footer {
-    background-color: #f0f0f0;
-    padding: 20px 0;
-    text-align: center;
-}
+/*footer {*/
+/*    background-color: #f0f0f0;*/
+/*    padding: 20px 0;*/
+/*    text-align: center;*/
+/*}*/
 
-footer ul {
-    list-style: none;
-    padding: 0;
-}
+/*footer ul {*/
+/*    list-style: none;*/
+/*    padding: 0;*/
+/*}*/
 
-footer ul li {
-    display: inline;
-    margin: 0 10px;
-}
+/*footer ul li {*/
+/*    display: inline;*/
+/*    margin: 0 10px;*/
+/*}*/
