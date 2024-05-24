@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function fetchVerbData(letter, verb) {
-        return fetch(`/verbs/letter/${letter}/${verb}/learn/visually`)
+        return fetch(`/verbs/${letter}/${verb}/learn/visually`)
             .then(response => response.json());
     }
 });

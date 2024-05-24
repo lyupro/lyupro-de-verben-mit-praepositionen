@@ -14,7 +14,7 @@ router.get('/', (req, res, next) => {
 });
 
 // Маршрут для отображения списка глаголов с пагинацией (указанная страница)
-router.get('/page/:page', (req, res, next) => {
+router.get('/:page', (req, res, next) => {
     const page = parseInt(req.params.page);
     renderVerbs(req, res, next, page);
 });
@@ -44,7 +44,7 @@ router.get('/search', async (req, res, next) => {
 });
 
 // Маршрут для отображения глаголов по выбранной букве
-router.get('/letter/:letter', async (req, res, next, page = 1) => {
+router.get('/:letter', async (req, res, next, page = 1) => {
     const letter = req.params.letter.toLowerCase();
     validateLetter(letter);
 
@@ -52,7 +52,7 @@ router.get('/letter/:letter', async (req, res, next, page = 1) => {
 });
 
 // Маршрут для отображения глаголов по выбранной букве (указанная страница)
-router.get('/letter/:letter/page/:page', async (req, res, next) => {
+router.get('/:letter/:page', async (req, res, next) => {
     const letter = req.params.letter.toLowerCase();
     validateLetter(letter);
 
@@ -61,7 +61,7 @@ router.get('/letter/:letter/page/:page', async (req, res, next) => {
 });
 
 // Маршрут для отображения выбранного глагола
-router.get('/letter/:letter/:verb', async (req, res, next) => {
+router.get('/:letter/:verb', async (req, res, next) => {
     try{
         const letter = req.params.letter.toLowerCase();
         validateLetter(letter);
@@ -85,7 +85,7 @@ router.get('/letter/:letter/:verb', async (req, res, next) => {
     }
 });
 
-router.get('/letter/:letter/:verb/learn/visually', async (req, res, next) => {
+router.get('/:letter/:verb/learn/visually', async (req, res, next) => {
     try {
         const letter = req.params.letter.toLowerCase();
         const verbText = req.params.verb;

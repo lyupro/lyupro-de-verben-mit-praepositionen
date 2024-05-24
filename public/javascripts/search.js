@@ -9,7 +9,7 @@ function displaySearchResults(verbs) {
         verbs.forEach(verb => {
             const listItem = document.createElement('li');
             const link = document.createElement('a');
-            link.href = `/verbs/letter/${verb.verb.charAt(0).toLowerCase()}/${verb.verb}`;
+            link.href = `/verbs/${verb.verb.charAt(0).toLowerCase()}/${verb.verb}`;
             link.textContent = `${verb.verb} - ${verb.translation}`;
             listItem.appendChild(link);
             resultList.appendChild(listItem);

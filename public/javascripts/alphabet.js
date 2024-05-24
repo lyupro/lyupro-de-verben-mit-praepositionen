@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 .catch(error => console.error('Error loading verbs:', error));
         } else {
             // Если нажата другая буква, загружаем страницу с глаголами по букве
-            fetch(`/verbs/letter/${letter}/page/${page}`)
+            fetch(`/verbs/${letter}/${page}`)
                 .then(response => response.text())
                 .then(html => {
                     const parser = new DOMParser();
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         paginationContainer.innerHTML = doc.querySelector('.pagination').innerHTML;
                         titleElement.textContent = doc.querySelector('title').textContent;
                         headerElement.textContent = doc.querySelector('h1').textContent;
-                        history.pushState(null, null, `/verbs/letter/${letter}/page/${page}`);
+                        history.pushState(null, null, `/verbs/${letter}/${page}`);
                         currentLetter = letter;
 
                         // Обновляем обработчики событий для пагинации
