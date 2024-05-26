@@ -1,162 +1,452 @@
 [
     {
         "verb_id": 1,
-        "sentences":
-        [
-            "Ich jage im Wald.",
-            "Sie jagt das Wild.",
-            "Wir jagen auf dem Land.",
-            "Du jagst geschickt.",
-            "Ihr jagt in der Dämmerung.",
-            "Sie jagen gemeinsam.",
-            "Jagst du auch gerne?",
-            "Jagen Sie alleine?",
-            "Jagen wir zusammen?",
-            "Jagen ist eine alte Tradition."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich jage im Wald."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie jagt das Wild."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir jagen auf dem Land."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du jagst geschickt."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr jagt in der Dämmerung."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie jagen gemeinsam."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Jagst du auch gerne?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Jagen Sie alleine?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Jagen wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Jagen ist eine alte Tradition."
+            }
         ]
     },
     {
         "verb_id": 2,
-        "sentences":
-        [
-            "Ich jammere oft über mein Schicksal.",
-            "Sie jammert über ihre Arbeit.",
-            "Wir jammern über das Wetter.",
-            "Du jammerst immer.",
-            "Ihr jammert zu viel.",
-            "Sie jammern über die Politik.",
-            "Jammerst du auch manchmal?",
-            "Jammern Sie über Ihre Situation?",
-            "Jammern wir gemeinsam?",
-            "Jammern ist nicht produktiv."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich jammere oft über mein Schicksal."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie jammert über ihre Arbeit."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir jammern über das Wetter."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du jammerst immer."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr jammert zu viel."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie jammern über die Politik."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Jammerst du auch manchmal?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Jammern Sie über Ihre Situation?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Jammern wir gemeinsam?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Jammern ist nicht produktiv."
+            }
         ]
     },
     {
         "verb_id": 3,
-        "sentences":
-        [
-            "Ich jubele vor Freude.",
-            "Sie jubelt über den Sieg.",
-            "Wir jubeln laut.",
-            "Du jubelst leise.",
-            "Ihr jubelt ausgelassen.",
-            "Sie jubeln über das Ergebnis.",
-            "Jubelst du auch?",
-            "Jubeln Sie über das Ereignis?",
-            "Jubeln wir zusammen?",
-            "Jubeln macht Spaß."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich jubele vor Freude."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie jubelt über den Sieg."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir jubeln laut."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du jubelst leise."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr jubelt ausgelassen."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie jubeln über das Ergebnis."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Jubelst du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Jubeln Sie über das Ereignis?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Jubeln wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Jubeln macht Spaß."
+            }
         ]
     },
     {
         "verb_id": 4,
-        "sentences":
-        [
-            "Ich jodele in den Bergen.",
-            "Sie jodelt fröhlich.",
-            "Wir jodeln traditionelle Lieder.",
-            "Du jodelst gerne.",
-            "Ihr jodelt auf Festen.",
-            "Sie jodeln zur Musik.",
-            "Jodelst du auch?",
-            "Jodeln Sie oft?",
-            "Jodeln wir zusammen?",
-            "Jodeln ist ein Brauch."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich jodele in den Bergen."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie jodelt fröhlich."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir jodeln traditionelle Lieder."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du jodelst gerne."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr jodelt auf Festen."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie jodeln zur Musik."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Jodelst du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Jodeln Sie oft?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Jodeln wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Jodeln ist ein Brauch."
+            }
         ]
     },
     {
         "verb_id": 5,
-        "sentences":
-        [
-            "Ich jongliere mit Bällen.",
-            "Sie jongliert geschickt.",
-            "Wir jonglieren mit verschiedenen Gegenständen.",
-            "Du jonglierst gut.",
-            "Ihr jongliert zusammen.",
-            "Sie jonglieren auf der Bühne.",
-            "Jonglierst du auch?",
-            "Jonglieren Sie gerne?",
-            "Jonglieren wir zusammen?",
-            "Jonglieren erfordert Übung."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich jongliere mit Bällen."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie jongliert geschickt."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir jonglieren mit verschiedenen Gegenständen."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du jonglierst gut."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr jongliert zusammen."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie jonglieren auf der Bühne."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Jonglierst du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Jonglieren Sie gerne?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Jonglieren wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Jonglieren erfordert Übung."
+            }
         ]
     },
     {
         "verb_id": 6,
-        "sentences":
-        [
-            "Ich jucke mich am Arm.",
-            "Sie juckt sich am Kopf.",
-            "Wir jucken uns nach dem Spaziergang.",
-            "Du juckst dich ständig.",
-            "Ihr juckt euch am Rücken.",
-            "Sie jucken sich am Bein.",
-            "Juckst du dich auch?",
-            "Jucken Sie oft?",
-            "Jucken wir uns zusammen?",
-            "Jucken kann sehr unangenehm sein."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich jucke mich am Arm."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie juckt sich am Kopf."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir jucken uns nach dem Spaziergang."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du juckst dich ständig."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr juckt euch am Rücken."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie jucken sich am Bein."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Juckst du dich auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Jucken Sie oft?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Jucken wir uns zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Jucken kann sehr unangenehm sein."
+            }
         ]
     },
     {
         "verb_id": 7,
-        "sentences":
-        [
-            "Ich justiere die Maschine.",
-            "Sie justiert das Fernglas.",
-            "Wir justieren die Kamera.",
-            "Du justierst das Mikroskop.",
-            "Ihr justiert das Teleskop.",
-            "Sie justieren das Instrument.",
-            "Justierst du auch gerne?",
-            "Justieren Sie die Einstellungen?",
-            "Justieren wir gemeinsam?",
-            "Justieren ist wichtig für die Genauigkeit."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich justiere die Maschine."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie justiert das Fernglas."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir justieren die Kamera."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du justierst das Mikroskop."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr justiert das Teleskop."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie justieren das Instrument."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Justierst du auch gerne?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Justieren Sie die Einstellungen?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Justieren wir gemeinsam?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Justieren ist wichtig für die Genauigkeit."
+            }
         ]
     },
     {
         "verb_id": 8,
-        "sentences":
-        [
-            "Ich jauchze vor Glück.",
-            "Sie jauchzt vor Freude.",
-            "Wir jauchzen laut.",
-            "Du jauchzt vor Begeisterung.",
-            "Ihr jauchzt vor Erleichterung.",
-            "Sie jauchzen vor Aufregung.",
-            "Jauchzt du auch manchmal?",
-            "Jauchzen Sie vor Freude?",
-            "Jauchzen wir zusammen?",
-            "Jauchzen ist Ausdruck von Gefühlen."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich jauchze vor Glück."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie jauchzt vor Freude."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir jauchzen laut."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du jauchzt vor Begeisterung."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr jauchzt vor Erleichterung."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie jauchzen vor Aufregung."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Jauchzt du auch manchmal?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Jauchzen Sie vor Freude?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Jauchzen wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Jauchzen ist Ausdruck von Gefühlen."
+            }
         ]
     },
     {
         "verb_id": 9,
-        "sentences":
-        [
-            "Ich jubiliere über den Erfolg.",
-            "Sie jubilieren über den Sieg.",
-            "Wir jubilieren laut.",
-            "Du jubilierst über die Neuigkeit.",
-            "Ihr jubiliert über das Ergebnis.",
-            "Sie jubilieren über das Ereignis.",
-            "Jubilierst du auch manchmal?",
-            "Jubilieren Sie über Ihre Errungenschaften?",
-            "Jubilieren wir gemeinsam?",
-            "Jubilieren ist eine Form der Freude."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich jubiliere über den Erfolg."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie jubilieren über den Sieg."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir jubilieren laut."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du jubilierst über die Neuigkeit."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr jubiliert über das Ergebnis."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie jubilieren über das Ereignis."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Jubilierst du auch manchmal?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Jubilieren Sie über Ihre Errungenschaften?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Jubilieren wir gemeinsam?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Jubilieren ist eine Form der Freude."
+            }
         ]
     },
     {
         "verb_id": 10,
-        "sentences":
-        [
-            "Ich jugendworte gerne.",
-            "Sie jugendwortet in ihren Texten.",
-            "Wir jugendworten im Chat.",
-            "Du jugendwortest oft.",
-            "Ihr jugendwortet mit euren Freunden.",
-            "Sie jugendworten in sozialen Medien.",
-            "Jugendwortest du auch?",
-            "Jugendworten Sie häufig?",
-            "Jugendworten wir zusammen?",
-            "Jugendworten ist Teil der Jugendsprache."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich jugendworte gerne."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie jugendwortet in ihren Texten."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir jugendworten im Chat."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du jugendwortest oft."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr jugendwortet mit euren Freunden."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie jugendworten in sozialen Medien."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Jugendwortest du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Jugendworten Sie häufig?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Jugendworten wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Jugendworten ist Teil der Jugendsprache."
+            }
         ]
     }
 ]

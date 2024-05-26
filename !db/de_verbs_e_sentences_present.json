@@ -1,162 +1,452 @@
 [
     {
         "verb_id": 1,
-        "sentences":
-        [
-            "Ich esse gerne Pizza.",
-            "Sie isst Obst und Gemüse.",
-            "Wir essen zusammen zu Abend.",
-            "Du isst schnell.",
-            "Ihr esst gerne Sushi.",
-            "Sie essen gesund.",
-            "Isst du auch gerne?",
-            "Essen Sie regelmäßig?",
-            "Essen wir zusammen?",
-            "Essen ist wichtig für die Gesundheit."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich esse gerne Pizza."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie isst Obst und Gemüse."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir essen zusammen zu Abend."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du isst schnell."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr esst gerne Sushi."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie essen gesund."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Isst du auch gerne?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Essen Sie regelmäßig?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Essen wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Essen ist wichtig für die Gesundheit."
+            }
         ]
     },
     {
         "verb_id": 2,
-        "sentences":
-        [
-            "Ich erkläre das Problem.",
-            "Sie erklärt die Lösung.",
-            "Wir erklären den Plan.",
-            "Du erklärst die Regeln.",
-            "Ihr erklärt den Prozess.",
-            "Sie erklären die Situation.",
-            "Erklärst du es nochmal?",
-            "Erklären Sie es genauer?",
-            "Erklären wir es zusammen?",
-            "Erklären hilft beim Verständnis."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich erkläre das Problem."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie erklärt die Lösung."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir erklären den Plan."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du erklärst die Regeln."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr erklärt den Prozess."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie erklären die Situation."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Erklärst du es nochmal?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Erklären Sie es genauer?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Erklären wir es zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Erklären hilft beim Verständnis."
+            }
         ]
     },
     {
         "verb_id": 3,
-        "sentences":
-        [
-            "Ich ernte die Früchte.",
-            "Sie erntet das Gemüse.",
-            "Wir ernten das Getreide.",
-            "Du erntest die Belohnung.",
-            "Ihr erntet die Ergebnisse.",
-            "Sie ernten die Ernte.",
-            "Erntest du auch?",
-            "Ernten Sie regelmäßig?",
-            "Ernten wir zusammen?",
-            "Ernten bedeutet harte Arbeit."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich ernte die Früchte."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie erntet das Gemüse."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir ernten das Getreide."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du erntest die Belohnung."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr erntet die Ergebnisse."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie ernten die Ernte."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Erntest du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Ernten Sie regelmäßig?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Ernten wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Ernten bedeutet harte Arbeit."
+            }
         ]
     },
     {
         "verb_id": 4,
-        "sentences":
-        [
-            "Ich erhöhe die Geschwindigkeit.",
-            "Sie erhöht den Einsatz.",
-            "Wir erhöhen die Anforderungen.",
-            "Du erhöhst den Druck.",
-            "Ihr erhöht den Preis.",
-            "Sie erhöhen die Standards.",
-            "Erhöhst du auch?",
-            "Erhöhen Sie die Investitionen?",
-            "Erhöhen wir zusammen?",
-            "Erhöhen bringt mehr Möglichkeiten."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich erhöhe die Geschwindigkeit."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie erhöht den Einsatz."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir erhöhen die Anforderungen."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du erhöhst den Druck."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr erhöht den Preis."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie erhöhen die Standards."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Erhöhst du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Erhöhen Sie die Investitionen?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Erhöhen wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Erhöhen bringt mehr Möglichkeiten."
+            }
         ]
     },
     {
         "verb_id": 5,
-        "sentences":
-        [
-            "Ich erstelle einen Plan.",
-            "Sie erstellt eine Präsentation.",
-            "Wir erstellen ein Angebot.",
-            "Du erstellst eine Liste.",
-            "Ihr erstellt eine Website.",
-            "Sie erstellen einen Bericht.",
-            "Erstellst du auch?",
-            "Erstellen Sie Dokumente oft?",
-            "Erstellen wir zusammen?",
-            "Erstellen erfordert Kreativität."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich erstelle einen Plan."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie erstellt eine Präsentation."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir erstellen ein Angebot."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du erstellst eine Liste."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr erstellt eine Website."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie erstellen einen Bericht."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Erstellst du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Erstellen Sie Dokumente oft?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Erstellen wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Erstellen erfordert Kreativität."
+            }
         ]
     },
     {
         "verb_id": 6,
-        "sentences":
-        [
-            "Ich erwarte Besuch.",
-            "Sie erwartet eine Antwort.",
-            "Wir erwarten gute Neuigkeiten.",
-            "Du erwartest einen Anruf.",
-            "Ihr erwartet den Erfolg.",
-            "Sie erwarten eine Entscheidung.",
-            "Erwartest du auch?",
-            "Erwarten Sie das Beste?",
-            "Erwarten wir zusammen?",
-            "Erwarten macht Vorfreude."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich erwarte Besuch."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie erwartet eine Antwort."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir erwarten gute Neuigkeiten."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du erwartest einen Anruf."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr erwartet den Erfolg."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie erwarten eine Entscheidung."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Erwartest du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Erwarten Sie das Beste?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Erwarten wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Erwarten macht Vorfreude."
+            }
         ]
     },
     {
         "verb_id": 7,
-        "sentences":
-        [
-            "Ich entwickle neue Ideen.",
-            "Sie entwickelt eine Strategie.",
-            "Wir entwickeln Software.",
-            "Du entwickelst dich weiter.",
-            "Ihr entwickelt Projekte.",
-            "Sie entwickeln Produkte.",
-            "Entwickelst du auch?",
-            "Entwickeln Sie neue Technologien?",
-            "Entwickeln wir zusammen?",
-            "Entwickeln bringt Fortschritt."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich entwickle neue Ideen."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie entwickelt eine Strategie."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir entwickeln Software."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du entwickelst dich weiter."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr entwickelt Projekte."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie entwickeln Produkte."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Entwickelst du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Entwickeln Sie neue Technologien?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Entwickeln wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Entwickeln bringt Fortschritt."
+            }
         ]
     },
     {
         "verb_id": 8,
-        "sentences":
-        [
-            "Ich ergänze den Text.",
-            "Sie ergänzt die Liste.",
-            "Wir ergänzen die Informationen.",
-            "Du ergänzt die Tabelle.",
-            "Ihr ergänzt den Bericht.",
-            "Sie ergänzen das Projekt.",
-            "Ergänzt du auch?",
-            "Ergänzen Sie die Daten?",
-            "Ergänzen wir zusammen?",
-            "Ergänzen vervollständigt die Informationen."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich ergänze den Text."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie ergänzt die Liste."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir ergänzen die Informationen."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du ergänzt die Tabelle."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr ergänzt den Bericht."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie ergänzen das Projekt."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Ergänzt du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Ergänzen Sie die Daten?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Ergänzen wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Ergänzen vervollständigt die Informationen."
+            }
         ]
     },
     {
         "verb_id": 9,
-        "sentences":
-        [
-            "Ich entdecke neue Möglichkeiten.",
-            "Sie entdeckt ein Geheimnis.",
-            "Wir entdecken einen Schatz.",
-            "Du entdeckst eine Spur.",
-            "Ihr entdeckt eine Lösung.",
-            "Sie entdecken ein Talent.",
-            "Entdeckst du auch gerne?",
-            "Entdecken Sie das Unbekannte?",
-            "Entdecken wir zusammen?",
-            "Entdecken erweitert den Horizont."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich entdecke neue Möglichkeiten."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie entdeckt ein Geheimnis."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir entdecken einen Schatz."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du entdeckst eine Spur."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr entdeckt eine Lösung."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie entdecken ein Talent."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Entdeckst du auch gerne?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Entdecken Sie das Unbekannte?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Entdecken wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Entdecken erweitert den Horizont."
+            }
         ]
     },
     {
         "verb_id": 10,
-        "sentences":
-        [
-            "Ich erfahre viel Neues.",
-            "Sie erfährt eine interessante Geschichte.",
-            "Wir erfahren die Wahrheit.",
-            "Du erfährst gute Nachrichten.",
-            "Ihr erfahrt spannende Details.",
-            "Sie erfahren neue Entwicklungen.",
-            "Erfährst du auch?",
-            "Erfahren Sie die aktuellen Ereignisse?",
-            "Erfahren wir zusammen?",
-            "Erfahren bedeutet ständiges Lernen."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich erfahre viel Neues."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie erfährt eine interessante Geschichte."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir erfahren die Wahrheit."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du erfährst gute Nachrichten."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr erfahrt spannende Details."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie erfahren neue Entwicklungen."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Erfährst du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Erfahren Sie die aktuellen Ereignisse?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Erfahren wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Erfahren bedeutet ständiges Lernen."
+            }
         ]
     }
 ]

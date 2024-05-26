@@ -1,162 +1,452 @@
 [
     {
         "verb_id": 1,
-        "sentences":
-        [
-            "Ich fahre gerne Fahrrad.",
-            "Sie fährt mit dem Zug.",
-            "Wir fahren in den Urlaub.",
-            "Du fährst vorsichtig.",
-            "Ihr fahrt schnell.",
-            "Sie fahren gemeinsam.",
-            "Fährst du auch?",
-            "Fahren Sie oft Auto?",
-            "Fahren wir zusammen?",
-            "Fahren macht Spaß."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich fahre gerne Fahrrad."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie fährt mit dem Zug."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir fahren in den Urlaub."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du fährst vorsichtig."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr fahrt schnell."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie fahren gemeinsam."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Fährst du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Fahren Sie oft Auto?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Fahren wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Fahren macht Spaß."
+            }
         ]
     },
     {
         "verb_id": 2,
-        "sentences":
-        [
-            "Ich feiere meinen Geburtstag.",
-            "Sie feiert ein Fest.",
-            "Wir feiern Silvester.",
-            "Du feierst deine Erfolge.",
-            "Ihr feiert das Leben.",
-            "Sie feiern das Jubiläum.",
-            "Feierst du auch?",
-            "Feiern Sie gerne?",
-            "Feiern wir zusammen?",
-            "Feiern verbindet Menschen."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich feiere meinen Geburtstag."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie feiert ein Fest."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir feiern Silvester."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du feierst deine Erfolge."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr feiert das Leben."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie feiern das Jubiläum."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Feierst du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Feiern Sie gerne?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Feiern wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Feiern verbindet Menschen."
+            }
         ]
     },
     {
         "verb_id": 3,
-        "sentences":
-        [
-            "Ich fotografiere Landschaften.",
-            "Sie fotografiert Porträts.",
-            "Wir fotografieren Events.",
-            "Du fotografierst gerne Tiere.",
-            "Ihr fotografiert Städte.",
-            "Sie fotografieren Natur.",
-            "Fotografierst du auch?",
-            "Fotografieren Sie professionell?",
-            "Fotografieren wir zusammen?",
-            "Fotografieren erfasst Momente."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich fotografiere Landschaften."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie fotografiert Porträts."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir fotografieren Events."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du fotografierst gerne Tiere."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr fotografiert Städte."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie fotografieren Natur."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Fotografierst du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Fotografieren Sie professionell?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Fotografieren wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Fotografieren erfasst Momente."
+            }
         ]
     },
     {
         "verb_id": 4,
-        "sentences":
-        [
-            "Ich friere im Winter.",
-            "Sie friert leicht.",
-            "Wir frieren draußen.",
-            "Du frierst in der Kälte.",
-            "Ihr friert schnell.",
-            "Sie frieren am Nordpol.",
-            "Frierst du auch?",
-            "Frieren Sie oft?",
-            "Frieren wir zusammen?",
-            "Frieren ist unangenehm."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich friere im Winter."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie friert leicht."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir frieren draußen."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du frierst in der Kälte."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr friert schnell."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie frieren am Nordpol."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Frierst du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Frieren Sie oft?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Frieren wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Frieren ist unangenehm."
+            }
         ]
     },
     {
         "verb_id": 5,
-        "sentences":
-        [
-            "Ich fühle mich wohl.",
-            "Sie fühlt sich glücklich.",
-            "Wir fühlen uns frei.",
-            "Du fühlst dich müde.",
-            "Ihr fühlt euch gestresst.",
-            "Sie fühlen sich entspannt.",
-            "Fühlst du auch so?",
-            "Fühlen Sie sich gut?",
-            "Fühlen wir uns zusammen?",
-            "Fühlen ist wichtig."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich fühle mich wohl."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie fühlt sich glücklich."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir fühlen uns frei."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du fühlst dich müde."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr fühlt euch gestresst."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie fühlen sich entspannt."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Fühlst du auch so?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Fühlen Sie sich gut?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Fühlen wir uns zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Fühlen ist wichtig."
+            }
         ]
     },
     {
         "verb_id": 6,
-        "sentences":
-        [
-            "Ich finde meinen Schlüssel.",
-            "Sie findet die Lösung.",
-            "Wir finden den Weg.",
-            "Du findest das Buch.",
-            "Ihr findet den Schatz.",
-            "Sie finden die Antwort.",
-            "Findest du es auch?",
-            "Finden Sie oft Dinge?",
-            "Finden wir zusammen?",
-            "Finden bringt Erfolg."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich finde meinen Schlüssel."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie findet die Lösung."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir finden den Weg."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du findest das Buch."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr findet den Schatz."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie finden die Antwort."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Findest du es auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Finden Sie oft Dinge?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Finden wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Finden bringt Erfolg."
+            }
         ]
     },
     {
         "verb_id": 7,
-        "sentences":
-        [
-            "Ich fliege in den Urlaub.",
-            "Sie fliegt nach Amerika.",
-            "Wir fliegen mit dem Flugzeug.",
-            "Du fliegst gerne.",
-            "Ihr fliegt geschäftlich.",
-            "Sie fliegen zum Mond.",
-            "Fliegst du auch?",
-            "Fliegen Sie oft?",
-            "Fliegen wir zusammen?",
-            "Fliegen ist aufregend."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich fliege in den Urlaub."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie fliegt nach Amerika."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir fliegen mit dem Flugzeug."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du fliegst gerne."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr fliegt geschäftlich."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie fliegen zum Mond."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Fliegst du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Fliegen Sie oft?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Fliegen wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Fliegen ist aufregend."
+            }
         ]
     },
     {
         "verb_id": 8,
-        "sentences":
-        [
-            "Ich frage nach dem Weg.",
-            "Sie fragt nach dem Preis.",
-            "Wir fragen nach dem Grund.",
-            "Du fragst nach dem Wetter.",
-            "Ihr fragt nach dem Namen.",
-            "Sie fragen nach der Zeit.",
-            "Fragst du auch?",
-            "Fragen Sie gerne?",
-            "Fragen wir zusammen?",
-            "Fragen ist der Anfang."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich frage nach dem Weg."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie fragt nach dem Preis."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir fragen nach dem Grund."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du fragst nach dem Wetter."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr fragt nach dem Namen."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie fragen nach der Zeit."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Fragst du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Fragen Sie gerne?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Fragen wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Fragen ist der Anfang."
+            }
         ]
     },
     {
         "verb_id": 9,
-        "sentences":
-        [
-            "Ich frohlocke vor Freude.",
-            "Sie frohlockt über den Sieg.",
-            "Wir frohlocken laut.",
-            "Du frohlockst leise.",
-            "Ihr frohlockt gemeinsam.",
-            "Sie frohlocken vor Glück.",
-            "Frohlockst du auch?",
-            "Frohlocken Sie oft?",
-            "Frohlocken wir zusammen?",
-            "Frohlocken macht Spaß."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich frohlocke vor Freude."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie frohlockt über den Sieg."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir frohlocken laut."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du frohlockst leise."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr frohlockt gemeinsam."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie frohlocken vor Glück."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Frohlockst du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Frohlocken Sie oft?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Frohlocken wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Frohlocken macht Spaß."
+            }
         ]
     },
     {
         "verb_id": 10,
-        "sentences":
-        [
-            "Ich folge deinen Anweisungen.",
-            "Sie folgt ihrem Instinkt.",
-            "Wir folgen den Regeln.",
-            "Du folgst dem Trend.",
-            "Ihr folgt eurem Chef.",
-            "Sie folgen dem Plan.",
-            "Folgst du auch?",
-            "Folgen Sie mir?",
-            "Folgen wir zusammen?",
-            "Folgen bringt Sicherheit."
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich folge deinen Anweisungen."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie folgt ihrem Instinkt."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir folgen den Regeln."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du folgst dem Trend."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr folgt eurem Chef."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie folgen dem Plan."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Folgst du auch?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Folgen Sie mir?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Folgen wir zusammen?"
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Folgen bringt Sicherheit."
+            }
         ]
     }
 ]
