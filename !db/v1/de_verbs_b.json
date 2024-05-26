@@ -1,0 +1,42 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "backen"
+    },
+    {
+        "verb_id": 2,
+        "verb": "basteln"
+    },
+    {
+        "verb_id": 3,
+        "verb": "bewegen"
+    },
+    {
+        "verb_id": 4,
+        "verb": "braten"
+    },
+    {
+        "verb_id": 5,
+        "verb": "baden"
+    },
+    {
+        "verb_id": 6,
+        "verb": "beobachten"
+    },
+    {
+        "verb_id": 7,
+        "verb": "bauen"
+    },
+    {
+        "verb_id": 8,
+        "verb": "blasen"
+    },
+    {
+        "verb_id": 9,
+        "verb": "bezahlen"
+    },
+    {
+        "verb_id": 10,
+        "verb": "bitten"
+    }
+]

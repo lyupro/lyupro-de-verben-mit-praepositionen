@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "duschte",
+            "du": "duschtest",
+            "er/sie/es": "duschte",
+            "wir": "duschten",
+            "ihr": "duschtet",
+            "sie/Sie": "duschten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "dribbelte",
+            "du": "dribbeltest",
+            "er/sie/es": "dribbelte",
+            "wir": "dribbelteten",
+            "ihr": "dribbeltet",
+            "sie/Sie": "dribbelten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "diskutierte",
+            "du": "diskutiertest",
+            "er/sie/es": "diskutierte",
+            "wir": "diskutierten",
+            "ihr": "diskutiertet",
+            "sie/Sie": "diskutierten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "dokumentierte",
+            "du": "dokumentiertest",
+            "er/sie/es": "dokumentierte",
+            "wir": "dokumentierten",
+            "ihr": "dokumentiertet",
+            "sie/Sie": "dokumentierten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "datete",
+            "du": "datetest",
+            "er/sie/es": "datete",
+            "wir": "dateten",
+            "ihr": "datetet",
+            "sie/Sie": "dateten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "demonstrierte",
+            "du": "demonstriertest",
+            "er/sie/es": "demonstrierte",
+            "wir": "demonstrierten",
+            "ihr": "demonstriertet",
+            "sie/Sie": "demonstrierten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "dichtete",
+            "du": "dichtetest",
+            "er/sie/es": "dichtete",
+            "wir": "dichteten",
+            "ihr": "dichtetet",
+            "sie/Sie": "dichteten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "dämmerte",
+            "du": "dämmertest",
+            "er/sie/es": "dämmerte",
+            "wir": "dämmerten",
+            "ihr": "dämmertet",
+            "sie/Sie": "dämmerten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "duckte",
+            "du": "ducktest",
+            "er/sie/es": "duckte",
+            "wir": "duckten",
+            "ihr": "ducktet",
+            "sie/Sie": "duckten"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "drosch",
+            "du": "droschest",
+            "er/sie/es": "drosch",
+            "wir": "droschen",
+            "ihr": "droscht",
+            "sie/Sie": "droschen"
+        }
+    }
+]

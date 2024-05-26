@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "machte",
+            "du": "machtest",
+            "er/sie/es": "machte",
+            "wir": "machten",
+            "ihr": "machtet",
+            "sie/Sie": "machten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "mochte",
+            "du": "mochtest",
+            "er/sie/es": "mochte",
+            "wir": "mochten",
+            "ihr": "mochtet",
+            "sie/Sie": "mochten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "malte",
+            "du": "maltest",
+            "er/sie/es": "malte",
+            "wir": "malten",
+            "ihr": "maltet",
+            "sie/Sie": "malten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "maß",
+            "du": "maßt",
+            "er/sie/es": "maß",
+            "wir": "maßen",
+            "ihr": "maßt",
+            "sie/Sie": "maßen"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "meldete",
+            "du": "meldetest",
+            "er/sie/es": "meldete",
+            "wir": "meldeten",
+            "ihr": "meldetet",
+            "sie/Sie": "meldeten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "mied",
+            "du": "miedst",
+            "er/sie/es": "mied",
+            "wir": "mieden",
+            "ihr": "miedet",
+            "sie/Sie": "mieden"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "brachte mit",
+            "du": "brachtest mit",
+            "er/sie/es": "brachte mit",
+            "wir": "brachten mit",
+            "ihr": "brachtet mit",
+            "sie/Sie": "brachten mit"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "musizierte",
+            "du": "musiziertest",
+            "er/sie/es": "musizierte",
+            "wir": "musizierten",
+            "ihr": "musiziertet",
+            "sie/Sie": "musizierten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "murmelte",
+            "du": "murmeltest",
+            "er/sie/es": "murmelte",
+            "wir": "murmelten",
+            "ihr": "murmeltet",
+            "sie/Sie": "murmelten"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "munkelte",
+            "du": "munkeltest",
+            "er/sie/es": "munkelte",
+            "wir": "munkelten",
+            "ihr": "munkeltet",
+            "sie/Sie": "munkelten"
+        }
+    }
+]

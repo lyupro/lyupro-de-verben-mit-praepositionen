@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "packte",
+            "du": "packtest",
+            "er/sie/es": "packte",
+            "wir": "packten",
+            "ihr": "packtet",
+            "sie/Sie": "packten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "parkte",
+            "du": "parktest",
+            "er/sie/es": "parkte",
+            "wir": "parkten",
+            "ihr": "parktet",
+            "sie/Sie": "parkten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "partizipierte",
+            "du": "partizipiertest",
+            "er/sie/es": "partizipierte",
+            "wir": "partizipierten",
+            "ihr": "partizipiertet",
+            "sie/Sie": "partizipierten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "passierte",
+            "du": "passiertest",
+            "er/sie/es": "passierte",
+            "wir": "passierten",
+            "ihr": "passiertet",
+            "sie/Sie": "passierten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "patentierte",
+            "du": "patentiertest",
+            "er/sie/es": "patentierte",
+            "wir": "patentierten",
+            "ihr": "patentiertet",
+            "sie/Sie": "patentierten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "peitschte",
+            "du": "peitschtest",
+            "er/sie/es": "peitschte",
+            "wir": "peitschten",
+            "ihr": "peitschtet",
+            "sie/Sie": "peitschten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "pendelte",
+            "du": "pendeltest",
+            "er/sie/es": "pendelte",
+            "wir": "pendelten",
+            "ihr": "pendeltet",
+            "sie/Sie": "pendelten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "perfektionierte",
+            "du": "perfektioniertest",
+            "er/sie/es": "perfektionierte",
+            "wir": "perfektionierten",
+            "ihr": "perfektioniertet",
+            "sie/Sie": "perfektionierten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "pfiff",
+            "du": "pfiffst",
+            "er/sie/es": "pfiff",
+            "wir": "pfiffen",
+            "ihr": "pfifft",
+            "sie/Sie": "pfiffen"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "pflanzte",
+            "du": "pflanztest",
+            "er/sie/es": "pflanzte",
+            "wir": "pflanzten",
+            "ihr": "pflanztet",
+            "sie/Sie": "pflanzten"
+        }
+    }
+]

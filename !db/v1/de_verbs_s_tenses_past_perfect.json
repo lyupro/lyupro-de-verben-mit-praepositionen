@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte gesagt",
+            "du": "hattest gesagt",
+            "er/sie/es": "hatte gesagt",
+            "wir": "hatten gesagt",
+            "ihr": "hattet gesagt",
+            "sie/Sie": "hatten gesagt"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte gesaugt",
+            "du": "hattest gesaugt",
+            "er/sie/es": "hatte gesaugt",
+            "wir": "hatten gesaugt",
+            "ihr": "hattet gesaugt",
+            "sie/Sie": "hatten gesaugt"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte geschaffen",
+            "du": "hattest geschaffen",
+            "er/sie/es": "hatte geschaffen",
+            "wir": "hatten geschaffen",
+            "ihr": "hattet geschaffen",
+            "sie/Sie": "hatten geschaffen"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte geschaut",
+            "du": "hattest geschaut",
+            "er/sie/es": "hatte geschaut",
+            "wir": "hatten geschaut",
+            "ihr": "hattet geschaut",
+            "sie/Sie": "hatten geschaut"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte geschickt",
+            "du": "hattest geschickt",
+            "er/sie/es": "hatte geschickt",
+            "wir": "hatten geschickt",
+            "ihr": "hattet geschickt",
+            "sie/Sie": "hatten geschickt"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte geschlafen",
+            "du": "hattest geschlafen",
+            "er/sie/es": "hatte geschlafen",
+            "wir": "hatten geschlafen",
+            "ihr": "hattet geschlafen",
+            "sie/Sie": "hatten geschlafen"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte geschmeckt",
+            "du": "hattest geschmeckt",
+            "er/sie/es": "hatte geschmeckt",
+            "wir": "hatten geschmeckt",
+            "ihr": "hattet geschmeckt",
+            "sie/Sie": "hatten geschmeckt"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte geschnitten",
+            "du": "hattest geschnitten",
+            "er/sie/es": "hatte geschnitten",
+            "wir": "hatten geschnitten",
+            "ihr": "hattet geschnitten",
+            "sie/Sie": "hatten geschnitten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte geschrieben",
+            "du": "hattest geschrieben",
+            "er/sie/es": "hatte geschrieben",
+            "wir": "hatten geschrieben",
+            "ihr": "hattet geschrieben",
+            "sie/Sie": "hatten geschrieben"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "war geschwommen",
+            "du": "warst geschwommen",
+            "er/sie/es": "war geschwommen",
+            "wir": "waren geschwommen",
+            "ihr": "wart geschwommen",
+            "sie/Sie": "waren geschwommen"
+        }
+    }
+]

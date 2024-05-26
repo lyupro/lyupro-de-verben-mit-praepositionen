@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte geduscht",
+            "du": "hattest geduscht",
+            "er/sie/es": "hatte geduscht",
+            "wir": "hatten geduscht",
+            "ihr": "hattet geduscht",
+            "sie/Sie": "hatten geduscht"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte gedribbelt",
+            "du": "hattest gedribbelt",
+            "er/sie/es": "hatte gedribbelt",
+            "wir": "hatten gedribbelt",
+            "ihr": "hattet gedribbelt",
+            "sie/Sie": "hatten gedribbelt"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte diskutiert",
+            "du": "hattest diskutiert",
+            "er/sie/es": "hatte diskutiert",
+            "wir": "hatten diskutiert",
+            "ihr": "hattet diskutiert",
+            "sie/Sie": "hatten diskutiert"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte dokumentiert",
+            "du": "hattest dokumentiert",
+            "er/sie/es": "hatte dokumentiert",
+            "wir": "hatten dokumentiert",
+            "ihr": "hattet dokumentiert",
+            "sie/Sie": "hatten dokumentiert"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte datiert",
+            "du": "hattest datiert",
+            "er/sie/es": "hatte datiert",
+            "wir": "hatten datiert",
+            "ihr": "hattet datiert",
+            "sie/Sie": "hatten datiert"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte demonstriert",
+            "du": "hattest demonstriert",
+            "er/sie/es": "hatte demonstriert",
+            "wir": "hatten demonstriert",
+            "ihr": "hattet demonstriert",
+            "sie/Sie": "hatten demonstriert"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte gedichtet",
+            "du": "hattest gedichtet",
+            "er/sie/es": "hatte gedichtet",
+            "wir": "hatten gedichtet",
+            "ihr": "hattet gedichtet",
+            "sie/Sie": "hatten gedichtet"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte gedämmert",
+            "du": "hattest gedämmert",
+            "er/sie/es": "hatte gedämmert",
+            "wir": "hatten gedämmert",
+            "ihr": "hattet gedämmert",
+            "sie/Sie": "hatten gedämmert"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte geduckt",
+            "du": "hattest geduckt",
+            "er/sie/es": "hatte geduckt",
+            "wir": "hatten geduckt",
+            "ihr": "hattet geduckt",
+            "sie/Sie": "hatten geduckt"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte gedroschen",
+            "du": "hattest gedroschen",
+            "er/sie/es": "hatte gedroschen",
+            "wir": "hatten gedroschen",
+            "ihr": "hattet gedroschen",
+            "sie/Sie": "hatten gedroschen"
+        }
+    }
+]

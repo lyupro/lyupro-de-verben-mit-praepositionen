@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "überlegte",
+            "du": "überlegtest",
+            "er/sie/es": "überlegte",
+            "wir": "überlegten",
+            "ihr": "überlegtet",
+            "sie/Sie": "überlegten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "übernahm",
+            "du": "übernahmst",
+            "er/sie/es": "übernahm",
+            "wir": "übernahmen",
+            "ihr": "übernahmt",
+            "sie/Sie": "übernahmen"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "überquerte",
+            "du": "überquertest",
+            "er/sie/es": "überquerte",
+            "wir": "überquerten",
+            "ihr": "überquertet",
+            "sie/Sie": "überquerten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "überredete",
+            "du": "überredetest",
+            "er/sie/es": "überredete",
+            "wir": "überredeten",
+            "ihr": "überredetet",
+            "sie/Sie": "überredeten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "überwies",
+            "du": "überwiest",
+            "er/sie/es": "überwies",
+            "wir": "überwiesen",
+            "ihr": "überwiest",
+            "sie/Sie": "überwiesen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "umarmte",
+            "du": "umarmtest",
+            "er/sie/es": "umarmte",
+            "wir": "umarmten",
+            "ihr": "umarmtet",
+            "sie/Sie": "umarmten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "umbog",
+            "du": "umbogst",
+            "er/sie/es": "umbog",
+            "wir": "umbogen",
+            "ihr": "umbogt",
+            "sie/Sie": "umbogen"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "umfuhr",
+            "du": "umfuhrst",
+            "er/sie/es": "umfuhr",
+            "wir": "umfuhren",
+            "ihr": "umfuhrt",
+            "sie/Sie": "umfuhren"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "umgab",
+            "du": "umgabst",
+            "er/sie/es": "umgab",
+            "wir": "umgaben",
+            "ihr": "umgabt",
+            "sie/Sie": "umgaben"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "umzog",
+            "du": "umzogst",
+            "er/sie/es": "umzog",
+            "wir": "umzogen",
+            "ihr": "umzogt",
+            "sie/Sie": "umzogen"
+        }
+    }
+]

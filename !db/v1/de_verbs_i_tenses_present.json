@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "infiltriere",
+            "du": "infiltrierst",
+            "er/sie/es": "infiltriert",
+            "wir": "infiltrieren",
+            "ihr": "infiltriert",
+            "sie/Sie": "infiltrieren"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "informiere",
+            "du": "informierst",
+            "er/sie/es": "informiert",
+            "wir": "informieren",
+            "ihr": "informiert",
+            "sie/Sie": "informieren"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "installiere",
+            "du": "installierst",
+            "er/sie/es": "installiert",
+            "wir": "installieren",
+            "ihr": "installiert",
+            "sie/Sie": "installieren"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "interessiere",
+            "du": "interessierst",
+            "er/sie/es": "interessiert",
+            "wir": "interessieren",
+            "ihr": "interessiert",
+            "sie/Sie": "interessieren"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "investiere",
+            "du": "investierst",
+            "er/sie/es": "investiert",
+            "wir": "investieren",
+            "ihr": "investiert",
+            "sie/Sie": "investieren"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "inspiriere",
+            "du": "inspirierst",
+            "er/sie/es": "inspiriert",
+            "wir": "inspirieren",
+            "ihr": "inspiriert",
+            "sie/Sie": "inspirieren"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "inszeniere",
+            "du": "inszenierst",
+            "er/sie/es": "inszeniert",
+            "wir": "inszenieren",
+            "ihr": "inszeniert",
+            "sie/Sie": "inszenieren"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "interpoliere",
+            "du": "interpolierst",
+            "er/sie/es": "interpoliert",
+            "wir": "interpolieren",
+            "ihr": "interpoliert",
+            "sie/Sie": "interpolieren"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "improvisiere",
+            "du": "improvisierst",
+            "er/sie/es": "improvisiert",
+            "wir": "improvisieren",
+            "ihr": "improvisiert",
+            "sie/Sie": "improvisieren"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "isoliere",
+            "du": "isolierst",
+            "er/sie/es": "isoliert",
+            "wir": "isolieren",
+            "ihr": "isoliert",
+            "sie/Sie": "isolieren"
+        }
+    }
+]

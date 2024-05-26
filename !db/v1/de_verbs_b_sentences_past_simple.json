@@ -1,0 +1,162 @@
+[
+    {
+        "verb_id": 1,
+        "sentences":
+        [
+            "Ich backte gestern einen Kuchen.",
+            "Du backtest frische Brötchen.",
+            "Er/Sie/Es backte ein Brot.",
+            "Wir backten Plätzchen.",
+            "Ihr backtet eine Torte.",
+            "Sie backten leckere Muffins.",
+            "Backtest du auch?",
+            "Backten Sie mit uns?",
+            "Backten wir zusammen?",
+            "Backen war eine angenehme Erfahrung."
+        ]
+    },
+    {
+        "verb_id": 2,
+        "sentences":
+        [
+            "Ich bastelte ein Modellauto.",
+            "Du basteltest eine Papierschiffchen.",
+            "Er/Sie/Es bastelte eine Vogelscheuche.",
+            "Wir bastelten eine Lampe.",
+            "Ihr basteltet einen Drachen.",
+            "Sie bastelten ein Vogelhaus.",
+            "Basteltest du auch?",
+            "Bastelten Sie mit uns?",
+            "Bastelten wir zusammen?",
+            "Basteln war kreativ und entspannend."
+        ]
+    },
+    {
+        "verb_id": 3,
+        "sentences":
+        [
+            "Ich bewegte mich langsam.",
+            "Du bewegtest dich geschickt.",
+            "Er/Sie/Es bewegte sich elegant.",
+            "Wir bewegten uns gemeinsam.",
+            "Ihr bewegtet euch synchron.",
+            "Sie bewegten sich frei.",
+            "Bewegtest du dich auch?",
+            "Bewegten Sie sich mit uns?",
+            "Bewegten wir uns zusammen?",
+            "Bewegen war wichtig für die Gesundheit."
+        ]
+    },
+    {
+        "verb_id": 4,
+        "sentences":
+        [
+            "Ich briet das Fleisch.",
+            "Du brietest die Kartoffeln.",
+            "Er/Sie/Es briet den Fisch.",
+            "Wir brieten das Gemüse.",
+            "Ihr brietet den Braten.",
+            "Sie brieten die Würstchen.",
+            "Brietest du auch?",
+            "Brieten Sie mit uns?",
+            "Brieten wir zusammen?",
+            "Braten war eine Kunst."
+        ]
+    },
+    {
+        "verb_id": 5,
+        "sentences":
+        [
+            "Ich badete im See.",
+            "Du badetest im Pool.",
+            "Er/Sie/Es badete im Meer.",
+            "Wir badeten in der Therme.",
+            "Ihr badetet im Fluss.",
+            "Sie badeten im warmen Wasser.",
+            "Badetest du auch?",
+            "Badeten Sie mit uns?",
+            "Badeten wir zusammen?",
+            "Baden war erfrischend."
+        ]
+    },
+    {
+        "verb_id": 6,
+        "sentences":
+        [
+            "Ich beobachtete die Vögel.",
+            "Du beobachtetest die Sterne.",
+            "Er/Sie/Es beobachtete die Wolken.",
+            "Wir beobachteten die Natur.",
+            "Ihr beobachtetet die Menschen.",
+            "Sie beobachteten die Tiere.",
+            "Beobachtetest du auch?",
+            "Beobachteten Sie mit uns?",
+            "Beobachteten wir zusammen?",
+            "Beobachten war interessant."
+        ]
+    },
+    {
+        "verb_id": 7,
+        "sentences":
+        [
+            "Ich baute ein Baumhaus.",
+            "Du bauteest einen Sandkasten.",
+            "Er/Sie/Es baute ein Regal.",
+            "Wir bauten ein Haus.",
+            "Ihr bautet einen Turm.",
+            "Sie bauten eine Brücke.",
+            "Bauteest du auch?",
+            "Bauten Sie mit uns?",
+            "Bauten wir zusammen?",
+            "Bauen war handwerklich."
+        ]
+    },
+    {
+        "verb_id": 8,
+        "sentences":
+        [
+            "Ich blies Seifenblasen.",
+            "Du bliesest Luftballons auf.",
+            "Er/Sie/Es blies die Kerzen aus.",
+            "Wir bliesen das Feuer an.",
+            "Ihr blieset in das Horn.",
+            "Sie bliesen die Flöte.",
+            "Bliesest du auch?",
+            "Bliesen Sie mit uns?",
+            "Bliesen wir zusammen?",
+            "Blasen war unterhaltsam."
+        ]
+    },
+    {
+        "verb_id": 9,
+        "sentences":
+        [
+            "Ich bezahlte die Rechnung.",
+            "Du bezahltest die Einkäufe.",
+            "Er/Sie/Es bezahlte den Eintritt.",
+            "Wir bezahlten das Essen.",
+            "Ihr bezahltet die Reise.",
+            "Sie bezahlten die Schulden.",
+            "Bezahltest du auch?",
+            "Bezahlten Sie mit uns?",
+            "Bezahlten wir zusammen?",
+            "Bezahlen war unvermeidlich."
+        ]
+    },
+    {
+        "verb_id": 10,
+        "sentences":
+        [
+            "Ich bat um Hilfe.",
+            "Du batst um Vergebung.",
+            "Er/Sie/Es bat um eine Antwort.",
+            "Wir baten um Unterstützung.",
+            "Ihr batet um eine Erklärung.",
+            "Sie baten um Rat.",
+            "Batst du auch?",
+            "Baten Sie mit uns?",
+            "Baten wir zusammen?",
+            "Bitten war eine Frage der Höflichkeit."
+        ]
+    }
+]

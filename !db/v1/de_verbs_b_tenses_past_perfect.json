@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte gebacken",
+            "du": "hattest gebacken",
+            "er/sie/es": "hatte gebacken",
+            "wir": "hatten gebacken",
+            "ihr": "hattet gebacken",
+            "sie/Sie": "hatten gebacken"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte gebastelt",
+            "du": "hattest gebastelt",
+            "er/sie/es": "hatte gebastelt",
+            "wir": "hatten gebastelt",
+            "ihr": "hattet gebastelt",
+            "sie/Sie": "hatten gebastelt"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte bewegt",
+            "du": "hattest bewegt",
+            "er/sie/es": "hatte bewegt",
+            "wir": "hatten bewegt",
+            "ihr": "hattet bewegt",
+            "sie/Sie": "hatten bewegt"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte gebraten",
+            "du": "hattest gebraten",
+            "er/sie/es": "hatte gebraten",
+            "wir": "hatten gebraten",
+            "ihr": "hattet gebraten",
+            "sie/Sie": "hatten gebraten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte gebadet",
+            "du": "hattest gebadet",
+            "er/sie/es": "hatte gebadet",
+            "wir": "hatten gebadet",
+            "ihr": "hattet gebadet",
+            "sie/Sie": "hatten gebadet"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte beobachtet",
+            "du": "hattest beobachtet",
+            "er/sie/es": "hatte beobachtet",
+            "wir": "hatten beobachtet",
+            "ihr": "hattet beobachtet",
+            "sie/Sie": "hatten beobachtet"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte gebaut",
+            "du": "hattest gebaut",
+            "er/sie/es": "hatte gebaut",
+            "wir": "hatten gebaut",
+            "ihr": "hattet gebaut",
+            "sie/Sie": "hatten gebaut"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte geblasen",
+            "du": "hattest geblasen",
+            "er/sie/es": "hatte geblasen",
+            "wir": "hatten geblasen",
+            "ihr": "hattet geblasen",
+            "sie/Sie": "hatten geblasen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte bezahlt",
+            "du": "hattest bezahlt",
+            "er/sie/es": "hatte bezahlt",
+            "wir": "hatten bezahlt",
+            "ihr": "hattet bezahlt",
+            "sie/Sie": "hatten bezahlt"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte gebeten",
+            "du": "hattest gebeten",
+            "er/sie/es": "hatte gebeten",
+            "wir": "hatten gebeten",
+            "ihr": "hattet gebeten",
+            "sie/Sie": "hatten gebeten"
+        }
+    }
+]

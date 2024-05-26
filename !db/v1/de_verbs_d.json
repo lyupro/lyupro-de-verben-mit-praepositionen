@@ -1,0 +1,42 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "duschen"
+    },
+    {
+        "verb_id": 2,
+        "verb": "dribbeln"
+    },
+    {
+        "verb_id": 3,
+        "verb": "diskutieren"
+    },
+    {
+        "verb_id": 4,
+        "verb": "dokumentieren"
+    },
+    {
+        "verb_id": 5,
+        "verb": "daten"
+    },
+    {
+        "verb_id": 6,
+        "verb": "demonstrieren"
+    },
+    {
+        "verb_id": 7,
+        "verb": "dichten"
+    },
+    {
+        "verb_id": 8,
+        "verb": "dämmern"
+    },
+    {
+        "verb_id": 9,
+        "verb": "ducken"
+    },
+    {
+        "verb_id": 10,
+        "verb": "dreschen"
+    }
+]

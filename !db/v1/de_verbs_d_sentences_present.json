@@ -1,0 +1,162 @@
+[
+    {
+        "verb_id": 1,
+        "sentences":
+        [
+            "Ich dusche jeden Morgen.",
+            "Sie duscht nach dem Sport.",
+            "Wir duschen gemeinsam nach dem Strandtag.",
+            "Du duschst schnell.",
+            "Ihr duscht abends vor dem Schlafengehen.",
+            "Sie duschen nach der Arbeit.",
+            "Duschst du gerne warm oder kalt?",
+            "Duschen Sie täglich?",
+            "Duschen wir zusammen?",
+            "Duschen erfrischt den Körper."
+        ]
+    },
+    {
+        "verb_id": 2,
+        "sentences":
+        [
+            "Ich dribbele mit dem Basketball.",
+            "Sie dribbelt geschickt um die Verteidiger herum.",
+            "Wir dribbeln im Training.",
+            "Du dribbelst gekonnt den Ball.",
+            "Ihr dribbelt im Turnier.",
+            "Sie dribbeln im Spiel um den Sieg.",
+            "Dribbelst du auch gerne?",
+            "Dribbeln Sie regelmäßig?",
+            "Dribbeln wir zusammen?",
+            "Dribbeln erfordert Geschicklichkeit."
+        ]
+    },
+    {
+        "verb_id": 3,
+        "sentences":
+        [
+            "Ich diskutiere gerne über Politik.",
+            "Sie diskutiert über aktuelle Themen.",
+            "Wir diskutieren über das Buch.",
+            "Du diskutierst leidenschaftlich.",
+            "Ihr diskutiert kontrovers.",
+            "Sie diskutieren konstruktiv.",
+            "Diskutierst du auch gerne?",
+            "Diskutieren Sie oft?",
+            "Diskutieren wir zusammen?",
+            "Diskutieren fördert den Austausch von Ideen."
+        ]
+    },
+    {
+        "verb_id": 4,
+        "sentences":
+        [
+            "Ich dokumentiere meine Forschungsergebnisse.",
+            "Sie dokumentiert den Projektverlauf.",
+            "Wir dokumentieren unsere Reisen.",
+            "Du dokumentierst das Experiment.",
+            "Ihr dokumentiert den Schaden.",
+            "Sie dokumentieren den Vorgang.",
+            "Dokumentierst du deine Arbeit?",
+            "Dokumentieren Sie alles sorgfältig?",
+            "Dokumentieren wir zusammen?",
+            "Dokumentieren ist wichtig für die Nachverfolgbarkeit."
+        ]
+    },
+    {
+        "verb_id": 5,
+        "sentences":
+        [
+            "Ich date gerne neue Leute.",
+            "Sie datet online.",
+            "Wir daten uns gegenseitig.",
+            "Du datest mehrere Personen gleichzeitig.",
+            "Ihr datet seit Jahren.",
+            "Sie daten diskret.",
+            "Datest du online?",
+            "Daten Sie aktiv?",
+            "Daten wir zusammen?",
+            "Daten ist heutzutage üblich geworden."
+        ]
+    },
+    {
+        "verb_id": 6,
+        "sentences":
+        [
+            "Ich demonstriere die Funktionsweise des Geräts.",
+            "Sie demonstriert die Technik.",
+            "Wir demonstrieren gegen Ungerechtigkeit.",
+            "Du demonstrierst für Umweltschutz.",
+            "Ihr demonstriert für bessere Arbeitsbedingungen.",
+            "Sie demonstrieren für ihre Rechte.",
+            "Demonstrierst du auch gerne?",
+            "Demonstrieren Sie aktiv?",
+            "Demonstrieren wir zusammen?",
+            "Demonstrieren kann Veränderungen bewirken."
+        ]
+    },
+    {
+        "verb_id": 7,
+        "sentences":
+        [
+            "Ich dichte Gedichte.",
+            "Sie dichtet romantische Verse.",
+            "Wir dichten Lieder.",
+            "Du dichtest gerne in deiner Freizeit.",
+            "Ihr dichtet gemeinsam im Schreibkurs.",
+            "Sie dichten für den Wettbewerb.",
+            "Dichtest du auch gerne?",
+            "Dichten Sie regelmäßig?",
+            "Dichten wir zusammen?",
+            "Dichten fördert die Kreativität."
+        ]
+    },
+    {
+        "verb_id": 8,
+        "sentences":
+        [
+            "Ich dämmer langsam dem Schlaf entgegen.",
+            "Sie dämmert am Abend.",
+            "Wir dämmern im Halbschlaf.",
+            "Du dämmerst am Morgen.",
+            "Ihr dämmert in der Dämmerung.",
+            "Sie dämmern früh am Abend.",
+            "Dämmert es schon?",
+            "Dämmern Sie früh?",
+            "Dämmern wir zusammen?",
+            "Das Dämmern kündigt die Nacht an."
+        ]
+    },
+    {
+        "verb_id": 9,
+        "sentences":
+        [
+            "Ich ducke mich, um nicht gesehen zu werden.",
+            "Sie duckt sich unter das Hindernis.",
+            "Wir ducken uns vor dem Sturm.",
+            "Du duckst dich, um den Ball zu fangen.",
+            "Ihr duckt euch vor dem lauten Geräusch.",
+            "Sie ducken sich, um durch die Tür zu passen.",
+            "Duckst du dich rechtzeitig?",
+            "Ducken Sie sich vor Gefahren?",
+            "Ducken wir uns zusammen?",
+            "Das Ducken vermeidet Verletzungen."
+        ]
+    },
+    {
+        "verb_id": 10,
+        "sentences":
+        [
+            "Ich dresche das Korn auf dem Feld.",
+            "Sie drischt das Getreide.",
+            "Wir dreschen das Stroh.",
+            "Du drischst das Korn.",
+            "Ihr drescht das Getreide mit dem Dreschflegel.",
+            "Sie dreschen das Korn auf dem Bauernhof.",
+            "Drischst du das Getreide?",
+            "Dreschen Sie das Korn?",
+            "Dreschen wir das Getreide zusammen?",
+            "Das Dreschen war früher eine mühsame Arbeit."
+        ]
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte infiltriert",
+            "du": "hattest infiltriert",
+            "er/sie/es": "hatte infiltriert",
+            "wir": "hatten infiltriert",
+            "ihr": "hattet infiltriert",
+            "sie/Sie": "hatten infiltriert"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte informiert",
+            "du": "hattest informiert",
+            "er/sie/es": "hatte informiert",
+            "wir": "hatten informiert",
+            "ihr": "hattet informiert",
+            "sie/Sie": "hatten informiert"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte installiert",
+            "du": "hattest installiert",
+            "er/sie/es": "hatte installiert",
+            "wir": "hatten installiert",
+            "ihr": "hattet installiert",
+            "sie/Sie": "hatten installiert"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte interessiert",
+            "du": "hattest interessiert",
+            "er/sie/es": "hatte interessiert",
+            "wir": "hatten interessiert",
+            "ihr": "hattet interessiert",
+            "sie/Sie": "hatten interessiert"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte investiert",
+            "du": "hattest investiert",
+            "er/sie/es": "hatte investiert",
+            "wir": "hatten investiert",
+            "ihr": "hattet investiert",
+            "sie/Sie": "hatten investiert"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte inspiriert",
+            "du": "hattest inspiriert",
+            "er/sie/es": "hatte inspiriert",
+            "wir": "hatten inspiriert",
+            "ihr": "hattet inspiriert",
+            "sie/Sie": "hatten inspiriert"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte inszeniert",
+            "du": "hattest inszeniert",
+            "er/sie/es": "hatte inszeniert",
+            "wir": "hatten inszeniert",
+            "ihr": "hattet inszeniert",
+            "sie/Sie": "hatten inszeniert"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte interpoliert",
+            "du": "hattest interpoliert",
+            "er/sie/es": "hatte interpoliert",
+            "wir": "hatten interpoliert",
+            "ihr": "hattet interpoliert",
+            "sie/Sie": "hatten interpoliert"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte improvisiert",
+            "du": "hattest improvisiert",
+            "er/sie/es": "hatte improvisiert",
+            "wir": "hatten improvisiert",
+            "ihr": "hattet improvisiert",
+            "sie/Sie": "hatten improvisiert"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte isoliert",
+            "du": "hattest isoliert",
+            "er/sie/es": "hatte isoliert",
+            "wir": "hatten isoliert",
+            "ihr": "hattet isoliert",
+            "sie/Sie": "hatten isoliert"
+        }
+    }
+]

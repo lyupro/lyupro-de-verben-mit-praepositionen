@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte",
+            "du": "hattest",
+            "er/sie/es": "hatte",
+            "wir": "hatten",
+            "ihr": "hattet",
+            "sie/Sie": "hatten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hielt",
+            "du": "hieltest",
+            "er/sie/es": "hielt",
+            "wir": "hielten",
+            "ihr": "hieltet",
+            "sie/Sie": "hielten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "half",
+            "du": "halfst",
+            "er/sie/es": "half",
+            "wir": "halfen",
+            "ihr": "halft",
+            "sie/Sie": "halfen"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hieß",
+            "du": "hießt",
+            "er/sie/es": "hieß",
+            "wir": "hießen",
+            "ihr": "hießt",
+            "sie/Sie": "hießen"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hörte",
+            "du": "hörtest",
+            "er/sie/es": "hörte",
+            "wir": "hörten",
+            "ihr": "hörtet",
+            "sie/Sie": "hörten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "lud hoch",
+            "du": "ludst hoch",
+            "er/sie/es": "lud hoch",
+            "wir": "luden hoch",
+            "ihr": "ludet hoch",
+            "sie/Sie": "luden hoch"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "heiratete",
+            "du": "heiratetest",
+            "er/sie/es": "heiratete",
+            "wir": "heirateten",
+            "ihr": "heiratetet",
+            "sie/Sie": "heirateten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hasste",
+            "du": "hasstest",
+            "er/sie/es": "hasste",
+            "wir": "hassten",
+            "ihr": "hasstet",
+            "sie/Sie": "hassten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "stellte her",
+            "du": "stelltest her",
+            "er/sie/es": "stellte her",
+            "wir": "stellten her",
+            "ihr": "stelltet her",
+            "sie/Sie": "stellten her"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hoffte",
+            "du": "hofftest",
+            "er/sie/es": "hoffte",
+            "wir": "hofften",
+            "ihr": "hofftet",
+            "sie/Sie": "hofften"
+        }
+    }
+]

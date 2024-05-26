@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "fuhr",
+            "du": "fuhrst",
+            "er/sie/es": "fuhr",
+            "wir": "fuhren",
+            "ihr": "fuhrt",
+            "sie/Sie": "fuhren"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "feierte",
+            "du": "feiertest",
+            "er/sie/es": "feierte",
+            "wir": "feierten",
+            "ihr": "feiertet",
+            "sie/Sie": "feierten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "fotografierte",
+            "du": "fotografiertest",
+            "er/sie/es": "fotografierte",
+            "wir": "fotografierten",
+            "ihr": "fotografiertet",
+            "sie/Sie": "fotografierten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "fror",
+            "du": "frorst",
+            "er/sie/es": "fror",
+            "wir": "froren",
+            "ihr": "frort",
+            "sie/Sie": "froren"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "fühlte",
+            "du": "fühltest",
+            "er/sie/es": "fühlte",
+            "wir": "fühlten",
+            "ihr": "fühltet",
+            "sie/Sie": "fühlten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "fand",
+            "du": "fandest",
+            "er/sie/es": "fand",
+            "wir": "fanden",
+            "ihr": "fandet",
+            "sie/Sie": "fanden"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "flog",
+            "du": "flogst",
+            "er/sie/es": "flog",
+            "wir": "flogen",
+            "ihr": "flogt",
+            "sie/Sie": "flogen"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "fragte",
+            "du": "fragtest",
+            "er/sie/es": "fragte",
+            "wir": "fragten",
+            "ihr": "fragtet",
+            "sie/Sie": "fragten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "frohlockte",
+            "du": "frohlocktest",
+            "er/sie/es": "frohlockte",
+            "wir": "frohlockten",
+            "ihr": "frohlocktet",
+            "sie/Sie": "frohlockten"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "folgte",
+            "du": "folgtest",
+            "er/sie/es": "folgte",
+            "wir": "folgten",
+            "ihr": "folgtet",
+            "sie/Sie": "folgten"
+        }
+    }
+]

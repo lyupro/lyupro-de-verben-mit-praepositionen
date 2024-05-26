@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte genommen",
+            "du": "hattest genommen",
+            "er/sie/es": "hatte genommen",
+            "wir": "hatten genommen",
+            "ihr": "hattet genommen",
+            "sie/Sie": "hatten genommen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte genannt",
+            "du": "hattest genannt",
+            "er/sie/es": "hatte genannt",
+            "wir": "hatten genannt",
+            "ihr": "hattet genannt",
+            "sie/Sie": "hatten genannt"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte genähert",
+            "du": "hattest genähert",
+            "er/sie/es": "hatte genähert",
+            "wir": "hatten genähert",
+            "ihr": "hattet genähert",
+            "sie/Sie": "hatten genähert"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte genutzt",
+            "du": "hattest genutzt",
+            "er/sie/es": "hatte genutzt",
+            "wir": "hatten genutzt",
+            "ihr": "hattet genutzt",
+            "sie/Sie": "hatten genutzt"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte genickt",
+            "du": "hattest genickt",
+            "er/sie/es": "hatte genickt",
+            "wir": "hatten genickt",
+            "ihr": "hattet genickt",
+            "sie/Sie": "hatten genickt"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte genascht",
+            "du": "hattest genascht",
+            "er/sie/es": "hatte genascht",
+            "wir": "hatten genascht",
+            "ihr": "hattet genascht",
+            "sie/Sie": "hatten genascht"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte genäht",
+            "du": "hattest genäht",
+            "er/sie/es": "hatte genäht",
+            "wir": "hatten genäht",
+            "ihr": "hattet genäht",
+            "sie/Sie": "hatten genäht"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte genagt",
+            "du": "hattest genagt",
+            "er/sie/es": "hatte genagt",
+            "wir": "hatten genagt",
+            "ihr": "hattet genagt",
+            "sie/Sie": "hatten genagt"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte geniest",
+            "du": "hattest geniest",
+            "er/sie/es": "hatte geniest",
+            "wir": "hatten geniest",
+            "ihr": "hattet geniest",
+            "sie/Sie": "hatten geniest"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte genickt",
+            "du": "hattest genickt",
+            "er/sie/es": "hatte genickt",
+            "wir": "hatten genickt",
+            "ihr": "hattet genickt",
+            "sie/Sie": "hatten genickt"
+        }
+    }
+]

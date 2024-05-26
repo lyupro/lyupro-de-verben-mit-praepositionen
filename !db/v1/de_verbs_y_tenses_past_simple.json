@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "yachtete",
+            "du": "yachtetest",
+            "er/sie/es": "yachtete",
+            "wir": "yachteten",
+            "ihr": "yachtetet",
+            "sie/Sie": "yachteten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "yogisierte",
+            "du": "yogisiertest",
+            "er/sie/es": "yogisierte",
+            "wir": "yogisierten",
+            "ihr": "yogisiertet",
+            "sie/Sie": "yogisierten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "yokozunierte",
+            "du": "yokozuniertest",
+            "er/sie/es": "yokozunierte",
+            "wir": "yokozunierten",
+            "ihr": "yokozuniertet",
+            "sie/Sie": "yokozunierten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "yorkte",
+            "du": "yorktest",
+            "er/sie/es": "yorkte",
+            "wir": "yorkten",
+            "ihr": "yorktet",
+            "sie/Sie": "yorkten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "yorkshirte",
+            "du": "yorkshirtest",
+            "er/sie/es": "yorkshirte",
+            "wir": "yorkshirten",
+            "ihr": "yorkshirtet",
+            "sie/Sie": "yorkshirten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "yogurtierte",
+            "du": "yogurtiertest",
+            "er/sie/es": "yogurtierte",
+            "wir": "yogurtierten",
+            "ihr": "yogurtiertet",
+            "sie/Sie": "yogurtierten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "yottierte",
+            "du": "yottiertest",
+            "er/sie/es": "yottierte",
+            "wir": "yottierten",
+            "ihr": "yottiertet",
+            "sie/Sie": "yottierten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "youtubte",
+            "du": "youtubtest",
+            "er/sie/es": "youtubte",
+            "wir": "youtubten",
+            "ihr": "youtubtet",
+            "sie/Sie": "youtubten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "yowte",
+            "du": "yowtest",
+            "er/sie/es": "yowte",
+            "wir": "yowten",
+            "ihr": "yowtet",
+            "sie/Sie": "yowten"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "y-chromosomenisierte",
+            "du": "y-chromosomenisiertest",
+            "er/sie/es": "y-chromosomenisierte",
+            "wir": "y-chromosomenisierten",
+            "ihr": "y-chromosomenisiertet",
+            "sie/Sie": "y-chromosomenisierten"
+        }
+    }
+]

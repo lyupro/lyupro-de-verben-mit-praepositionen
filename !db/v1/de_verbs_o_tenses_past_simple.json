@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "öffnete",
+            "du": "öffnetest",
+            "er/sie/es": "öffnete",
+            "wir": "öffneten",
+            "ihr": "öffnetet",
+            "sie/Sie": "öffneten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "operierte",
+            "du": "operiertest",
+            "er/sie/es": "operierte",
+            "wir": "operierten",
+            "ihr": "operiertet",
+            "sie/Sie": "operierten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "organisierte",
+            "du": "organisiertest",
+            "er/sie/es": "organisierte",
+            "wir": "organisierten",
+            "ihr": "organisiertet",
+            "sie/Sie": "organisierten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "obstrierte",
+            "du": "obstriertest",
+            "er/sie/es": "obstrierte",
+            "wir": "obstrierten",
+            "ihr": "obstriertet",
+            "sie/Sie": "obstrierten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "ohrte",
+            "du": "ohrtest",
+            "er/sie/es": "ohrte",
+            "wir": "ohrten",
+            "ihr": "ohrtet",
+            "sie/Sie": "ohrten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "ordnete",
+            "du": "ordnetest",
+            "er/sie/es": "ordnete",
+            "wir": "ordneten",
+            "ihr": "ordnetet",
+            "sie/Sie": "ordneten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "oszillierte",
+            "du": "oszilliertest",
+            "er/sie/es": "oszillierte",
+            "wir": "oszillierten",
+            "ihr": "oszilliertet",
+            "sie/Sie": "oszillierten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "observierte",
+            "du": "observiertest",
+            "er/sie/es": "observierte",
+            "wir": "observierten",
+            "ihr": "observiertet",
+            "sie/Sie": "observierten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "outete",
+            "du": "outetest",
+            "er/sie/es": "outete",
+            "wir": "outeten",
+            "ihr": "outetet",
+            "sie/Sie": "outeten"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "orgelte",
+            "du": "orgeltest",
+            "er/sie/es": "orgelte",
+            "wir": "orgelten",
+            "ihr": "orgeltet",
+            "sie/Sie": "orgelten"
+        }
+    }
+]

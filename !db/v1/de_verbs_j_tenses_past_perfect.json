@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte gejagt",
+            "du": "hattest gejagt",
+            "er/sie/es": "hatte gejagt",
+            "wir": "hatten gejagt",
+            "ihr": "hattet gejagt",
+            "sie/Sie": "hatten gejagt"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte gejammert",
+            "du": "hattest gejammert",
+            "er/sie/es": "hatte gejammert",
+            "wir": "hatten gejammert",
+            "ihr": "hattet gejammert",
+            "sie/Sie": "hatten gejammert"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte gejubelt",
+            "du": "hattest gejubelt",
+            "er/sie/es": "hatte gejubelt",
+            "wir": "hatten gejubelt",
+            "ihr": "hattet gejubelt",
+            "sie/Sie": "hatten gejubelt"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte gejodelt",
+            "du": "hattest gejodelt",
+            "er/sie/es": "hatte gejodelt",
+            "wir": "hatten gejodelt",
+            "ihr": "hattet gejodelt",
+            "sie/Sie": "hatten gejodelt"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte jongliert",
+            "du": "hattest jongliert",
+            "er/sie/es": "hatte jongliert",
+            "wir": "hatten jongliert",
+            "ihr": "hattet jongliert",
+            "sie/Sie": "hatten jongliert"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte gejuckt",
+            "du": "hattest gejuckt",
+            "er/sie/es": "hatte gejuckt",
+            "wir": "hatten gejuckt",
+            "ihr": "hattet gejuckt",
+            "sie/Sie": "hatten gejuckt"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte justiert",
+            "du": "hattest justiert",
+            "er/sie/es": "hatte justiert",
+            "wir": "hatten justiert",
+            "ihr": "hattet justiert",
+            "sie/Sie": "hatten justiert"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte gejauchzt",
+            "du": "hattest gejauchzt",
+            "er/sie/es": "hatte gejauchzt",
+            "wir": "hatten gejauchzt",
+            "ihr": "hattet gejauchzt",
+            "sie/Sie": "hatten gejauchzt"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte gejubiliert",
+            "du": "hattest gejubiliert",
+            "er/sie/es": "hatte gejubiliert",
+            "wir": "hatten gejubiliert",
+            "ihr": "hattet gejubiliert",
+            "sie/Sie": "hatten gejubiliert"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte gejugendwortet",
+            "du": "hattest gejugendwortet",
+            "er/sie/es": "hatte gejugendwortet",
+            "wir": "hatten gejugendwortet",
+            "ihr": "hattet gejugendwortet",
+            "sie/Sie": "hatten gejugendwortet"
+        }
+    }
+]

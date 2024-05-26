@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "arbeitete",
+            "du": "arbeitetest",
+            "er/sie/es": "arbeitete",
+            "wir": "arbeiteten",
+            "ihr": "arbeitetet",
+            "sie/Sie": "arbeiteten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "angelte",
+            "du": "angeltest",
+            "er/sie/es": "angelte",
+            "wir": "angelten",
+            "ihr": "angeltet",
+            "sie/Sie": "angelten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "analysierte",
+            "du": "analysiertest",
+            "er/sie/es": "analysierte",
+            "wir": "analysierten",
+            "ihr": "analysiertet",
+            "sie/Sie": "analysierten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "argumentierte",
+            "du": "argumentiertest",
+            "er/sie/es": "argumentierte",
+            "wir": "argumentierten",
+            "ihr": "argumentiertet",
+            "sie/Sie": "argumentierten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "assimilierte",
+            "du": "assimiliertest",
+            "er/sie/es": "assimilierte",
+            "wir": "assimilierten",
+            "ihr": "assimiliertet",
+            "sie/Sie": "assimilierten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "wärmte auf",
+            "du": "wärmtest auf",
+            "er/sie/es": "wärmte auf",
+            "wir": "wärmten auf",
+            "ihr": "wärmtet auf",
+            "sie/Sie": "wärmten auf"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "probierte aus",
+            "du": "probiertest aus",
+            "er/sie/es": "probierte aus",
+            "wir": "probierten aus",
+            "ihr": "probiertet aus",
+            "sie/Sie": "probierten aus"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "kam an",
+            "du": "kamst an",
+            "er/sie/es": "kam an",
+            "wir": "kamen an",
+            "ihr": "kamt an",
+            "sie/Sie": "kamen an"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "zog an",
+            "du": "zogst an",
+            "er/sie/es": "zog an",
+            "wir": "zogen an",
+            "ihr": "zogt an",
+            "sie/Sie": "zogen an"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "wusch ab",
+            "du": "wuschest ab",
+            "er/sie/es": "wusch ab",
+            "wir": "wuschen ab",
+            "ihr": "wuscht ab",
+            "sie/Sie": "wuschen ab"
+        }
+    }
+]

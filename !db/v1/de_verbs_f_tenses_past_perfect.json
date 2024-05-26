@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "war gefahren",
+            "du": "warst gefahren",
+            "er/sie/es": "war gefahren",
+            "wir": "waren gefahren",
+            "ihr": "wart gefahren",
+            "sie/Sie": "waren gefahren"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte gefeiert",
+            "du": "hattest gefeiert",
+            "er/sie/es": "hatte gefeiert",
+            "wir": "hatten gefeiert",
+            "ihr": "hattet gefeiert",
+            "sie/Sie": "hatten gefeiert"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte fotografiert",
+            "du": "hattest fotografiert",
+            "er/sie/es": "hatte fotografiert",
+            "wir": "hatten fotografiert",
+            "ihr": "hattet fotografiert",
+            "sie/Sie": "hatten fotografiert"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte gefroren",
+            "du": "hattest gefroren",
+            "er/sie/es": "hatte gefroren",
+            "wir": "hatten gefroren",
+            "ihr": "hattet gefroren",
+            "sie/Sie": "hatten gefroren"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte gefühlt",
+            "du": "hattest gefühlt",
+            "er/sie/es": "hatte gefühlt",
+            "wir": "hatten gefühlt",
+            "ihr": "hattet gefühlt",
+            "sie/Sie": "hatten gefühlt"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte gefunden",
+            "du": "hattest gefunden",
+            "er/sie/es": "hatte gefunden",
+            "wir": "hatten gefunden",
+            "ihr": "hattet gefunden",
+            "sie/Sie": "hatten gefunden"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "war geflogen",
+            "du": "warst geflogen",
+            "er/sie/es": "war geflogen",
+            "wir": "waren geflogen",
+            "ihr": "wart geflogen",
+            "sie/Sie": "waren geflogen"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte gefragt",
+            "du": "hattest gefragt",
+            "er/sie/es": "hatte gefragt",
+            "wir": "hatten gefragt",
+            "ihr": "hattet gefragt",
+            "sie/Sie": "hatten gefragt"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte frohlockt",
+            "du": "hattest frohlockt",
+            "er/sie/es": "hatte frohlockt",
+            "wir": "hatten frohlockt",
+            "ihr": "hattet frohlockt",
+            "sie/Sie": "hatten frohlockt"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "war gefolgt",
+            "du": "warst gefolgt",
+            "er/sie/es": "war gefolgt",
+            "wir": "waren gefolgt",
+            "ihr": "wart gefolgt",
+            "sie/Sie": "waren gefolgt"
+        }
+    }
+]

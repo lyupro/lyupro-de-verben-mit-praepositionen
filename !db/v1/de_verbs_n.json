@@ -1,0 +1,42 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "nehmen"
+    },
+    {
+        "verb_id": 2,
+        "verb": "nennen"
+    },
+    {
+        "verb_id": 3,
+        "verb": "nähern"
+    },
+    {
+        "verb_id": 4,
+        "verb": "nutzen"
+    },
+    {
+        "verb_id": 5,
+        "verb": "nicken"
+    },
+    {
+        "verb_id": 6,
+        "verb": "naschen"
+    },
+    {
+        "verb_id": 7,
+        "verb": "nähen"
+    },
+    {
+        "verb_id": 8,
+        "verb": "nagen"
+    },
+    {
+        "verb_id": 9,
+        "verb": "niesen"
+    },
+    {
+        "verb_id": 10,
+        "verb": "nicken"
+    }
+]

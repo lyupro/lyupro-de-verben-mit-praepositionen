@@ -1,0 +1,162 @@
+[
+    {
+        "verb_id": 1,
+        "sentences":
+        [
+            "Die Frösche quaken im Teich.",
+            "Er quakt laut.",
+            "Sie quaken im Chor.",
+            "Wir quaken fröhlich.",
+            "Du quakst wie ein Frosch.",
+            "Ihr quakt gemeinsam.",
+            "Quakst du gerne?",
+            "Quaken Sie mit den Fröschen.",
+            "Quaken wir im Frühling?",
+            "Quaken erfüllt den Teich."
+        ]
+    },
+    {
+        "verb_id": 2,
+        "sentences":
+        [
+            "Das Wasser quellt aus der Quelle.",
+            "Es quillt stark.",
+            "Sie quellen aus dem Boden.",
+            "Wir quellen frisch.",
+            "Du quellst vor Energie.",
+            "Ihr quellt aus dem Felsen.",
+            "Quellst du über?",
+            "Quellen Sie rein.",
+            "Quellen wir aus dem Berg?",
+            "Quellen spenden frisches Wasser."
+        ]
+    },
+    {
+        "verb_id": 3,
+        "sentences":
+        [
+            "Die Kinder quengeln im Supermarkt.",
+            "Er quengelt um ein Eis.",
+            "Sie quengelt nach Aufmerksamkeit.",
+            "Wir quengeln leise.",
+            "Du quengelst laut.",
+            "Ihr quengelt um Spielzeug.",
+            "Quengelst du oft?",
+            "Quengeln Sie nicht.",
+            "Quengeln wir weniger?",
+            "Quengeln stört die Ruhe."
+        ]
+    },
+    {
+        "verb_id": 4,
+        "sentences":
+        [
+            "Die Türen querstellen.",
+            "Er stellt sich quer.",
+            "Sie stellt sich quer zur Diskussion.",
+            "Wir stellen uns quer gegenüber.",
+            "Du stellst dich quer zur Tradition.",
+            "Ihr stellt euch quer zur Norm.",
+            "Stellst du dich gerne quer?",
+            "Stellen Sie sich nicht quer.",
+            "Stellen wir uns offen?",
+            "Stellen sich quer führt zu Konflikten."
+        ]
+    },
+    {
+        "verb_id": 5,
+        "sentences":
+        [
+            "Er quittiert den Empfang.",
+            "Sie quittieren die Lieferung.",
+            "Wir quittieren den Erhalt.",
+            "Du quittierst den Eingang.",
+            "Ihr quittiert den Ausgang.",
+            "Quittierst du den Beleg?",
+            "Quittieren Sie den Erhalt.",
+            "Quittieren wir den Vertrag?",
+            "Quittieren Sie den Fehler.",
+            "Quittieren schließt ab."
+        ]
+    },
+    {
+        "verb_id": 6,
+        "sentences":
+        [
+            "Er quotiert die Preise.",
+            "Sie quotieren die Aktien.",
+            "Wir quotieren die Währungen.",
+            "Du quotierst die Kosten.",
+            "Ihr quotiert die Raten.",
+            "Quotierst du die Werte?",
+            "Quotieren Sie die Angebote.",
+            "Quotieren wir die Zinssätze?",
+            "Quotieren Sie realistisch.",
+            "Quotieren ist Teil der Analyse."
+        ]
+    },
+    {
+        "verb_id": 7,
+        "sentences":
+        [
+            "Sie quasseln den ganzen Tag.",
+            "Er quasselt über belanglose Themen.",
+            "Wir quasseln am Abend.",
+            "Du quasselst viel.",
+            "Ihr quasselt gemeinsam.",
+            "Quasselst du gerne?",
+            "Quasseln Sie nicht so viel.",
+            "Quasseln wir über das Wetter?",
+            "Quasseln bringt Entspannung.",
+            "Quasseln verbindet."
+        ]
+    },
+    {
+        "verb_id": 8,
+        "sentences":
+        [
+            "Die Qualen des Krieges.",
+            "Er quält das Tier.",
+            "Sie quält sich mit Gedanken.",
+            "Wir quälen uns durch die Hitze.",
+            "Du quälst dich mit der Aufgabe.",
+            "Ihr quält euch mit dem Training.",
+            "Quälst du andere?",
+            "Quälen Sie sich nicht.",
+            "Quälen wir uns selbst?",
+            "Quälen bringt Leid."
+        ]
+    },
+    {
+        "verb_id": 9,
+        "sentences":
+        [
+            "Die Pläne gehen quer.",
+            "Er geht quer durch den Wald.",
+            "Sie gehen quer durch die Stadt.",
+            "Wir gehen quer durch das Gebirge.",
+            "Du gehst quer durch den Fluss.",
+            "Ihr geht quer durch das Moor.",
+            "Gehst du quer durch das Tal?",
+            "Gehen Sie quer durch das Land.",
+            "Gehen wir quer durch das Labyrinth?",
+            "Gehen quer erfordert Flexibilität."
+        ]
+    },
+    {
+        "verb_id": 10,
+        "sentences":
+        [
+            "Er macht alles quitt.",
+            "Sie macht die Rechnungen quitt.",
+            "Wir machen die Abrechnung quitt.",
+            "Du machst den Saldo quitt.",
+            "Ihr macht die Konten quitt.",
+            "Machst du alles quitt?",
+            "Machen Sie die Posten quitt.",
+            "Machen wir alles quitt?",
+            "Machen Sie den Abschluss quitt.",
+            "Machen quitt beendet den Prozess."
+        ]
+    }
+]

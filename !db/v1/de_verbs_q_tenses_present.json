@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "quake",
+            "du": "quakst",
+            "er/sie/es": "quakt",
+            "wir": "quaken",
+            "ihr": "quakt",
+            "sie/Sie": "quaken"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "quelle",
+            "du": "quellst",
+            "er/sie/es": "quellt",
+            "wir": "quellen",
+            "ihr": "quellt",
+            "sie/Sie": "quellen"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "quengele",
+            "du": "quengelst",
+            "er/sie/es": "quengelt",
+            "wir": "quengeln",
+            "ihr": "quengelt",
+            "sie/Sie": "quengeln"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "stelle quer",
+            "du": "stellst quer",
+            "er/sie/es": "stellt quer",
+            "wir": "stellen quer",
+            "ihr": "stellt quer",
+            "sie/Sie": "stellen quer"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "quittiere",
+            "du": "quittierst",
+            "er/sie/es": "quittiert",
+            "wir": "quittieren",
+            "ihr": "quittiert",
+            "sie/Sie": "quittieren"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "quotiere",
+            "du": "quotierst",
+            "er/sie/es": "quotiert",
+            "wir": "quotieren",
+            "ihr": "quotiert",
+            "sie/Sie": "quotieren"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "quassle",
+            "du": "quasselst",
+            "er/sie/es": "quasselt",
+            "wir": "quasseln",
+            "ihr": "quasselt",
+            "sie/Sie": "quasseln"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "quäle",
+            "du": "quälst",
+            "er/sie/es": "quält",
+            "wir": "quälen",
+            "ihr": "quält",
+            "sie/Sie": "quälen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "gehe quer",
+            "du": "gehst quer",
+            "er/sie/es": "geht quer",
+            "wir": "gehen quer",
+            "ihr": "geht quer",
+            "sie/Sie": "gehen quer"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "mache quitt",
+            "du": "machst quitt",
+            "er/sie/es": "macht quitt",
+            "wir": "machen quitt",
+            "ihr": "macht quitt",
+            "sie/Sie": "machen quitt"
+        }
+    }
+]

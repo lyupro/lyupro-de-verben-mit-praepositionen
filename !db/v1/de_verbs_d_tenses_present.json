@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "dusche",
+            "du": "duschst",
+            "er/sie/es": "duscht",
+            "wir": "duschen",
+            "ihr": "duscht",
+            "sie/Sie": "duschen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "dribbele",
+            "du": "dribbelst",
+            "er/sie/es": "dribbelt",
+            "wir": "dribbeln",
+            "ihr": "dribbelt",
+            "sie/Sie": "dribbeln"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "diskutiere",
+            "du": "diskutierst",
+            "er/sie/es": "diskutiert",
+            "wir": "diskutieren",
+            "ihr": "diskutiert",
+            "sie/Sie": "diskutieren"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "dokumentiere",
+            "du": "dokumentierst",
+            "er/sie/es": "dokumentiert",
+            "wir": "dokumentieren",
+            "ihr": "dokumentiert",
+            "sie/Sie": "dokumentieren"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "datiere",
+            "du": "datierst",
+            "er/sie/es": "datiert",
+            "wir": "datieren",
+            "ihr": "datiert",
+            "sie/Sie": "datieren"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "demonstriere",
+            "du": "demonstrierst",
+            "er/sie/es": "demonstriert",
+            "wir": "demonstrieren",
+            "ihr": "demonstriert",
+            "sie/Sie": "demonstrieren"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "dichte",
+            "du": "dichtest",
+            "er/sie/es": "dichtet",
+            "wir": "dichten",
+            "ihr": "dichtet",
+            "sie/Sie": "dichten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "dämmer",
+            "du": "dämmerst",
+            "er/sie/es": "dämmert",
+            "wir": "dämmern",
+            "ihr": "dämmert",
+            "sie/Sie": "dämmern"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "ducke",
+            "du": "duckst",
+            "er/sie/es": "duckt",
+            "wir": "ducken",
+            "ihr": "duckt",
+            "sie/Sie": "ducken"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "dresche",
+            "du": "dreschst",
+            "er/sie/es": "drescht",
+            "wir": "dreschen",
+            "ihr": "drescht",
+            "sie/Sie": "dreschen"
+        }
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "zahlte",
+            "du": "zahltest",
+            "er/sie/es": "zahlte",
+            "wir": "zahlten",
+            "ihr": "zahltet",
+            "sie/Sie": "zahlten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "zähmte",
+            "du": "zähmtest",
+            "er/sie/es": "zähmte",
+            "wir": "zähmten",
+            "ihr": "zähmtet",
+            "sie/Sie": "zähmten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "zählte",
+            "du": "zähltest",
+            "er/sie/es": "zählte",
+            "wir": "zählten",
+            "ihr": "zähltet",
+            "sie/Sie": "zählten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "zähnte",
+            "du": "zähntest",
+            "er/sie/es": "zähnte",
+            "wir": "zähnten",
+            "ihr": "zähntet",
+            "sie/Sie": "zähnten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "zähmte",
+            "du": "zähmtest",
+            "er/sie/es": "zähmte",
+            "wir": "zähmten",
+            "ihr": "zähmtet",
+            "sie/Sie": "zähmten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "zäkerte",
+            "du": "zäkertest",
+            "er/sie/es": "zäkerte",
+            "wir": "zäkerten",
+            "ihr": "zäkertet",
+            "sie/Sie": "zäkerten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "zankte",
+            "du": "zanktest",
+            "er/sie/es": "zankte",
+            "wir": "zankten",
+            "ihr": "zanktet",
+            "sie/Sie": "zankten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "zapfte",
+            "du": "zapftest",
+            "er/sie/es": "zapfte",
+            "wir": "zapften",
+            "ihr": "zapftet",
+            "sie/Sie": "zapften"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "zappelte",
+            "du": "zappeltest",
+            "er/sie/es": "zappelte",
+            "wir": "zappelten",
+            "ihr": "zappeltet",
+            "sie/Sie": "zappelten"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "zappelte",
+            "du": "zappeltest",
+            "er/sie/es": "zappelte",
+            "wir": "zappelten",
+            "ihr": "zappeltet",
+            "sie/Sie": "zappelten"
+        }
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "aß",
+            "du": "aßt",
+            "er/sie/es": "aß",
+            "wir": "aßen",
+            "ihr": "aßt",
+            "sie/Sie": "aßen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "erklärte",
+            "du": "erklärtest",
+            "er/sie/es": "erklärte",
+            "wir": "erklärten",
+            "ihr": "erklärtet",
+            "sie/Sie": "erklärten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "erntete",
+            "du": "erntetest",
+            "er/sie/es": "erntete",
+            "wir": "ernteten",
+            "ihr": "erntetet",
+            "sie/Sie": "ernteten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "erhöhte",
+            "du": "erhöhtest",
+            "er/sie/es": "erhöhte",
+            "wir": "erhöhten",
+            "ihr": "erhöhtet",
+            "sie/Sie": "erhöhten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "erstellte",
+            "du": "erstelltest",
+            "er/sie/es": "erstellte",
+            "wir": "erstellten",
+            "ihr": "erstelltet",
+            "sie/Sie": "erstellten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "erwartete",
+            "du": "erwartetest",
+            "er/sie/es": "erwartete",
+            "wir": "erwarteten",
+            "ihr": "erwartetet",
+            "sie/Sie": "erwarteten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "entwickelte",
+            "du": "entwickeltest",
+            "er/sie/es": "entwickelte",
+            "wir": "entwickelten",
+            "ihr": "entwickeltet",
+            "sie/Sie": "entwickelten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "ergänzte",
+            "du": "ergänztest",
+            "er/sie/es": "ergänzte",
+            "wir": "ergänzten",
+            "ihr": "ergänztet",
+            "sie/Sie": "ergänzten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "entdeckte",
+            "du": "entdecktest",
+            "er/sie/es": "entdeckte",
+            "wir": "entdeckten",
+            "ihr": "entdecktet",
+            "sie/Sie": "entdeckten"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "erfuhr",
+            "du": "erfuhrst",
+            "er/sie/es": "erfuhr",
+            "wir": "erfuhren",
+            "ihr": "erfuhrt",
+            "sie/Sie": "erfuhren"
+        }
+    }
+]

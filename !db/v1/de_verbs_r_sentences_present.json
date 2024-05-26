@@ -1,0 +1,162 @@
+[
+    {
+        "verb_id": 1,
+        "sentences":
+        [
+            "Ich rase durch die Stadt.",
+            "Sie rast den Berg hinunter.",
+            "Wir rasen zum Bahnhof.",
+            "Du rast am Wochenende gerne.",
+            "Ihr rast durch den Verkehr.",
+            "Sie rasen um die Wette.",
+            "Rast du auch so schnell?",
+            "Rasen Sie mit uns?",
+            "Rasen wir zusammen zum Ziel?",
+            "Rasen ist manchmal gefährlich."
+        ]
+    },
+    {
+        "verb_id": 2,
+        "sentences":
+        [
+            "Ich rauche Zigaretten.",
+            "Sie raucht abends eine Pfeife.",
+            "Wir rauchen zusammen eine Shisha.",
+            "Du rauchst nur gelegentlich.",
+            "Ihr raucht nicht mehr.",
+            "Sie rauchen auf dem Balkon.",
+            "Rauchst du auch?",
+            "Rauchen Sie?",
+            "Rauchen wir zusammen eine Zigarre?",
+            "Rauchen ist ungesund."
+        ]
+    },
+    {
+        "verb_id": 3,
+        "sentences":
+        [
+            "Ich rechne schnell im Kopf.",
+            "Sie rechnet die Ausgaben zusammen.",
+            "Wir rechnen die Steuern aus.",
+            "Du rechnest im Supermarkt.",
+            "Ihr rechnet mit dem Taschenrechner.",
+            "Sie rechnen den Gewinn aus.",
+            "Rechnest du gerne?",
+            "Rechnen Sie oft?",
+            "Rechnen wir zusammen die Zahlen?",
+            "Rechnen ist wichtig im Alltag."
+        ]
+    },
+    {
+        "verb_id": 4,
+        "sentences":
+        [
+            "Es regnet draußen.",
+            "Es regnet seit Stunden.",
+            "Es regnet in Strömen.",
+            "Es regnet auf die Straße.",
+            "Es regnet heute Morgen.",
+            "Es regnet den ganzen Tag.",
+            "Regnet es dir?",
+            "Regnet es stark?",
+            "Regnet es jetzt?",
+            "Regnen ist typisch für den Herbst."
+        ]
+    },
+    {
+        "verb_id": 5,
+        "sentences":
+        [
+            "Ich reiße das Papier.",
+            "Sie reißt den Brief auf.",
+            "Wir reißen die Verpackung auf.",
+            "Du reißt die Tüte auf.",
+            "Ihr reißt die Zeitung auf.",
+            "Sie reißen das Geschenk auf.",
+            "Reißt du auch gerne Sachen auf?",
+            "Reißen Sie die Schachtel auf?",
+            "Reißen wir zusammen das Geschenkpapier auf?",
+            "Reißen kann manchmal schwierig sein."
+        ]
+    },
+    {
+        "verb_id": 6,
+        "sentences":
+        [
+            "Ich reite gerne im Wald.",
+            "Sie reitet seit ihrer Kindheit.",
+            "Wir reiten oft am Wochenende.",
+            "Du reitest auf dem Reiterhof.",
+            "Ihr reitet im Galopp.",
+            "Sie reiten auf dem Pferderücken.",
+            "Reitest du auch?",
+            "Reiten Sie gerne?",
+            "Reiten wir zusammen aus?",
+            "Reiten kann entspannend sein."
+        ]
+    },
+    {
+        "verb_id": 7,
+        "sentences":
+        [
+            "Ich renne zum Bus.",
+            "Sie rennt im Park.",
+            "Wir rennen um die Wette.",
+            "Du rennst jeden Morgen.",
+            "Ihr rennt zur Arbeit.",
+            "Sie rennen im Stadion.",
+            "Rennst du auch so gerne?",
+            "Rennen Sie?",
+            "Rennen wir zusammen?",
+            "Rennen macht Spaß."
+        ]
+    },
+    {
+        "verb_id": 8,
+        "sentences":
+        [
+            "Ich repariere mein Fahrrad.",
+            "Sie repariert die Waschmaschine.",
+            "Wir reparieren das Auto.",
+            "Du reparierst den Computer.",
+            "Ihr repariert das Dach.",
+            "Sie reparieren die Heizung.",
+            "Reparierst du gerne?",
+            "Reparieren Sie oft?",
+            "Reparieren wir zusammen das Fenster?",
+            "Reparieren kann zeitaufwendig sein."
+        ]
+    },
+    {
+        "verb_id": 9,
+        "sentences":
+        [
+            "Ich reserviere einen Tisch im Restaurant.",
+            "Sie reserviert die Karten für das Konzert.",
+            "Wir reservieren den Platz im Zug.",
+            "Du reservierst den Urlaub online.",
+            "Ihr reserviert das Hotelzimmer.",
+            "Sie reservieren den Seminarraum.",
+            "Reservierst du gerne?",
+            "Reservieren Sie?",
+            "Reservieren wir zusammen?",
+            "Reservieren ist wichtig in der Hochsaison."
+        ]
+    },
+    {
+        "verb_id": 10,
+        "sentences":
+        [
+            "Ich riskiere nichts.",
+            "Sie riskiert ihr Leben.",
+            "Wir riskieren den Verlust.",
+            "Du riskierst die Konsequenzen.",
+            "Ihr riskiert viel.",
+            "Sie riskieren einen Rückfall.",
+            "Riskierst du gerne?",
+            "Riskieren Sie alles?",
+            "Riskieren wir zu viel?",
+            "Riskieren kann belohnt werden."
+        ]
+    }
+]

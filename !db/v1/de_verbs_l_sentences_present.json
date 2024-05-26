@@ -1,0 +1,162 @@
+[
+    {
+        "verb_id": 1,
+        "sentences":
+        [
+            "Ich laufe jeden Morgen im Park.",
+            "Er läuft schnell.",
+            "Sie läuft eine Runde um den See.",
+            "Wir laufen gemeinsam ins Ziel.",
+            "Du läufst gerne Marathon.",
+            "Ihr lauft regelmäßig im Wald.",
+            "Laufen Sie auch gerne?",
+            "Laufen wir eine kleine Runde?",
+            "Läuft das Programm einwandfrei?",
+            "Laufen ist gesund."
+        ]
+    },
+    {
+        "verb_id": 2,
+        "sentences":
+        [
+            "Ich lerne Deutsch.",
+            "Sie lernt eine neue Sprache.",
+            "Wir lernen für die Prüfung.",
+            "Du lernst schnell.",
+            "Ihr lernt fleißig.",
+            "Sie lernen gemeinsam.",
+            "Lernst du auch?",
+            "Lernen Sie mit uns?",
+            "Lernen wir zusammen!",
+            "Lernen ist wichtig."
+        ]
+    },
+    {
+        "verb_id": 3,
+        "sentences":
+        [
+            "Ich liebe meinen Partner sehr.",
+            "Er liebt seine Arbeit.",
+            "Sie liebt es zu reisen.",
+            "Wir lieben die Natur.",
+            "Du liebst gutes Essen.",
+            "Ihr liebt es, neue Dinge auszuprobieren.",
+            "Liebst du mich?",
+            "Lieben Sie auch Tiere?",
+            "Lieben wir das Leben?",
+            "Liebe kennt keine Grenzen."
+        ]
+    },
+    {
+        "verb_id": 4,
+        "sentences":
+        [
+            "Ich lächle, wenn ich glücklich bin.",
+            "Er lächelt zurück.",
+            "Sie lächelt verlegen.",
+            "Wir lächeln über den Witz.",
+            "Du lächelst verschmitzt.",
+            "Ihr lächelt freundlich.",
+            "Lächelst du oft?",
+            "Lächeln Sie für das Foto!",
+            "Lächeln wir der Zukunft entgegen!",
+            "Ein Lächeln kann viel bewirken."
+        ]
+    },
+    {
+        "verb_id": 5,
+        "sentences":
+        [
+            "Ich lüge nie.",
+            "Er lügt, wenn es ihm nützt.",
+            "Sie lügt aus Angst.",
+            "Wir lügen, um zu schützen.",
+            "Du lügst nicht gut.",
+            "Ihr lügt euch selbst an.",
+            "Lügst du mich an?",
+            "Lügen Sie für Ihre Vorteile?",
+            "Lügen wir uns nicht selbst an?",
+            "Ehrlichkeit ist besser als Lügen."
+        ]
+    },
+    {
+        "verb_id": 6,
+        "sentences":
+        [
+            "Ich lebe in einer Großstadt.",
+            "Er lebt auf dem Land.",
+            "Sie lebt ein einfaches Leben.",
+            "Wir leben gemeinsam glücklich.",
+            "Du lebst für deine Träume.",
+            "Ihr lebt euer Leben nach euren Regeln.",
+            "Lebst du gerne hier?",
+            "Leben Sie in Frieden und Harmonie.",
+            "Leben wir im Paradies?",
+            "Das Leben ist schön."
+        ]
+    },
+    {
+        "verb_id": 7,
+        "sentences":
+        [
+            "Ich lehre Mathematik.",
+            "Er lehrt an einer Universität.",
+            "Sie lehrt Musik.",
+            "Wir lehren unsere Kinder.",
+            "Du lehrst mich viel.",
+            "Ihr lehrt uns neue Techniken.",
+            "Lehrst du gerne?",
+            "Lehren Sie mich das Wichtigste?",
+            "Lehren wir für die Zukunft?",
+            "Lehre und lerne."
+        ]
+    },
+    {
+        "verb_id": 8,
+        "sentences":
+        [
+            "Ich lese gerne Bücher.",
+            "Er liest die Zeitung.",
+            "Sie liest ein Buch.",
+            "Wir lesen gemeinsam.",
+            "Du liest schnell.",
+            "Ihr lest gerne in der Natur.",
+            "Liest du oft?",
+            "Lesen Sie dieses Kapitel.",
+            "Lesen wir morgen weiter?",
+            "Lesen bildet."
+        ]
+    },
+    {
+        "verb_id": 9,
+        "sentences":
+        [
+            "Ich lösche die Daten.",
+            "Er löscht das Feuer.",
+            "Sie löscht die Nachrichten.",
+            "Wir löschen die Dateien.",
+            "Du löschst den Verlauf.",
+            "Ihr löscht die alten Bilder.",
+            "Löschst du alles?",
+            "Löschen Sie den Cache.",
+            "Löschen wir den Fehler?",
+            "Löschen ist endgültig."
+        ]
+    },
+    {
+        "verb_id": 10,
+        "sentences":
+        [
+            "Ich leihe dir mein Auto.",
+            "Er leiht Geld von mir.",
+            "Sie leiht sich einen Stift.",
+            "Wir leihen Werkzeug aus.",
+            "Du leihst das Buch.",
+            "Ihr leiht euch gegenseitig.",
+            "Leihst du oft?",
+            "Leihen Sie mir Ihr Ohr.",
+            "Leihen wir uns etwas?",
+            "Leihen und ausleihen."
+        ]
+    }
+]

@@ -1,0 +1,162 @@
+[
+    {
+        "verb_id": 1,
+        "sentences":
+        [
+            "Ich öffne die Tür.",
+            "Er öffnet das Geschenk.",
+            "Sie öffnet ihr Herz.",
+            "Wir öffnen den Laden.",
+            "Du öffnest die Flasche.",
+            "Ihr öffnet ein neues Kapitel.",
+            "Öffnest du das Fenster?",
+            "Öffnen Sie bitte das Dokument.",
+            "Öffnen wir uns für neue Ideen?",
+            "Öffnen bringt Frische."
+        ]
+    },
+    {
+        "verb_id": 2,
+        "sentences":
+        [
+            "Ich operiere den Patienten.",
+            "Er operiert am offenen Herzen.",
+            "Sie operiert erfolgreich.",
+            "Wir operieren im Krankenhaus.",
+            "Du operierst mit Präzision.",
+            "Ihr operiert gemeinsam.",
+            "Operierst du oft?",
+            "Operieren Sie vorsichtig.",
+            "Operieren wir im Notfall?",
+            "Operieren erfordert Können."
+        ]
+    },
+    {
+        "verb_id": 3,
+        "sentences":
+        [
+            "Ich organisiere das Event.",
+            "Er organisiert das Team.",
+            "Sie organisiert die Abläufe.",
+            "Wir organisieren den Wettbewerb.",
+            "Du organisierst die Reise.",
+            "Ihr organisiert die Logistik.",
+            "Organisierst du gerne?",
+            "Organisieren Sie alles gut.",
+            "Organisieren wir das Treffen?",
+            "Organisieren macht alles einfacher."
+        ]
+    },
+    {
+        "verb_id": 4,
+        "sentences":
+        [
+            "Ich obstruiere den Weg.",
+            "Er obstruiert die Verhandlung.",
+            "Sie obstruiert die Entscheidung.",
+            "Wir obstruieren den Fortschritt.",
+            "Du obstruierst die Sicht.",
+            "Ihr obstruiert das Gesetz.",
+            "Obstruierst du den Prozess?",
+            "Obstruieren Sie nicht.",
+            "Obstruieren wir den Fluss?",
+            "Obstruieren stört den Fluss."
+        ]
+    },
+    {
+        "verb_id": 5,
+        "sentences":
+        [
+            "Ich höre das Lied.",
+            "Er hört die Vögel singen.",
+            "Sie hört die Wellen rauschen.",
+            "Wir hören die Musik.",
+            "Du hörst den Wind.",
+            "Ihr hört die Stimmen.",
+            "Hörst du das?",
+            "Hören Sie das Geräusch?",
+            "Hören wir die Natur?",
+            "Hören bringt Erkenntnis."
+        ]
+    },
+    {
+        "verb_id": 6,
+        "sentences":
+        [
+            "Ich ordne die Unterlagen.",
+            "Er ordnet die Bücher.",
+            "Sie ordnet ihre Gedanken.",
+            "Wir ordnen die Aufgaben.",
+            "Du ordnest die Werkzeuge.",
+            "Ihr ordnet die Dateien.",
+            "Ordnest du oft?",
+            "Ordnen Sie das Chaos.",
+            "Ordnen wir die Prioritäten?",
+            "Ordnen bringt Struktur."
+        ]
+    },
+    {
+        "verb_id": 7,
+        "sentences":
+        [
+            "Ich oszilliere zwischen den Optionen.",
+            "Er oszilliert in seinen Entscheidungen.",
+            "Sie oszilliert in ihrer Meinung.",
+            "Wir oszillieren in der Bewertung.",
+            "Du oszillierst in deinem Verhalten.",
+            "Ihr oszilliert zwischen Hoffnung und Zweifel.",
+            "Oszillierst du oft?",
+            "Oszillieren Sie zwischen den Extremen.",
+            "Oszillieren wir zu stark?",
+            "Oszillieren bringt Unentschlossenheit."
+        ]
+    },
+    {
+        "verb_id": 8,
+        "sentences":
+        [
+            "Ich observiere das Verhalten.",
+            "Er observiert die Bewegungen.",
+            "Sie observiert das Gespräch.",
+            "Wir observieren die Umgebung.",
+            "Du observierst die Details.",
+            "Ihr observiert die Verdächtigen.",
+            "Observierst du gerne?",
+            "Observieren Sie diskret.",
+            "Observieren wir das Ziel?",
+            "Observieren bringt Erkenntnis."
+        ]
+    },
+    {
+        "verb_id": 9,
+        "sentences":
+        [
+            "Ich oute mich als Unterstützer.",
+            "Er outet sich als Fan.",
+            "Sie outet sich als Künstlerin.",
+            "Wir outen uns als Team.",
+            "Du outest dich als Experte.",
+            "Ihr outet euch als Befürworter.",
+            "Outest du dich öffentlich?",
+            "Outen Sie sich mutig.",
+            "Outen wir uns als Aktivisten?",
+            "Outen bedeutet Ehrlichkeit."
+        ]
+    },
+    {
+        "verb_id": 10,
+        "sentences":
+        [
+            "Ich orgle in der Kirche.",
+            "Er orgelt bei Festen.",
+            "Sie orgelt im Chor.",
+            "Wir orgeln zu besonderen Anlässen.",
+            "Du orgelst für die Gemeinde.",
+            "Ihr orgelt zu Feierlichkeiten.",
+            "Orgelst du gerne?",
+            "Orgeln Sie für die Veranstaltung.",
+            "Orgeln wir am Sonntag?",
+            "Orgeln bringt festliche Stimmung."
+        ]
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "tanze",
+            "du": "tanzt",
+            "er/sie/es": "tanzt",
+            "wir": "tanzen",
+            "ihr": "tanzt",
+            "sie/Sie": "tanzen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "teile",
+            "du": "teilst",
+            "er/sie/es": "teilt",
+            "wir": "teilen",
+            "ihr": "teilt",
+            "sie/Sie": "teilen"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "telefoniere",
+            "du": "telefonierst",
+            "er/sie/es": "telefoniert",
+            "wir": "telefonieren",
+            "ihr": "telefoniert",
+            "sie/Sie": "telefonieren"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "trage",
+            "du": "trägst",
+            "er/sie/es": "trägt",
+            "wir": "tragen",
+            "ihr": "tragt",
+            "sie/Sie": "tragen"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "treffe",
+            "du": "triffst",
+            "er/sie/es": "trifft",
+            "wir": "treffen",
+            "ihr": "trefft",
+            "sie/Sie": "treffen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "trinke",
+            "du": "trinkst",
+            "er/sie/es": "trinkt",
+            "wir": "trinken",
+            "ihr": "trinkt",
+            "sie/Sie": "trinken"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "tue",
+            "du": "tust",
+            "er/sie/es": "tut",
+            "wir": "tun",
+            "ihr": "tut",
+            "sie/Sie": "tun"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "töte",
+            "du": "tötest",
+            "er/sie/es": "tötet",
+            "wir": "töten",
+            "ihr": "tötet",
+            "sie/Sie": "töten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "trommle",
+            "du": "trommelst",
+            "er/sie/es": "trommelt",
+            "wir": "trommeln",
+            "ihr": "trommelt",
+            "sie/Sie": "trommeln"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "tröste",
+            "du": "tröstest",
+            "er/sie/es": "tröstet",
+            "wir": "trösten",
+            "ihr": "tröstet",
+            "sie/Sie": "trösten"
+        }
+    }
+]

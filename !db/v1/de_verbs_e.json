@@ -1,0 +1,42 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "essen"
+    },
+    {
+        "verb_id": 2,
+        "verb": "erklären"
+    },
+    {
+        "verb_id": 3,
+        "verb": "ernten"
+    },
+    {
+        "verb_id": 4,
+        "verb": "erhöhen"
+    },
+    {
+        "verb_id": 5,
+        "verb": "erstellen"
+    },
+    {
+        "verb_id": 6,
+        "verb": "erwarten"
+    },
+    {
+        "verb_id": 7,
+        "verb": "entwickeln"
+    },
+    {
+        "verb_id": 8,
+        "verb": "ergänzen"
+    },
+    {
+        "verb_id": 9,
+        "verb": "entdecken"
+    },
+    {
+        "verb_id": 10,
+        "verb": "erfahren"
+    }
+]

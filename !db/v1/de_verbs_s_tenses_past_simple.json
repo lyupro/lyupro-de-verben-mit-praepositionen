@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "sagte",
+            "du": "sagtest",
+            "er/sie/es": "sagte",
+            "wir": "sagten",
+            "ihr": "sagtet",
+            "sie/Sie": "sagten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "sog",
+            "du": "sogst",
+            "er/sie/es": "sog",
+            "wir": "sogen",
+            "ihr": "sogt",
+            "sie/Sie": "sogen"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "schuf",
+            "du": "schufst",
+            "er/sie/es": "schuf",
+            "wir": "schufen",
+            "ihr": "schuftet",
+            "sie/Sie": "schufen"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "schaute",
+            "du": "schautest",
+            "er/sie/es": "schaute",
+            "wir": "schauten",
+            "ihr": "schautet",
+            "sie/Sie": "schauten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "schickte",
+            "du": "schicktest",
+            "er/sie/es": "schickte",
+            "wir": "schickten",
+            "ihr": "schicktet",
+            "sie/Sie": "schickten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "schlief",
+            "du": "schliefst",
+            "er/sie/es": "schlief",
+            "wir": "schliefen",
+            "ihr": "schlieft",
+            "sie/Sie": "schliefen"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "schmeckte",
+            "du": "schmecktest",
+            "er/sie/es": "schmeckte",
+            "wir": "schmeckten",
+            "ihr": "schmecktet",
+            "sie/Sie": "schmeckten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "schnitt",
+            "du": "schnittst",
+            "er/sie/es": "schnitt",
+            "wir": "schnitten",
+            "ihr": "schnittet",
+            "sie/Sie": "schnitten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "schrieb",
+            "du": "schriebst",
+            "er/sie/es": "schrieb",
+            "wir": "schrieben",
+            "ihr": "schriebt",
+            "sie/Sie": "schrieben"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "schwamm",
+            "du": "schwammst",
+            "er/sie/es": "schwamm",
+            "wir": "schwammen",
+            "ihr": "schwammt",
+            "sie/Sie": "schwammen"
+        }
+    }
+]

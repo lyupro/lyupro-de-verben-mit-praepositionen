@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte gewachsen",
+            "du": "hattest gewachsen",
+            "er/sie/es": "hatte gewachsen",
+            "wir": "hatten gewachsen",
+            "ihr": "hattet gewachsen",
+            "sie/Sie": "hatten gewachsen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte gewählt",
+            "du": "hattest gewählt",
+            "er/sie/es": "hatte gewählt",
+            "wir": "hatten gewählt",
+            "ihr": "hattet gewählt",
+            "sie/Sie": "hatten gewählt"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte gewandert",
+            "du": "hattest gewandert",
+            "er/sie/es": "hatte gewandert",
+            "wir": "hatten gewandert",
+            "ihr": "hattet gewandert",
+            "sie/Sie": "hatten gewandert"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte gewarnt",
+            "du": "hattest gewarnt",
+            "er/sie/es": "hatte gewarnt",
+            "wir": "hatten gewarnt",
+            "ihr": "hattet gewarnt",
+            "sie/Sie": "hatten gewarnt"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte gewaschen",
+            "du": "hattest gewaschen",
+            "er/sie/es": "hatte gewaschen",
+            "wir": "hatten gewaschen",
+            "ihr": "hattet gewaschen",
+            "sie/Sie": "hatten gewaschen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte gewechselt",
+            "du": "hattest gewechselt",
+            "er/sie/es": "hatte gewechselt",
+            "wir": "hatten gewechselt",
+            "ihr": "hattet gewechselt",
+            "sie/Sie": "hatten gewechselt"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte geweckt",
+            "du": "hattest geweckt",
+            "er/sie/es": "hatte geweckt",
+            "wir": "hatten geweckt",
+            "ihr": "hattet geweckt",
+            "sie/Sie": "hatten geweckt"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte gewehrt",
+            "du": "hattest gewehrt",
+            "er/sie/es": "hatte gewehrt",
+            "wir": "hatten gewehrt",
+            "ihr": "hattet gewehrt",
+            "sie/Sie": "hatten gewehrt"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte geweint",
+            "du": "hattest geweint",
+            "er/sie/es": "hatte geweint",
+            "wir": "hatten geweint",
+            "ihr": "hattet geweint",
+            "sie/Sie": "hatten geweint"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "war geworden",
+            "du": "warst geworden",
+            "er/sie/es": "war geworden",
+            "wir": "waren geworden",
+            "ihr": "wart geworden",
+            "sie/Sie": "waren geworden"
+        }
+    }
+]

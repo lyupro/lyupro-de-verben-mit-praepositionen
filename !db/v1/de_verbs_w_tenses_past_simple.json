@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "wuchs",
+            "du": "wuchst",
+            "er/sie/es": "wuchs",
+            "wir": "wuchsen",
+            "ihr": "wuchst",
+            "sie/Sie": "wuchsen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "wählte",
+            "du": "wähltest",
+            "er/sie/es": "wählte",
+            "wir": "wählten",
+            "ihr": "wähltet",
+            "sie/Sie": "wählten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "wanderte",
+            "du": "wandertest",
+            "er/sie/es": "wanderte",
+            "wir": "wanderten",
+            "ihr": "wandertet",
+            "sie/Sie": "wanderten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "warnte",
+            "du": "warntest",
+            "er/sie/es": "warnte",
+            "wir": "warnten",
+            "ihr": "warntet",
+            "sie/Sie": "warnten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "wusch",
+            "du": "wuschest",
+            "er/sie/es": "wusch",
+            "wir": "wuschten",
+            "ihr": "wuschtet",
+            "sie/Sie": "wuschten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "wechselte",
+            "du": "wechseltest",
+            "er/sie/es": "wechselte",
+            "wir": "wechselten",
+            "ihr": "wechseltet",
+            "sie/Sie": "wechselten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "weckte",
+            "du": "wecktest",
+            "er/sie/es": "weckte",
+            "wir": "weckten",
+            "ihr": "wecktet",
+            "sie/Sie": "weckten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "wehrte",
+            "du": "wehrtest",
+            "er/sie/es": "wehrte",
+            "wir": "wehrten",
+            "ihr": "wehrtet",
+            "sie/Sie": "wehrten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "weinte",
+            "du": "weintest",
+            "er/sie/es": "weinte",
+            "wir": "weinten",
+            "ihr": "weintet",
+            "sie/Sie": "weinten"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "wurde",
+            "du": "wurdest",
+            "er/sie/es": "wurde",
+            "wir": "wurden",
+            "ihr": "wurdet",
+            "sie/Sie": "wurden"
+        }
+    }
+]

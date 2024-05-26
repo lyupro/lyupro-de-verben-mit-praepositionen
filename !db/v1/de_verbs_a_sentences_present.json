@@ -1,0 +1,162 @@
+[
+    {
+        "verb_id": 1,
+        "sentences":
+        [
+            "Ich arbeite von Montag bis Freitag.",
+            "Sie arbeitet als Lehrerin.",
+            "Wir arbeiten im Büro.",
+            "Du arbeitest hart.",
+            "Ihr arbeitet gerne zusammen.",
+            "Sie arbeiten im Garten.",
+            "Arbeitest du auch am Wochenende?",
+            "Arbeiten Sie in dieser Firma?",
+            "Arbeiten wir heute zusammen?",
+            "Arbeiten macht Spaß."
+        ]
+    },
+    {
+        "verb_id": 2,
+        "sentences":
+        [
+            "Ich angle gerne in meinem Urlaub.",
+            "Er angelt am liebsten am See.",
+            "Wir angeln oft am Fluss.",
+            "Du angelst mit deinem Vater.",
+            "Ihr angelt morgen früh.",
+            "Sie angeln im Meer.",
+            "Angelst du auch in anderen Ländern?",
+            "Angeln Sie regelmäßig?",
+            "Angeln wir heute Abend?",
+            "Angeln ist entspannend."
+        ]
+    },
+    {
+        "verb_id": 3,
+        "sentences":
+        [
+            "Ich analysiere die Daten gründlich.",
+            "Sie analysiert den Markt für uns.",
+            "Wir analysieren die Ergebnisse.",
+            "Du analysierst die Trends.",
+            "Ihr analysiert die Probleme.",
+            "Sie analysieren gemeinsam.",
+            "Analysierst du auch die Konkurrenz?",
+            "Analysieren Sie regelmäßig?",
+            "Analysieren wir die Situation?",
+            "Analysieren ist wichtig."
+        ]
+    },
+    {
+        "verb_id": 4,
+        "sentences":
+        [
+            "Ich argumentiere für meine Ideen.",
+            "Sie argumentiert überzeugend.",
+            "Wir argumentieren für die Umwelt.",
+            "Du argumentierst fair.",
+            "Ihr argumentiert leidenschaftlich.",
+            "Sie argumentieren sachlich.",
+            "Argumentierst du auch in schwierigen Situationen?",
+            "Argumentieren Sie gerne?",
+            "Argumentieren wir darüber?",
+            "Argumentieren ist eine Kunst."
+        ]
+    },
+    {
+        "verb_id": 5,
+        "sentences":
+        [
+            "Ich assimiliere mich in die neue Kultur.",
+            "Sie assimiliert sich schnell.",
+            "Wir assimilieren uns an die Regeln.",
+            "Du assimilierst dich gut.",
+            "Ihr assimiliert euch in die Gesellschaft.",
+            "Sie assimilieren die neuen Ideen.",
+            "Assimilierst du dich auch in andere Länder?",
+            "Assimilieren Sie sich leicht?",
+            "Assimilieren wir uns gegenseitig?",
+            "Assimilieren ist ein natürlicher Prozess."
+        ]
+    },
+    {
+        "verb_id": 6,
+        "sentences":
+        [
+            "Ich wärme das Essen auf.",
+            "Sie wärmt sich die Hände auf.",
+            "Wir wärmen uns im Winter auf.",
+            "Du wärmst dich am Feuer auf.",
+            "Ihr wärmt euch vor dem Spiel auf.",
+            "Sie wärmen die Suppe auf.",
+            "Wärmst du dich auch vor dem Training auf?",
+            "Wärmen Sie sich gut auf?",
+            "Wärmen wir uns gemeinsam auf?",
+            "Aufwärmen ist wichtig vor körperlicher Aktivität."
+        ]
+    },
+    {
+        "verb_id": 7,
+        "sentences":
+        [
+            "Ich probiere das neue Rezept aus.",
+            "Sie probiert das Kleidungsstück aus.",
+            "Wir probieren die neue Technologie aus.",
+            "Du probierst das neue Spiel aus.",
+            "Ihr probiert die neue Sportart aus.",
+            "Sie probieren das neue Produkt aus.",
+            "Probierst du auch gerne Neues aus?",
+            "Probieren Sie verschiedene Optionen aus?",
+            "Probieren wir es aus?",
+            "Ausprobieren ist eine Möglichkeit, Neues kennenzulernen."
+        ]
+    },
+    {
+        "verb_id": 8,
+        "sentences":
+        [
+            "Ich komme pünktlich an.",
+            "Sie kommt am Bahnhof an.",
+            "Wir kommen rechtzeitig an.",
+            "Du kommst immer zu spät an.",
+            "Ihr kommt zusammen an.",
+            "Sie kommen mit dem Auto an.",
+            "Kommst du auch mit dem Zug an?",
+            "Kommen Sie gut an?",
+            "Kommen wir an?",
+            "Ankommen ist der Beginn eines Abenteuers."
+        ]
+    },
+    {
+        "verb_id": 9,
+        "sentences":
+        [
+            "Ich ziehe mich für die Party an.",
+            "Sie zieht sich elegant an.",
+            "Wir ziehen uns warm an.",
+            "Du ziehst dich schnell an.",
+            "Ihr zieht euch für die Hochzeit an.",
+            "Sie ziehen sich für das Meeting an.",
+            "Ziehst du dich auch für besondere Anlässe an?",
+            "Ziehen Sie sich für die Arbeit an?",
+            "Ziehen wir uns gemeinsam an?",
+            "Anziehen ist Teil des täglichen Rituals."
+        ]
+    },
+    {
+        "verb_id": 10,
+        "sentences":
+        [
+            "Ich wasche das Geschirr ab.",
+            "Sie wäscht die Wäsche ab.",
+            "Wir waschen die Fenster ab.",
+            "Du wäschst das Auto ab.",
+            "Ihr wascht das Besteck ab.",
+            "Sie waschen den Boden ab.",
+            "Wäschst du auch die Kleidung ab?",
+            "Waschen Sie das Gemüse ab?",
+            "Waschen wir das Auto ab?",
+            "Abwaschen spart Zeit."
+        ]
+    }
+]

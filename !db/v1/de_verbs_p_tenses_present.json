@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "packe",
+            "du": "packst",
+            "er/sie/es": "packt",
+            "wir": "packen",
+            "ihr": "packt",
+            "sie/Sie": "packen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "parke",
+            "du": "parkst",
+            "er/sie/es": "parkt",
+            "wir": "parken",
+            "ihr": "parkt",
+            "sie/Sie": "parken"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "partizipiere",
+            "du": "partizipierst",
+            "er/sie/es": "partizipiert",
+            "wir": "partizipieren",
+            "ihr": "partizipiert",
+            "sie/Sie": "partizipieren"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "passiere",
+            "du": "passierst",
+            "er/sie/es": "passiert",
+            "wir": "passieren",
+            "ihr": "passiert",
+            "sie/Sie": "passieren"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "patentiere",
+            "du": "patentierst",
+            "er/sie/es": "patentiert",
+            "wir": "patentieren",
+            "ihr": "patentiert",
+            "sie/Sie": "patentieren"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "peitsche",
+            "du": "peitschst",
+            "er/sie/es": "peitscht",
+            "wir": "peitschen",
+            "ihr": "peitscht",
+            "sie/Sie": "peitschen"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "pendle",
+            "du": "pendelst",
+            "er/sie/es": "pendelt",
+            "wir": "pendeln",
+            "ihr": "pendelt",
+            "sie/Sie": "pendeln"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "perfektioniere",
+            "du": "perfektionierst",
+            "er/sie/es": "perfektioniert",
+            "wir": "perfektionieren",
+            "ihr": "perfektioniert",
+            "sie/Sie": "perfektionieren"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "pfeife",
+            "du": "pfeifst",
+            "er/sie/es": "pfeift",
+            "wir": "pfeifen",
+            "ihr": "pfeift",
+            "sie/Sie": "pfeifen"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "pflanze",
+            "du": "pflanzt",
+            "er/sie/es": "pflanzt",
+            "wir": "pflanzen",
+            "ihr": "pflanzt",
+            "sie/Sie": "pflanzen"
+        }
+    }
+]

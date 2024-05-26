@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "mache",
+            "du": "machst",
+            "er/sie/es": "macht",
+            "wir": "machen",
+            "ihr": "macht",
+            "sie/Sie": "machen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "mag",
+            "du": "magst",
+            "er/sie/es": "mag",
+            "wir": "mögen",
+            "ihr": "mögt",
+            "sie/Sie": "mögen"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "male",
+            "du": "malst",
+            "er/sie/es": "malt",
+            "wir": "malen",
+            "ihr": "malt",
+            "sie/Sie": "malen"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "messe",
+            "du": "misst",
+            "er/sie/es": "misst",
+            "wir": "messen",
+            "ihr": "messt",
+            "sie/Sie": "messen"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "melde",
+            "du": "meldest",
+            "er/sie/es": "meldet",
+            "wir": "melden",
+            "ihr": "meldet",
+            "sie/Sie": "melden"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "meide",
+            "du": "meidest",
+            "er/sie/es": "meidet",
+            "wir": "meiden",
+            "ihr": "meidet",
+            "sie/Sie": "meiden"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "bringe mit",
+            "du": "bringst mit",
+            "er/sie/es": "bringt mit",
+            "wir": "bringen mit",
+            "ihr": "bringt mit",
+            "sie/Sie": "bringen mit"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "musiziere",
+            "du": "musizierst",
+            "er/sie/es": "musiziert",
+            "wir": "musizieren",
+            "ihr": "musiziert",
+            "sie/Sie": "musizieren"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "murmele",
+            "du": "murmelst",
+            "er/sie/es": "murmelt",
+            "wir": "murmeln",
+            "ihr": "murmelt",
+            "sie/Sie": "murmeln"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "munkle",
+            "du": "munkelst",
+            "er/sie/es": "munkelt",
+            "wir": "munkeln",
+            "ihr": "munkelt",
+            "sie/Sie": "munkeln"
+        }
+    }
+]

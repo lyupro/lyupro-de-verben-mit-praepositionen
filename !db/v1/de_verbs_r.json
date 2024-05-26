@@ -1,0 +1,42 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "rasen"
+    },
+    {
+        "verb_id": 2,
+        "verb": "rauchen"
+    },
+    {
+        "verb_id": 3,
+        "verb": "rechnen"
+    },
+    {
+        "verb_id": 4,
+        "verb": "regnen"
+    },
+    {
+        "verb_id": 5,
+        "verb": "reißen"
+    },
+    {
+        "verb_id": 6,
+        "verb": "reiten"
+    },
+    {
+        "verb_id": 7,
+        "verb": "rennen"
+    },
+    {
+        "verb_id": 8,
+        "verb": "reparieren"
+    },
+    {
+        "verb_id": 9,
+        "verb": "reservieren"
+    },
+    {
+        "verb_id": 10,
+        "verb": "riskieren"
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "überlege",
+            "du": "überlegst",
+            "er/sie/es": "überlegt",
+            "wir": "überlegen",
+            "ihr": "überlegt",
+            "sie/Sie": "überlegen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "übernehme",
+            "du": "übernimmst",
+            "er/sie/es": "übernimmt",
+            "wir": "übernehmen",
+            "ihr": "übernehmt",
+            "sie/Sie": "übernehmen"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "überquere",
+            "du": "überquerst",
+            "er/sie/es": "überquert",
+            "wir": "überqueren",
+            "ihr": "überquert",
+            "sie/Sie": "überqueren"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "überrede",
+            "du": "überredest",
+            "er/sie/es": "überredet",
+            "wir": "überreden",
+            "ihr": "überredet",
+            "sie/Sie": "überreden"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "überweise",
+            "du": "überweist",
+            "er/sie/es": "überweist",
+            "wir": "überweisen",
+            "ihr": "überweist",
+            "sie/Sie": "überweisen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "umarme",
+            "du": "umarmst",
+            "er/sie/es": "umarmt",
+            "wir": "umarmen",
+            "ihr": "umarmt",
+            "sie/Sie": "umarmen"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "umbiege",
+            "du": "umbiegst",
+            "er/sie/es": "umbiegt",
+            "wir": "umbiegen",
+            "ihr": "umbiegt",
+            "sie/Sie": "umbiegen"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "umfahre",
+            "du": "umfährst",
+            "er/sie/es": "umfährt",
+            "wir": "umfahren",
+            "ihr": "umfahrt",
+            "sie/Sie": "umfahren"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "umgebe",
+            "du": "umgibst",
+            "er/sie/es": "umgibt",
+            "wir": "umgeben",
+            "ihr": "umgebt",
+            "sie/Sie": "umgeben"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "umziehe",
+            "du": "umziehst",
+            "er/sie/es": "umzieht",
+            "wir": "umziehen",
+            "ihr": "umzieht",
+            "sie/Sie": "umziehen"
+        }
+    }
+]

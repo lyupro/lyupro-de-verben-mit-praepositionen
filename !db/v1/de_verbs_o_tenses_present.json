@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "öffne",
+            "du": "öffnest",
+            "er/sie/es": "öffnet",
+            "wir": "öffnen",
+            "ihr": "öffnet",
+            "sie/Sie": "öffnen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "operiere",
+            "du": "operierst",
+            "er/sie/es": "operiert",
+            "wir": "operieren",
+            "ihr": "operiert",
+            "sie/Sie": "operieren"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "organisiere",
+            "du": "organisierst",
+            "er/sie/es": "organisiert",
+            "wir": "organisieren",
+            "ihr": "organisiert",
+            "sie/Sie": "organisieren"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "obstriere",
+            "du": "obstrierst",
+            "er/sie/es": "obstriert",
+            "wir": "obstrieren",
+            "ihr": "obstriert",
+            "sie/Sie": "obstrieren"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "ohre",
+            "du": "ohrst",
+            "er/sie/es": "ohrt",
+            "wir": "ohren",
+            "ihr": "ohrt",
+            "sie/Sie": "ohren"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "ordne",
+            "du": "ordnest",
+            "er/sie/es": "ordnet",
+            "wir": "ordnen",
+            "ihr": "ordnet",
+            "sie/Sie": "ordnen"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "oszilliere",
+            "du": "oszillierst",
+            "er/sie/es": "oszilliert",
+            "wir": "oszillieren",
+            "ihr": "oszilliert",
+            "sie/Sie": "oszillieren"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "observiere",
+            "du": "observierst",
+            "er/sie/es": "observiert",
+            "wir": "observieren",
+            "ihr": "observiert",
+            "sie/Sie": "observieren"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "oute",
+            "du": "outest",
+            "er/sie/es": "outet",
+            "wir": "outen",
+            "ihr": "outet",
+            "sie/Sie": "outen"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "orgle",
+            "du": "orgelst",
+            "er/sie/es": "orgelt",
+            "wir": "orgeln",
+            "ihr": "orgelt",
+            "sie/Sie": "orgeln"
+        }
+    }
+]
