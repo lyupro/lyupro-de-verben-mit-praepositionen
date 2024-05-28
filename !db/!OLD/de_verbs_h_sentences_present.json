@@ -1,0 +1,162 @@
+[
+    {
+        "verb_id": 0,
+        "sentences":
+        [
+            "Ich habe einen Hund.",
+            "Sie hat viele Freunde.",
+            "Wir haben Glück.",
+            "Du hast Zeit.",
+            "Ihr habt Spaß.",
+            "Sie haben Erfolg.",
+            "Hast du auch?",
+            "Haben Sie eine Idee?",
+            "Haben wir Zeit?",
+            "Haben ist wichtig."
+        ]
+    },
+    {
+        "verb_id": 1,
+        "sentences":
+        [
+            "Ich halte die Tür auf.",
+            "Sie hält das Buch fest.",
+            "Wir halten uns fest.",
+            "Du hältst die Stellung.",
+            "Ihr haltet die Tradition hoch.",
+            "Sie halten zusammen.",
+            "Hältst du auch?",
+            "Halten Sie das für möglich?",
+            "Halten wir Kontakt?",
+            "Halten verbindet."
+        ]
+    },
+    {
+        "verb_id": 2,
+        "sentences":
+        [
+            "Ich helfe dir gerne.",
+            "Sie hilft im Haushalt.",
+            "Wir helfen uns gegenseitig.",
+            "Du hilfst deinen Eltern.",
+            "Ihr helft in der Not.",
+            "Sie helfen den Bedürftigen.",
+            "Hilfst du auch?",
+            "Helfen Sie gerne?",
+            "Helfen wir zusammen?",
+            "Helfen macht glücklich."
+        ]
+    },
+    {
+        "verb_id": 3,
+        "sentences":
+        [
+            "Ich heiße Anna.",
+            "Sie heißt Max.",
+            "Wir heißen alle willkommen.",
+            "Du heißt freundlich.",
+            "Ihr heißt ihn willkommen.",
+            "Sie heißen ihn Chef.",
+            "Heißt du auch so?",
+            "Heißen Sie Herr Müller?",
+            "Heißen wir ihn willkommen?",
+            "Heißen verbindet."
+        ]
+    },
+    {
+        "verb_id": 4,
+        "sentences":
+        [
+            "Ich höre Musik.",
+            "Sie hört das Meer rauschen.",
+            "Wir hören auf den Lehrer.",
+            "Du hörst den Vogel singen.",
+            "Ihr hört den Applaus.",
+            "Sie hören die Nachrichten.",
+            "Hörst du auch?",
+            "Hören Sie gerne Musik?",
+            "Hören wir gut zu?",
+            "Hören verbindet."
+        ]
+    },
+    {
+        "verb_id": 5,
+        "sentences":
+        [
+            "Ich lade das Foto hoch.",
+            "Sie lädt das Video hoch.",
+            "Wir laden die Datei hoch.",
+            "Du lädst die Software hoch.",
+            "Ihr ladet die Informationen hoch.",
+            "Sie laden das Update hoch.",
+            "Lädst du auch hoch?",
+            "Laden Sie oft hoch?",
+            "Laden wir etwas hoch?",
+            "Hochladen ist einfach."
+        ]
+    },
+    {
+        "verb_id": 6,
+        "sentences":
+        [
+            "Ich heirate meinen Partner.",
+            "Sie heiratet ihren Freund.",
+            "Wir heiraten im Sommer.",
+            "Du heiratest im Ausland.",
+            "Ihr heiratet traditionell.",
+            "Sie heiraten standesamtlich.",
+            "Heiratest du auch?",
+            "Heiraten Sie bald?",
+            "Heiraten wir in Weiß?",
+            "Heiraten verbindet."
+        ]
+    },
+    {
+        "verb_id": 7,
+        "sentences":
+        [
+            "Ich hasse Lügen.",
+            "Sie hasst Streit.",
+            "Wir hassen Ungerechtigkeit.",
+            "Du hasst den Winter.",
+            "Ihr hasst Wartezeiten.",
+            "Sie hassen Betrug.",
+            "Hasst du auch?",
+            "Hassen Sie diese Situation?",
+            "Hassen wir dasselbe?",
+            "Hassen ist negativ."
+        ]
+    },
+    {
+        "verb_id": 8,
+        "sentences":
+        [
+            "Ich stelle Möbel her.",
+            "Sie stellt Keramik her.",
+            "Wir stellen Maschinen her.",
+            "Du stellst Produkte her.",
+            "Ihr stellt Kunstwerke her.",
+            "Sie stellen Lebensmittel her.",
+            "Stellst du auch her?",
+            "Stellen Sie das selbst her?",
+            "Stellen wir zusammen her?",
+            "Herstellen ist kreativ."
+        ]
+    },
+    {
+        "verb_id": 9,
+        "sentences":
+        [
+            "Ich hoffe auf Erfolg.",
+            "Sie hofft auf eine Chance.",
+            "Wir hoffen auf Veränderung.",
+            "Du hoffst auf Glück.",
+            "Ihr hofft auf Besserung.",
+            "Sie hoffen auf ein Wunder.",
+            "Hoffst du auch?",
+            "Hoffen Sie das Beste?",
+            "Hoffen wir auf ein Wunder?",
+            "Hoffen macht optimistisch."
+        ]
+    }
+]

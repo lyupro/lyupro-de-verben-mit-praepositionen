@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "kämpfe",
+            "du": "kämpfst",
+            "er/sie/es": "kämpft",
+            "wir": "kämpfen",
+            "ihr": "kämpft",
+            "sie/Sie": "kämpfen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "küsse",
+            "du": "küsst",
+            "er/sie/es": "küsst",
+            "wir": "küssen",
+            "ihr": "küsst",
+            "sie/Sie": "küssen"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "klettere",
+            "du": "kletterst",
+            "er/sie/es": "klettert",
+            "wir": "klettern",
+            "ihr": "klettert",
+            "sie/Sie": "klettern"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "koche",
+            "du": "kochst",
+            "er/sie/es": "kocht",
+            "wir": "kochen",
+            "ihr": "kocht",
+            "sie/Sie": "kochen"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "klatsche",
+            "du": "klatschst",
+            "er/sie/es": "klatscht",
+            "wir": "klatschen",
+            "ihr": "klatscht",
+            "sie/Sie": "klatschen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "komme",
+            "du": "kommst",
+            "er/sie/es": "kommt",
+            "wir": "kommen",
+            "ihr": "kommt",
+            "sie/Sie": "kommen"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "krabble",
+            "du": "krabbelst",
+            "er/sie/es": "krabbelt",
+            "wir": "krabbeln",
+            "ihr": "krabbelt",
+            "sie/Sie": "krabbeln"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "kreische",
+            "du": "kreischst",
+            "er/sie/es": "kreischt",
+            "wir": "kreischen",
+            "ihr": "kreischt",
+            "sie/Sie": "kreischen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "krieche",
+            "du": "kriechst",
+            "er/sie/es": "kriecht",
+            "wir": "kriechen",
+            "ihr": "kriecht",
+            "sie/Sie": "kriechen"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "kaufe",
+            "du": "kaufst",
+            "er/sie/es": "kauft",
+            "wir": "kaufen",
+            "ihr": "kauft",
+            "sie/Sie": "kaufen"
+        }
+    }
+]

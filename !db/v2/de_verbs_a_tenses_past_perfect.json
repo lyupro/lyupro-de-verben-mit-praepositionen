@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte gearbeitet",
+            "du": "hattest gearbeitet",
+            "er/sie/es": "hatte gearbeitet",
+            "wir": "hatten gearbeitet",
+            "ihr": "hattet gearbeitet",
+            "sie/Sie": "hatten gearbeitet"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte geangelt",
+            "du": "hattest geangelt",
+            "er/sie/es": "hatte geangelt",
+            "wir": "hatten geangelt",
+            "ihr": "hattet geangelt",
+            "sie/Sie": "hatten geangelt"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte analysiert",
+            "du": "hattest analysiert",
+            "er/sie/es": "hatte analysiert",
+            "wir": "hatten analysiert",
+            "ihr": "hattet analysiert",
+            "sie/Sie": "hatten analysiert"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte argumentiert",
+            "du": "hattest argumentiert",
+            "er/sie/es": "hatte argumentiert",
+            "wir": "hatten argumentiert",
+            "ihr": "hattet argumentiert",
+            "sie/Sie": "hatten argumentiert"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte assimiliert",
+            "du": "hattest assimiliert",
+            "er/sie/es": "hatte assimiliert",
+            "wir": "hatten assimiliert",
+            "ihr": "hattet assimiliert",
+            "sie/Sie": "hatten assimiliert"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte aufgewärmt",
+            "du": "hattest aufgewärmt",
+            "er/sie/es": "hatte aufgewärmt",
+            "wir": "hatten aufgewärmt",
+            "ihr": "hattet aufgewärmt",
+            "sie/Sie": "hatten aufgewärmt"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte ausprobiert",
+            "du": "hattest ausprobiert",
+            "er/sie/es": "hatte ausprobiert",
+            "wir": "hatten ausprobiert",
+            "ihr": "hattet ausprobiert",
+            "sie/Sie": "hatten ausprobiert"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "war angekommen",
+            "du": "warst angekommen",
+            "er/sie/es": "war angekommen",
+            "wir": "waren angekommen",
+            "ihr": "wart angekommen",
+            "sie/Sie": "waren angekommen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte angezogen",
+            "du": "hattest angezogen",
+            "er/sie/es": "hatte angezogen",
+            "wir": "hatten angezogen",
+            "ihr": "hattet angezogen",
+            "sie/Sie": "hatten angezogen"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte abgewaschen",
+            "du": "hattest abgewaschen",
+            "er/sie/es": "hatte abgewaschen",
+            "wir": "hatten abgewaschen",
+            "ihr": "hattet abgewaschen",
+            "sie/Sie": "hatten abgewaschen"
+        }
+    }
+]

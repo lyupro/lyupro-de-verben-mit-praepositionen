@@ -1,6 +1,6 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "sentences":
         [
             "Ich arbeitete hart gestern.",
@@ -16,7 +16,7 @@
         ]
     },
     {
-        "verb_id": 2,
+        "verb_id": 1,
         "sentences":
         [
             "Ich angelte am See.",
@@ -32,7 +32,7 @@
         ]
     },
     {
-        "verb_id": 3,
+        "verb_id": 2,
         "sentences":
         [
             "Ich analysierte die Daten.",
@@ -48,7 +48,7 @@
         ]
     },
     {
-        "verb_id": 4,
+        "verb_id": 3,
         "sentences":
         [
             "Ich argumentierte mit meinem Freund.",
@@ -64,7 +64,7 @@
         ]
     },
     {
-        "verb_id": 5,
+        "verb_id": 4,
         "sentences":
         [
             "Ich assimilierte die Informationen.",
@@ -80,7 +80,7 @@
         ]
     },
     {
-        "verb_id": 6,
+        "verb_id": 5,
         "sentences":
         [
             "Ich wärmte das Essen auf.",
@@ -96,7 +96,7 @@
         ]
     },
     {
-        "verb_id": 7,
+        "verb_id": 6,
         "sentences":
         [
             "Ich probierte das neue Gericht aus.",
@@ -112,7 +112,7 @@
         ]
     },
     {
-        "verb_id": 8,
+        "verb_id": 7,
         "sentences":
         [
             "Ich kam pünktlich an.",
@@ -128,7 +128,7 @@
         ]
     },
     {
-        "verb_id": 9,
+        "verb_id": 8,
         "sentences":
         [
             "Ich zog mich elegant an.",
@@ -144,7 +144,7 @@
         ]
     },
     {
-        "verb_id": 10,
+        "verb_id": 9,
         "sentences":
         [
             "Ich wusch das Geschirr ab.",

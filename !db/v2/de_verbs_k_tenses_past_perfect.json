@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte gekämpft",
+            "du": "hattest gekämpft",
+            "er/sie/es": "hatte gekämpft",
+            "wir": "hatten gekämpft",
+            "ihr": "hattet gekämpft",
+            "sie/Sie": "hatten gekämpft"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte geküsst",
+            "du": "hattest geküsst",
+            "er/sie/es": "hatte geküsst",
+            "wir": "hatten geküsst",
+            "ihr": "hattet geküsst",
+            "sie/Sie": "hatten geküsst"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte geklettert",
+            "du": "hattest geklettert",
+            "er/sie/es": "hatte geklettert",
+            "wir": "hatten geklettert",
+            "ihr": "hattet geklettert",
+            "sie/Sie": "hatten geklettert"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte gekocht",
+            "du": "hattest gekocht",
+            "er/sie/es": "hatte gekocht",
+            "wir": "hatten gekocht",
+            "ihr": "hattet gekocht",
+            "sie/Sie": "hatten gekocht"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte geklatscht",
+            "du": "hattest geklatscht",
+            "er/sie/es": "hatte geklatscht",
+            "wir": "hatten geklatscht",
+            "ihr": "hattet geklatscht",
+            "sie/Sie": "hatten geklatscht"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte gekommen",
+            "du": "hattest gekommen",
+            "er/sie/es": "hatte gekommen",
+            "wir": "waren gekommen",
+            "ihr": "wart gekommen",
+            "sie/Sie": "waren gekommen"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte gekrabbelt",
+            "du": "hattest gekrabbelt",
+            "er/sie/es": "hatte gekrabbelt",
+            "wir": "hatten gekrabbelt",
+            "ihr": "hattet gekrabbelt",
+            "sie/Sie": "hatten gekrabbelt"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte gekreischt",
+            "du": "hattest gekreischt",
+            "er/sie/es": "hatte gekreischt",
+            "wir": "hatten gekreischt",
+            "ihr": "hattet gekreischt",
+            "sie/Sie": "hatten gekreischt"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte gekrochen",
+            "du": "hattest gekrochen",
+            "er/sie/es": "hatte gekrochen",
+            "wir": "waren gekrochen",
+            "ihr": "wart gekrochen",
+            "sie/Sie": "waren gekrochen"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte gekauft",
+            "du": "hattest gekauft",
+            "er/sie/es": "hatte gekauft",
+            "wir": "hatten gekauft",
+            "ihr": "hattet gekauft",
+            "sie/Sie": "hatten gekauft"
+        }
+    }
+]

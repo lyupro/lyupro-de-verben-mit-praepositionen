@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte getanzt",
+            "du": "hattest getanzt",
+            "er/sie/es": "hatte getanzt",
+            "wir": "hatten getanzt",
+            "ihr": "hattet getanzt",
+            "sie/Sie": "hatten getanzt"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte geteilt",
+            "du": "hattest geteilt",
+            "er/sie/es": "hatte geteilt",
+            "wir": "hatten geteilt",
+            "ihr": "hattet geteilt",
+            "sie/Sie": "hatten geteilt"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte telefoniert",
+            "du": "hattest telefoniert",
+            "er/sie/es": "hatte telefoniert",
+            "wir": "hatten telefoniert",
+            "ihr": "hattet telefoniert",
+            "sie/Sie": "hatten telefoniert"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte getragen",
+            "du": "hattest getragen",
+            "er/sie/es": "hatte getragen",
+            "wir": "hatten getragen",
+            "ihr": "hattet getragen",
+            "sie/Sie": "hatten getragen"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte getroffen",
+            "du": "hattest getroffen",
+            "er/sie/es": "hatte getroffen",
+            "wir": "hatten getroffen",
+            "ihr": "hattet getroffen",
+            "sie/Sie": "hatten getroffen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte getrunken",
+            "du": "hattest getrunken",
+            "er/sie/es": "hatte getrunken",
+            "wir": "hatten getrunken",
+            "ihr": "hattet getrunken",
+            "sie/Sie": "hatten getrunken"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte getan",
+            "du": "hattest getan",
+            "er/sie/es": "hatte getan",
+            "wir": "hatten getan",
+            "ihr": "hattet getan",
+            "sie/Sie": "hatten getan"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte getötet",
+            "du": "hattest getötet",
+            "er/sie/es": "hatte getötet",
+            "wir": "hatten getötet",
+            "ihr": "hattet getötet",
+            "sie/Sie": "hatten getötet"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte getrommelt",
+            "du": "hattest getrommelt",
+            "er/sie/es": "hatte getrommelt",
+            "wir": "hatten getrommelt",
+            "ihr": "hattet getrommelt",
+            "sie/Sie": "hatten getrommelt"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte getröstet",
+            "du": "hattest getröstet",
+            "er/sie/es": "hatte getröstet",
+            "wir": "hatten getröstet",
+            "ihr": "hattet getröstet",
+            "sie/Sie": "hatten getröstet"
+        }
+    }
+]

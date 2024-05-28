@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "zahle",
+            "du": "zahlst",
+            "er/sie/es": "zahlt",
+            "wir": "zahlen",
+            "ihr": "zahlt",
+            "sie/Sie": "zahlen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "zähme",
+            "du": "zähmst",
+            "er/sie/es": "zähmt",
+            "wir": "zähmen",
+            "ihr": "zähmt",
+            "sie/Sie": "zähmen"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "zähle",
+            "du": "zählst",
+            "er/sie/es": "zählt",
+            "wir": "zählen",
+            "ihr": "zählt",
+            "sie/Sie": "zählen"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "zähne",
+            "du": "zähnst",
+            "er/sie/es": "zähnt",
+            "wir": "zähnen",
+            "ihr": "zähnt",
+            "sie/Sie": "zähnen"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "zähre",
+            "du": "zährest",
+            "er/sie/es": "zährt",
+            "wir": "zähren",
+            "ihr": "zährt",
+            "sie/Sie": "zähren"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "zäkere",
+            "du": "zäkerst",
+            "er/sie/es": "zäkert",
+            "wir": "zäkern",
+            "ihr": "zäkert",
+            "sie/Sie": "zäkern"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "zanke",
+            "du": "zankst",
+            "er/sie/es": "zanke",
+            "wir": "zanken",
+            "ihr": "zanke",
+            "sie/Sie": "zanken"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "zapfe",
+            "du": "zapfst",
+            "er/sie/es": "zapft",
+            "wir": "zapfen",
+            "ihr": "zapft",
+            "sie/Sie": "zapfen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "zapple",
+            "du": "zappelst",
+            "er/sie/es": "zappelt",
+            "wir": "zappeln",
+            "ihr": "zappelt",
+            "sie/Sie": "zappeln"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "zappe",
+            "du": "zappst",
+            "er/sie/es": "zappet",
+            "wir": "zappen",
+            "ihr": "zappet",
+            "sie/Sie": "zappen"
+        }
+    }
+]

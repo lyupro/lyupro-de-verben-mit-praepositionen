@@ -1,0 +1,42 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "tanzen"
+    },
+    {
+        "verb_id": 2,
+        "verb": "teilen"
+    },
+    {
+        "verb_id": 3,
+        "verb": "telefonieren"
+    },
+    {
+        "verb_id": 4,
+        "verb": "tragen"
+    },
+    {
+        "verb_id": 5,
+        "verb": "treffen"
+    },
+    {
+        "verb_id": 6,
+        "verb": "trinken"
+    },
+    {
+        "verb_id": 7,
+        "verb": "tun"
+    },
+    {
+        "verb_id": 8,
+        "verb": "töten"
+    },
+    {
+        "verb_id": 9,
+        "verb": "trommeln"
+    },
+    {
+        "verb_id": 10,
+        "verb": "trösten"
+    }
+]

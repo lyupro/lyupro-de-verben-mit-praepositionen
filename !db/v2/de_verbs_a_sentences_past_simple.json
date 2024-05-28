@@ -1,0 +1,162 @@
+[
+    {
+        "verb_id": 1,
+        "sentences":
+        [
+            "Ich arbeitete hart gestern.",
+            "Sie arbeitete lange an diesem Projekt.",
+            "Wir arbeiteten zusammen an der Aufgabe.",
+            "Du arbeitetest effizient.",
+            "Ihr arbeitetet fleißig.",
+            "Sie arbeiteten den ganzen Tag.",
+            "Arbeitetest du auch?",
+            "Arbeiteten Sie mit uns?",
+            "Arbeiteten wir zusammen?",
+            "Arbeiten war eine Herausforderung."
+        ]
+    },
+    {
+        "verb_id": 2,
+        "sentences":
+        [
+            "Ich angelte am See.",
+            "Sie angelte an der Küste.",
+            "Wir angelten im Fluss.",
+            "Du angeltest im Meer.",
+            "Ihr angeltet in einem Teich.",
+            "Sie angelten im Urlaub.",
+            "Angeltest du auch?",
+            "Angelten Sie mit uns?",
+            "Angelten wir zusammen?",
+            "Angeln war entspannend."
+        ]
+    },
+    {
+        "verb_id": 3,
+        "sentences":
+        [
+            "Ich analysierte die Daten.",
+            "Sie analysierte die Ergebnisse.",
+            "Wir analysierten die Informationen.",
+            "Du analysiertest das Problem.",
+            "Ihr analysiertet die Trends.",
+            "Sie analysierten die Muster.",
+            "Analysiertest du auch?",
+            "Analysierten Sie mit uns?",
+            "Analysierten wir zusammen?",
+            "Analysieren war anspruchsvoll."
+        ]
+    },
+    {
+        "verb_id": 4,
+        "sentences":
+        [
+            "Ich argumentierte mit meinem Freund.",
+            "Sie argumentierte für ihre Position.",
+            "Wir argumentierten über Politik.",
+            "Du argumentiertest vehement.",
+            "Ihr argumentiertet leidenschaftlich.",
+            "Sie argumentierten sachlich.",
+            "Argumentiertest du auch?",
+            "Argumentierten Sie mit uns?",
+            "Argumentierten wir zusammen?",
+            "Argumentieren konnte hitzig sein."
+        ]
+    },
+    {
+        "verb_id": 5,
+        "sentences":
+        [
+            "Ich assimilierte die Informationen.",
+            "Sie assimilierte die Kultur.",
+            "Wir assimilierten uns schnell.",
+            "Du assimiliertest die Sprache.",
+            "Ihr assimiliertet die Ideen.",
+            "Sie assimilierten sich leicht.",
+            "Assimiliertest du auch?",
+            "Assimilierten Sie mit uns?",
+            "Assimilierten wir zusammen?",
+            "Assimilieren war ein interessanter Prozess."
+        ]
+    },
+    {
+        "verb_id": 6,
+        "sentences":
+        [
+            "Ich wärmte das Essen auf.",
+            "Sie wärmte sich vor dem Kamin auf.",
+            "Wir wärmten uns nach dem Sport auf.",
+            "Du wärmtest deine Hände an der Tasse auf.",
+            "Ihr wärmtest das Wasser für den Tee auf.",
+            "Sie wärmten die Suppe auf dem Herd auf.",
+            "Wärmtest du auch auf?",
+            "Wärmten Sie sich mit uns auf?",
+            "Wärmten wir uns zusammen auf?",
+            "Aufwärmen war gemütlich."
+        ]
+    },
+    {
+        "verb_id": 7,
+        "sentences":
+        [
+            "Ich probierte das neue Gericht aus.",
+            "Sie probierte das Kleid an.",
+            "Wir probierten die neue Technologie aus.",
+            "Du probiertest den neuen Sport aus.",
+            "Ihr probiertet die neuen Schuhe aus.",
+            "Sie probierten das Parfüm aus.",
+            "Probiertest du auch?",
+            "Probierten Sie mit uns?",
+            "Probierten wir zusammen?",
+            "Ausprobieren war aufregend."
+        ]
+    },
+    {
+        "verb_id": 8,
+        "sentences":
+        [
+            "Ich kam pünktlich an.",
+            "Sie kam rechtzeitig zur Besprechung an.",
+            "Wir kamen gemeinsam am Ziel an.",
+            "Du kamst vor den anderen an.",
+            "Ihr kamt erschöpft am Ziel an.",
+            "Sie kamen nach langer Reise an.",
+            "Kamst du auch pünktlich an?",
+            "Kamen Sie gemeinsam mit uns an?",
+            "Kamen wir zusammen an?",
+            "Ankommen war erleichternd."
+        ]
+    },
+    {
+        "verb_id": 9,
+        "sentences":
+        [
+            "Ich zog mich elegant an.",
+            "Sie zog sich für die Party an.",
+            "Wir zogen uns warm an.",
+            "Du zogst dich schnell an.",
+            "Ihr zogt euch für den Termin an.",
+            "Sie zogen sich für das Treffen an.",
+            "Zogst du dich auch schnell an?",
+            "Zogen Sie sich gemeinsam mit uns an?",
+            "Zogen wir uns zusammen an?",
+            "Anziehen war stilvoll."
+        ]
+    },
+    {
+        "verb_id": 10,
+        "sentences":
+        [
+            "Ich wusch das Geschirr ab.",
+            "Sie wusch die Wäsche ab.",
+            "Wir wuschen die Fenster ab.",
+            "Du wuschst das Auto ab.",
+            "Ihr wuscht den Boden ab.",
+            "Sie wuschen die Oberflächen ab.",
+            "Wuschst du das Geschirr auch ab?",
+            "Wuschen Sie gemeinsam mit uns das Geschirr ab?",
+            "Wuschten wir zusammen das Geschirr ab?",
+            "Abwaschen war mühsam."
+        ]
+    }
+]

@@ -1,46 +1,91 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "sentences": [
             {
-                "sentence_id": 1,
+                "sentence_id": 0,
                 "sentence": "Ich backe gerne Kuchen."
             },
             {
-                "sentence_id": 2,
+                "sentence_id": 1,
                 "sentence": "Sie backt Brot für die Familie."
             },
             {
-                "sentence_id": 3,
+                "sentence_id": 2,
                 "sentence": "Wir backen Plätzchen zu Weihnachten."
             },
             {
-                "sentence_id": 4,
+                "sentence_id": 3,
                 "sentence": "Du bäckst frisches Gebäck."
             },
             {
-                "sentence_id": 5,
+                "sentence_id": 4,
                 "sentence": "Ihr backt gemeinsam im Backkurs."
             },
             {
-                "sentence_id": 6,
+                "sentence_id": 5,
                 "sentence": "Sie backen einen Apfelkuchen."
             },
             {
-                "sentence_id": 7,
+                "sentence_id": 6,
                 "sentence": "Backst du auch gerne?"
             },
             {
-                "sentence_id": 8,
+                "sentence_id": 7,
                 "sentence": "Backen Sie regelmäßig?"
             },
             {
-                "sentence_id": 9,
+                "sentence_id": 8,
                 "sentence": "Backen wir zusammen?"
             },
             {
-                "sentence_id": 10,
+                "sentence_id": 9,
                 "sentence": "Backen ist eine Kunst."
+            }
+        ]
+    },
+    {
+        "verb_id": 1,
+        "sentences": [
+            {
+                "sentence_id": 0,
+                "sentence": "Ich bastle ein Geschenk."
+            },
+            {
+                "sentence_id": 1,
+                "sentence": "Sie bastelt eine Karte für ihren Freund."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Wir basteln Dekorationen für die Party."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Du bastelst gerne in deiner Freizeit."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Ihr bastelt Modelleisenbahnen."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Sie basteln an einem neuen Projekt."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Bastelst du auch gerne?"
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Basteln Sie oft?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Basteln wir zusammen?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Basteln fördert die Kreativität."
             }
         ]
     },
@@ -48,44 +93,44 @@
         "verb_id": 2,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich bewege mich gerne."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich bastle ein Geschenk."
+                "sentence": "Sie bewegt sich elegant."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie bastelt eine Karte für ihren Freund."
+                "sentence": "Wir bewegen uns viel."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir basteln Dekorationen für die Party."
+                "sentence": "Du bewegst dich schnell."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du bastelst gerne in deiner Freizeit."
+                "sentence": "Ihr bewegt euch im Takt."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr bastelt Modelleisenbahnen."
+                "sentence": "Sie bewegen sich langsam."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie basteln an einem neuen Projekt."
+                "sentence": "Bewegst du dich auch gerne an der frischen Luft?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Bastelst du auch gerne?"
+                "sentence": "Bewegen Sie sich regelmäßig?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Basteln Sie oft?"
+                "sentence": "Bewegen wir uns zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Basteln wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Basteln fördert die Kreativität."
+                "sentence": "Bewegen ist gesund."
             }
         ]
     },
@@ -93,44 +138,44 @@
         "verb_id": 3,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich brate Fleisch für das Abendessen."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich bewege mich gerne."
+                "sentence": "Sie brät Fisch in der Pfanne."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie bewegt sich elegant."
+                "sentence": "Wir braten Gemüse für die Suppe."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir bewegen uns viel."
+                "sentence": "Du brätst Kartoffeln knusprig."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du bewegst dich schnell."
+                "sentence": "Ihr bratet Würstchen auf dem Grill."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr bewegt euch im Takt."
+                "sentence": "Sie braten Hähnchen im Ofen."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie bewegen sich langsam."
+                "sentence": "Brätst du auch gerne?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Bewegst du dich auch gerne an der frischen Luft?"
+                "sentence": "Braten Sie oft?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Bewegen Sie sich regelmäßig?"
+                "sentence": "Braten wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Bewegen wir uns zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Bewegen ist gesund."
+                "sentence": "Braten erfordert Geduld."
             }
         ]
     },
@@ -138,44 +183,44 @@
         "verb_id": 4,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich bade gerne im See."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich brate Fleisch für das Abendessen."
+                "sentence": "Sie badet im warmen Wasser."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie brät Fisch in der Pfanne."
+                "sentence": "Wir baden im Meer."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir braten Gemüse für die Suppe."
+                "sentence": "Du badest im Pool."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du brätst Kartoffeln knusprig."
+                "sentence": "Ihr badet im Freibad."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr bratet Würstchen auf dem Grill."
+                "sentence": "Sie baden im Fluss."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie braten Hähnchen im Ofen."
+                "sentence": "Badest du auch gerne?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Brätst du auch gerne?"
+                "sentence": "Baden Sie oft?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Braten Sie oft?"
+                "sentence": "Baden wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Braten wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Braten erfordert Geduld."
+                "sentence": "Baden entspannt die Muskeln."
             }
         ]
     },
@@ -183,44 +228,44 @@
         "verb_id": 5,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich beobachte die Vögel im Garten."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich bade gerne im See."
+                "sentence": "Sie beobachtet die Sterne am Himmel."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie badet im warmen Wasser."
+                "sentence": "Wir beobachten die Wolken am Himmel."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir baden im Meer."
+                "sentence": "Du beobachtest die Menschen auf der Straße."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du badest im Pool."
+                "sentence": "Ihr beobachtet die Tiere im Zoo."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr badet im Freibad."
+                "sentence": "Sie beobachten die Entwicklung auf dem Markt."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie baden im Fluss."
+                "sentence": "Beobachtest du auch gerne?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Badest du auch gerne?"
+                "sentence": "Beobachten Sie regelmäßig?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Baden Sie oft?"
+                "sentence": "Beobachten wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Baden wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Baden entspannt die Muskeln."
+                "sentence": "Beobachten hilft, die Welt zu verstehen."
             }
         ]
     },
@@ -228,44 +273,44 @@
         "verb_id": 6,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich baue ein Haus aus Lego."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich beobachte die Vögel im Garten."
+                "sentence": "Sie baut eine Sandburg am Strand."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie beobachtet die Sterne am Himmel."
+                "sentence": "Wir bauen ein Baumhaus im Garten."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir beobachten die Wolken am Himmel."
+                "sentence": "Du baust eine Mauer im Garten."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du beobachtest die Menschen auf der Straße."
+                "sentence": "Ihr baut eine Brücke über den Fluss."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr beobachtet die Tiere im Zoo."
+                "sentence": "Sie bauen ein Modellflugzeug."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie beobachten die Entwicklung auf dem Markt."
+                "sentence": "Baust du auch gerne?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Beobachtest du auch gerne?"
+                "sentence": "Bauen Sie oft?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Beobachten Sie regelmäßig?"
+                "sentence": "Bauen wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Beobachten wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Beobachten hilft, die Welt zu verstehen."
+                "sentence": "Bauen fördert die kreative Entwicklung."
             }
         ]
     },
@@ -273,44 +318,44 @@
         "verb_id": 7,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich blase Luft in den Ballon."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich baue ein Haus aus Lego."
+                "sentence": "Sie bläst die Kerzen aus."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie baut eine Sandburg am Strand."
+                "sentence": "Wir blasen Seifenblasen im Park."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir bauen ein Baumhaus im Garten."
+                "sentence": "Du bläst die Suppe, um sie abzukühlen."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du baust eine Mauer im Garten."
+                "sentence": "Ihr blast die Trompete im Orchester."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr baut eine Brücke über den Fluss."
+                "sentence": "Sie blasen die Luftmatratze auf."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie bauen ein Modellflugzeug."
+                "sentence": "Bläst du auch gerne?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Baust du auch gerne?"
+                "sentence": "Blasen Sie oft?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Bauen Sie oft?"
+                "sentence": "Blasen wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Bauen wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Bauen fördert die kreative Entwicklung."
+                "sentence": "Blasen erfordert Atemkontrolle."
             }
         ]
     },
@@ -318,44 +363,44 @@
         "verb_id": 8,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich bezahle mit meiner Kreditkarte."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich blase Luft in den Ballon."
+                "sentence": "Sie bezahlt die Rechnung im Restaurant."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie bläst die Kerzen aus."
+                "sentence": "Wir bezahlen den Einkauf an der Kasse."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir blasen Seifenblasen im Park."
+                "sentence": "Du bezahlst die Miete jeden Monat."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du bläst die Suppe, um sie abzukühlen."
+                "sentence": "Ihr bezahlt das Ticket für das Konzert."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr blast die Trompete im Orchester."
+                "sentence": "Sie bezahlen den Handwerker für die Reparatur."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie blasen die Luftmatratze auf."
+                "sentence": "Bezahlst du auch gerne mit Karte?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Bläst du auch gerne?"
+                "sentence": "Bezahlen Sie bar oder mit Karte?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Blasen Sie oft?"
+                "sentence": "Bezahlen wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Blasen wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Blasen erfordert Atemkontrolle."
+                "sentence": "Bezahlen ist Teil des täglichen Lebens."
             }
         ]
     },
@@ -363,88 +408,43 @@
         "verb_id": 9,
         "sentences": [
             {
-                "sentence_id": 1,
-                "sentence": "Ich bezahle mit meiner Kreditkarte."
-            },
-            {
-                "sentence_id": 2,
-                "sentence": "Sie bezahlt die Rechnung im Restaurant."
-            },
-            {
-                "sentence_id": 3,
-                "sentence": "Wir bezahlen den Einkauf an der Kasse."
-            },
-            {
-                "sentence_id": 4,
-                "sentence": "Du bezahlst die Miete jeden Monat."
-            },
-            {
-                "sentence_id": 5,
-                "sentence": "Ihr bezahlt das Ticket für das Konzert."
-            },
-            {
-                "sentence_id": 6,
-                "sentence": "Sie bezahlen den Handwerker für die Reparatur."
-            },
-            {
-                "sentence_id": 7,
-                "sentence": "Bezahlst du auch gerne mit Karte?"
-            },
-            {
-                "sentence_id": 8,
-                "sentence": "Bezahlen Sie bar oder mit Karte?"
-            },
-            {
-                "sentence_id": 9,
-                "sentence": "Bezahlen wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Bezahlen ist Teil des täglichen Lebens."
-            }
-        ]
-    },
-    {
-        "verb_id": 10,
-        "sentences": [
-            {
-                "sentence_id": 1,
+                "sentence_id": 0,
                 "sentence": "Ich bitte um Hilfe."
             },
             {
-                "sentence_id": 2,
+                "sentence_id": 1,
                 "sentence": "Sie bittet um Verständnis."
             },
             {
-                "sentence_id": 3,
+                "sentence_id": 2,
                 "sentence": "Wir bitten um eine Antwort."
             },
             {
-                "sentence_id": 4,
+                "sentence_id": 3,
                 "sentence": "Du bittest um eine Erklärung."
             },
             {
-                "sentence_id": 5,
+                "sentence_id": 4,
                 "sentence": "Ihr bittet um eine Ausnahme."
             },
             {
-                "sentence_id": 6,
+                "sentence_id": 5,
                 "sentence": "Sie bitten um eine Entscheidung."
             },
             {
-                "sentence_id": 7,
+                "sentence_id": 6,
                 "sentence": "Bittest du auch gerne um Hilfe?"
             },
             {
-                "sentence_id": 8,
+                "sentence_id": 7,
                 "sentence": "Bitten Sie höflich?"
             },
             {
-                "sentence_id": 9,
+                "sentence_id": 8,
                 "sentence": "Bitten wir gemeinsam?"
             },
             {
-                "sentence_id": 10,
+                "sentence_id": 9,
                 "sentence": "Bitten ist eine höfliche Geste."
             }
         ]

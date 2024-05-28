@@ -1,0 +1,162 @@
+[
+    {
+        "verb_id": 0,
+        "sentences":
+        [
+            "Ich campe gerne in der Natur.",
+            "Sie campen mit Freunden am See.",
+            "Wir campen im Wald.",
+            "Du campst gerne am Strand.",
+            "Ihr campt oft in den Bergen.",
+            "Sie campen in einem Zelt.",
+            "Camps du auch gerne?",
+            "Campen Sie im Sommer?",
+            "Campen wir zusammen?",
+            "Campen macht Spaß."
+        ]
+    },
+    {
+        "verb_id": 1,
+        "sentences":
+        [
+            "Ich chatte mit meinen Freunden.",
+            "Sie chattet mit ihrer Familie.",
+            "Wir chatten über verschiedene Themen.",
+            "Du chattest gerne in sozialen Netzwerken.",
+            "Ihr chattet täglich.",
+            "Sie chatten mit Kollegen.",
+            "Chattest du auch gerne?",
+            "Chatten Sie regelmäßig?",
+            "Chatten wir zusammen?",
+            "Chatten hält Kontakte aufrecht."
+        ]
+    },
+    {
+        "verb_id": 2,
+        "sentences":
+        [
+            "Ich chille auf dem Sofa.",
+            "Sie chillt im Garten.",
+            "Wir chillen am Strand.",
+            "Du chillst gerne mit Musik.",
+            "Ihr chillt bei einem Film.",
+            "Sie chillen auf der Terrasse.",
+            "Chillst du auch gerne?",
+            "Chillen Sie oft?",
+            "Chillen wir zusammen?",
+            "Chillen entspannt den Geist."
+        ]
+    },
+    {
+        "verb_id": 3,
+        "sentences":
+        [
+            "Ich crawle im Schwimmbad.",
+            "Sie crawlt im Wettkampf.",
+            "Wir crawlen im Meer.",
+            "Du crawlst schnell.",
+            "Ihr crawlt im Verein.",
+            "Sie crawlen für die Fitness.",
+            "Crawlst du auch gerne?",
+            "Crawlen Sie regelmäßig?",
+            "Crawlen wir zusammen?",
+            "Crawlen verbessert die Ausdauer."
+        ]
+    },
+    {
+        "verb_id": 4,
+        "sentences":
+        [
+            "Ich creme mich nach dem Duschen ein.",
+            "Sie cremt sich mit Sonnencreme ein.",
+            "Wir cremen uns vor dem Sonnenbaden ein.",
+            "Du cremst deine Haut täglich ein.",
+            "Ihr cremt euch gegen trockene Haut ein.",
+            "Sie cremen ihre Hände ein.",
+            "Cremst du dich auch regelmäßig ein?",
+            "Cremen Sie sich vor dem Sonnenbaden ein?",
+            "Cremen wir uns zusammen ein?",
+            "Cremen hält die Haut geschmeidig."
+        ]
+    },
+    {
+        "verb_id": 5,
+        "sentences":
+        [
+            "Ich cruise durch die Stadt.",
+            "Sie cruisen mit dem Motorrad.",
+            "Wir cruisen mit dem Cabrio.",
+            "Du cruisest gerne am Wochenende.",
+            "Ihr cruiset entlang der Küste.",
+            "Sie cruisen durch die Berge.",
+            "Cruisest du auch gerne?",
+            "Cruisen Sie oft?",
+            "Cruisen wir zusammen?",
+            "Cruisen macht Spaß."
+        ]
+    },
+    {
+        "verb_id": 6,
+        "sentences":
+        [
+            "Ich curle auf dem Eis.",
+            "Sie curlen im Curling-Verein.",
+            "Wir curlen auf dem See.",
+            "Du curlst mit deinem Team.",
+            "Ihr curlet regelmäßig.",
+            "Sie curlen auf professionellem Niveau.",
+            "Curlst du auch gerne?",
+            "Curlen Sie regelmäßig?",
+            "Curlen wir zusammen?",
+            "Curlen erfordert Präzision."
+        ]
+    },
+    {
+        "verb_id": 7,
+        "sentences":
+        [
+            "Ich coache ein Fußballteam.",
+            "Sie coacht ein Cheerleading-Team.",
+            "Wir coachen eine Schulmannschaft.",
+            "Du coachst Einzelsportler.",
+            "Ihr coacht die Jugendmannschaft.",
+            "Sie coachen das Basketballteam.",
+            "Coachst du auch gerne?",
+            "Coachen Sie regelmäßig?",
+            "Coachen wir zusammen?",
+            "Coachen fördert die Entwicklung."
+        ]
+    },
+    {
+        "verb_id": 8,
+        "sentences":
+        [
+            "Ich covere einen Song auf meinem Klavier.",
+            "Sie covert bekannte Hits.",
+            "Wir covern die Songs unserer Lieblingsband.",
+            "Du coverst gerne Popmusik.",
+            "Ihr covert als Band zusammen.",
+            "Sie covern berühmte Klassiker.",
+            "Coverst du auch gerne?",
+            "Covern Sie bekannte Lieder?",
+            "Covern wir zusammen?",
+            "Covern erfordert musikalisches Talent."
+        ]
+    },
+    {
+        "verb_id": 9,
+        "sentences":
+        [
+            "Ich codiere Programme für meine Arbeit.",
+            "Sie codiert Websites für Kunden.",
+            "Wir codieren Apps für mobile Geräte.",
+            "Du codierst Spiele als Hobby.",
+            "Ihr codiert Software für Unternehmen.",
+            "Sie codieren komplexe Algorithmen.",
+            "Codierst du auch gerne?",
+            "Codieren Sie regelmäßig?",
+            "Codieren wir zusammen?",
+            "Codieren ist Teil der digitalen Welt."
+        ]
+    }
+]

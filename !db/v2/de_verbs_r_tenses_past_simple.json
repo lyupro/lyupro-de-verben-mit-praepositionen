@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "raste",
+            "du": "rastest",
+            "er/sie/es": "raste",
+            "wir": "rasten",
+            "ihr": "rastet",
+            "sie/Sie": "rasten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "rauchte",
+            "du": "rauchtest",
+            "er/sie/es": "rauchte",
+            "wir": "rauchten",
+            "ihr": "rauchtet",
+            "sie/Sie": "rauchten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "rechnete",
+            "du": "rechnetest",
+            "er/sie/es": "rechnete",
+            "wir": "rechneten",
+            "ihr": "rechnetet",
+            "sie/Sie": "rechneten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "regnete",
+            "du": "regnetest",
+            "er/sie/es": "regnete",
+            "wir": "regneten",
+            "ihr": "regnetet",
+            "sie/Sie": "regneten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "riss",
+            "du": "risst",
+            "er/sie/es": "riss",
+            "wir": "rissen",
+            "ihr": "risst",
+            "sie/Sie": "rissen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "ritt",
+            "du": "rittst",
+            "er/sie/es": "ritt",
+            "wir": "ritten",
+            "ihr": "rittet",
+            "sie/Sie": "ritten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "rannte",
+            "du": "ranntest",
+            "er/sie/es": "rannte",
+            "wir": "rannten",
+            "ihr": "ranntet",
+            "sie/Sie": "rannten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "reparierte",
+            "du": "repariertest",
+            "er/sie/es": "reparierte",
+            "wir": "reparierten",
+            "ihr": "repariertet",
+            "sie/Sie": "reparierten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "reservierte",
+            "du": "reserviertest",
+            "er/sie/es": "reservierte",
+            "wir": "reservierten",
+            "ihr": "reserviertet",
+            "sie/Sie": "reservierten"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "riskierte",
+            "du": "riskiertest",
+            "er/sie/es": "riskierte",
+            "wir": "riskierten",
+            "ihr": "riskiertet",
+            "sie/Sie": "riskierten"
+        }
+    }
+]

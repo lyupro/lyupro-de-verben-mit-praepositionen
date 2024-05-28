@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte verabschiedet",
+            "du": "hattest verabschiedet",
+            "er/sie/es": "hatte verabschiedet",
+            "wir": "hatten verabschiedet",
+            "ihr": "hattet verabschiedet",
+            "sie/Sie": "hatten verabschiedet"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte verändert",
+            "du": "hattest verändert",
+            "er/sie/es": "hatte verändert",
+            "wir": "hatten verändert",
+            "ihr": "hattet verändert",
+            "sie/Sie": "hatten verändert"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte verbracht",
+            "du": "hattest verbracht",
+            "er/sie/es": "hatte verbracht",
+            "wir": "hatten verbracht",
+            "ihr": "hattet verbracht",
+            "sie/Sie": "hatten verbracht"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte verdient",
+            "du": "hattest verdient",
+            "er/sie/es": "hatte verdient",
+            "wir": "hatten verdient",
+            "ihr": "hattet verdient",
+            "sie/Sie": "hatten verdient"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte vergessen",
+            "du": "hattest vergessen",
+            "er/sie/es": "hatte vergessen",
+            "wir": "hatten vergessen",
+            "ihr": "hattet vergessen",
+            "sie/Sie": "hatten vergessen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte verglichen",
+            "du": "hattest verglichen",
+            "er/sie/es": "hatte verglichen",
+            "wir": "hatten verglichen",
+            "ihr": "hattet verglichen",
+            "sie/Sie": "hatten verglichen"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte verlassen",
+            "du": "hattest verlassen",
+            "er/sie/es": "hatte verlassen",
+            "wir": "hatten verlassen",
+            "ihr": "hattet verlassen",
+            "sie/Sie": "hatten verlassen"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte verloren",
+            "du": "hattest verloren",
+            "er/sie/es": "hatte verloren",
+            "wir": "hatten verloren",
+            "ihr": "hattet verloren",
+            "sie/Sie": "hatten verloren"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte versprochen",
+            "du": "hattest versprochen",
+            "er/sie/es": "hatte versprochen",
+            "wir": "hatten versprochen",
+            "ihr": "hattet versprochen",
+            "sie/Sie": "hatten versprochen"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte verteidigt",
+            "du": "hattest verteidigt",
+            "er/sie/es": "hatte verteidigt",
+            "wir": "hatten verteidigt",
+            "ihr": "hattet verteidigt",
+            "sie/Sie": "hatten verteidigt"
+        }
+    }
+]

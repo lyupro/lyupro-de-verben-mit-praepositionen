@@ -1,46 +1,91 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "sentences": [
             {
-                "sentence_id": 1,
+                "sentence_id": 0,
                 "sentence": "Ich dusche jeden Morgen."
             },
             {
-                "sentence_id": 2,
+                "sentence_id": 1,
                 "sentence": "Sie duscht nach dem Sport."
             },
             {
-                "sentence_id": 3,
+                "sentence_id": 2,
                 "sentence": "Wir duschen gemeinsam nach dem Strandtag."
             },
             {
-                "sentence_id": 4,
+                "sentence_id": 3,
                 "sentence": "Du duschst schnell."
             },
             {
-                "sentence_id": 5,
+                "sentence_id": 4,
                 "sentence": "Ihr duscht abends vor dem Schlafengehen."
             },
             {
-                "sentence_id": 6,
+                "sentence_id": 5,
                 "sentence": "Sie duschen nach der Arbeit."
             },
             {
-                "sentence_id": 7,
+                "sentence_id": 6,
                 "sentence": "Duschst du gerne warm oder kalt?"
             },
             {
-                "sentence_id": 8,
+                "sentence_id": 7,
                 "sentence": "Duschen Sie täglich?"
             },
             {
-                "sentence_id": 9,
+                "sentence_id": 8,
                 "sentence": "Duschen wir zusammen?"
             },
             {
-                "sentence_id": 10,
+                "sentence_id": 9,
                 "sentence": "Duschen erfrischt den Körper."
+            }
+        ]
+    },
+    {
+        "verb_id": 1,
+        "sentences": [
+            {
+                "sentence_id": 0,
+                "sentence": "Ich dribbele mit dem Basketball."
+            },
+            {
+                "sentence_id": 1,
+                "sentence": "Sie dribbelt geschickt um die Verteidiger herum."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Wir dribbeln im Training."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Du dribbelst gekonnt den Ball."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Ihr dribbelt im Turnier."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Sie dribbeln im Spiel um den Sieg."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Dribbelst du auch gerne?"
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Dribbeln Sie regelmäßig?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Dribbeln wir zusammen?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Dribbeln erfordert Geschicklichkeit."
             }
         ]
     },
@@ -48,44 +93,44 @@
         "verb_id": 2,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich diskutiere gerne über Politik."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich dribbele mit dem Basketball."
+                "sentence": "Sie diskutiert über aktuelle Themen."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie dribbelt geschickt um die Verteidiger herum."
+                "sentence": "Wir diskutieren über das Buch."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir dribbeln im Training."
+                "sentence": "Du diskutierst leidenschaftlich."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du dribbelst gekonnt den Ball."
+                "sentence": "Ihr diskutiert kontrovers."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr dribbelt im Turnier."
+                "sentence": "Sie diskutieren konstruktiv."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie dribbeln im Spiel um den Sieg."
+                "sentence": "Diskutierst du auch gerne?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Dribbelst du auch gerne?"
+                "sentence": "Diskutieren Sie oft?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Dribbeln Sie regelmäßig?"
+                "sentence": "Diskutieren wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Dribbeln wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Dribbeln erfordert Geschicklichkeit."
+                "sentence": "Diskutieren fördert den Austausch von Ideen."
             }
         ]
     },
@@ -93,44 +138,44 @@
         "verb_id": 3,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich dokumentiere meine Forschungsergebnisse."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich diskutiere gerne über Politik."
+                "sentence": "Sie dokumentiert den Projektverlauf."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie diskutiert über aktuelle Themen."
+                "sentence": "Wir dokumentieren unsere Reisen."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir diskutieren über das Buch."
+                "sentence": "Du dokumentierst das Experiment."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du diskutierst leidenschaftlich."
+                "sentence": "Ihr dokumentiert den Schaden."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr diskutiert kontrovers."
+                "sentence": "Sie dokumentieren den Vorgang."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie diskutieren konstruktiv."
+                "sentence": "Dokumentierst du deine Arbeit?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Diskutierst du auch gerne?"
+                "sentence": "Dokumentieren Sie alles sorgfältig?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Diskutieren Sie oft?"
+                "sentence": "Dokumentieren wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Diskutieren wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Diskutieren fördert den Austausch von Ideen."
+                "sentence": "Dokumentieren ist wichtig für die Nachverfolgbarkeit."
             }
         ]
     },
@@ -138,44 +183,44 @@
         "verb_id": 4,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich date gerne neue Leute."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich dokumentiere meine Forschungsergebnisse."
+                "sentence": "Sie datet online."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie dokumentiert den Projektverlauf."
+                "sentence": "Wir daten uns gegenseitig."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir dokumentieren unsere Reisen."
+                "sentence": "Du datest mehrere Personen gleichzeitig."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du dokumentierst das Experiment."
+                "sentence": "Ihr datet seit Jahren."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr dokumentiert den Schaden."
+                "sentence": "Sie daten diskret."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie dokumentieren den Vorgang."
+                "sentence": "Datest du online?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Dokumentierst du deine Arbeit?"
+                "sentence": "Daten Sie aktiv?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Dokumentieren Sie alles sorgfältig?"
+                "sentence": "Daten wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Dokumentieren wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Dokumentieren ist wichtig für die Nachverfolgbarkeit."
+                "sentence": "Daten ist heutzutage üblich geworden."
             }
         ]
     },
@@ -183,44 +228,44 @@
         "verb_id": 5,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich demonstriere die Funktionsweise des Geräts."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich date gerne neue Leute."
+                "sentence": "Sie demonstriert die Technik."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie datet online."
+                "sentence": "Wir demonstrieren gegen Ungerechtigkeit."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir daten uns gegenseitig."
+                "sentence": "Du demonstrierst für Umweltschutz."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du datest mehrere Personen gleichzeitig."
+                "sentence": "Ihr demonstriert für bessere Arbeitsbedingungen."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr datet seit Jahren."
+                "sentence": "Sie demonstrieren für ihre Rechte."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie daten diskret."
+                "sentence": "Demonstrierst du auch gerne?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Datest du online?"
+                "sentence": "Demonstrieren Sie aktiv?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Daten Sie aktiv?"
+                "sentence": "Demonstrieren wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Daten wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Daten ist heutzutage üblich geworden."
+                "sentence": "Demonstrieren kann Veränderungen bewirken."
             }
         ]
     },
@@ -228,44 +273,44 @@
         "verb_id": 6,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich dichte Gedichte."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich demonstriere die Funktionsweise des Geräts."
+                "sentence": "Sie dichtet romantische Verse."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie demonstriert die Technik."
+                "sentence": "Wir dichten Lieder."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir demonstrieren gegen Ungerechtigkeit."
+                "sentence": "Du dichtest gerne in deiner Freizeit."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du demonstrierst für Umweltschutz."
+                "sentence": "Ihr dichtet gemeinsam im Schreibkurs."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr demonstriert für bessere Arbeitsbedingungen."
+                "sentence": "Sie dichten für den Wettbewerb."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie demonstrieren für ihre Rechte."
+                "sentence": "Dichtest du auch gerne?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Demonstrierst du auch gerne?"
+                "sentence": "Dichten Sie regelmäßig?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Demonstrieren Sie aktiv?"
+                "sentence": "Dichten wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Demonstrieren wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Demonstrieren kann Veränderungen bewirken."
+                "sentence": "Dichten fördert die Kreativität."
             }
         ]
     },
@@ -273,44 +318,44 @@
         "verb_id": 7,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich dämmer langsam dem Schlaf entgegen."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich dichte Gedichte."
+                "sentence": "Sie dämmert am Abend."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie dichtet romantische Verse."
+                "sentence": "Wir dämmern im Halbschlaf."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir dichten Lieder."
+                "sentence": "Du dämmerst am Morgen."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du dichtest gerne in deiner Freizeit."
+                "sentence": "Ihr dämmert in der Dämmerung."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr dichtet gemeinsam im Schreibkurs."
+                "sentence": "Sie dämmern früh am Abend."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie dichten für den Wettbewerb."
+                "sentence": "Dämmert es schon?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Dichtest du auch gerne?"
+                "sentence": "Dämmern Sie früh?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Dichten Sie regelmäßig?"
+                "sentence": "Dämmern wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Dichten wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Dichten fördert die Kreativität."
+                "sentence": "Das Dämmern kündigt die Nacht an."
             }
         ]
     },
@@ -318,44 +363,44 @@
         "verb_id": 8,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich ducke mich, um nicht gesehen zu werden."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich dämmer langsam dem Schlaf entgegen."
+                "sentence": "Sie duckt sich unter das Hindernis."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie dämmert am Abend."
+                "sentence": "Wir ducken uns vor dem Sturm."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir dämmern im Halbschlaf."
+                "sentence": "Du duckst dich, um den Ball zu fangen."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du dämmerst am Morgen."
+                "sentence": "Ihr duckt euch vor dem lauten Geräusch."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr dämmert in der Dämmerung."
+                "sentence": "Sie ducken sich, um durch die Tür zu passen."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie dämmern früh am Abend."
+                "sentence": "Duckst du dich rechtzeitig?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Dämmert es schon?"
+                "sentence": "Ducken Sie sich vor Gefahren?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Dämmern Sie früh?"
+                "sentence": "Ducken wir uns zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Dämmern wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Das Dämmern kündigt die Nacht an."
+                "sentence": "Das Ducken vermeidet Verletzungen."
             }
         ]
     },
@@ -363,88 +408,43 @@
         "verb_id": 9,
         "sentences": [
             {
-                "sentence_id": 1,
-                "sentence": "Ich ducke mich, um nicht gesehen zu werden."
-            },
-            {
-                "sentence_id": 2,
-                "sentence": "Sie duckt sich unter das Hindernis."
-            },
-            {
-                "sentence_id": 3,
-                "sentence": "Wir ducken uns vor dem Sturm."
-            },
-            {
-                "sentence_id": 4,
-                "sentence": "Du duckst dich, um den Ball zu fangen."
-            },
-            {
-                "sentence_id": 5,
-                "sentence": "Ihr duckt euch vor dem lauten Geräusch."
-            },
-            {
-                "sentence_id": 6,
-                "sentence": "Sie ducken sich, um durch die Tür zu passen."
-            },
-            {
-                "sentence_id": 7,
-                "sentence": "Duckst du dich rechtzeitig?"
-            },
-            {
-                "sentence_id": 8,
-                "sentence": "Ducken Sie sich vor Gefahren?"
-            },
-            {
-                "sentence_id": 9,
-                "sentence": "Ducken wir uns zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Das Ducken vermeidet Verletzungen."
-            }
-        ]
-    },
-    {
-        "verb_id": 10,
-        "sentences": [
-            {
-                "sentence_id": 1,
+                "sentence_id": 0,
                 "sentence": "Ich dresche das Korn auf dem Feld."
             },
             {
-                "sentence_id": 2,
+                "sentence_id": 1,
                 "sentence": "Sie drischt das Getreide."
             },
             {
-                "sentence_id": 3,
+                "sentence_id": 2,
                 "sentence": "Wir dreschen das Stroh."
             },
             {
-                "sentence_id": 4,
+                "sentence_id": 3,
                 "sentence": "Du drischst das Korn."
             },
             {
-                "sentence_id": 5,
+                "sentence_id": 4,
                 "sentence": "Ihr drescht das Getreide mit dem Dreschflegel."
             },
             {
-                "sentence_id": 6,
+                "sentence_id": 5,
                 "sentence": "Sie dreschen das Korn auf dem Bauernhof."
             },
             {
-                "sentence_id": 7,
+                "sentence_id": 6,
                 "sentence": "Drischst du das Getreide?"
             },
             {
-                "sentence_id": 8,
+                "sentence_id": 7,
                 "sentence": "Dreschen Sie das Korn?"
             },
             {
-                "sentence_id": 9,
+                "sentence_id": 8,
                 "sentence": "Dreschen wir das Getreide zusammen?"
             },
             {
-                "sentence_id": 10,
+                "sentence_id": 9,
                 "sentence": "Das Dreschen war früher eine mühsame Arbeit."
             }
         ]

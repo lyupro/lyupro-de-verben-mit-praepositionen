@@ -1,42 +1,42 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "verb": ["принимать душ"]
     },
     {
-        "verb_id": 2,
+        "verb_id": 1,
         "verb": ["дриблировать"]
     },
     {
-        "verb_id": 3,
+        "verb_id": 2,
         "verb": ["обсуждать"]
     },
     {
-        "verb_id": 4,
+        "verb_id": 3,
         "verb": ["документировать"]
     },
     {
-        "verb_id": 5,
+        "verb_id": 4,
         "verb": ["знакомиться"]
     },
     {
-        "verb_id": 6,
+        "verb_id": 5,
         "verb": ["демонстрировать"]
     },
     {
-        "verb_id": 7,
+        "verb_id": 6,
         "verb": ["стихотворять"]
     },
     {
-        "verb_id": 8,
+        "verb_id": 7,
         "verb": ["смеркаться"]
     },
     {
-        "verb_id": 9,
+        "verb_id": 8,
         "verb": ["приседать"]
     },
     {
-        "verb_id": 10,
+        "verb_id": 9,
         "verb": ["молотить"]
     }
 ]

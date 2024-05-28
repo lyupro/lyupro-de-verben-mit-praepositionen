@@ -1,42 +1,42 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "verb": ["иметь"]
     },
     {
-        "verb_id": 2,
+        "verb_id": 1,
         "verb": ["держать"]
     },
     {
-        "verb_id": 3,
+        "verb_id": 2,
         "verb": ["помогать"]
     },
     {
-        "verb_id": 4,
+        "verb_id": 3,
         "verb": ["звать"]
     },
     {
-        "verb_id": 5,
+        "verb_id": 4,
         "verb": ["слышать"]
     },
     {
-        "verb_id": 6,
+        "verb_id": 5,
         "verb": ["загружать"]
     },
     {
-        "verb_id": 7,
+        "verb_id": 6,
         "verb": ["жениться", "выйти замуж"]
     },
     {
-        "verb_id": 8,
+        "verb_id": 7,
         "verb": ["ненавидеть"]
     },
     {
-        "verb_id": 9,
+        "verb_id": 8,
         "verb": ["производить", "изготавливать"]
     },
     {
-        "verb_id": 10,
+        "verb_id": 9,
         "verb": ["надеяться"]
     }
 ]

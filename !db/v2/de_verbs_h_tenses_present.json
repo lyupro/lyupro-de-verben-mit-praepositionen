@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "habe",
+            "du": "hast",
+            "er/sie/es": "hat",
+            "wir": "haben",
+            "ihr": "habt",
+            "sie/Sie": "haben"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "halte",
+            "du": "hältst",
+            "er/sie/es": "hält",
+            "wir": "halten",
+            "ihr": "haltet",
+            "sie/Sie": "halten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "helfe",
+            "du": "hilfst",
+            "er/sie/es": "hilft",
+            "wir": "helfen",
+            "ihr": "helft",
+            "sie/Sie": "helfen"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "heiße",
+            "du": "heißt",
+            "er/sie/es": "heißt",
+            "wir": "heißen",
+            "ihr": "heißt",
+            "sie/Sie": "heißen"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "höre",
+            "du": "hörst",
+            "er/sie/es": "hört",
+            "wir": "hören",
+            "ihr": "hört",
+            "sie/Sie": "hören"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "lade hoch",
+            "du": "lädst hoch",
+            "er/sie/es": "lädt hoch",
+            "wir": "laden hoch",
+            "ihr": "ladet hoch",
+            "sie/Sie": "laden hoch"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "heirate",
+            "du": "heiratest",
+            "er/sie/es": "heiratet",
+            "wir": "heiraten",
+            "ihr": "heiratet",
+            "sie/Sie": "heiraten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hasse",
+            "du": "hasst",
+            "er/sie/es": "hasst",
+            "wir": "hassen",
+            "ihr": "hasst",
+            "sie/Sie": "hassen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "stelle her",
+            "du": "stellst her",
+            "er/sie/es": "stellt her",
+            "wir": "stellen her",
+            "ihr": "stellt her",
+            "sie/Sie": "stellen her"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hoffe",
+            "du": "hoffst",
+            "er/sie/es": "hofft",
+            "wir": "hoffen",
+            "ihr": "hofft",
+            "sie/Sie": "hoffen"
+        }
+    }
+]

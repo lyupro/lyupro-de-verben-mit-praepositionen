@@ -1,42 +1,42 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "verb": ["кемпинговать"]
     },
     {
-        "verb_id": 2,
+        "verb_id": 1,
         "verb": ["чатить"]
     },
     {
-        "verb_id": 3,
+        "verb_id": 2,
         "verb": ["чиллить"]
     },
     {
-        "verb_id": 4,
+        "verb_id": 3,
         "verb": ["краулить"]
     },
     {
-        "verb_id": 5,
+        "verb_id": 4,
         "verb": ["мазать кремом"]
     },
     {
-        "verb_id": 6,
+        "verb_id": 5,
         "verb": ["круизировать"]
     },
     {
-        "verb_id": 7,
+        "verb_id": 6,
         "verb": ["кататься на кёрлинге"]
     },
     {
-        "verb_id": 8,
+        "verb_id": 7,
         "verb": ["тренировать"]
     },
     {
-        "verb_id": 9,
+        "verb_id": 8,
         "verb": ["делать кавер"]
     },
     {
-        "verb_id": 10,
+        "verb_id": 9,
         "verb": ["кодировать"]
     }
 ]

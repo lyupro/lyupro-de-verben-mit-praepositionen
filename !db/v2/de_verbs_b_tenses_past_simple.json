@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "backte",
+            "du": "backtest",
+            "er/sie/es": "backte",
+            "wir": "backten",
+            "ihr": "backtet",
+            "sie/Sie": "backten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "bastelte",
+            "du": "basteltest",
+            "er/sie/es": "bastelte",
+            "wir": "bastelten",
+            "ihr": "basteltet",
+            "sie/Sie": "bastelten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "bewegte",
+            "du": "bewegtest",
+            "er/sie/es": "bewegte",
+            "wir": "bewegten",
+            "ihr": "bewegtet",
+            "sie/Sie": "bewegten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "briet",
+            "du": "brietest",
+            "er/sie/es": "briet",
+            "wir": "brieten",
+            "ihr": "brietet",
+            "sie/Sie": "brieten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "badete",
+            "du": "badetest",
+            "er/sie/es": "badete",
+            "wir": "badeten",
+            "ihr": "badetet",
+            "sie/Sie": "badeten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "beobachtete",
+            "du": "beobachtetest",
+            "er/sie/es": "beobachtete",
+            "wir": "beobachteten",
+            "ihr": "beobachtetet",
+            "sie/Sie": "beobachteten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "baute",
+            "du": "bautest",
+            "er/sie/es": "baute",
+            "wir": "bauten",
+            "ihr": "bautet",
+            "sie/Sie": "bauten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "blies",
+            "du": "bliest",
+            "er/sie/es": "blies",
+            "wir": "bliesen",
+            "ihr": "blieset",
+            "sie/Sie": "bliesen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "bezahlte",
+            "du": "bezahltest",
+            "er/sie/es": "bezahlte",
+            "wir": "bezahlten",
+            "ihr": "bezahltet",
+            "sie/Sie": "bezahlten"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "bat",
+            "du": "batst",
+            "er/sie/es": "bat",
+            "wir": "baten",
+            "ihr": "batet",
+            "sie/Sie": "baten"
+        }
+    }
+]

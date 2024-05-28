@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "kämpfte",
+            "du": "kämpftest",
+            "er/sie/es": "kämpfte",
+            "wir": "kämpften",
+            "ihr": "kämpftet",
+            "sie/Sie": "kämpften"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "küsste",
+            "du": "küsstest",
+            "er/sie/es": "küsste",
+            "wir": "küssten",
+            "ihr": "küsstet",
+            "sie/Sie": "küssten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "kletterte",
+            "du": "klettertest",
+            "er/sie/es": "kletterte",
+            "wir": "kletterten",
+            "ihr": "klettertet",
+            "sie/Sie": "kletterten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "kochte",
+            "du": "kochtest",
+            "er/sie/es": "kochte",
+            "wir": "kochten",
+            "ihr": "kochtet",
+            "sie/Sie": "kochten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "klatschte",
+            "du": "klatschtest",
+            "er/sie/es": "klatschte",
+            "wir": "klatschten",
+            "ihr": "klatschtet",
+            "sie/Sie": "klatschten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "kam",
+            "du": "kamst",
+            "er/sie/es": "kam",
+            "wir": "kamen",
+            "ihr": "kamt",
+            "sie/Sie": "kamen"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "krabbelte",
+            "du": "krabbeltest",
+            "er/sie/es": "krabbelte",
+            "wir": "krabbelten",
+            "ihr": "krabbeltet",
+            "sie/Sie": "krabbelten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "kreischte",
+            "du": "kreischtest",
+            "er/sie/es": "kreischte",
+            "wir": "kreischten",
+            "ihr": "kreischtet",
+            "sie/Sie": "kreischten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "kroch",
+            "du": "krochst",
+            "er/sie/es": "kroch",
+            "wir": "krochen",
+            "ihr": "krocht",
+            "sie/Sie": "krochen"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "kaufte",
+            "du": "kauftest",
+            "er/sie/es": "kaufte",
+            "wir": "kauften",
+            "ihr": "kauftet",
+            "sie/Sie": "kauften"
+        }
+    }
+]

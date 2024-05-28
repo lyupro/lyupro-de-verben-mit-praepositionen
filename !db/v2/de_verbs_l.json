@@ -1,0 +1,42 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "laufen"
+    },
+    {
+        "verb_id": 2,
+        "verb": "lernen"
+    },
+    {
+        "verb_id": 3,
+        "verb": "lieben"
+    },
+    {
+        "verb_id": 4,
+        "verb": "lächeln"
+    },
+    {
+        "verb_id": 5,
+        "verb": "lügen"
+    },
+    {
+        "verb_id": 6,
+        "verb": "leben"
+    },
+    {
+        "verb_id": 7,
+        "verb": "lehren"
+    },
+    {
+        "verb_id": 8,
+        "verb": "lesen"
+    },
+    {
+        "verb_id": 9,
+        "verb": "löschen"
+    },
+    {
+        "verb_id": 10,
+        "verb": "leihen"
+    }
+]

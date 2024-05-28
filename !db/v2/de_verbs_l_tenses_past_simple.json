@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "lief",
+            "du": "liefst",
+            "er/sie/es": "lief",
+            "wir": "liefen",
+            "ihr": "lieft",
+            "sie/Sie": "liefen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "lernte",
+            "du": "lerntest",
+            "er/sie/es": "lernte",
+            "wir": "lernten",
+            "ihr": "lerntet",
+            "sie/Sie": "lernten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "liebte",
+            "du": "liebtest",
+            "er/sie/es": "liebte",
+            "wir": "liebten",
+            "ihr": "liebtet",
+            "sie/Sie": "liebten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "lächelte",
+            "du": "lächeltest",
+            "er/sie/es": "lächelte",
+            "wir": "lächelten",
+            "ihr": "lächeltet",
+            "sie/Sie": "lächelten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "log",
+            "du": "logst",
+            "er/sie/es": "log",
+            "wir": "logen",
+            "ihr": "logt",
+            "sie/Sie": "logen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "lebte",
+            "du": "lebtest",
+            "er/sie/es": "lebte",
+            "wir": "lebten",
+            "ihr": "lebtet",
+            "sie/Sie": "lebten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "lehrte",
+            "du": "lehrtest",
+            "er/sie/es": "lehrte",
+            "wir": "lehrten",
+            "ihr": "lehrtet",
+            "sie/Sie": "lehrten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "las",
+            "du": "lasest",
+            "er/sie/es": "las",
+            "wir": "lasen",
+            "ihr": "last",
+            "sie/Sie": "lasen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "löschte",
+            "du": "löschtest",
+            "er/sie/es": "löschte",
+            "wir": "löschten",
+            "ihr": "löschtet",
+            "sie/Sie": "löschten"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "lieh",
+            "du": "liehst",
+            "er/sie/es": "lieh",
+            "wir": "liehen",
+            "ihr": "lieht",
+            "sie/Sie": "liehen"
+        }
+    }
+]

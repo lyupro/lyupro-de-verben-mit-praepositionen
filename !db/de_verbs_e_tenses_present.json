@@ -1,6 +1,6 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "conjugations":
         {
             "ich": "esse",
@@ -12,7 +12,7 @@
         }
     },
     {
-        "verb_id": 2,
+        "verb_id": 1,
         "conjugations":
         {
             "ich": "erkläre",
@@ -24,7 +24,7 @@
         }
     },
     {
-        "verb_id": 3,
+        "verb_id": 2,
         "conjugations":
         {
             "ich": "ernte",
@@ -36,7 +36,7 @@
         }
     },
     {
-        "verb_id": 4,
+        "verb_id": 3,
         "conjugations":
         {
             "ich": "erhöhe",
@@ -48,7 +48,7 @@
         }
     },
     {
-        "verb_id": 5,
+        "verb_id": 4,
         "conjugations":
         {
             "ich": "erstelle",
@@ -60,7 +60,7 @@
         }
     },
     {
-        "verb_id": 6,
+        "verb_id": 5,
         "conjugations":
         {
             "ich": "erwarte",
@@ -72,7 +72,7 @@
         }
     },
     {
-        "verb_id": 7,
+        "verb_id": 6,
         "conjugations":
         {
             "ich": "entwickle",
@@ -84,7 +84,7 @@
         }
     },
     {
-        "verb_id": 8,
+        "verb_id": 7,
         "conjugations":
         {
             "ich": "ergänze",
@@ -96,7 +96,7 @@
         }
     },
     {
-        "verb_id": 9,
+        "verb_id": 8,
         "conjugations":
         {
             "ich": "entdecke",
@@ -108,7 +108,7 @@
         }
     },
     {
-        "verb_id": 10,
+        "verb_id": 9,
         "conjugations":
         {
             "ich": "erfahre",

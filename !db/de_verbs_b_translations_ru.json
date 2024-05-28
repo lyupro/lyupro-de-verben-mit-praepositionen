@@ -1,42 +1,42 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "verb": ["печь"]
     },
     {
-        "verb_id": 2,
+        "verb_id": 1,
         "verb": ["мастерить"]
     },
     {
-        "verb_id": 3,
+        "verb_id": 2,
         "verb": ["двигать", "перемещать"]
     },
     {
-        "verb_id": 4,
+        "verb_id": 3,
         "verb": ["жарить"]
     },
     {
-        "verb_id": 5,
+        "verb_id": 4,
         "verb": ["купаться"]
     },
     {
-        "verb_id": 6,
+        "verb_id": 5,
         "verb": ["следить", "наблюдать"]
     },
     {
-        "verb_id": 7,
+        "verb_id": 6,
         "verb": ["строить"]
     },
     {
-        "verb_id": 8,
+        "verb_id": 7,
         "verb": ["дуть"]
     },
     {
-        "verb_id": 9,
+        "verb_id": 8,
         "verb": ["платить"]
     },
     {
-        "verb_id": 10,
+        "verb_id": 9,
         "verb": ["просить"]
     }
 ]

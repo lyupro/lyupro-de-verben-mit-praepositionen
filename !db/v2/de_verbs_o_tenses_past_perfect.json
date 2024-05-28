@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte geöffnet",
+            "du": "hattest geöffnet",
+            "er/sie/es": "hatte geöffnet",
+            "wir": "hatten geöffnet",
+            "ihr": "hattet geöffnet",
+            "sie/Sie": "hatten geöffnet"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte operiert",
+            "du": "hattest operiert",
+            "er/sie/es": "hatte operiert",
+            "wir": "hatten operiert",
+            "ihr": "hattet operiert",
+            "sie/Sie": "hatten operiert"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte organisiert",
+            "du": "hattest organisiert",
+            "er/sie/es": "hatte organisiert",
+            "wir": "hatten organisiert",
+            "ihr": "hattet organisiert",
+            "sie/Sie": "hatten organisiert"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte obstriert",
+            "du": "hattest obstriert",
+            "er/sie/es": "hatte obstriert",
+            "wir": "hatten obstriert",
+            "ihr": "hattet obstriert",
+            "sie/Sie": "hatten obstriert"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte gehört",
+            "du": "hattest gehört",
+            "er/sie/es": "hatte gehört",
+            "wir": "hatten gehört",
+            "ihr": "hattet gehört",
+            "sie/Sie": "hatten gehört"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte geordnet",
+            "du": "hattest geordnet",
+            "er/sie/es": "hatte geordnet",
+            "wir": "hatten geordnet",
+            "ihr": "hattet geordnet",
+            "sie/Sie": "hatten geordnet"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte oszilliert",
+            "du": "hattest oszilliert",
+            "er/sie/es": "hatte oszilliert",
+            "wir": "hatten oszilliert",
+            "ihr": "hattet oszilliert",
+            "sie/Sie": "hatten oszilliert"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte observiert",
+            "du": "hattest observiert",
+            "er/sie/es": "hatte observiert",
+            "wir": "hatten observiert",
+            "ihr": "hattet observiert",
+            "sie/Sie": "hatten observiert"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte geoutet",
+            "du": "hattest geoutet",
+            "er/sie/es": "hatte geoutet",
+            "wir": "hatten geoutet",
+            "ihr": "hattet geoutet",
+            "sie/Sie": "hatten geoutet"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte georgelt",
+            "du": "hattest georgelt",
+            "er/sie/es": "hatte georgelt",
+            "wir": "hatten georgelt",
+            "ihr": "hattet georgelt",
+            "sie/Sie": "hatten georgelt"
+        }
+    }
+]

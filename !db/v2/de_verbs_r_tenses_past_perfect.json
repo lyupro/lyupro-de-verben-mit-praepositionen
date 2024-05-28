@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "war gerast",
+            "du": "warst gerast",
+            "er/sie/es": "war gerast",
+            "wir": "waren gerast",
+            "ihr": "wart gerast",
+            "sie/Sie": "waren gerast"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte geraucht",
+            "du": "hattest geraucht",
+            "er/sie/es": "hatte geraucht",
+            "wir": "hatten geraucht",
+            "ihr": "hattet geraucht",
+            "sie/Sie": "hatten geraucht"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte gerechnet",
+            "du": "hattest gerechnet",
+            "er/sie/es": "hatte gerechnet",
+            "wir": "hatten gerechnet",
+            "ihr": "hattet gerechnet",
+            "sie/Sie": "hatten gerechnet"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte geregnet",
+            "du": "hattest geregnet",
+            "er/sie/es": "hatte geregnet",
+            "wir": "hatten geregnet",
+            "ihr": "hattet geregnet",
+            "sie/Sie": "hatten geregnet"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte gerissen",
+            "du": "hattest gerissen",
+            "er/sie/es": "hatte gerissen",
+            "wir": "hatten gerissen",
+            "ihr": "hattet gerissen",
+            "sie/Sie": "hatten gerissen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "war geritten",
+            "du": "warst geritten",
+            "er/sie/es": "war geritten",
+            "wir": "waren geritten",
+            "ihr": "wart geritten",
+            "sie/Sie": "waren geritten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "war gerannt",
+            "du": "warst gerannt",
+            "er/sie/es": "war gerannt",
+            "wir": "waren gerannt",
+            "ihr": "wart gerannt",
+            "sie/Sie": "waren gerannt"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte repariert",
+            "du": "hattest repariert",
+            "er/sie/es": "hatte repariert",
+            "wir": "hatten repariert",
+            "ihr": "hattet repariert",
+            "sie/Sie": "hatten repariert"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte reserviert",
+            "du": "hattest reserviert",
+            "er/sie/es": "hatte reserviert",
+            "wir": "hatten reserviert",
+            "ihr": "hattet reserviert",
+            "sie/Sie": "hatten reserviert"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte riskiert",
+            "du": "hattest riskiert",
+            "er/sie/es": "hatte riskiert",
+            "wir": "hatten riskiert",
+            "ihr": "hattet riskiert",
+            "sie/Sie": "hatten riskiert"
+        }
+    }
+]

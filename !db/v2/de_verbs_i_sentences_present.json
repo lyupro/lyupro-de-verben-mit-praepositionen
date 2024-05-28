@@ -1,0 +1,452 @@
+[
+    {
+        "verb_id": 1,
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich infiltriere das Gebäude."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie infiltrieren die feindlichen Reihen."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir infiltrieren die Organisation seit Monaten."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du infiltrierst geschickt die Gruppe."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr infiltriert die Computersysteme."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie infiltrieren die Geheimbasis."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Infiltrierst du auch das Netzwerk?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Informieren Sie mich über den Fortschritt."
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Wir informieren die Öffentlichkeit über das Ereignis."
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Er informiert uns über die Änderungen."
+            }
+        ]
+    },
+    {
+        "verb_id": 2,
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich informiere mich über die aktuellen Nachrichten."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie informieren die Kunden über neue Produkte."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir informieren uns über die besten Reiseziele."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du informierst den Chef über die Situation."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr informiert euch über die neuesten Trends."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie informieren die Öffentlichkeit über das Ereignis."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Informierst du auch deine Freunde?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Informieren Sie mich über den Vorfall."
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Wir informieren die Mitarbeiter über die Änderungen."
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Er informiert uns über die Entscheidung."
+            }
+        ]
+    },
+    {
+        "verb_id": 3,
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich installiere die neue Software auf meinem Computer."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie installieren die Überwachungskameras im Gebäude."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir installieren das Sicherheitssystem."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du installierst die Anwendung auf deinem Smartphone."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr installiert die Updates regelmäßig."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie installieren die Maschinen in der Fabrik."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Installierst du auch die Treiber?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Installieren Sie die benötigten Programme."
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Wir installieren die neuen Geräte."
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Er installiert die Heizung im Haus."
+            }
+        ]
+    },
+    {
+        "verb_id": 4,
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich interessiere mich für Kunst."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie interessieren sich für die Geschichte."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir interessieren uns für die Ergebnisse."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du interessierst mich sehr."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr interessiert euch für Politik."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie interessieren die Öffentlichkeit."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Interessierst du dich auch für Sport?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Interessieren Sie sich für Musik?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Wir interessieren die Kunden mit neuen Angeboten."
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Er interessiert uns mit seinen Erzählungen."
+            }
+        ]
+    },
+    {
+        "verb_id": 5,
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich investiere in Aktien."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie investieren in Immobilien."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir investieren in die Zukunft."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du investierst in deine Bildung."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr investiert in neue Technologien."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie investieren in Unternehmen."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Investierst du auch in Kryptowährungen?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Investieren Sie in Ihre Gesundheit."
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Wir investieren in Nachhaltigkeit."
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Er investiert in sein eigenes Unternehmen."
+            }
+        ]
+    },
+    {
+        "verb_id": 6,
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich lasse mich von der Natur inspirieren."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie inspirieren andere mit ihren Ideen."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir inspirieren uns gegenseitig."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du inspirierst mich zu neuen Projekten."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr inspiriert mit eurer Kreativität."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie inspirieren durch ihre Kunst."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Inspirierst du auch andere?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Inspirieren Sie mich mit Ihren Gedichten."
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Wir inspirieren die Jugend mit unseren Aktionen."
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Er inspiriert uns mit seinem Engagement."
+            }
+        ]
+    },
+    {
+        "verb_id": 7,
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich inszeniere das Theaterstück."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie inszenieren die Modeshow."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir inszenieren das Event."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du inszenierst das Foto perfekt."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr inszeniert die Szene überzeugend."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie inszenieren die Protestaktion."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Inszenierst du auch das Theaterstück?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Inszenieren Sie das Interview."
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Wir inszenieren den Film."
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Er inszeniert die Performance."
+            }
+        ]
+    },
+    {
+        "verb_id": 8,
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich interpoliere die Daten."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie interpolieren die Ergebnisse."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir interpolieren die Kurve."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du interpolierst die Messwerte."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr interpoliert die Datenpunkte."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie interpolieren die Temperaturwerte."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Interpolierst du auch die Daten?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Interpolieren Sie die fehlenden Werte."
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Wir interpolieren die Funktion."
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Er interpoliert die Bewegung."
+            }
+        ]
+    },
+    {
+        "verb_id": 9,
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich improvisiere auf der Bühne."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie improvisieren die Dialoge."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir improvisieren die Musik."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du improvisierst die Szene."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr improvisiert die Handlung."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie improvisieren die Situation."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Improvisierst du auch gern?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Improvisieren Sie die Lösung."
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Wir improvisieren die Lösungsansätze."
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Er improvisiert die Rede."
+            }
+        ]
+    },
+    {
+        "verb_id": 10,
+        "sentences": [
+            {
+                "sentence_id": 1,
+                "sentence": "Ich isoliere den Bereich."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Sie isolieren das Problem."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Wir isolieren die Probe."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Du isolierst die Substanz."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Ihr isoliert die Daten."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Sie isolieren die Ursache."
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Isolierst du auch das Material?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Isolieren Sie die Störquelle."
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Wir isolieren die Fehlerquelle."
+            },
+            {
+                "sentence_id": 10,
+                "sentence": "Er isoliert das Gas."
+            }
+        ]
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "zahlen"
+    },
+    {
+        "verb_id": 2,
+        "verb": "zähmen"
+    },
+    {
+        "verb_id": 3,
+        "verb": "zählen"
+    },
+    {
+        "verb_id": 4,
+        "verb": "zähnen"
+    },
+    {
+        "verb_id": 5,
+        "verb": "zähren"
+    },
+    {
+        "verb_id": 6,
+        "verb": "zäkern"
+    },
+    {
+        "verb_id": 7,
+        "verb": "zanken"
+    },
+    {
+        "verb_id": 8,
+        "verb": "zapfen"
+    },
+    {
+        "verb_id": 9,
+        "verb": "zapplen"
+    },
+    {
+        "verb_id": 10,
+        "verb": "zappen"
+    }
+]

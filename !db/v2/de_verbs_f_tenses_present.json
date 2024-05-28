@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "fahre",
+            "du": "fährst",
+            "er/sie/es": "fährt",
+            "wir": "fahren",
+            "ihr": "fahrt",
+            "sie/Sie": "fahren"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "feiere",
+            "du": "feierst",
+            "er/sie/es": "feiert",
+            "wir": "feiern",
+            "ihr": "feiert",
+            "sie/Sie": "feiern"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "fotografiere",
+            "du": "fotografierst",
+            "er/sie/es": "fotografiert",
+            "wir": "fotografieren",
+            "ihr": "fotografiert",
+            "sie/Sie": "fotografieren"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "friere",
+            "du": "frierst",
+            "er/sie/es": "friert",
+            "wir": "frieren",
+            "ihr": "friert",
+            "sie/Sie": "frieren"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "fühle",
+            "du": "fühlst",
+            "er/sie/es": "fühlt",
+            "wir": "fühlen",
+            "ihr": "fühlt",
+            "sie/Sie": "fühlen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "finde",
+            "du": "findest",
+            "er/sie/es": "findet",
+            "wir": "finden",
+            "ihr": "findet",
+            "sie/Sie": "finden"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "fliege",
+            "du": "fliegst",
+            "er/sie/es": "fliegt",
+            "wir": "fliegen",
+            "ihr": "fliegt",
+            "sie/Sie": "fliegen"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "frage",
+            "du": "fragst",
+            "er/sie/es": "fragt",
+            "wir": "fragen",
+            "ihr": "fragt",
+            "sie/Sie": "fragen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "frohlocke",
+            "du": "frohlockst",
+            "er/sie/es": "frohlockt",
+            "wir": "frohlocken",
+            "ihr": "frohlockt",
+            "sie/Sie": "frohlocken"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "folge",
+            "du": "folgst",
+            "er/sie/es": "folgt",
+            "wir": "folgen",
+            "ihr": "folgt",
+            "sie/Sie": "folgen"
+        }
+    }
+]

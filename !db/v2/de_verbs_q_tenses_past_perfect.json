@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte gequakt",
+            "du": "hattest gequakt",
+            "er/sie/es": "hatte gequakt",
+            "wir": "hatten gequakt",
+            "ihr": "hattet gequakt",
+            "sie/Sie": "hatten gequakt"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte gequollen",
+            "du": "hattest gequollen",
+            "er/sie/es": "hatte gequollen",
+            "wir": "hatten gequollen",
+            "ihr": "hattet gequollen",
+            "sie/Sie": "hatten gequollen"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte gequengelt",
+            "du": "hattest gequengelt",
+            "er/sie/es": "hatte gequengelt",
+            "wir": "hatten gequengelt",
+            "ihr": "hattet gequengelt",
+            "sie/Sie": "hatten gequengelt"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte querstellt",
+            "du": "hattest querstellt",
+            "er/sie/es": "hatte querstellt",
+            "wir": "hatten querstellt",
+            "ihr": "hattet querstellt",
+            "sie/Sie": "hatten querstellt"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte quittiert",
+            "du": "hattest quittiert",
+            "er/sie/es": "hatte quittiert",
+            "wir": "hatten quittiert",
+            "ihr": "hattet quittiert",
+            "sie/Sie": "hatten quittiert"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte quotiert",
+            "du": "hattest quotiert",
+            "er/sie/es": "hatte quotiert",
+            "wir": "hatten quotiert",
+            "ihr": "hattet quotiert",
+            "sie/Sie": "hatten quotiert"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte gequasselt",
+            "du": "hattest gequasselt",
+            "er/sie/es": "hatte gequasselt",
+            "wir": "hatten gequasselt",
+            "ihr": "hattet gequasselt",
+            "sie/Sie": "hatten gequasselt"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte gequält",
+            "du": "hattest gequält",
+            "er/sie/es": "hatte gequält",
+            "wir": "hatten gequält",
+            "ihr": "hattet gequält",
+            "sie/Sie": "hatten gequält"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte quergegangen",
+            "du": "hattest quergegangen",
+            "er/sie/es": "hatte quergegangen",
+            "wir": "hatten quergegangen",
+            "ihr": "hattet quergegangen",
+            "sie/Sie": "hatten quergegangen"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte quittgemacht",
+            "du": "hattest quittgemacht",
+            "er/sie/es": "hatte quittgemacht",
+            "wir": "hatten quittgemacht",
+            "ihr": "hattet quittgemacht",
+            "sie/Sie": "hatten quittgemacht"
+        }
+    }
+]

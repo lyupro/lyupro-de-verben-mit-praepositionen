@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte gehabt",
+            "du": "hattest gehabt",
+            "er/sie/es": "hatte gehabt",
+            "wir": "hatten gehabt",
+            "ihr": "hattet gehabt",
+            "sie/Sie": "hatten gehabt"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte gehalten",
+            "du": "hattest gehalten",
+            "er/sie/es": "hatte gehalten",
+            "wir": "hatten gehalten",
+            "ihr": "hattet gehalten",
+            "sie/Sie": "hatten gehalten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte geholfen",
+            "du": "hattest geholfen",
+            "er/sie/es": "hatte geholfen",
+            "wir": "hatten geholfen",
+            "ihr": "hattet geholfen",
+            "sie/Sie": "hatten geholfen"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte geheißen",
+            "du": "hattest geheißen",
+            "er/sie/es": "hatte geheißen",
+            "wir": "hatten geheißen",
+            "ihr": "hattet geheißen",
+            "sie/Sie": "hatten geheißen"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte gehört",
+            "du": "hattest gehört",
+            "er/sie/es": "hatte gehört",
+            "wir": "hatten gehört",
+            "ihr": "hattet gehört",
+            "sie/Sie": "hatten gehört"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte hochgeladen",
+            "du": "hattest hochgeladen",
+            "er/sie/es": "hatte hochgeladen",
+            "wir": "hatten hochgeladen",
+            "ihr": "hattet hochgeladen",
+            "sie/Sie": "hatten hochgeladen"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte geheiratet",
+            "du": "hattest geheiratet",
+            "er/sie/es": "hatte geheiratet",
+            "wir": "hatten geheiratet",
+            "ihr": "hattet geheiratet",
+            "sie/Sie": "hatten geheiratet"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte gehasst",
+            "du": "hattest gehasst",
+            "er/sie/es": "hatte gehasst",
+            "wir": "hatten gehasst",
+            "ihr": "hattet gehasst",
+            "sie/Sie": "hatten gehasst"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte hergestellt",
+            "du": "hattest hergestellt",
+            "er/sie/es": "hatte hergestellt",
+            "wir": "hatten hergestellt",
+            "ihr": "hattet hergestellt",
+            "sie/Sie": "hatten hergestellt"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte gehofft",
+            "du": "hattest gehofft",
+            "er/sie/es": "hatte gehofft",
+            "wir": "hatten gehofft",
+            "ihr": "hattet gehofft",
+            "sie/Sie": "hatten gehofft"
+        }
+    }
+]

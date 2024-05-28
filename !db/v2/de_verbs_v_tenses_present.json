@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "verabschiede",
+            "du": "verabschiedest",
+            "er/sie/es": "verabschiedet",
+            "wir": "verabschieden",
+            "ihr": "verabschiedet",
+            "sie/Sie": "verabschieden"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "verändere",
+            "du": "veränderst",
+            "er/sie/es": "verändert",
+            "wir": "verändern",
+            "ihr": "verändert",
+            "sie/Sie": "verändern"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "verbringe",
+            "du": "verbringst",
+            "er/sie/es": "verbringt",
+            "wir": "verbringen",
+            "ihr": "verbringt",
+            "sie/Sie": "verbringen"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "verdiene",
+            "du": "verdienst",
+            "er/sie/es": "verdient",
+            "wir": "verdienen",
+            "ihr": "verdient",
+            "sie/Sie": "verdienen"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "vergesse",
+            "du": "vergisst",
+            "er/sie/es": "vergisst",
+            "wir": "vergessen",
+            "ihr": "vergesst",
+            "sie/Sie": "vergessen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "vergleiche",
+            "du": "vergleichst",
+            "er/sie/es": "vergleicht",
+            "wir": "vergleichen",
+            "ihr": "vergleicht",
+            "sie/Sie": "vergleichen"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "verlasse",
+            "du": "verlässt",
+            "er/sie/es": "verlässt",
+            "wir": "verlassen",
+            "ihr": "verlasst",
+            "sie/Sie": "verlassen"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "verliere",
+            "du": "verlierst",
+            "er/sie/es": "verliert",
+            "wir": "verlieren",
+            "ihr": "verliert",
+            "sie/Sie": "verlieren"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "verspreche",
+            "du": "versprichst",
+            "er/sie/es": "verspricht",
+            "wir": "versprechen",
+            "ihr": "versprecht",
+            "sie/Sie": "versprechen"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "verteidige",
+            "du": "verteidigst",
+            "er/sie/es": "verteidigt",
+            "wir": "verteidigen",
+            "ihr": "verteidigt",
+            "sie/Sie": "verteidigen"
+        }
+    }
+]

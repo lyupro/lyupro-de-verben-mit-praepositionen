@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "backe",
+            "du": "backst",
+            "er/sie/es": "backt",
+            "wir": "backen",
+            "ihr": "backt",
+            "sie/Sie": "backen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "bastle",
+            "du": "bastelst",
+            "er/sie/es": "bastelt",
+            "wir": "basteln",
+            "ihr": "bastelt",
+            "sie/Sie": "basteln"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "bewege",
+            "du": "bewegst",
+            "er/sie/es": "bewegt",
+            "wir": "bewegen",
+            "ihr": "bewegt",
+            "sie/Sie": "bewegen"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "brate",
+            "du": "brätst",
+            "er/sie/es": "brät",
+            "wir": "braten",
+            "ihr": "bratet",
+            "sie/Sie": "braten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "bade",
+            "du": "badest",
+            "er/sie/es": "badet",
+            "wir": "baden",
+            "ihr": "badet",
+            "sie/Sie": "baden"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "beobachte",
+            "du": "beobachtest",
+            "er/sie/es": "beobachtet",
+            "wir": "beobachten",
+            "ihr": "beobachtet",
+            "sie/Sie": "beobachten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "baue",
+            "du": "baust",
+            "er/sie/es": "baut",
+            "wir": "bauen",
+            "ihr": "baut",
+            "sie/Sie": "bauen"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "blase",
+            "du": "bläst",
+            "er/sie/es": "bläst",
+            "wir": "blasen",
+            "ihr": "blast",
+            "sie/Sie": "blasen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "bezahle",
+            "du": "bezahlst",
+            "er/sie/es": "bezahlt",
+            "wir": "bezahlen",
+            "ihr": "bezahlt",
+            "sie/Sie": "bezahlen"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "bitte",
+            "du": "bittest",
+            "er/sie/es": "bittet",
+            "wir": "bitten",
+            "ihr": "bittet",
+            "sie/Sie": "bitten"
+        }
+    }
+]

@@ -1,42 +1,42 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "verb": "verabschieden"
     },
     {
-        "verb_id": 2,
+        "verb_id": 1,
         "verb": "verändern"
     },
     {
-        "verb_id": 3,
+        "verb_id": 2,
         "verb": "verbringen"
     },
     {
-        "verb_id": 4,
+        "verb_id": 3,
         "verb": "verdienen"
     },
     {
-        "verb_id": 5,
+        "verb_id": 4,
         "verb": "vergessen"
     },
     {
-        "verb_id": 6,
+        "verb_id": 5,
         "verb": "vergleichen"
     },
     {
-        "verb_id": 7,
+        "verb_id": 6,
         "verb": "verlassen"
     },
     {
-        "verb_id": 8,
+        "verb_id": 7,
         "verb": "verlieren"
     },
     {
-        "verb_id": 9,
+        "verb_id": 8,
         "verb": "versprechen"
     },
     {
-        "verb_id": 10,
+        "verb_id": 9,
         "verb": "verteidigen"
     }
 ]

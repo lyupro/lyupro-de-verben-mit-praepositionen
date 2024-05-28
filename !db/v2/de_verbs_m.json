@@ -1,0 +1,42 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "machen"
+    },
+    {
+        "verb_id": 2,
+        "verb": "mögen"
+    },
+    {
+        "verb_id": 3,
+        "verb": "malen"
+    },
+    {
+        "verb_id": 4,
+        "verb": "messen"
+    },
+    {
+        "verb_id": 5,
+        "verb": "melden"
+    },
+    {
+        "verb_id": 6,
+        "verb": "meiden"
+    },
+    {
+        "verb_id": 7,
+        "verb": "mitbringen"
+    },
+    {
+        "verb_id": 8,
+        "verb": "musizieren"
+    },
+    {
+        "verb_id": 9,
+        "verb": "murmeln"
+    },
+    {
+        "verb_id": 10,
+        "verb": "munkeln"
+    }
+]

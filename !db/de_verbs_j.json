@@ -1,42 +1,42 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "verb": "jagen"
     },
     {
-        "verb_id": 2,
+        "verb_id": 1,
         "verb": "jammern"
     },
     {
-        "verb_id": 3,
+        "verb_id": 2,
         "verb": "jubeln"
     },
     {
-        "verb_id": 4,
+        "verb_id": 3,
         "verb": "jodeln"
     },
     {
-        "verb_id": 5,
+        "verb_id": 4,
         "verb": "jonglieren"
     },
     {
-        "verb_id": 6,
+        "verb_id": 5,
         "verb": "jucken"
     },
     {
-        "verb_id": 7,
+        "verb_id": 6,
         "verb": "justieren"
     },
     {
-        "verb_id": 8,
+        "verb_id": 7,
         "verb": "jauchzen"
     },
     {
-        "verb_id": 9,
+        "verb_id": 8,
         "verb": "jubilieren"
     },
     {
-        "verb_id": 10,
+        "verb_id": 9,
         "verb": "jugendworten"
     }
 ]

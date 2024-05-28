@@ -1,0 +1,162 @@
+[
+    {
+        "verb_id": 1,
+        "sentences":
+        [
+            "Ich tanze gerne.",
+            "Sie tanzt auf der Bühne.",
+            "Wir tanzen im Club.",
+            "Du tanzt zu der Musik.",
+            "Ihr tanzt den ganzen Abend.",
+            "Sie tanzen zusammen.",
+            "Tanzt du auch?",
+            "Tanzen Sie mit uns?",
+            "Tanzen wir zusammen?",
+            "Tanzen macht Spaß."
+        ]
+    },
+    {
+        "verb_id": 2,
+        "sentences":
+        [
+            "Ich teile mein Essen.",
+            "Sie teilt ihre Zeit gut ein.",
+            "Wir teilen unsere Ideen.",
+            "Du teilst deine Gedanken mit mir.",
+            "Ihr teilt eure Erfahrungen.",
+            "Sie teilen ihr Wissen.",
+            "Teilst du gerne?",
+            "Teilen Sie es mit uns?",
+            "Teilen wir die Kosten?",
+            "Teilen ist wichtig."
+        ]
+    },
+    {
+        "verb_id": 3,
+        "sentences":
+        [
+            "Ich telefoniere mit meinem Freund.",
+            "Sie telefoniert mit ihrer Familie.",
+            "Wir telefonieren mit unseren Kunden.",
+            "Du telefonierst oft.",
+            "Ihr telefoniert über das Internet.",
+            "Sie telefonieren mit dem Chef.",
+            "Telefonierst du gerne?",
+            "Telefonieren Sie viel?",
+            "Telefonieren wir später?",
+            "Telefonieren ist praktisch."
+        ]
+    },
+    {
+        "verb_id": 4,
+        "sentences":
+        [
+            "Ich trage einen Rucksack.",
+            "Sie trägt ein schönes Kleid.",
+            "Wir tragen schwere Lasten.",
+            "Du trägst deine Verantwortung.",
+            "Ihr tragt eure Uniformen.",
+            "Sie tragen die Kisten.",
+            "Trägst du oft?",
+            "Tragen Sie es bitte.",
+            "Tragen wir es zusammen?",
+            "Tragen kann mühsam sein."
+        ]
+    },
+    {
+        "verb_id": 5,
+        "sentences":
+        [
+            "Ich treffe meine Freunde.",
+            "Sie trifft ihre Kollegen.",
+            "Wir treffen uns im Café.",
+            "Du triffst wichtige Entscheidungen.",
+            "Ihr trefft euch am Wochenende.",
+            "Sie treffen neue Leute.",
+            "Triffst du gerne neue Leute?",
+            "Treffen Sie sich mit uns?",
+            "Treffen wir uns um 5 Uhr?",
+            "Treffen ist wichtig für soziale Beziehungen."
+        ]
+    },
+    {
+        "verb_id": 6,
+        "sentences":
+        [
+            "Ich trinke Wasser.",
+            "Sie trinkt einen Kaffee.",
+            "Wir trinken Tee.",
+            "Du trinkst gerne Saft.",
+            "Ihr trinkt Bier.",
+            "Sie trinken Wein.",
+            "Trinkst du oft?",
+            "Trinken Sie einen Tee?",
+            "Trinken wir zusammen?",
+            "Trinken ist lebensnotwendig."
+        ]
+    },
+    {
+        "verb_id": 7,
+        "sentences":
+        [
+            "Ich tue mein Bestes.",
+            "Sie tut, was sie kann.",
+            "Wir tun alles, um zu helfen.",
+            "Du tust, was du denkst.",
+            "Ihr tut, was nötig ist.",
+            "Sie tun das Richtige.",
+            "Tust du das gerne?",
+            "Tun Sie es jetzt?",
+            "Tun wir es gemeinsam?",
+            "Tun ist besser als reden."
+        ]
+    },
+    {
+        "verb_id": 8,
+        "sentences":
+        [
+            "Ich töte keine Tiere.",
+            "Sie tötet die Spinne.",
+            "Wir töten keine Menschen.",
+            "Du tötest die Fliege.",
+            "Ihr tötet die Mücke.",
+            "Sie töten die Kakerlake.",
+            "Tötest du oft?",
+            "Töten Sie die Spinne?",
+            "Töten wir die Kakerlake?",
+            "Töten ist falsch."
+        ]
+    },
+    {
+        "verb_id": 9,
+        "sentences":
+        [
+            "Ich trommle im Musikverein.",
+            "Sie trommelt in einer Band.",
+            "Wir trommeln im Park.",
+            "Du trommelst auf dem Tisch.",
+            "Ihr trommelt auf den Bongos.",
+            "Sie trommeln im Rhythmus.",
+            "Trommelst du gerne?",
+            "Trommeln Sie in der Gruppe?",
+            "Trommeln wir am Wochenende?",
+            "Trommeln macht Spaß."
+        ]
+    },
+    {
+        "verb_id": 10,
+        "sentences":
+        [
+            "Ich tröste meinen Freund.",
+            "Sie tröstet ihr Kind.",
+            "Wir trösten die Traurigen.",
+            "Du tröstest die Verletzten.",
+            "Ihr tröstet die Enttäuschten.",
+            "Sie trösten die Bedürftigen.",
+            "Tröstest du gerne?",
+            "Trösten Sie das Kind?",
+            "Trösten wir die Traurigen?",
+            "Trösten ist wichtig."
+        ]
+    }
+]

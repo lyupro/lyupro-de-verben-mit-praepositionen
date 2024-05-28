@@ -1,6 +1,6 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "sentences":
         [
             "Ich backte gestern einen Kuchen.",
@@ -16,7 +16,7 @@
         ]
     },
     {
-        "verb_id": 2,
+        "verb_id": 1,
         "sentences":
         [
             "Ich bastelte ein Modellauto.",
@@ -32,7 +32,7 @@
         ]
     },
     {
-        "verb_id": 3,
+        "verb_id": 2,
         "sentences":
         [
             "Ich bewegte mich langsam.",
@@ -48,7 +48,7 @@
         ]
     },
     {
-        "verb_id": 4,
+        "verb_id": 3,
         "sentences":
         [
             "Ich briet das Fleisch.",
@@ -64,7 +64,7 @@
         ]
     },
     {
-        "verb_id": 5,
+        "verb_id": 4,
         "sentences":
         [
             "Ich badete im See.",
@@ -80,7 +80,7 @@
         ]
     },
     {
-        "verb_id": 6,
+        "verb_id": 5,
         "sentences":
         [
             "Ich beobachtete die Vögel.",
@@ -96,7 +96,7 @@
         ]
     },
     {
-        "verb_id": 7,
+        "verb_id": 6,
         "sentences":
         [
             "Ich baute ein Baumhaus.",
@@ -112,7 +112,7 @@
         ]
     },
     {
-        "verb_id": 8,
+        "verb_id": 7,
         "sentences":
         [
             "Ich blies Seifenblasen.",
@@ -128,7 +128,7 @@
         ]
     },
     {
-        "verb_id": 9,
+        "verb_id": 8,
         "sentences":
         [
             "Ich bezahlte die Rechnung.",
@@ -144,7 +144,7 @@
         ]
     },
     {
-        "verb_id": 10,
+        "verb_id": 9,
         "sentences":
         [
             "Ich bat um Hilfe.",

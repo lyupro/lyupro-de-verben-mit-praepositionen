@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte gezahlt",
+            "du": "hattest gezahlt",
+            "er/sie/es": "hatte gezahlt",
+            "wir": "hatten gezahlt",
+            "ihr": "hattet gezahlt",
+            "sie/Sie": "hatten gezahlt"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte gezähmt",
+            "du": "hattest gezähmt",
+            "er/sie/es": "hatte gezähmt",
+            "wir": "hatten gezähmt",
+            "ihr": "hattet gezähmt",
+            "sie/Sie": "hatten gezähmt"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte gezählt",
+            "du": "hattest gezählt",
+            "er/sie/es": "hatte gezählt",
+            "wir": "hatten gezählt",
+            "ihr": "hattet gezählt",
+            "sie/Sie": "hatten gezählt"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte gezähnt",
+            "du": "hattest gezähnt",
+            "er/sie/es": "hatte gezähnt",
+            "wir": "hatten gezähnt",
+            "ihr": "hattet gezähnt",
+            "sie/Sie": "hatten gezähnt"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte gezährt",
+            "du": "hattest gezährt",
+            "er/sie/es": "hatte gezährt",
+            "wir": "hatten gezährt",
+            "ihr": "hattet gezährt",
+            "sie/Sie": "hatten gezährt"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte gezäkert",
+            "du": "hattest gezäkert",
+            "er/sie/es": "hatte gezäkert",
+            "wir": "hatten gezäkert",
+            "ihr": "hattet gezäkert",
+            "sie/Sie": "hatten gezäkert"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte gezankt",
+            "du": "hattest gezankt",
+            "er/sie/es": "hatte gezankt",
+            "wir": "hatten gezankt",
+            "ihr": "hattet gezankt",
+            "sie/Sie": "hatten gezankt"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte gezapft",
+            "du": "hattest gezapft",
+            "er/sie/es": "hatte gezapft",
+            "wir": "hatten gezapft",
+            "ihr": "hattet gezapft",
+            "sie/Sie": "hatten gezapft"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte gezappelt",
+            "du": "hattest gezappelt",
+            "er/sie/es": "hatte gezappelt",
+            "wir": "hatten gezappelt",
+            "ihr": "hattet gezappelt",
+            "sie/Sie": "hatten gezappelt"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte gezappt",
+            "du": "hattest gezappt",
+            "er/sie/es": "hatte gezappt",
+            "wir": "hatten gezappt",
+            "ihr": "hattet gezappt",
+            "sie/Sie": "hatten gezappt"
+        }
+    }
+]

@@ -1,46 +1,91 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "sentences": [
             {
-                "sentence_id": 1,
+                "sentence_id": 0,
                 "sentence": "Ich gehe oft spazieren."
             },
             {
-                "sentence_id": 2,
+                "sentence_id": 1,
                 "sentence": "Sie geht zur Arbeit."
             },
             {
-                "sentence_id": 3,
+                "sentence_id": 2,
                 "sentence": "Wir gehen ins Kino."
             },
             {
-                "sentence_id": 4,
+                "sentence_id": 3,
                 "sentence": "Du gehst schnell."
             },
             {
-                "sentence_id": 5,
+                "sentence_id": 4,
                 "sentence": "Ihr geht gemeinsam."
             },
             {
-                "sentence_id": 6,
+                "sentence_id": 5,
                 "sentence": "Sie gehen gemütlich."
             },
             {
-                "sentence_id": 7,
+                "sentence_id": 6,
                 "sentence": "Gehst du auch?"
             },
             {
-                "sentence_id": 8,
+                "sentence_id": 7,
                 "sentence": "Gehen Sie gerne?"
             },
             {
-                "sentence_id": 9,
+                "sentence_id": 8,
                 "sentence": "Gehen wir zusammen?"
             },
             {
-                "sentence_id": 10,
+                "sentence_id": 9,
                 "sentence": "Gehen hält fit."
+            }
+        ]
+    },
+    {
+        "verb_id": 1,
+        "sentences": [
+            {
+                "sentence_id": 0,
+                "sentence": "Ich glaube an dich."
+            },
+            {
+                "sentence_id": 1,
+                "sentence": "Sie glaubt an Wunder."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Wir glauben an die Zukunft."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Du glaubst an Karma."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Ihr glaubt an die Liebe."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Sie glauben an sich selbst."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Glaubst du auch?"
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Glauben Sie an Gott?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Glauben wir zusammen?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Glauben verbindet Menschen."
             }
         ]
     },
@@ -48,44 +93,44 @@
         "verb_id": 2,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich gebe dir mein Wort."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich glaube an dich."
+                "sentence": "Sie gibt mir ein Geschenk."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie glaubt an Wunder."
+                "sentence": "Wir geben Geld aus."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir glauben an die Zukunft."
+                "sentence": "Du gibst mir Rat."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du glaubst an Karma."
+                "sentence": "Ihr gebt euch Mühe."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr glaubt an die Liebe."
+                "sentence": "Sie geben mir Zeit."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie glauben an sich selbst."
+                "sentence": "Gibst du auch?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Glaubst du auch?"
+                "sentence": "Geben Sie gerne?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Glauben Sie an Gott?"
+                "sentence": "Geben wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Glauben wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Glauben verbindet Menschen."
+                "sentence": "Geben bedeutet teilen."
             }
         ]
     },
@@ -93,44 +138,44 @@
         "verb_id": 3,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich gratuliere dir zum Geburtstag."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich gebe dir mein Wort."
+                "sentence": "Sie gratuliert zum Sieg."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie gibt mir ein Geschenk."
+                "sentence": "Wir gratulieren zur Hochzeit."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir geben Geld aus."
+                "sentence": "Du gratulierst zur Beförderung."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du gibst mir Rat."
+                "sentence": "Ihr gratuliert zum Jubiläum."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr gebt euch Mühe."
+                "sentence": "Sie gratulieren zur Prüfung."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie geben mir Zeit."
+                "sentence": "Gratulierst du auch?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Gibst du auch?"
+                "sentence": "Gratulieren Sie herzlich?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Geben Sie gerne?"
+                "sentence": "Gratulieren wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Geben wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Geben bedeutet teilen."
+                "sentence": "Gratulieren macht Freude."
             }
         ]
     },
@@ -138,44 +183,44 @@
         "verb_id": 4,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich grüße dich herzlich."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich gratuliere dir zum Geburtstag."
+                "sentence": "Sie grüßt freundlich."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie gratuliert zum Sieg."
+                "sentence": "Wir grüßen höflich."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir gratulieren zur Hochzeit."
+                "sentence": "Du grüßt fröhlich."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du gratulierst zur Beförderung."
+                "sentence": "Ihr grüßt zurückhaltend."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr gratuliert zum Jubiläum."
+                "sentence": "Sie grüßen respektvoll."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie gratulieren zur Prüfung."
+                "sentence": "Grüßt du auch?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Gratulierst du auch?"
+                "sentence": "Grüßen Sie höflich?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Gratulieren Sie herzlich?"
+                "sentence": "Grüßen wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Gratulieren wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Gratulieren macht Freude."
+                "sentence": "Grüßen verbindet Menschen."
             }
         ]
     },
@@ -183,44 +228,44 @@
         "verb_id": 5,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich gewinne das Spiel."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich grüße dich herzlich."
+                "sentence": "Sie gewinnt den Preis."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie grüßt freundlich."
+                "sentence": "Wir gewinnen die Meisterschaft."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir grüßen höflich."
+                "sentence": "Du gewinnst an Erfahrung."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du grüßt fröhlich."
+                "sentence": "Ihr gewinnt das Rennen."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr grüßt zurückhaltend."
+                "sentence": "Sie gewinnen die Wette."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie grüßen respektvoll."
+                "sentence": "Gewinnst du auch?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Grüßt du auch?"
+                "sentence": "Gewinnen Sie oft?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Grüßen Sie höflich?"
+                "sentence": "Gewinnen wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Grüßen wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Grüßen verbindet Menschen."
+                "sentence": "Gewinnen macht stolz."
             }
         ]
     },
@@ -228,44 +273,44 @@
         "verb_id": 6,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich grille gerne im Garten."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich gewinne das Spiel."
+                "sentence": "Sie grillt das Fleisch."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie gewinnt den Preis."
+                "sentence": "Wir grillen am See."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir gewinnen die Meisterschaft."
+                "sentence": "Du grillst leckere Würstchen."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du gewinnst an Erfahrung."
+                "sentence": "Ihr grillt vegetarisch."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr gewinnt das Rennen."
+                "sentence": "Sie grillen gemeinsam."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie gewinnen die Wette."
+                "sentence": "Grillst du auch?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Gewinnst du auch?"
+                "sentence": "Grillen Sie oft?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Gewinnen Sie oft?"
+                "sentence": "Grillen wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Gewinnen wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Gewinnen macht stolz."
+                "sentence": "Grillen macht hungrig."
             }
         ]
     },
@@ -273,44 +318,44 @@
         "verb_id": 7,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich genieße die Sonne."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich grille gerne im Garten."
+                "sentence": "Sie genießt die Natur."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie grillt das Fleisch."
+                "sentence": "Wir genießen das Leben."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir grillen am See."
+                "sentence": "Du genießt das Essen."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du grillst leckere Würstchen."
+                "sentence": "Ihr genießt den Moment."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr grillt vegetarisch."
+                "sentence": "Sie genießen den Urlaub."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie grillen gemeinsam."
+                "sentence": "Genießt du auch?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Grillst du auch?"
+                "sentence": "Genießen Sie oft?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Grillen Sie oft?"
+                "sentence": "Genießen wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Grillen wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Grillen macht hungrig."
+                "sentence": "Genießen ist wichtig."
             }
         ]
     },
@@ -318,44 +363,44 @@
         "verb_id": 8,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich gestehe meinen Fehler."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich genieße die Sonne."
+                "sentence": "Sie gesteht ihre Gefühle."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie genießt die Natur."
+                "sentence": "Wir gestehen die Wahrheit."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir genießen das Leben."
+                "sentence": "Du gestehst deine Angst."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du genießt das Essen."
+                "sentence": "Ihr gesteht eure Schwäche."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr genießt den Moment."
+                "sentence": "Sie gestehen ihre Schuld."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie genießen den Urlaub."
+                "sentence": "Gestehst du auch?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Genießt du auch?"
+                "sentence": "Gestehen Sie offen?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Genießen Sie oft?"
+                "sentence": "Gestehen wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Genießen wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Genießen ist wichtig."
+                "sentence": "Gestehen bringt Befreiung."
             }
         ]
     },
@@ -363,88 +408,43 @@
         "verb_id": 9,
         "sentences": [
             {
-                "sentence_id": 1,
-                "sentence": "Ich gestehe meinen Fehler."
-            },
-            {
-                "sentence_id": 2,
-                "sentence": "Sie gesteht ihre Gefühle."
-            },
-            {
-                "sentence_id": 3,
-                "sentence": "Wir gestehen die Wahrheit."
-            },
-            {
-                "sentence_id": 4,
-                "sentence": "Du gestehst deine Angst."
-            },
-            {
-                "sentence_id": 5,
-                "sentence": "Ihr gesteht eure Schwäche."
-            },
-            {
-                "sentence_id": 6,
-                "sentence": "Sie gestehen ihre Schuld."
-            },
-            {
-                "sentence_id": 7,
-                "sentence": "Gestehst du auch?"
-            },
-            {
-                "sentence_id": 8,
-                "sentence": "Gestehen Sie offen?"
-            },
-            {
-                "sentence_id": 9,
-                "sentence": "Gestehen wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Gestehen bringt Befreiung."
-            }
-        ]
-    },
-    {
-        "verb_id": 10,
-        "sentences": [
-            {
-                "sentence_id": 1,
+                "sentence_id": 0,
                 "sentence": "Ich gucke mir einen Film an."
             },
             {
-                "sentence_id": 2,
+                "sentence_id": 1,
                 "sentence": "Sie guckt aus dem Fenster."
             },
             {
-                "sentence_id": 3,
+                "sentence_id": 2,
                 "sentence": "Wir gucken nach den Sternen."
             },
             {
-                "sentence_id": 4,
+                "sentence_id": 3,
                 "sentence": "Du guckst auf die Uhr."
             },
             {
-                "sentence_id": 5,
+                "sentence_id": 4,
                 "sentence": "Ihr guckt auf das Handy."
             },
             {
-                "sentence_id": 6,
+                "sentence_id": 5,
                 "sentence": "Sie gucken in die Ferne."
             },
             {
-                "sentence_id": 7,
+                "sentence_id": 6,
                 "sentence": "Guckst du auch?"
             },
             {
-                "sentence_id": 8,
+                "sentence_id": 7,
                 "sentence": "Gucken Sie gerne TV?"
             },
             {
-                "sentence_id": 9,
+                "sentence_id": 8,
                 "sentence": "Gucken wir zusammen?"
             },
             {
-                "sentence_id": 10,
+                "sentence_id": 9,
                 "sentence": "Gucken entspannt."
             }
         ]

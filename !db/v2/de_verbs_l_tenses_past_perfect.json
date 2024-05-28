@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte gelaufen",
+            "du": "hattest gelaufen",
+            "er/sie/es": "hatte gelaufen",
+            "wir": "hatten gelaufen",
+            "ihr": "hattet gelaufen",
+            "sie/Sie": "hatten gelaufen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte gelernt",
+            "du": "hattest gelernt",
+            "er/sie/es": "hatte gelernt",
+            "wir": "hatten gelernt",
+            "ihr": "hattet gelernt",
+            "sie/Sie": "hatten gelernt"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte geliebt",
+            "du": "hattest geliebt",
+            "er/sie/es": "hatte geliebt",
+            "wir": "hatten geliebt",
+            "ihr": "hattet geliebt",
+            "sie/Sie": "hatten geliebt"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "hatte gelächelt",
+            "du": "hattest gelächelt",
+            "er/sie/es": "hatte gelächelt",
+            "wir": "hatten gelächelt",
+            "ihr": "hattet gelächelt",
+            "sie/Sie": "hatten gelächelt"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte gelogen",
+            "du": "hattest gelogen",
+            "er/sie/es": "hatte gelogen",
+            "wir": "hatten gelogen",
+            "ihr": "hattet gelogen",
+            "sie/Sie": "hatten gelogen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte gelebt",
+            "du": "hattest gelebt",
+            "er/sie/es": "hatte gelebt",
+            "wir": "hatten gelebt",
+            "ihr": "hattet gelebt",
+            "sie/Sie": "hatten gelebt"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "hatte gelehrt",
+            "du": "hattest gelehrt",
+            "er/sie/es": "hatte gelehrt",
+            "wir": "hatten gelehrt",
+            "ihr": "hattet gelehrt",
+            "sie/Sie": "hatten gelehrt"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte gelesen",
+            "du": "hattest gelesen",
+            "er/sie/es": "hatte gelesen",
+            "wir": "hatten gelesen",
+            "ihr": "hattet gelesen",
+            "sie/Sie": "hatten gelesen"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte gelöscht",
+            "du": "hattest gelöscht",
+            "er/sie/es": "hatte gelöscht",
+            "wir": "hatten gelöscht",
+            "ihr": "hattet gelöscht",
+            "sie/Sie": "hatten gelöscht"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte geliehen",
+            "du": "hattest geliehen",
+            "er/sie/es": "hatte geliehen",
+            "wir": "hatten geliehen",
+            "ihr": "hattet geliehen",
+            "sie/Sie": "hatten geliehen"
+        }
+    }
+]

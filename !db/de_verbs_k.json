@@ -1,42 +1,42 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "verb": "kämpfen"
     },
     {
-        "verb_id": 2,
+        "verb_id": 1,
         "verb": "küssen"
     },
     {
-        "verb_id": 3,
+        "verb_id": 2,
         "verb": "klettern"
     },
     {
-        "verb_id": 4,
+        "verb_id": 3,
         "verb": "kochen"
     },
     {
-        "verb_id": 5,
+        "verb_id": 4,
         "verb": "klatschen"
     },
     {
-        "verb_id": 6,
+        "verb_id": 5,
         "verb": "kommen"
     },
     {
-        "verb_id": 7,
+        "verb_id": 6,
         "verb": "krabbeln"
     },
     {
-        "verb_id": 8,
+        "verb_id": 7,
         "verb": "kreischen"
     },
     {
-        "verb_id": 9,
+        "verb_id": 8,
         "verb": "kriechen"
     },
     {
-        "verb_id": 10,
+        "verb_id": 9,
         "verb": "kaufen"
     }
 ]

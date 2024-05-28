@@ -1,0 +1,162 @@
+[
+    {
+        "verb_id": 1,
+        "sentences":
+        [
+            "Ich überlege meine Entscheidung.",
+            "Er überlegt, ob er teilnehmen soll.",
+            "Wir überlegen gemeinsam eine Lösung.",
+            "Du überlegst zu lange.",
+            "Ihr überlegt euch die Möglichkeiten.",
+            "Sie überlegen, was sie tun sollen.",
+            "Überlegst du auch manchmal?",
+            "Überlegen Sie sorgfältig, bevor Sie handeln.",
+            "Wir überlegen zusammen, wie wir vorgehen sollen.",
+            "Überlegen ist wichtig für gute Entscheidungen."
+        ]
+    },
+    {
+        "verb_id": 2,
+        "sentences":
+        [
+            "Ich übernehme die Verantwortung.",
+            "Sie übernimmt die Leitung des Projekts.",
+            "Wir übernehmen die Kosten für die Reparatur.",
+            "Du übernimmst die Führung in dieser Angelegenheit.",
+            "Ihr übernehmt die Aufgabenverteilung.",
+            "Sie übernehmen die Kontrolle über die Situation.",
+            "Übernimmst du diese Aufgabe?",
+            "Übernehmen Sie bitte die korrekte Ausführung.",
+            "Wir übernehmen gemeinsam die Herausforderung.",
+            "Es ist wichtig, Verantwortung zu übernehmen."
+        ]
+    },
+    {
+        "verb_id": 3,
+        "sentences":
+        [
+            "Ich überquere die Straße.",
+            "Sie überquert den Fluss mit dem Boot.",
+            "Wir überqueren die Grenze zu Fuß.",
+            "Du überquerst die Brücke.",
+            "Ihr überquert die Straße an der Ampel.",
+            "Sie überqueren die Straße zusammen.",
+            "Überquerst du die Straße sicher?",
+            "Bitte überqueren Sie den Zebrastreifen.",
+            "Wir überqueren gemeinsam den Weg.",
+            "Das Überqueren der Straße erfordert Vorsicht."
+        ]
+    },
+    {
+        "verb_id": 4,
+        "sentences":
+        [
+            "Ich überrede ihn, mitzukommen.",
+            "Sie überredet ihre Freunde zum Feiern.",
+            "Wir überreden sie, sich zu entschuldigen.",
+            "Du überredest ihn, die Wahrheit zu sagen.",
+            "Ihr überredet sie, mit euch zu kommen.",
+            "Sie überreden ihn zum Kauf.",
+            "Überredest du sie auch?",
+            "Überreden Sie sie zu vernünftigen Entscheidungen.",
+            "Wir überreden gemeinsam die Leute.",
+            "Es ist nicht richtig, jemanden zu überreden."
+        ]
+    },
+    {
+        "verb_id": 5,
+        "sentences":
+        [
+            "Ich überweise das Geld auf Ihr Konto.",
+            "Sie überweist die Zahlung rechtzeitig.",
+            "Wir überweisen die Gebühren elektronisch.",
+            "Du überweist das Geld per Überweisung.",
+            "Ihr überweist die Miete jeden Monat.",
+            "Sie überweisen das Geld an den Empfänger.",
+            "Überweist du das Geld online?",
+            "Bitte überweisen Sie den Betrag bis morgen.",
+            "Wir überweisen das Geld gemeinsam.",
+            "Überweisen Sie das Geld rechtzeitig, um Verzögerungen zu vermeiden."
+        ]
+    },
+    {
+        "verb_id": 6,
+        "sentences":
+        [
+            "Ich umarme meine Freunde zum Abschied.",
+            "Sie umarmt ihn zur Begrüßung.",
+            "Wir umarmen uns zur Versöhnung.",
+            "Du umarmst deine Familie.",
+            "Ihr umarmt euch vor Freude.",
+            "Sie umarmen sich liebevoll.",
+            "Umarmst du deine Liebsten?",
+            "Umarmen Sie Ihre Liebsten öfter.",
+            "Wir umarmen uns zum Geburtstag.",
+            "Eine Umarmung kann Trost spenden."
+        ]
+    },
+    {
+        "verb_id": 7,
+        "sentences":
+        [
+            "Er biegt die Ecke um.",
+            "Wir biegen die Wahrheit nicht um.",
+            "Du biegst den Draht um.",
+            "Sie biegen um die Kurve.",
+            "Ich biege um den Baum herum.",
+            "Er biegt das Blech um.",
+            "Wir biegen um die Ecke.",
+            "Du biegst das Blatt Papier um.",
+            "Sie biegen die Regeln um.",
+            "Ich biege um den Block herum."
+        ]
+    },
+    {
+        "verb_id": 8,
+        "sentences":
+        [
+            "Er fährt um das Hindernis herum.",
+            "Wir fahren um die Stadt herum.",
+            "Du fährst um die Kurve.",
+            "Sie fahren um den Park herum.",
+            "Ich fahre um die Welt herum.",
+            "Er fährt um den Berg herum.",
+            "Wir fahren um den See herum.",
+            "Du fährst um die Insel herum.",
+            "Sie fahren um das Gebäude herum.",
+            "Ich fahre um die Ecke herum."
+        ]
+    },
+    {
+        "verb_id": 9,
+        "sentences":
+        [
+            "Er umgibt sich mit Freunden.",
+            "Wir umgeben uns mit Liebe.",
+            "Du umgibst dich mit Talent.",
+            "Sie umgeben sich mit Glück.",
+            "Ich umgebe mich mit Ruhe.",
+            "Er umgibt sich mit Menschen.",
+            "Wir umgeben uns mit Natur.",
+            "Du umgibst dich mit Vertrauen.",
+            "Sie umgeben sich mit Harmonie.",
+            "Ich umgebe mich mit Positivität."
+        ]
+    },
+    {
+        "verb_id": 10,
+        "sentences":
+        [
+            "Er zieht sich schnell um.",
+            "Wir ziehen uns warm an.",
+            "Du ziehst dich stilvoll um.",
+            "Sie ziehen sich elegant um.",
+            "Ich ziehe mich sportlich um.",
+            "Er zieht sich lässig um.",
+            "Wir ziehen uns für die Party um.",
+            "Du ziehst dich für das Meeting um.",
+            "Sie ziehen sich für den Auftritt um.",
+            "Ich ziehe mich für das Date um."
+        ]
+    }
+]

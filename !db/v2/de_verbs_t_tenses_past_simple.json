@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "tanzte",
+            "du": "tanztest",
+            "er/sie/es": "tanzte",
+            "wir": "tanzten",
+            "ihr": "tanztet",
+            "sie/Sie": "tanzten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "teilte",
+            "du": "teiltest",
+            "er/sie/es": "teilte",
+            "wir": "teilten",
+            "ihr": "teiltet",
+            "sie/Sie": "teilten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "telefonierte",
+            "du": "telefoniertest",
+            "er/sie/es": "telefonierte",
+            "wir": "telefonierten",
+            "ihr": "telefoniertet",
+            "sie/Sie": "telefonierten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "trug",
+            "du": "trugst",
+            "er/sie/es": "trug",
+            "wir": "trugen",
+            "ihr": "trugt",
+            "sie/Sie": "trugen"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "traf",
+            "du": "trafst",
+            "er/sie/es": "traf",
+            "wir": "trafen",
+            "ihr": "traft",
+            "sie/Sie": "trafen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "trank",
+            "du": "trankst",
+            "er/sie/es": "trank",
+            "wir": "tranken",
+            "ihr": "trankt",
+            "sie/Sie": "tranken"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "tat",
+            "du": "tatest",
+            "er/sie/es": "tat",
+            "wir": "taten",
+            "ihr": "tatet",
+            "sie/Sie": "taten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "tötete",
+            "du": "tötetest",
+            "er/sie/es": "tötete",
+            "wir": "töteten",
+            "ihr": "tötetet",
+            "sie/Sie": "töteten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "trommelte",
+            "du": "trommeltest",
+            "er/sie/es": "trommelte",
+            "wir": "trommelten",
+            "ihr": "trommeltet",
+            "sie/Sie": "trommelten"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "tröstete",
+            "du": "tröstetest",
+            "er/sie/es": "tröstete",
+            "wir": "trösteten",
+            "ihr": "tröstetet",
+            "sie/Sie": "trösteten"
+        }
+    }
+]

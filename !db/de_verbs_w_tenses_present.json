@@ -1,6 +1,6 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "conjugations":
         {
             "ich": "wachse",
@@ -12,7 +12,7 @@
         }
     },
     {
-        "verb_id": 2,
+        "verb_id": 1,
         "conjugations":
         {
             "ich": "wähle",
@@ -24,7 +24,7 @@
         }
     },
     {
-        "verb_id": 3,
+        "verb_id": 2,
         "conjugations":
         {
             "ich": "wandere",
@@ -36,7 +36,7 @@
         }
     },
     {
-        "verb_id": 4,
+        "verb_id": 3,
         "conjugations":
         {
             "ich": "warne",
@@ -48,7 +48,7 @@
         }
     },
     {
-        "verb_id": 5,
+        "verb_id": 4,
         "conjugations":
         {
             "ich": "wasche",
@@ -60,7 +60,7 @@
         }
     },
     {
-        "verb_id": 6,
+        "verb_id": 5,
         "conjugations":
         {
             "ich": "wechsle",
@@ -72,7 +72,7 @@
         }
     },
     {
-        "verb_id": 7,
+        "verb_id": 6,
         "conjugations":
         {
             "ich": "wecke",
@@ -84,7 +84,7 @@
         }
     },
     {
-        "verb_id": 8,
+        "verb_id": 7,
         "conjugations":
         {
             "ich": "wehre",
@@ -96,7 +96,7 @@
         }
     },
     {
-        "verb_id": 9,
+        "verb_id": 8,
         "conjugations":
         {
             "ich": "weine",
@@ -108,7 +108,7 @@
         }
     },
     {
-        "verb_id": 10,
+        "verb_id": 9,
         "conjugations":
         {
             "ich": "werde",

@@ -1,42 +1,42 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "verb": ["бороться"]
     },
     {
-        "verb_id": 2,
+        "verb_id": 1,
         "verb": ["целоваться"]
     },
     {
-        "verb_id": 3,
+        "verb_id": 2,
         "verb": ["взбираться"]
     },
     {
-        "verb_id": 4,
+        "verb_id": 3,
         "verb": ["готовить"]
     },
     {
-        "verb_id": 5,
+        "verb_id": 4,
         "verb": ["хлопать"]
     },
     {
-        "verb_id": 6,
+        "verb_id": 5,
         "verb": ["приходить"]
     },
     {
-        "verb_id": 7,
+        "verb_id": 6,
         "verb": ["ползать"]
     },
     {
-        "verb_id": 8,
+        "verb_id": 7,
         "verb": ["кричать"]
     },
     {
-        "verb_id": 9,
+        "verb_id": 8,
         "verb": ["ползти"]
     },
     {
-        "verb_id": 10,
+        "verb_id": 9,
         "verb": ["покупать"]
     }
 ]

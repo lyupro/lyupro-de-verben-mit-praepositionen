@@ -1,0 +1,82 @@
+[
+    {
+        "verb_id": 1,
+        "verb": "arbeiten"
+    },
+    {
+        "verb_id": 2,
+        "verb": "angeln"
+    },
+    {
+        "verb_id": 3,
+        "verb": "analysieren"
+    },
+    {
+        "verb_id": 4,
+        "verb": "argumentieren"
+    },
+    {
+        "verb_id": 5,
+        "verb": "assimilieren sich"
+    },
+    {
+        "verb_id": 6,
+        "verb": "aufwärmen"
+    },
+    {
+        "verb_id": 7,
+        "verb": "ausprobieren"
+    },
+    {
+        "verb_id": 8,
+        "verb": "ankommen"
+    },
+    {
+        "verb_id": 9,
+        "verb": "anziehen"
+    },
+    {
+        "verb_id": 10,
+        "verb": "abwaschen"
+    },
+    {
+        "verb_id": 11,
+        "verb": "aussteigen"
+    },
+    {
+        "verb_id": 12,
+        "verb": "aufstehen"
+    },
+    {
+        "verb_id": 13,
+        "verb": "anbauen"
+    },
+    {
+        "verb_id": 14,
+        "verb": "ausgeben"
+    },
+    {
+        "verb_id": 15,
+        "verb": "anerkennen"
+    },
+    {
+        "verb_id": 16,
+        "verb": "ausdrucken"
+    },
+    {
+        "verb_id": 17,
+        "verb": "ausziehen"
+    },
+    {
+        "verb_id": 18,
+        "verb": "anrufen"
+    },
+    {
+        "verb_id": 19,
+        "verb": "abholen"
+    },
+    {
+        "verb_id": 20,
+        "verb": "aufpassen"
+    }
+]

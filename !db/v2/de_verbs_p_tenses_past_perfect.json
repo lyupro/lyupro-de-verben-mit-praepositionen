@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "hatte gepackt",
+            "du": "hattest gepackt",
+            "er/sie/es": "hatte gepackt",
+            "wir": "hatten gepackt",
+            "ihr": "hattet gepackt",
+            "sie/Sie": "hatten gepackt"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "hatte geparkt",
+            "du": "hattest geparkt",
+            "er/sie/es": "hatte geparkt",
+            "wir": "hatten geparkt",
+            "ihr": "hattet geparkt",
+            "sie/Sie": "hatten geparkt"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "hatte partizipiert",
+            "du": "hattest partizipiert",
+            "er/sie/es": "hatte partizipiert",
+            "wir": "hatten partizipiert",
+            "ihr": "hattet partizipiert",
+            "sie/Sie": "hatten partizipiert"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "war passiert",
+            "du": "warst passiert",
+            "er/sie/es": "war passiert",
+            "wir": "waren passiert",
+            "ihr": "wart passiert",
+            "sie/Sie": "waren passiert"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "hatte patentiert",
+            "du": "hattest patentiert",
+            "er/sie/es": "hatte patentiert",
+            "wir": "hatten patentiert",
+            "ihr": "hattet patentiert",
+            "sie/Sie": "hatten patentiert"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "hatte gepeitscht",
+            "du": "hattest gepeitscht",
+            "er/sie/es": "hatte gepeitscht",
+            "wir": "hatten gepeitscht",
+            "ihr": "hattet gepeitscht",
+            "sie/Sie": "hatten gepeitscht"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "war gependelt",
+            "du": "warst gependelt",
+            "er/sie/es": "war gependelt",
+            "wir": "waren gependelt",
+            "ihr": "wart gependelt",
+            "sie/Sie": "waren gependelt"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "hatte perfektioniert",
+            "du": "hattest perfektioniert",
+            "er/sie/es": "hatte perfektioniert",
+            "wir": "hatten perfektioniert",
+            "ihr": "hattet perfektioniert",
+            "sie/Sie": "hatten perfektioniert"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "hatte gepfiffen",
+            "du": "hattest gepfiffen",
+            "er/sie/es": "hatte gepfiffen",
+            "wir": "hatten gepfiffen",
+            "ihr": "hattet gepfiffen",
+            "sie/Sie": "hatten gepfiffen"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "hatte gepflanzt",
+            "du": "hattest gepflanzt",
+            "er/sie/es": "hatte gepflanzt",
+            "wir": "hatten gepflanzt",
+            "ihr": "hattet gepflanzt",
+            "sie/Sie": "hatten gepflanzt"
+        }
+    }
+]

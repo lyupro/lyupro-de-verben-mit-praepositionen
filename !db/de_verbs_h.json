@@ -1,42 +1,42 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "verb": "haben"
     },
     {
-        "verb_id": 2,
+        "verb_id": 1,
         "verb": "halten"
     },
     {
-        "verb_id": 3,
+        "verb_id": 2,
         "verb": "helfen"
     },
     {
-        "verb_id": 4,
+        "verb_id": 3,
         "verb": "heißen"
     },
     {
-        "verb_id": 5,
+        "verb_id": 4,
         "verb": "hören"
     },
     {
-        "verb_id": 6,
+        "verb_id": 5,
         "verb": "hochladen"
     },
     {
-        "verb_id": 7,
+        "verb_id": 6,
         "verb": "heiraten"
     },
     {
-        "verb_id": 8,
+        "verb_id": 7,
         "verb": "hassen"
     },
     {
-        "verb_id": 9,
+        "verb_id": 8,
         "verb": "herstellen"
     },
     {
-        "verb_id": 10,
+        "verb_id": 9,
         "verb": "hoffen"
     }
 ]

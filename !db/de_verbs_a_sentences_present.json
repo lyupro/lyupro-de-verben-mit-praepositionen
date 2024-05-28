@@ -1,46 +1,91 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "sentences": [
             {
-                "sentence_id": 1,
+                "sentence_id": 0,
                 "sentence": "Ich arbeite von Montag bis Freitag."
             },
             {
-                "sentence_id": 2,
+                "sentence_id": 1,
                 "sentence": "Sie arbeitet als Lehrerin."
             },
             {
-                "sentence_id": 3,
+                "sentence_id": 2,
                 "sentence": "Wir arbeiten im Büro."
             },
             {
-                "sentence_id": 4,
+                "sentence_id": 3,
                 "sentence": "Du arbeitest hart."
             },
             {
-                "sentence_id": 5,
+                "sentence_id": 4,
                 "sentence": "Ihr arbeitet gerne zusammen."
             },
             {
-                "sentence_id": 6,
+                "sentence_id": 5,
                 "sentence": "Sie arbeiten im Garten."
             },
             {
-                "sentence_id": 7,
+                "sentence_id": 6,
                 "sentence": "Arbeitest du auch am Wochenende?"
             },
             {
-                "sentence_id": 8,
+                "sentence_id": 7,
                 "sentence": "Arbeiten Sie in dieser Firma?"
             },
             {
-                "sentence_id": 9,
+                "sentence_id": 8,
                 "sentence": "Arbeiten wir heute zusammen?"
             },
             {
-                "sentence_id": 10,
+                "sentence_id": 9,
                 "sentence": "Arbeiten macht Spaß."
+            }
+        ]
+    },
+    {
+        "verb_id": 1,
+        "sentences": [
+            {
+                "sentence_id": 0,
+                "sentence": "Ich angle gerne in meinem Urlaub."
+            },
+            {
+                "sentence_id": 1,
+                "sentence": "Er angelt am liebsten am See."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Wir angeln oft am Fluss."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Du angelst mit deinem Vater."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Ihr angelt morgen früh."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Sie angeln im Meer."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Angelst du auch in anderen Ländern?"
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Angeln Sie regelmäßig?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Angeln wir heute Abend?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Angeln ist entspannend."
             }
         ]
     },
@@ -48,44 +93,44 @@
         "verb_id": 2,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich analysiere die Daten gründlich."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich angle gerne in meinem Urlaub."
+                "sentence": "Sie analysiert den Markt für uns."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Er angelt am liebsten am See."
+                "sentence": "Wir analysieren die Ergebnisse."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir angeln oft am Fluss."
+                "sentence": "Du analysierst die Trends."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du angelst mit deinem Vater."
+                "sentence": "Ihr analysiert die Probleme."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr angelt morgen früh."
+                "sentence": "Sie analysieren gemeinsam."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie angeln im Meer."
+                "sentence": "Analysierst du auch die Konkurrenz?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Angelst du auch in anderen Ländern?"
+                "sentence": "Analysieren Sie regelmäßig?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Angeln Sie regelmäßig?"
+                "sentence": "Analysieren wir die Situation?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Angeln wir heute Abend?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Angeln ist entspannend."
+                "sentence": "Analysieren ist wichtig."
             }
         ]
     },
@@ -93,44 +138,44 @@
         "verb_id": 3,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich argumentiere für meine Ideen."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich analysiere die Daten gründlich."
+                "sentence": "Sie argumentiert überzeugend."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie analysiert den Markt für uns."
+                "sentence": "Wir argumentieren für die Umwelt."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir analysieren die Ergebnisse."
+                "sentence": "Du argumentierst fair."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du analysierst die Trends."
+                "sentence": "Ihr argumentiert leidenschaftlich."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr analysiert die Probleme."
+                "sentence": "Sie argumentieren sachlich."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie analysieren gemeinsam."
+                "sentence": "Argumentierst du auch in schwierigen Situationen?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Analysierst du auch die Konkurrenz?"
+                "sentence": "Argumentieren Sie gerne?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Analysieren Sie regelmäßig?"
+                "sentence": "Argumentieren wir darüber?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Analysieren wir die Situation?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Analysieren ist wichtig."
+                "sentence": "Argumentieren ist eine Kunst."
             }
         ]
     },
@@ -138,44 +183,44 @@
         "verb_id": 4,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich assimiliere mich in die neue Kultur."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich argumentiere für meine Ideen."
+                "sentence": "Sie assimiliert sich schnell."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie argumentiert überzeugend."
+                "sentence": "Wir assimilieren uns an die Regeln."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir argumentieren für die Umwelt."
+                "sentence": "Du assimilierst dich gut."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du argumentierst fair."
+                "sentence": "Ihr assimiliert euch in die Gesellschaft."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr argumentiert leidenschaftlich."
+                "sentence": "Sie assimilieren die neuen Ideen."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie argumentieren sachlich."
+                "sentence": "Assimilierst du dich auch in andere Länder?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Argumentierst du auch in schwierigen Situationen?"
+                "sentence": "Assimilieren Sie sich leicht?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Argumentieren Sie gerne?"
+                "sentence": "Assimilieren wir uns gegenseitig?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Argumentieren wir darüber?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Argumentieren ist eine Kunst."
+                "sentence": "Assimilieren ist ein natürlicher Prozess."
             }
         ]
     },
@@ -183,44 +228,44 @@
         "verb_id": 5,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich wärme das Essen auf."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich assimiliere mich in die neue Kultur."
+                "sentence": "Sie wärmt sich die Hände auf."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie assimiliert sich schnell."
+                "sentence": "Wir wärmen uns im Winter auf."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir assimilieren uns an die Regeln."
+                "sentence": "Du wärmst dich am Feuer auf."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du assimilierst dich gut."
+                "sentence": "Ihr wärmt euch vor dem Spiel auf."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr assimiliert euch in die Gesellschaft."
+                "sentence": "Sie wärmen die Suppe auf."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie assimilieren die neuen Ideen."
+                "sentence": "Wärmst du dich auch vor dem Training auf?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Assimilierst du dich auch in andere Länder?"
+                "sentence": "Wärmen Sie sich gut auf?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Assimilieren Sie sich leicht?"
+                "sentence": "Wärmen wir uns gemeinsam auf?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Assimilieren wir uns gegenseitig?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Assimilieren ist ein natürlicher Prozess."
+                "sentence": "Aufwärmen ist wichtig vor körperlicher Aktivität."
             }
         ]
     },
@@ -228,44 +273,44 @@
         "verb_id": 6,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich probiere das neue Rezept aus."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich wärme das Essen auf."
+                "sentence": "Sie probiert das Kleidungsstück aus."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie wärmt sich die Hände auf."
+                "sentence": "Wir probieren die neue Technologie aus."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir wärmen uns im Winter auf."
+                "sentence": "Du probierst das neue Spiel aus."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du wärmst dich am Feuer auf."
+                "sentence": "Ihr probiert die neue Sportart aus."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr wärmt euch vor dem Spiel auf."
+                "sentence": "Sie probieren das neue Produkt aus."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie wärmen die Suppe auf."
+                "sentence": "Probierst du auch gerne Neues aus?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Wärmst du dich auch vor dem Training auf?"
+                "sentence": "Probieren Sie verschiedene Optionen aus?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Wärmen Sie sich gut auf?"
+                "sentence": "Probieren wir es aus?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Wärmen wir uns gemeinsam auf?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Aufwärmen ist wichtig vor körperlicher Aktivität."
+                "sentence": "Ausprobieren ist eine Möglichkeit, Neues kennenzulernen."
             }
         ]
     },
@@ -273,44 +318,44 @@
         "verb_id": 7,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich komme pünktlich an."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich probiere das neue Rezept aus."
+                "sentence": "Sie kommt am Bahnhof an."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie probiert das Kleidungsstück aus."
+                "sentence": "Wir kommen rechtzeitig an."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir probieren die neue Technologie aus."
+                "sentence": "Du kommst immer zu spät an."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du probierst das neue Spiel aus."
+                "sentence": "Ihr kommt zusammen an."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr probiert die neue Sportart aus."
+                "sentence": "Sie kommen mit dem Auto an."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie probieren das neue Produkt aus."
+                "sentence": "Kommst du auch mit dem Zug an?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Probierst du auch gerne Neues aus?"
+                "sentence": "Kommen Sie gut an?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Probieren Sie verschiedene Optionen aus?"
+                "sentence": "Kommen wir an?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Probieren wir es aus?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Ausprobieren ist eine Möglichkeit, Neues kennenzulernen."
+                "sentence": "Ankommen ist der Beginn eines Abenteuers."
             }
         ]
     },
@@ -318,44 +363,44 @@
         "verb_id": 8,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich ziehe mich für die Party an."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich komme pünktlich an."
+                "sentence": "Sie zieht sich elegant an."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie kommt am Bahnhof an."
+                "sentence": "Wir ziehen uns warm an."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir kommen rechtzeitig an."
+                "sentence": "Du ziehst dich schnell an."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du kommst immer zu spät an."
+                "sentence": "Ihr zieht euch für die Hochzeit an."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr kommt zusammen an."
+                "sentence": "Sie ziehen sich für das Meeting an."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie kommen mit dem Auto an."
+                "sentence": "Ziehst du dich auch für besondere Anlässe an?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Kommst du auch mit dem Zug an?"
+                "sentence": "Ziehen Sie sich für die Arbeit an?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Kommen Sie gut an?"
+                "sentence": "Ziehen wir uns gemeinsam an?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Kommen wir an?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Ankommen ist der Beginn eines Abenteuers."
+                "sentence": "Anziehen ist Teil des täglichen Rituals."
             }
         ]
     },
@@ -363,88 +408,43 @@
         "verb_id": 9,
         "sentences": [
             {
-                "sentence_id": 1,
-                "sentence": "Ich ziehe mich für die Party an."
-            },
-            {
-                "sentence_id": 2,
-                "sentence": "Sie zieht sich elegant an."
-            },
-            {
-                "sentence_id": 3,
-                "sentence": "Wir ziehen uns warm an."
-            },
-            {
-                "sentence_id": 4,
-                "sentence": "Du ziehst dich schnell an."
-            },
-            {
-                "sentence_id": 5,
-                "sentence": "Ihr zieht euch für die Hochzeit an."
-            },
-            {
-                "sentence_id": 6,
-                "sentence": "Sie ziehen sich für das Meeting an."
-            },
-            {
-                "sentence_id": 7,
-                "sentence": "Ziehst du dich auch für besondere Anlässe an?"
-            },
-            {
-                "sentence_id": 8,
-                "sentence": "Ziehen Sie sich für die Arbeit an?"
-            },
-            {
-                "sentence_id": 9,
-                "sentence": "Ziehen wir uns gemeinsam an?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Anziehen ist Teil des täglichen Rituals."
-            }
-        ]
-    },
-    {
-        "verb_id": 10,
-        "sentences": [
-            {
-                "sentence_id": 1,
+                "sentence_id": 0,
                 "sentence": "Ich wasche das Geschirr ab."
             },
             {
-                "sentence_id": 2,
+                "sentence_id": 1,
                 "sentence": "Sie wäscht die Wäsche ab."
             },
             {
-                "sentence_id": 3,
+                "sentence_id": 2,
                 "sentence": "Wir waschen die Fenster ab."
             },
             {
-                "sentence_id": 4,
+                "sentence_id": 3,
                 "sentence": "Du wäschst das Auto ab."
             },
             {
-                "sentence_id": 5,
+                "sentence_id": 4,
                 "sentence": "Ihr wascht das Besteck ab."
             },
             {
-                "sentence_id": 6,
+                "sentence_id": 5,
                 "sentence": "Sie waschen den Boden ab."
             },
             {
-                "sentence_id": 7,
+                "sentence_id": 6,
                 "sentence": "Wäschst du auch die Kleidung ab?"
             },
             {
-                "sentence_id": 8,
+                "sentence_id": 7,
                 "sentence": "Waschen Sie das Gemüse ab?"
             },
             {
-                "sentence_id": 9,
+                "sentence_id": 8,
                 "sentence": "Waschen wir das Auto ab?"
             },
             {
-                "sentence_id": 10,
+                "sentence_id": 9,
                 "sentence": "Abwaschen spart Zeit."
             }
         ]

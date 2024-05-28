@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "nahm",
+            "du": "nahmst",
+            "er/sie/es": "nahm",
+            "wir": "nahmen",
+            "ihr": "nahmt",
+            "sie/Sie": "nahmen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "nannte",
+            "du": "nanntest",
+            "er/sie/es": "nannte",
+            "wir": "nannten",
+            "ihr": "nanntet",
+            "sie/Sie": "nannten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "näherte",
+            "du": "nähertest",
+            "er/sie/es": "näherte",
+            "wir": "näherten",
+            "ihr": "nähertet",
+            "sie/Sie": "näherten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "nutzte",
+            "du": "nutztest",
+            "er/sie/es": "nutzte",
+            "wir": "nutzten",
+            "ihr": "nutztet",
+            "sie/Sie": "nutzten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "nickte",
+            "du": "nicktest",
+            "er/sie/es": "nickte",
+            "wir": "nickten",
+            "ihr": "nicktet",
+            "sie/Sie": "nickten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "naschte",
+            "du": "naschtest",
+            "er/sie/es": "naschte",
+            "wir": "naschten",
+            "ihr": "naschtet",
+            "sie/Sie": "naschten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "nähte",
+            "du": "nähtest",
+            "er/sie/es": "nähte",
+            "wir": "nähten",
+            "ihr": "nähtet",
+            "sie/Sie": "nähten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "nagte",
+            "du": "nagtest",
+            "er/sie/es": "nagte",
+            "wir": "nagten",
+            "ihr": "nagtet",
+            "sie/Sie": "nagten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "niest",
+            "du": "niest",
+            "er/sie/es": "niest",
+            "wir": "niesten",
+            "ihr": "niestet",
+            "sie/Sie": "niesten"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "nickte",
+            "du": "nicktest",
+            "er/sie/es": "nickte",
+            "wir": "nickten",
+            "ihr": "nicktet",
+            "sie/Sie": "nickten"
+        }
+    }
+]

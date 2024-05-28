@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "wachse",
+            "du": "wächst",
+            "er/sie/es": "wächst",
+            "wir": "wachsen",
+            "ihr": "wachst",
+            "sie/Sie": "wachsen"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "wähle",
+            "du": "wählst",
+            "er/sie/es": "wählt",
+            "wir": "wählen",
+            "ihr": "wählt",
+            "sie/Sie": "wählen"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "wandere",
+            "du": "wanderst",
+            "er/sie/es": "wandert",
+            "wir": "wandern",
+            "ihr": "wandert",
+            "sie/Sie": "wandern"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "warne",
+            "du": "warnst",
+            "er/sie/es": "warnt",
+            "wir": "warnen",
+            "ihr": "warnt",
+            "sie/Sie": "warnen"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "wasche",
+            "du": "wäschst",
+            "er/sie/es": "wäscht",
+            "wir": "waschen",
+            "ihr": "wascht",
+            "sie/Sie": "waschen"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "wechsle",
+            "du": "wechselst",
+            "er/sie/es": "wechselt",
+            "wir": "wechseln",
+            "ihr": "wechselt",
+            "sie/Sie": "wechseln"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "wecke",
+            "du": "weckst",
+            "er/sie/es": "weckt",
+            "wir": "wecken",
+            "ihr": "weckt",
+            "sie/Sie": "wecken"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "wehre",
+            "du": "wehrst",
+            "er/sie/es": "wehrt",
+            "wir": "wehren",
+            "ihr": "wehrt",
+            "sie/Sie": "wehren"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "weine",
+            "du": "weinst",
+            "er/sie/es": "weint",
+            "wir": "weinen",
+            "ihr": "weint",
+            "sie/Sie": "weinen"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "werde",
+            "du": "wirst",
+            "er/sie/es": "wird",
+            "wir": "werden",
+            "ihr": "werdet",
+            "sie/Sie": "werden"
+        }
+    }
+]

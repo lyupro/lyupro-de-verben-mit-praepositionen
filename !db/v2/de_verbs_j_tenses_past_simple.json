@@ -1,0 +1,122 @@
+[
+    {
+        "verb_id": 1,
+        "conjugations":
+        {
+            "ich": "jagte",
+            "du": "jagtest",
+            "er/sie/es": "jagte",
+            "wir": "jagten",
+            "ihr": "jagtet",
+            "sie/Sie": "jagten"
+        }
+    },
+    {
+        "verb_id": 2,
+        "conjugations":
+        {
+            "ich": "jammerte",
+            "du": "jammertest",
+            "er/sie/es": "jammerte",
+            "wir": "jammerten",
+            "ihr": "jammertet",
+            "sie/Sie": "jammerten"
+        }
+    },
+    {
+        "verb_id": 3,
+        "conjugations":
+        {
+            "ich": "jubelte",
+            "du": "jubeltest",
+            "er/sie/es": "jubelte",
+            "wir": "jubelten",
+            "ihr": "jubeltet",
+            "sie/Sie": "jubelten"
+        }
+    },
+    {
+        "verb_id": 4,
+        "conjugations":
+        {
+            "ich": "jodelte",
+            "du": "jodeltest",
+            "er/sie/es": "jodelte",
+            "wir": "jodelten",
+            "ihr": "jodeltet",
+            "sie/Sie": "jodelten"
+        }
+    },
+    {
+        "verb_id": 5,
+        "conjugations":
+        {
+            "ich": "jonglierte",
+            "du": "jongliertest",
+            "er/sie/es": "jonglierte",
+            "wir": "jonglierten",
+            "ihr": "jongliertet",
+            "sie/Sie": "jonglierten"
+        }
+    },
+    {
+        "verb_id": 6,
+        "conjugations":
+        {
+            "ich": "juckte",
+            "du": "jucktest",
+            "er/sie/es": "juckte",
+            "wir": "juckten",
+            "ihr": "jucktet",
+            "sie/Sie": "juckten"
+        }
+    },
+    {
+        "verb_id": 7,
+        "conjugations":
+        {
+            "ich": "justierte",
+            "du": "justiertest",
+            "er/sie/es": "justierte",
+            "wir": "justierten",
+            "ihr": "justiertet",
+            "sie/Sie": "justierten"
+        }
+    },
+    {
+        "verb_id": 8,
+        "conjugations":
+        {
+            "ich": "jauchzte",
+            "du": "jauchztest",
+            "er/sie/es": "jauchzte",
+            "wir": "jauchzten",
+            "ihr": "jauchztet",
+            "sie/Sie": "jauchzten"
+        }
+    },
+    {
+        "verb_id": 9,
+        "conjugations":
+        {
+            "ich": "jubilierte",
+            "du": "jubiliertest",
+            "er/sie/es": "jubilierte",
+            "wir": "jubilierten",
+            "ihr": "jubiliertet",
+            "sie/Sie": "jubilierten"
+        }
+    },
+    {
+        "verb_id": 10,
+        "conjugations":
+        {
+            "ich": "jugendwortete",
+            "du": "jugendwortetest",
+            "er/sie/es": "jugendwortete",
+            "wir": "jugendworteten",
+            "ihr": "jugendwortetet",
+            "sie/Sie": "jugendworteten"
+        }
+    }
+]

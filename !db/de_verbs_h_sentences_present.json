@@ -1,46 +1,91 @@
 [
     {
-        "verb_id": 1,
+        "verb_id": 0,
         "sentences": [
             {
-                "sentence_id": 1,
+                "sentence_id": 0,
                 "sentence": "Ich habe einen Hund."
             },
             {
-                "sentence_id": 2,
+                "sentence_id": 1,
                 "sentence": "Sie hat viele Freunde."
             },
             {
-                "sentence_id": 3,
+                "sentence_id": 2,
                 "sentence": "Wir haben Glück."
             },
             {
-                "sentence_id": 4,
+                "sentence_id": 3,
                 "sentence": "Du hast Zeit."
             },
             {
-                "sentence_id": 5,
+                "sentence_id": 4,
                 "sentence": "Ihr habt Spaß."
             },
             {
-                "sentence_id": 6,
+                "sentence_id": 5,
                 "sentence": "Sie haben Erfolg."
             },
             {
-                "sentence_id": 7,
+                "sentence_id": 6,
                 "sentence": "Hast du auch?"
             },
             {
-                "sentence_id": 8,
+                "sentence_id": 7,
                 "sentence": "Haben Sie eine Idee?"
             },
             {
-                "sentence_id": 9,
+                "sentence_id": 8,
                 "sentence": "Haben wir Zeit?"
             },
             {
-                "sentence_id": 10,
+                "sentence_id": 9,
                 "sentence": "Haben ist wichtig."
+            }
+        ]
+    },
+    {
+        "verb_id": 1,
+        "sentences": [
+            {
+                "sentence_id": 0,
+                "sentence": "Ich halte die Tür auf."
+            },
+            {
+                "sentence_id": 1,
+                "sentence": "Sie hält das Buch fest."
+            },
+            {
+                "sentence_id": 2,
+                "sentence": "Wir halten uns fest."
+            },
+            {
+                "sentence_id": 3,
+                "sentence": "Du hältst die Stellung."
+            },
+            {
+                "sentence_id": 4,
+                "sentence": "Ihr haltet die Tradition hoch."
+            },
+            {
+                "sentence_id": 5,
+                "sentence": "Sie halten zusammen."
+            },
+            {
+                "sentence_id": 6,
+                "sentence": "Hältst du auch?"
+            },
+            {
+                "sentence_id": 7,
+                "sentence": "Halten Sie das für möglich?"
+            },
+            {
+                "sentence_id": 8,
+                "sentence": "Halten wir Kontakt?"
+            },
+            {
+                "sentence_id": 9,
+                "sentence": "Halten verbindet."
             }
         ]
     },
@@ -48,44 +93,44 @@
         "verb_id": 2,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich helfe dir gerne."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich halte die Tür auf."
+                "sentence": "Sie hilft im Haushalt."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie hält das Buch fest."
+                "sentence": "Wir helfen uns gegenseitig."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir halten uns fest."
+                "sentence": "Du hilfst deinen Eltern."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du hältst die Stellung."
+                "sentence": "Ihr helft in der Not."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr haltet die Tradition hoch."
+                "sentence": "Sie helfen den Bedürftigen."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie halten zusammen."
+                "sentence": "Hilfst du auch?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Hältst du auch?"
+                "sentence": "Helfen Sie gerne?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Halten Sie das für möglich?"
+                "sentence": "Helfen wir zusammen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Halten wir Kontakt?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Halten verbindet."
+                "sentence": "Helfen macht glücklich."
             }
         ]
     },
@@ -93,44 +138,44 @@
         "verb_id": 3,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich heiße Anna."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich helfe dir gerne."
+                "sentence": "Sie heißt Max."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie hilft im Haushalt."
+                "sentence": "Wir heißen alle willkommen."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir helfen uns gegenseitig."
+                "sentence": "Du heißt freundlich."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du hilfst deinen Eltern."
+                "sentence": "Ihr heißt ihn willkommen."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr helft in der Not."
+                "sentence": "Sie heißen ihn Chef."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie helfen den Bedürftigen."
+                "sentence": "Heißt du auch so?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Hilfst du auch?"
+                "sentence": "Heißen Sie Herr Müller?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Helfen Sie gerne?"
+                "sentence": "Heißen wir ihn willkommen?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Helfen wir zusammen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Helfen macht glücklich."
+                "sentence": "Heißen verbindet."
             }
         ]
     },
@@ -138,44 +183,44 @@
         "verb_id": 4,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich höre Musik."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich heiße Anna."
+                "sentence": "Sie hört das Meer rauschen."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie heißt Max."
+                "sentence": "Wir hören auf den Lehrer."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir heißen alle willkommen."
+                "sentence": "Du hörst den Vogel singen."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du heißt freundlich."
+                "sentence": "Ihr hört den Applaus."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr heißt ihn willkommen."
+                "sentence": "Sie hören die Nachrichten."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie heißen ihn Chef."
+                "sentence": "Hörst du auch?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Heißt du auch so?"
+                "sentence": "Hören Sie gerne Musik?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Heißen Sie Herr Müller?"
+                "sentence": "Hören wir gut zu?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Heißen wir ihn willkommen?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Heißen verbindet."
+                "sentence": "Hören verbindet."
             }
         ]
     },
@@ -183,44 +228,44 @@
         "verb_id": 5,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich lade das Foto hoch."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich höre Musik."
+                "sentence": "Sie lädt das Video hoch."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie hört das Meer rauschen."
+                "sentence": "Wir laden die Datei hoch."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir hören auf den Lehrer."
+                "sentence": "Du lädst die Software hoch."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du hörst den Vogel singen."
+                "sentence": "Ihr ladet die Informationen hoch."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr hört den Applaus."
+                "sentence": "Sie laden das Update hoch."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie hören die Nachrichten."
+                "sentence": "Lädst du auch hoch?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Hörst du auch?"
+                "sentence": "Laden Sie oft hoch?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Hören Sie gerne Musik?"
+                "sentence": "Laden wir etwas hoch?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Hören wir gut zu?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Hören verbindet."
+                "sentence": "Hochladen ist einfach."
             }
         ]
     },
@@ -228,44 +273,44 @@
         "verb_id": 6,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich heirate meinen Partner."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich lade das Foto hoch."
+                "sentence": "Sie heiratet ihren Freund."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie lädt das Video hoch."
+                "sentence": "Wir heiraten im Sommer."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir laden die Datei hoch."
+                "sentence": "Du heiratest im Ausland."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du lädst die Software hoch."
+                "sentence": "Ihr heiratet traditionell."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr ladet die Informationen hoch."
+                "sentence": "Sie heiraten standesamtlich."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie laden das Update hoch."
+                "sentence": "Heiratest du auch?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Lädst du auch hoch?"
+                "sentence": "Heiraten Sie bald?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Laden Sie oft hoch?"
+                "sentence": "Heiraten wir in Weiß?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Laden wir etwas hoch?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Hochladen ist einfach."
+                "sentence": "Heiraten verbindet."
             }
         ]
     },
@@ -273,44 +318,44 @@
         "verb_id": 7,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich hasse Lügen."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich heirate meinen Partner."
+                "sentence": "Sie hasst Streit."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie heiratet ihren Freund."
+                "sentence": "Wir hassen Ungerechtigkeit."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir heiraten im Sommer."
+                "sentence": "Du hasst den Winter."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du heiratest im Ausland."
+                "sentence": "Ihr hasst Wartezeiten."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr heiratet traditionell."
+                "sentence": "Sie hassen Betrug."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie heiraten standesamtlich."
+                "sentence": "Hasst du auch?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Heiratest du auch?"
+                "sentence": "Hassen Sie diese Situation?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Heiraten Sie bald?"
+                "sentence": "Hassen wir dasselbe?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Heiraten wir in Weiß?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Heiraten verbindet."
+                "sentence": "Hassen ist negativ."
             }
         ]
     },
@@ -318,44 +363,44 @@
         "verb_id": 8,
         "sentences": [
             {
+                "sentence_id": 0,
+                "sentence": "Ich stelle Möbel her."
+            },
+            {
                 "sentence_id": 1,
-                "sentence": "Ich hasse Lügen."
+                "sentence": "Sie stellt Keramik her."
             },
             {
                 "sentence_id": 2,
-                "sentence": "Sie hasst Streit."
+                "sentence": "Wir stellen Maschinen her."
             },
             {
                 "sentence_id": 3,
-                "sentence": "Wir hassen Ungerechtigkeit."
+                "sentence": "Du stellst Produkte her."
             },
             {
                 "sentence_id": 4,
-                "sentence": "Du hasst den Winter."
+                "sentence": "Ihr stellt Kunstwerke her."
             },
             {
                 "sentence_id": 5,
-                "sentence": "Ihr hasst Wartezeiten."
+                "sentence": "Sie stellen Lebensmittel her."
             },
             {
                 "sentence_id": 6,
-                "sentence": "Sie hassen Betrug."
+                "sentence": "Stellst du auch her?"
             },
             {
                 "sentence_id": 7,
-                "sentence": "Hasst du auch?"
+                "sentence": "Stellen Sie das selbst her?"
             },
             {
                 "sentence_id": 8,
-                "sentence": "Hassen Sie diese Situation?"
+                "sentence": "Stellen wir zusammen her?"
             },
             {
                 "sentence_id": 9,
-                "sentence": "Hassen wir dasselbe?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Hassen ist negativ."
+                "sentence": "Herstellen ist kreativ."
             }
         ]
     },
@@ -363,88 +408,43 @@
         "verb_id": 9,
         "sentences": [
             {
-                "sentence_id": 1,
-                "sentence": "Ich stelle Möbel her."
-            },
-            {
-                "sentence_id": 2,
-                "sentence": "Sie stellt Keramik her."
-            },
-            {
-                "sentence_id": 3,
-                "sentence": "Wir stellen Maschinen her."
-            },
-            {
-                "sentence_id": 4,
-                "sentence": "Du stellst Produkte her."
-            },
-            {
-                "sentence_id": 5,
-                "sentence": "Ihr stellt Kunstwerke her."
-            },
-            {
-                "sentence_id": 6,
-                "sentence": "Sie stellen Lebensmittel her."
-            },
-            {
-                "sentence_id": 7,
-                "sentence": "Stellst du auch her?"
-            },
-            {
-                "sentence_id": 8,
-                "sentence": "Stellen Sie das selbst her?"
-            },
-            {
-                "sentence_id": 9,
-                "sentence": "Stellen wir zusammen her?"
-            },
-            {
-                "sentence_id": 10,
-                "sentence": "Herstellen ist kreativ."
-            }
-        ]
-    },
-    {
-        "verb_id": 10,
-        "sentences": [
-            {
-                "sentence_id": 1,
+                "sentence_id": 0,
                 "sentence": "Ich hoffe auf Erfolg."
             },
             {
-                "sentence_id": 2,
+                "sentence_id": 1,
                 "sentence": "Sie hofft auf eine Chance."
             },
             {
-                "sentence_id": 3,
+                "sentence_id": 2,
                 "sentence": "Wir hoffen auf Veränderung."
             },
             {
-                "sentence_id": 4,
+                "sentence_id": 3,
                 "sentence": "Du hoffst auf Glück."
             },
             {
-                "sentence_id": 5,
+                "sentence_id": 4,
                 "sentence": "Ihr hofft auf Besserung."
             },
             {
-                "sentence_id": 6,
+                "sentence_id": 5,
                 "sentence": "Sie hoffen auf ein Wunder."
             },
             {
-                "sentence_id": 7,
+                "sentence_id": 6,
                 "sentence": "Hoffst du auch?"
             },
             {
-                "sentence_id": 8,
+                "sentence_id": 7,
                 "sentence": "Hoffen Sie das Beste?"
             },
             {
-                "sentence_id": 9,
+                "sentence_id": 8,
                 "sentence": "Hoffen wir auf ein Wunder?"
             },
             {
-                "sentence_id": 10,
+                "sentence_id": 9,
                 "sentence": "Hoffen macht optimistisch."
             }
         ]
