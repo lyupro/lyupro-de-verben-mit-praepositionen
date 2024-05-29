@@ -123,6 +123,7 @@ const VerbSentenceTranslationModel = {};
 // Функция для создания моделей Mongoose
 function createModels() {
     alphabetConfig.letters.forEach((letter) => {
+        //console.log(`Creating models for letter: ${letter}`);
         VerbModel[letter] = mongoose.model(
             `Verb_${letter}`,
             verbSchema,
@@ -148,18 +149,23 @@ function createModels() {
         });
 
         VerbSentenceModel[letter] = {};
+        //console.log('VerbSentenceModel[letter] before:', VerbSentenceModel[letter]);
         verbTensesConfig.tenses.forEach((tense) => {
+            //console.log(`Creating VerbSentenceModel for tense: ${tense}`);
             VerbSentenceModel[letter][tense] = mongoose.model(
                 `Verb_${letter}_Sentence_${tense}`,
                 verbSentenceSchema,
                 `de_verbs_${letter}_sentences_${tense}`
             );
+            //console.log('VerbSentenceModel[letter][tense]:', VerbSentenceModel[letter][tense]);
         });
+        //console.log('VerbSentenceModel[letter] after:', VerbSentenceModel[letter]);
 
         VerbSentenceTranslationModel[letter] = {};
         verbTensesConfig.tenses.forEach((tense) => {
             VerbSentenceTranslationModel[letter][tense] = {};
             languagesConfig.languages.forEach((language) => {
+                //console.log(`Creating VerbSentenceTranslationModel for tense: ${tense}, language: ${language}`);
                 VerbSentenceTranslationModel[letter][tense][language] = mongoose.model(
                     `Verb_${letter}_Sentence_${tense}_${language}`,
                     verbSentenceTranslationSchema,
