@@ -1,5 +1,5 @@
 <!-- views/partials/verb/verbDetails.ejs -->
-<% if (translation) { %>
+<% if (translation && translation.translations.length > 0) { %>
     <h2>Перевод:</h2>
     <ul>
         <% translation.translations.forEach(translationVariant => { %>
