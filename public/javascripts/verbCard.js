@@ -3,8 +3,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const cards = document.querySelectorAll('.card');
 
-    function flipCard() {
-        if (window.innerWidth <= 768) {
+    function flipCard(event) {
+        if (window.innerWidth <= 768 && !event.target.closest('a')) {
             this.classList.toggle('flipped');
         }
     }
