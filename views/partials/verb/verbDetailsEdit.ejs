@@ -31,71 +31,18 @@
 
     <div class="form-group">
         <label>Спряжения:</label>
-        <table class="conjugation-table">
-            <thead>
-            <tr>
-                <th></th>
-                <th>Praesens</th>
-                <!-- Добавить дополнительные столбцы для других времен в будущем -->
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th>ich</th>
-                <td>
-                    <div class="col">
-                        <input type="text" class="form-control" name="conjugations[ich]" value="<%= conjugations.ich || '' %>">
-                    </div>
-                </td>
-                <!-- Добавить дополнительные ячейки для других времен в будущем -->
-            </tr>
-            <tr>
-                <th>du</th>
-                <td>
-                    <div class="col">
-                        <input type="text" class="form-control" name="conjugations[du]" value="<%= conjugations.du || '' %>">
-                    </div>
-                </td>
-                <!-- Добавить дополнительные ячейки для других времен в будущем -->
-            </tr>
-            <tr>
-                <th>er/sie/es</th>
-                <td>
-                    <div class="col">
-                        <input type="text" class="form-control" name="conjugations[er/sie/es]" value="<%= conjugations['er/sie/es'] || '' %>">
-                    </div>
-                </td>
-                <!-- Добавить дополнительные ячейки для других времен в будущем -->
-            </tr>
-            <tr>
-                <th>wir</th>
-                <td>
-                    <div class="col">
-                        <input type="text" class="form-control" name="conjugations[wir]" value="<%= conjugations.wir || '' %>">
-                    </div>
-                </td>
-                <!-- Добавить дополнительные ячейки для других времен в будущем -->
-            </tr>
-            <tr>
-                <th>ihr</th>
-                <td>
-                    <div class="col">
-                        <input type="text" class="form-control" name="conjugations[ihr]" value="<%= conjugations.ihr || '' %>">
-                    </div>
-                </td>
-                <!-- Добавить дополнительные ячейки для других времен в будущем -->
-            </tr>
-            <tr>
-                <th>Sie/sie</th>
-                <td>
-                    <div class="col">
-                        <input type="text" class="form-control" name="conjugations[sie/Sie]" value="<%= conjugations['sie/Sie'] || '' %>">
-                    </div>
-                </td>
-                <!-- Добавить дополнительные ячейки для других времен в будущем -->
-            </tr>
-            </tbody>
-        </table>
+        <% if (typeof conjugations === 'object' && conjugations !== null) { %>
+            <% if (Object.keys(conjugations).length > 0) { %>
+                <% Object.keys(conjugations).forEach(tense => { %>
+                    <h3><%= tense %></h3>
+                    <%- include('../../partials/verb/conjugationDisplay', { conjugationData: conjugations[tense], tense: tense }) %>
+                <% }) %>
+            <% } else { %>
+                <p>Данные о спряжениях отсутствуют.</p>
+            <% } %>
+        <% } else { %>
+            <p>Ошибка: данные о спряжениях некорректны.</p>
+        <% } %>
     </div>
 
     <div class="form-group">

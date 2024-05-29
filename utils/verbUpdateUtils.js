@@ -30,14 +30,24 @@ async function updateTranslationData(letter, verbId, translation) {
 }
 
 async function updateTensesData(letter, verbId, conjugations) {
-    const tensesModel = getVerbTensesModel(letter, 'present');
-    const updatedTensesData = await tensesModel.findOneAndUpdate(
-        { verb_id: verbId },
-        { conjugations },
-        { new: true, upsert: true }
-    );
+    const tensesModels = {};
+    const updatedConjugations = {};
 
-    return updatedTensesData;
+    for (const tense in conjugations) {
+        tensesModels[tense] = getVerbTensesModel(letter, tense);
+        const existingTensesData = await tensesModels[tense].findOne({ verb_id: verbId });
+
+        updatedConjugations[tense] = conjugations[tense] || (existingTensesData ? existingTensesData.conjugations[tense] : {});
+
+        await tensesModels[tense].findOneAndUpdate(
+            { verb_id: verbId },
+            { $set: { [`conjugations.${tense}`]: updatedConjugations[tense] } },
+            { new: true, upsert: true }
+        );
+    }
+    console.log('updateSentencesData() | updatedConjugations: ', updatedConjugations);
+
+    return updatedConjugations;
 }
 
 async function updateSentencesData(letter, verbId, sentences) {

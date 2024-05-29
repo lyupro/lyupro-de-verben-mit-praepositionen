@@ -227,10 +227,15 @@ async function getVerbData(letter, verbText, random = false) {
         //console.log('translation: ', translation);
         validateVerbTranslation(translation);
 
-        const tensesData = await getVerbTensesModel(letter, 'present').findOne({ verb_id: verb.verb_id });
-        //console.log('tensesData: ', tensesData);
-        const conjugations = tensesData ? tensesData.conjugations : {};
-        //console.log('conjugations: ', conjugations);
+        const conjugations = {};
+        const requiredTenses = ['present']; // Добавьте другие времена в этот массив
+
+        for (const tense of requiredTenses) {
+            const tenseData = await getVerbTensesModel(letter, tense).findOne({ verb_id: verb.verb_id });
+            //console.log('getVerbData() | tenseData: ', tenseData);
+            conjugations[tense] = tenseData ? tenseData.conjugations : {};
+        }
+        //console.log('getVerbData() | conjugations: ', conjugations);
 
         const sentences = await getVerbSentences(letter, 'present', verb.verb_id);
         //console.log('sentences: ', sentences);
@@ -262,7 +267,7 @@ async function updateVerb(letter, verb, translation, conjugations, sentences, se
         const updatedTranslationData = await updateTranslationData(letter, verbData.verb_id, translation);
         //console.log('updateVerb() | updatedTranslationData: ', updatedTranslationData);
         const updatedTensesData = await updateTensesData(letter, verbData.verb_id, conjugations);
-        //console.log('updateVerb() | updatedTensesData: ', updatedTensesData);
+        console.log('updateVerb() | updatedTensesData: ', updatedTensesData);
         const { newSentences, mergedSentences } = await updateSentencesData(letter, verbData.verb_id, sentences);
         const { newSentencesTranslation, mergedTranslations } = await updateSentencesTranslationData(letter, verbData.verb_id, sentencesTranslation);
 
