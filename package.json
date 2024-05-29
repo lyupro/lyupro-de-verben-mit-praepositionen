@@ -6,7 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "webpack"
+    "build": "webpack",
+
+    "seed-verbs_sentences-a-present-ru": "node seeds/seed-verbs_sentences.js a present ru"
   },
   "keywords": [],
   "author": "Maksym Lyubachevsky <m.lyubachevsky@gmail.com>",
