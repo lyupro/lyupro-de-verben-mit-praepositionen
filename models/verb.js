@@ -59,11 +59,6 @@ const verbSentenceSchema = new mongoose.Schema({
         ref: 'Verb',
         required: true,
     },
-    tense: {
-        type: String,
-        enum: verbTensesConfig.tenses,
-        required: true,
-    },
     sentences: {
         type: [{
             sentence_id: {
@@ -83,7 +78,7 @@ const verbSentenceSchema = new mongoose.Schema({
             message: 'At least one sentence is required.',
         },
     },
-});
+}, { versionKey: false }); // Отключаем поле `__v`
 
 // Схема для модели VerbSentenceTranslation
 const verbSentenceTranslationSchema = new mongoose.Schema({
@@ -111,7 +106,7 @@ const verbSentenceTranslationSchema = new mongoose.Schema({
             message: 'At least one sentence translation is required.',
         },
     },
-});
+}, { versionKey: false }); // Отключаем поле `__v`
 
 // Создание объектов моделей для каждой буквы алфавита
 const VerbModel = {};
