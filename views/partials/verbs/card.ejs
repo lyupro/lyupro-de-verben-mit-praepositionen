@@ -14,5 +14,9 @@
                 <span class="tooltip-icon" data-tooltip="<%= verb.tooltipText %>">?</span>
             <% } %>
         </div>
+        <a href="/verbs/<%= verb.verb.charAt(0).toLowerCase() %>/<%= verb.verb %>/edit" class="btn btn-sm btn-primary mt-2">Редактировать</a>
+        <form action="/verbs/<%= verb.verb.charAt(0).toLowerCase() %>/<%= verb.verb %>?_method=DELETE" method="POST" class="d-inline">
+            <button type="submit" class="btn btn-sm btn-danger mt-2">Удалить</button>
+        </form>
     </div>
 </div>

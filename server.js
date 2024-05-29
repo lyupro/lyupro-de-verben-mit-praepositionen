@@ -4,21 +4,25 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const path = require('path');
+const methodOverride = require('method-override');
 const { connectToDatabase } = require('./db');
 const { createModels } = require('./models/verb');
 const verbRoute = require('./routes/verb');
 const verbsRoute = require('./routes/verbs');
-
-// Обслуживания статических файлов из директории public (для styles и других)
-app.use(express.static(path.join(__dirname, 'public')));
 
 
 // Настройка шаблонизатора EJS
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+// Обслуживания статических файлов из директории public (для styles и других)
+app.use(express.static(path.join(__dirname, 'public')));
 // Парсинг тела запроса (middleware for parsing) in verb.js line 16: 'const verb = req.body.verb;'
 app.use(express.urlencoded({ extended: true }));
+// Middleware для обработки методов PUT и DELETE через форму
+// Позволяет использовать _method=PUT или _method=DELETE в качестве параметра запроса
+// для эмуляции соответствующих HTTP методов
+app.use(methodOverride('_method'));
 
 // Подключение к базе данных и создание моделей
 connectToDatabase()

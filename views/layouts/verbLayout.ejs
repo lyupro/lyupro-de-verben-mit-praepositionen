@@ -3,10 +3,12 @@
     title: title,
     verbStyles: verbStyles,
     verbScripts: verbScripts,
+    editMode: editMode,
     content: `
         <div class="container">
             <h1>${pageHeader}</h1>
-            <div class="verbDetails" data-letter="${verb.verb.charAt(0).toLowerCase()}" data-verb="${verb.verb}">
+            ${typeof verb !== 'undefined' && !editMode ? `
+            <div class="verbDetails" data-letter="${verb && verb.verb ? verb.verb.charAt(0).toLowerCase() : ''}" data-verb="${verb && verb.verb ? verb.verb : ''}">
                 ${include('../partials/verb/verbDetails', { verb: verb, translation: translation, sentences: sentences, sentencesTranslation: sentencesTranslation })}
             </div>
             <div class="verbLearningGame" id="verbLearningGameContainer">
@@ -19,6 +21,13 @@
             <div class="verbCheckSentence">
                 ${include('../partials/verb/checkSentence', { verb: verb })}
             </div>
+            ` : ''}
+            ${editMode ? `
+            <div class="verbDetailsEdit">
+                ${include('../partials/verb/verbDetailsEdit', { verb, letter, translation, conjugations, sentences, sentencesTranslation })}
+            </div>
+            ` : ''}
+            ${content}
         </div>
     `
 }) %>

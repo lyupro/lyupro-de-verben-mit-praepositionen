@@ -19,6 +19,9 @@
             <link rel="stylesheet" href="/stylesheets/verb/verbDetails.css">
             <link rel="stylesheet" href="/stylesheets/verb/games/verbLearningGame.css">
             <link rel="stylesheet" href="/stylesheets/verb/checkSentence.css">
+            <% if (typeof editMode !== 'undefined' && editMode) { %>
+                <link rel="stylesheet" href="/stylesheets/verb/verbDetailsEdit.css">
+            <% } %>
         <% } %>
         <% if (typeof verbsStyles !== 'undefined' && verbsStyles) { %>
             <link rel="stylesheet" href="/stylesheets/verbs/alphabet.css">
@@ -47,6 +50,11 @@
             <script src="/javascripts/pagination.js"></script>
             <script src="/javascripts/verbCard.js"></script>
             <script src="/javascripts/alphabet.js"></script>
+        <% } %>
+        <% if (typeof editMode !== 'undefined' && editMode) { %>
+            <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+            <script src="/javascripts/verbs/addTranslationField.js"></script>
+            <script src="/javascripts/verbs/verbDetailsEdit.js"></script>
         <% } %>
     </body>
 </html>

@@ -1,85 +1,109 @@
 // public/javascripts/alphabet.js
 
+// Функция для загрузки глаголов по букве
+async function loadVerbsByLetter(letter, page = 1) {
+    try {
+        const response = await fetch(`/verbs/${letter}/${page}`);
+        const html = await response.text();
+
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const verbList = document.querySelector('.verbs');
+        const paginationContainer = document.querySelector('.pagination');
+        const titleElement = document.querySelector('title');
+        const headerElement = document.querySelector('h1');
+
+        if (verbList && paginationContainer && titleElement && headerElement) {
+            verbList.innerHTML = doc.querySelector('.verbs').innerHTML;
+            paginationContainer.innerHTML = doc.querySelector('.pagination').innerHTML;
+            titleElement.textContent = doc.querySelector('title').textContent;
+            headerElement.textContent = doc.querySelector('h1').textContent;
+            history.pushState(null, null, `/verbs/${letter}/${page}`);
+
+            // Обновляем обработчики событий для пагинации
+            const paginationLinks = paginationContainer.querySelectorAll('a');
+            paginationLinks.forEach(link => {
+                link.addEventListener('click', paginationClickHandler);
+            });
+        } else {
+            console.error('Elements .verbs or .pagination not found');
+        }
+    } catch (error) {
+        console.error('Error loading verbs:', error);
+    }
+}
+
+// Функция для загрузки всех глаголов
+async function loadAllVerbs() {
+    try {
+        const response = await fetch('/verbs');
+        const html = await response.text();
+
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const verbList = document.querySelector('.verbs');
+        const paginationContainer = document.querySelector('.pagination');
+        const titleElement = document.querySelector('title');
+        const headerElement = document.querySelector('h1');
+
+        if (verbList && paginationContainer && titleElement && headerElement) {
+            verbList.innerHTML = doc.querySelector('.verbs').innerHTML;
+            paginationContainer.innerHTML = doc.querySelector('.pagination').innerHTML;
+            titleElement.textContent = doc.querySelector('title').textContent;
+            headerElement.textContent = doc.querySelector('h1').textContent;
+            history.pushState(null, null, '/verbs');
+
+            // Обновляем обработчики событий для пагинации
+            const paginationLinks = paginationContainer.querySelectorAll('a');
+            paginationLinks.forEach(link => {
+                link.addEventListener('click', paginationClickHandler);
+            });
+        } else {
+            console.error('One or more required elements not found');
+        }
+    } catch (error) {
+        console.error('Error loading verbs:', error);
+    }
+}
+
+// Обработчик события 'click' для ссылок пагинации
+function paginationClickHandler(event) {
+    event.preventDefault();
+    const url = this.getAttribute('href');
+    loadVerbs(url);
+}
+
+// Функция для загрузки глаголов по URL
+function loadVerbs(url) {
+    const urlParts = url.split('/');
+    const letter = urlParts[urlParts.length - 2];
+    const page = urlParts[urlParts.length - 1];
+
+    if (letter === 'verbs') {
+        loadAllVerbs();
+    } else {
+        loadVerbsByLetter(letter, page);
+    }
+}
+
+// Добавление обработчиков событий для ссылок на буквы алфавита
 document.addEventListener('DOMContentLoaded', function() {
     const alphabetLinks = document.querySelectorAll('.alphabet a');
     let currentLetter = null;
 
-    function loadVerbsByLetter(event) {
-        event.preventDefault();
-        const letter = this.getAttribute('href').split('/').pop();
-        const page = 1;
+    alphabetLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const letter = this.getAttribute('href').split('/').pop();
 
-
-        if (letter === currentLetter) {
-            // Если нажата та же буква, загружаем страницу /verbs
-            fetch(`/verbs`)
-                .then(response => response.text())
-                .then(html => {
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString(html, 'text/html');
-
-                    const verbList = document.querySelector('.verbs');
-                    const paginationContainer = document.querySelector('.pagination');
-                    const titleElement = document.querySelector('title');
-                    const headerElement = document.querySelector('h1');
-
-                    if (verbList && paginationContainer && titleElement && headerElement) {
-                        verbList.innerHTML = doc.querySelector('.verbs').innerHTML;
-                        paginationContainer.innerHTML = doc.querySelector('.pagination').innerHTML;
-                        titleElement.textContent = doc.querySelector('title').textContent;
-                        headerElement.textContent = doc.querySelector('h1').textContent;
-                        history.pushState(null, null, `/verbs`);
-                        currentLetter = null;
-
-                        // Обновляем обработчики событий для пагинации
-                        const paginationLinks = paginationContainer.querySelectorAll('a');
-                        paginationLinks.forEach(link => {
-                            link.addEventListener('click', paginationClickHandler);
-                        });
-                    } else {
-                        console.error('One or more required elements not found');
-                    }
-                })
-                .catch(error => console.error('Error loading verbs:', error));
-        } else {
-            // Если нажата другая буква, загружаем страницу с глаголами по букве
-            fetch(`/verbs/${letter}/${page}`)
-                .then(response => response.text())
-                .then(html => {
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString(html, 'text/html');
-
-                    const verbList = document.querySelector('.verbs');
-                    const paginationContainer = document.querySelector('.pagination');
-                    const titleElement = document.querySelector('title');
-                    const headerElement = document.querySelector('h1');
-
-                    if (verbList && paginationContainer && titleElement && headerElement) {
-                        verbList.innerHTML = doc.querySelector('.verbs').innerHTML;
-                        paginationContainer.innerHTML = doc.querySelector('.pagination').innerHTML;
-                        titleElement.textContent = doc.querySelector('title').textContent;
-                        headerElement.textContent = doc.querySelector('h1').textContent;
-                        history.pushState(null, null, `/verbs/${letter}/${page}`);
-                        currentLetter = letter;
-
-                        // Обновляем обработчики событий для пагинации
-                        const paginationLinks = paginationContainer.querySelectorAll('a');
-                        paginationLinks.forEach(link => {
-                            link.addEventListener('click', paginationClickHandler);
-                        });
-                    } else {
-                        console.error('Elements .verbs or .pagination not found');
-                    }
-                })
-                .catch(error => console.error('Error loading verbs:', error));
-        }
-    }
-
-    function paginationClickHandler(event) {
-        event.preventDefault();
-        const url = this.getAttribute('href');
-        loadVerbs(url);
-    }
-
-    alphabetLinks.forEach(link => link.addEventListener('click', loadVerbsByLetter));
+            if (letter === currentLetter) {
+                loadAllVerbs();
+            } else {
+                loadVerbsByLetter(letter);
+                currentLetter = letter;
+            }
+        });
+    });
 });

@@ -25,6 +25,7 @@ router.get('/', async (req, res, next) => {
             sentencesTranslation: sentencesTranslation,
             pageTitle: `Случайный глагол: ${verb.verb}`,
             pageHeader: `Случайный глагол: ${verb.verb}`,
+            editMode: false, // Передаем editMode: false для отображения информации о глаголе
         });
     } catch (error) {
         next(error);

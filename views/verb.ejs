@@ -1,11 +1,13 @@
 <!-- views/verb.ejs -->
 <%- include('layouts/verbLayout', {
     title: pageTitle,
+    pageHeader: pageHeader,
+    editMode: editMode, // Передаем editMode для отображения только формы редактирования
     verbStyles: true,
     verbScripts: true,
-    pageHeader: pageHeader,
     verb: verb,
-    sentences: sentences,
     translation: translation,
-    sentencesTranslation: sentencesTranslation
+    sentences: sentences,
+    sentencesTranslation: sentencesTranslation,
+    content: ''
 }) %>

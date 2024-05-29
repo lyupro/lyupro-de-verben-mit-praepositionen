@@ -1,11 +1,14 @@
 // utils/verbUtils.js
-const { getVerbModel,
+const {
+    getVerbModel,
     getVerbTranslationModel,
+    getVerbTensesModel,
     getVerbSentencesModel,
-    getVerbSentencesTranslationModel
+    getVerbSentencesTranslationModel,
 } = require('../models/verb');
 const alphabetConfig = require('../config/alphabet');
-const { validateLetter,
+const {
+    validateLetter,
     validateLetterFilter,
     validateTense,
     validateVerbId,
@@ -16,8 +19,16 @@ const { validateLetter,
     validateVerbModel,
     validateVerbSentencesModel,
     validateVerbSentencesTranslationModel,
-    validateAvailableVerbsForLetter, validateVerb
+    validateAvailableVerbsForLetter,
+    validateVerb,
 } = require('./validationUtils');
+const {
+    updateVerbData,
+    updateTranslationData,
+    updateTensesData,
+    updateSentencesData,
+    updateSentencesTranslationData,
+} = require('./verbUpdateUtils');
 
 async function getAlphabetWithAvailability() {
     try {
@@ -213,7 +224,13 @@ async function getVerbData(letter, verbText, random = false) {
         }
 
         const translation = await getVerbTranslation(letter, 'ru', verb.verb_id);
+        //console.log('translation: ', translation);
         validateVerbTranslation(translation);
+
+        const tensesData = await getVerbTensesModel(letter, 'present').findOne({ verb_id: verb.verb_id });
+        //console.log('tensesData: ', tensesData);
+        const conjugations = tensesData ? tensesData.conjugations : {};
+        //console.log('conjugations: ', conjugations);
 
         const sentences = await getVerbSentences(letter, 'present', verb.verb_id);
         //console.log('sentences: ', sentences);
@@ -223,11 +240,77 @@ async function getVerbData(letter, verbText, random = false) {
         return {
             verb,
             translation,
+            conjugations,
             sentences,
             sentencesTranslation,
         };
     } catch (error) {
         throw new Error(`Ошибка при получении данных для глагола "${verbText}": ${error.message}`);
+    }
+}
+
+
+async function updateVerb(letter, verb, translation, conjugations, sentences, sentencesTranslation) {
+    try {
+        validateLetter(letter);
+        validateVerbText(verb);
+        console.log('updateVerb() | sentences: ', sentences);
+        console.log('updateVerb() | sentencesTranslation: ', sentencesTranslation);
+
+        const verbData = await updateVerbData(letter, verb);
+        //console.log('updateVerb() | verbData: ', verbData);
+        const updatedTranslationData = await updateTranslationData(letter, verbData.verb_id, translation);
+        //console.log('updateVerb() | updatedTranslationData: ', updatedTranslationData);
+        const updatedTensesData = await updateTensesData(letter, verbData.verb_id, conjugations);
+        //console.log('updateVerb() | updatedTensesData: ', updatedTensesData);
+        const { newSentences, mergedSentences } = await updateSentencesData(letter, verbData.verb_id, sentences);
+        const { newSentencesTranslation, mergedTranslations } = await updateSentencesTranslationData(letter, verbData.verb_id, sentencesTranslation);
+
+        // Don't know, do I need it or not
+        if (newSentences.length === 0 && newSentencesTranslation.length === 0) {
+            throw new Error('Предложения и их переводы не могут быть пустыми.');
+        }
+
+        return {
+            translation: updatedTranslationData,
+            conjugations: updatedTensesData.conjugations,
+            sentences: mergedSentences,
+            sentencesTranslation: mergedTranslations,
+        };
+    } catch (error) {
+        console.error('Ошибка при обновлении глагола:', error);
+        throw error;
+    }
+}
+
+async function deleteVerb(letter, verb) {
+    try {
+        validateLetter(letter);
+        validateVerbText(verb);
+
+        const VerbModel = getVerbModel(letter);
+        const verbData = await VerbModel.findOneAndDelete({ verb });
+
+        if (!verbData) {
+            throw new Error(`Глагол "${verb}" не найден.`);
+        }
+
+        const translationModel = getVerbTranslationModel(letter, 'ru');
+        await translationModel.deleteOne({ verb_id: verbData.verb_id });
+
+        const tensesModel = getVerbTensesModel(letter, 'present');
+        await tensesModel.deleteOne({ verb_id: verbData.verb_id });
+
+        const sentencesModel = getVerbSentencesModel(letter, 'present');
+        await sentencesModel.deleteOne({ verb_id: verbData.verb_id });
+
+        const sentencesTranslationModel = getVerbSentencesTranslationModel(letter, 'present', 'ru');
+        await sentencesTranslationModel.deleteOne({ verb_id: verbData.verb_id });
+
+        return verbData;
+    } catch (error) {
+        console.error('Ошибка при удалении глагола:', error);
+        throw error;
     }
 }
 
@@ -239,4 +322,6 @@ module.exports = {
     getVerbsWithTranslations,
     renderVerbs,
     getVerbData,
+    updateVerb,
+    deleteVerb,
 };
