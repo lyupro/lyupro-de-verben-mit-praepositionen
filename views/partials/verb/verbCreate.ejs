@@ -1,0 +1,19 @@
+<!-- views/partials/verb/verbCreate.ejs -->
+<%- include('../../layouts/verbLayout', {
+    title: pageTitle,
+    pageHeader: pageHeader,
+    editMode: editMode,
+    verbStyles: true,
+    verbScripts: true,
+    verb: null,
+    letter: null,
+    translation: null,
+    conjugations: null,
+    sentences: null,
+    sentencesTranslation: null,
+    content: `
+        <div class="verbDetailsEdit">
+            ${include('../../partials/verb/verbCreateDetails', { letter: '', translation: {}, conjugations: {}, sentences: [], sentencesTranslation: [] })}
+        </div>
+    `
+}) %>

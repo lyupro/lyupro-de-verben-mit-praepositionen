@@ -7,8 +7,9 @@
     content: `
         <div class="container">
             <h1>${pageHeader}</h1>
-            ${typeof verb !== 'undefined' && !editMode ? `
+            ${typeof verb !== 'undefined' && verb !== null && !editMode ? `
             <div class="verbDetails" data-letter="${verb && verb.verb ? verb.verb.charAt(0).toLowerCase() : ''}" data-verb="${verb && verb.verb ? verb.verb : ''}">
+            <div class="verbDetails" data-letter="${verb.verb ? verb.verb.charAt(0).toLowerCase() : ''}" data-verb="${verb.verb ? verb.verb : ''}">
                 ${include('../partials/verb/verbDetails', { verb: verb, translation: translation, sentences: sentences, sentencesTranslation: sentencesTranslation })}
             </div>
             <div class="verbLearningGame" id="verbLearningGameContainer">

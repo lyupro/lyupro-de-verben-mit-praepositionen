@@ -254,6 +254,50 @@ async function getVerbData(letter, verbText, random = false) {
     }
 }
 
+async function createVerb(verb, letter, translation, conjugations, sentences, sentencesTranslation) {
+    try {
+        const verbModel = getVerbModel(letter);
+        const newVerb = await verbModel.create({ verb });
+
+        const translationModel = getVerbTranslationModel(letter, 'ru');
+        await translationModel.create({
+            verb_id: newVerb.verb_id,
+            verb: translation,
+        });
+
+        const tensesModel = getVerbTensesModel(letter, 'present');
+        await tensesModel.create({
+            verb_id: newVerb.verb_id,
+            conjugations,
+        });
+
+        const sentencesModel = getVerbSentencesModel(letter, 'present');
+        const newSentences = sentences.map((sentence, index) => ({
+            sentence_id: index + 1,
+            sentence: sentence.sentence,
+        }));
+        await sentencesModel.create({
+            verb_id: newVerb.verb_id,
+            tense: 'present',
+            sentences: newSentences,
+        });
+
+        const sentencesTranslationModel = getVerbSentencesTranslationModel(letter, 'present', 'ru');
+        const newSentencesTranslation = sentencesTranslation.map((translation, index) => ({
+            sentence_id: index + 1,
+            sentence: translation.sentence,
+        }));
+        await sentencesTranslationModel.create({
+            verb_id: newVerb.verb_id,
+            sentences: newSentencesTranslation,
+        });
+
+        return newVerb;
+    } catch (error) {
+        console.error('Ошибка при создании глагола:', error);
+        throw error;
+    }
+}
 
 async function updateVerb(letter, verb, translation, conjugations, sentences, sentencesTranslation) {
     try {
@@ -327,6 +371,7 @@ module.exports = {
     getVerbsWithTranslations,
     renderVerbs,
     getVerbData,
+    createVerb,
     updateVerb,
     deleteVerb,
 };
