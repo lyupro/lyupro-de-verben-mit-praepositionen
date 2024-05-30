@@ -6,6 +6,7 @@ const app = express();
 const path = require('path');
 const methodOverride = require('method-override');
 const { connectToDatabase } = require('./db');
+const { getNamedRoute } = require('./middleware/namedRoutes');
 const { createModels } = require('./models/verb');
 const verbRoute = require('./routes/verb');
 const verbsRoute = require('./routes/verbs');
@@ -23,6 +24,9 @@ app.use(express.urlencoded({ extended: true }));
 // Позволяет использовать _method=PUT или _method=DELETE в качестве параметра запроса
 // для эмуляции соответствующих HTTP методов
 app.use(methodOverride('_method'));
+
+
+app.locals.getNamedRoute = getNamedRoute;
 
 // Подключение к базе данных и создание моделей
 connectToDatabase()

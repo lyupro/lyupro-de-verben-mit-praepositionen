@@ -1,5 +1,4 @@
-const express = require('express');
-const router = express.Router();
+// routes/verbs/read.js
 const {
     getVerbModel,
     getVerbTranslationModel,
@@ -21,19 +20,8 @@ const {
     validateVerbText,
 } = require('../../utils/validationUtils');
 
-// GET /verbs - Отображение списка глаголов с пагинацией (по умолчанию - первая страница)
-router.get('/', (req, res, next) => {
-    renderVerbs(req, res, next);
-});
-
-// GET /verbs/:page - Отображение списка глаголов с пагинацией (указанная страница)
-router.get('/:page', (req, res, next) => {
-    const page = parseInt(req.params.page);
-    renderVerbs(req, res, next, page);
-});
-
 // GET /verbs/search - Поиск глаголов
-router.get('/search', async (req, res, next) => {
+exports.searchVerbs = async (req, res, next) => {
     try {
         const query = req.query.q.toLowerCase();
         validateQuery(query);
@@ -54,10 +42,10 @@ router.get('/search', async (req, res, next) => {
     } catch (error) {
         next(error);
     }
-});
+};
 
 // GET /verbs/:letter/:verb/learn/visually - Получение данных для визуального обучения глагола
-router.get('/:letter/:verb/learn/visually', async (req, res, next) => {
+exports.getVerbDataForVisualLearning = async (req, res, next) => {
     try {
         const letter = req.params.letter.toLowerCase();
         const verbText = req.params.verb;
@@ -69,10 +57,10 @@ router.get('/:letter/:verb/learn/visually', async (req, res, next) => {
     } catch (error) {
         next(error);
     }
-});
+};
 
 // GET /verbs/:letter/:verb - Отображение выбранного глагола
-router.get('/:letter/:verb', async (req, res, next) => {
+exports.showVerb = async (req, res, next) => {
     try{
         const letter = req.params.letter.toLowerCase();
         console.log('/:letter/:verb | letter: ', letter);
@@ -83,14 +71,14 @@ router.get('/:letter/:verb', async (req, res, next) => {
         validateVerbText(verbText);
 
         const verbData = await getVerbData(letter, verbText);
-        const { verb, translation, sentences, sentencesTranslation } = verbData;
+        const { verb, translation, conjugations, sentences, sentencesTranslation } = verbData;
 
         if (req.query.edit) {
             return res.render('partials/verb/verbDetailsEdit', {
                 verb: verb.verb,
                 letter,
                 translation: translation.translations,
-                conjugations: translation.conjugations,
+                conjugations: conjugations,
                 sentences,
                 sentencesTranslation,
             });
@@ -100,7 +88,8 @@ router.get('/:letter/:verb', async (req, res, next) => {
             verb,
             translation,
             sentences,
-            sentencesTranslation: sentencesTranslation,
+            //sentencesTranslation: sentencesTranslation, // OLD
+            sentencesTranslation,
             pageTitle: `Глагол: ${verb.verb}`,
             pageHeader: `Глагол: ${verb.verb}`,
             editMode: false, // Передаем editMode: false для отображения информации о глаголе
@@ -108,23 +97,23 @@ router.get('/:letter/:verb', async (req, res, next) => {
     } catch (error) {
         next(error)
     }
-});
+};
 
+// GET /verbs/:letter - Отображение глаголов по выбранной букве
 // GET /verbs/:letter/:page - Отображение глаголов по выбранной букве (указанная страница)
-router.get('/:letter/:page', async (req, res, next) => {
+exports.showVerbsByLetter = async (req, res, next) => {
     const letter = req.params.letter.toLowerCase();
     validateLetter(letter);
 
     const page = parseInt(req.params.page) || 1;
-    renderVerbsByLetter(req, res, next, letter, page);
-});
-
-// GET /verbs/:letter - Отображение глаголов по выбранной букве
-router.get('/:letter', async (req, res, next, page = 1) => {
-    const letter = req.params.letter.toLowerCase();
-    validateLetter(letter);
 
     renderVerbsByLetter(req, res, next, letter, page);
-});
+};
 
-module.exports = router;
+// GET /verbs - Отображение списка глаголов с пагинацией (по умолчанию - первая страница)
+// GET /verbs/:page - Отображение списка глаголов с пагинацией (указанная страница)
+exports.showVerbsWithPagination = async (req, res, next) => {
+    const page = parseInt(req.params.page) || 1;
+
+    renderVerbs(req, res, next, page);
+};

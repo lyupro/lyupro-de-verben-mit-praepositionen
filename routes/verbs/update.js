@@ -1,10 +1,9 @@
-const express = require('express');
-const router = express.Router();
-const { updateVerb, getVerbData} = require('../../utils/verbUtils');
+// routes/verbs/update.js
+const { getVerbData, updateVerb } = require('../../utils/verbUtils');
 const { validateLetter, validateVerbText } = require('../../utils/validationUtils');
 
 // GET /verbs/:letter/:verb/edit - Отображение формы редактирования глагола
-router.get('/:letter/:verb/edit', async (req, res, next) => {
+exports.showEditForm = async (req, res, next) => {
     try {
         const letter = req.params.letter.toLowerCase();
         const verb = req.params.verb.toLowerCase();
@@ -31,10 +30,10 @@ router.get('/:letter/:verb/edit', async (req, res, next) => {
     } catch (error) {
         next(error);
     }
-});
+};
 
 // PUT /verbs/:letter/:verb - Обновление глагола
-router.put('/:letter/:verb', async (req, res, next) => {
+exports.updateVerb = async (req, res, next) => {
     try {
         const letter = req.params.letter.toLowerCase();
         const verb = req.params.verb.toLowerCase();
@@ -108,6 +107,4 @@ router.put('/:letter/:verb', async (req, res, next) => {
     } catch (error) {
         next(error);
     }
-});
-
-module.exports = router;
+};

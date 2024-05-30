@@ -1,10 +1,11 @@
+// routes/verbs/update.js
 const express = require('express');
 const router = express.Router();
 const { deleteVerb } = require('../../utils/verbUtils');
 const { validateLetter, validateVerbText } = require('../../utils/validationUtils');
 
 // DELETE /verbs/:letter/:verb - Удаление глагола
-router.delete('/:letter/:verb', async (req, res, next) => {
+exports.deleteVerb = async (req, res, next) => {
     try {
         const letter = req.params.letter.toLowerCase();
         const verb = req.params.verb.toLowerCase();
@@ -22,6 +23,6 @@ router.delete('/:letter/:verb', async (req, res, next) => {
     } catch (error) {
         next(error);
     }
-});
+};
 
 module.exports = router;
