@@ -1,5 +1,5 @@
 <!-- views/partials/verb/verbCreateEdit.ejs -->
-<form action="/verbs" method="POST">
+<form action="<%= getNamedRoute('verbs.store') %>" method="POST">
     <div class="form-group">
         <label for="verb">Глагол:</label>
         <input type="text" class="form-control" id="verb" name="verb" required>

@@ -2,7 +2,7 @@
 <div class="alphabet">
     <% alphabet.forEach(letter => { %>
         <% if (letterAvailability[letter]) { %>
-            <a href="/verbs/<%= letter %>"><%= letter %></a>
+            <a href="<%= getNamedRoute('verbs.letter', { letter: letter }) %>"><%= letter %></a>
         <% } else { %>
             <span class="disabled"><%= letter %></span>
         <% } %>

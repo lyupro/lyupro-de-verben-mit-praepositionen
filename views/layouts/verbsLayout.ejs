@@ -6,7 +6,7 @@
     content: `
         <div class="container">
             <h1>${pageHeader}</h1>
-            <a href="/verbs/create" class="btn btn-primary mb-3">Добавить новый глагол</a>
+            <a href="${getNamedRoute('verbs.create')}" class="btn btn-primary mb-3">Добавить новый глагол</a>
             ${include('../partials/verbs/search')}
             ${include('../partials/verbs/alphabet')}
             <div class="verbs">

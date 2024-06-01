@@ -1,21 +1,21 @@
 <!-- views/partials/verbs/card.ejs -->
 <div class="card">
     <div class="card-front">
-        <a href="/verbs/<%= verb.verb.charAt(0).toLowerCase() %>/<%= verb.verb %>">
+        <a href="<%= getNamedRoute('verbs.show', { letter: verb.verb.charAt(0).toLowerCase(), verb: verb.verb }) %>">
             <h2><%= verb.verb %></h2>
         </a>
     </div>
     <div class="card-back">
         <div class="translation-wrapper">
-            <a href="/verbs/<%= verb.verb.charAt(0).toLowerCase() %>/<%= verb.verb %>">
+            <a href="<%= getNamedRoute('verbs.show', { letter: verb.verb.charAt(0).toLowerCase(), verb: verb.verb }) %>">
                 <h2><%= verb.translation %><% if (verb.translations && verb.translations.length > 1) { %>...<% } %></h2>
             </a>
             <% if (verb.tooltipText) { %>
                 <span class="tooltip-icon" data-tooltip="<%= verb.tooltipText %>">?</span>
             <% } %>
         </div>
-        <a href="/verbs/<%= verb.verb.charAt(0).toLowerCase() %>/<%= verb.verb %>/edit" class="btn btn-sm btn-primary mt-2">Редактировать</a>
-        <form action="/verbs/<%= verb.verb.charAt(0).toLowerCase() %>/<%= verb.verb %>?_method=DELETE" method="POST" class="d-inline">
+        <a href="<%= getNamedRoute('verbs.edit', { letter: verb.verb.charAt(0).toLowerCase(), verb: verb.verb }) %>" class="btn btn-sm btn-primary mt-2">Редактировать</a>
+        <form action="<%= getNamedRoute('verbs.destroy', { letter: verb.verb.charAt(0).toLowerCase(), verb: verb.verb }) %>?_method=DELETE" method="POST" class="d-inline">
             <button type="submit" class="btn btn-sm btn-danger mt-2">Удалить</button>
         </form>
     </div>

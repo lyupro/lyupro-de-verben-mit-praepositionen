@@ -5,25 +5,24 @@ const createController = require('./verbs/create');
 const readController = require('./verbs/read');
 const updateController = require('./verbs/update');
 const deleteController = require('./verbs/delete');
-const { addNamedRoute } = require('../middleware/namedRoutes');
 
 // Маршруты для создания глаголов
-router.get('/create', addNamedRoute, createController.showCreateForm).namedRoute = 'verbs.create';
-router.post('/', createController.createVerb).namedRoute = 'verbs.store';
+router.get('/create', createController.showCreateForm);
+router.post('/', createController.createVerb);
 
 // Маршруты для чтения глаголов
-router.get('/', addNamedRoute, readController.showVerbsWithPagination).namedRoute = 'verbs.index';
-router.get('/search', addNamedRoute, readController.searchVerbs).namedRoute = 'verbs.search';
-router.get('/:letter/:verb/learn/visually', addNamedRoute, readController.getVerbDataForVisualLearning).namedRoute = 'verbs.learn.visually';
-router.get('/:letter/:verb', addNamedRoute, readController.showVerb).namedRoute = 'verbs.show';
-router.get('/:letter/:page?', addNamedRoute, readController.showVerbsByLetter).namedRoute = 'verbs.letter';
-router.get('/:page', addNamedRoute, readController.showVerbsWithPagination).namedRoute = 'verbs.page';
+router.get('/', readController.showVerbsWithPagination);
+router.get('/search', readController.searchVerbs);
+router.get('/:letter/:verb/learn/visually', readController.getVerbDataForVisualLearning);
+router.get('/:letter/:verb', readController.showVerb);
+router.get('/:letter/:page?', readController.showVerbsByLetter);
+router.get('/:page', readController.showVerbsWithPagination);
 
 // Маршруты для обновления глаголов
-router.get('/:letter/:verb/edit', addNamedRoute, updateController.showEditForm).namedRoute = 'verbs.edit';
-router.put('/:letter/:verb', updateController.updateVerb).namedRoute = 'verbs.update';
+router.get('/:letter/:verb/edit', updateController.showEditForm);
+router.put('/:letter/:verb', updateController.updateVerb);
 
 // Маршруты для удаления глаголов
-//router.delete('/:letter/:verb', deleteController.deleteVerb).namedRoute = 'verbs.destroy';
+//router.delete('/:letter/:verb', deleteController.deleteVerb);
 
 module.exports = router;

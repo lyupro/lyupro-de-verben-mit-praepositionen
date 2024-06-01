@@ -3,9 +3,9 @@
     <div class="pagination">
         <% if (currentPage > 1) { %>
             <% if (letter) { %>
-                <a href="/verbs/<%= letter %>/<%= currentPage - 1 %>" class="pagination-link">Назад</a>
+                <a href="<%= getNamedRoute('verbs.letter', { letter: letter, page: currentPage - 1 }) %>" class="pagination-link">Назад</a>
             <% } else { %>
-                <a href="/verbs/<%= currentPage - 1 %>" class="pagination-link">Назад</a>
+                <a href="<%= getNamedRoute('verbs.page', { page: currentPage - 1 }) %>" class="pagination-link">Назад</a>
             <% } %>
         <% } else { %>
             <span class="pagination-disabled">Назад</span>
@@ -15,17 +15,17 @@
                 <span class="pagination-current"><%= i %></span>
             <% } else { %>
                 <% if (letter) { %>
-                    <a href="/verbs/<%= letter %>/<%= i %>" class="pagination-link"><%= i %></a>
+                    <a href="<%= getNamedRoute('verbs.letter', { letter: letter, page: i }) %>" class="pagination-link"><%= i %></a>
                 <% } else { %>
-                    <a href="/verbs/<%= i %>" class="pagination-link"><%= i %></a>
+                    <a href="<%= getNamedRoute('verbs.page', { page: i }) %>" class="pagination-link"><%= i %></a>
                 <% } %>
             <% } %>
         <% } %>
         <% if (currentPage < totalPages) { %>
             <% if (letter) { %>
-                <a href="/verbs/<%= letter %>/<%= currentPage + 1 %>" class="pagination-link">Вперед</a>
+                <a href="<%= getNamedRoute('verbs.letter', { letter: letter, page: currentPage + 1 }) %>" class="pagination-link">Вперед</a>
             <% } else { %>
-                <a href="/verbs/<%= currentPage + 1 %>" class="pagination-link">Вперед</a>
+                <a href="<%= getNamedRoute('verbs.page', { page: currentPage + 1 }) %>" class="pagination-link">Вперед</a>
             <% } %>
         <% } else { %>
             <span class="pagination-disabled">Вперед</span>

@@ -1,17 +1,9 @@
 // middleware/namedRoutes.js
-const namedRoutes = {};
-
-function addNamedRoute(req, res, next) {
-    if (req.method === 'GET') {
-        const name = req.namedRoute;
-        const url = req.originalUrl;
-        namedRoutes[name] = url;
-    }
-    next();
-}
+const namedRoutes = require('../config/namedRoutes');
 
 function getNamedRoute(name, params = {}) {
     let url = namedRoutes[name];
+    //console.log('getNamedRoute() | namedRoutes: ', namedRoutes);
 
     if (!url) {
         throw new Error(`Именованный маршрут '${name}' не найден.`);
@@ -25,6 +17,5 @@ function getNamedRoute(name, params = {}) {
 }
 
 module.exports = {
-    addNamedRoute,
     getNamedRoute,
 };

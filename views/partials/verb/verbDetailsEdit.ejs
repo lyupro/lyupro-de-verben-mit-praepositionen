@@ -1,5 +1,5 @@
 <!-- views/partials/verb/verbDetailsEdit.ejs -->
-<form action="/verbs/<%= letter %>/<%= verb %>?_method=PUT" method="POST">
+<form action="<%= getNamedRoute('verbs.update', { letter: letter, verb: verb }) %>?_method=PUT" method="POST">
 
     <div class="form-group">
         <label>
