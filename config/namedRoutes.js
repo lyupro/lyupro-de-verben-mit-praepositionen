@@ -1,3 +1,4 @@
+// config/namedRoutes.js
 module.exports = {
     'verbs.create': '/verbs/create',
     'verbs.store': '/verbs',
