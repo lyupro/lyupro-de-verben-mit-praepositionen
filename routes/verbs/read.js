@@ -74,7 +74,7 @@ exports.showVerb = async (req, res, next) => {
         const { verb, translation, conjugations, sentences, sentencesTranslation } = verbData;
 
         if (req.query.edit) {
-            return res.render('partials/verb/verbDetailsEdit', {
+            return res.render('partials/verb/verbDetailsForm', {
                 verb: verb.verb,
                 letter,
                 translation: translation.translations,

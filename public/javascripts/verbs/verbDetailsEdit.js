@@ -1,4 +1,4 @@
-// public/javascripts/verbs/verbDetailsEdit.js
+// public/javascripts/verbs/verbDetailsForm.js
 
 // Функция для удаления строки из таблицы предложений
 function removeSentenceRow(button) {

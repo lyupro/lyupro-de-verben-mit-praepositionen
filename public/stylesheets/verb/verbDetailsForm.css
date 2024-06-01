@@ -1,40 +1,40 @@
-/* public/stylesheets/verb/verbDetailsEdit.css */
+/* public/stylesheets/verb/verbDetailsForm.css */
 
-.verbDetailsEdit {
+.verbDetailsForm {
     margin-bottom: 20px;
 }
 
-.verbDetailsEdit h2 {
+.verbDetailsForm h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.verbDetailsEdit .form-group {
+.verbDetailsForm .form-group {
     margin-bottom: 20px;
 }
 
-.verbDetailsEdit label {
+.verbDetailsForm label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.verbDetailsEdit .input-group {
+.verbDetailsForm .input-group {
     margin-bottom: 10px;
 }
 
-.verbDetailsEdit .input-group-append {
+.verbDetailsForm .input-group-append {
     margin-left: 10px;
 }
 
-.verbDetailsEdit .btn-sm {
+.verbDetailsForm .btn-sm {
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
     line-height: 1.5;
     border-radius: 0.2rem;
 }
 
-.verbDetailsEdit .form-control {
+.verbDetailsForm .form-control {
     display: block;
     width: 100%;
     padding: 0.375rem 0.75rem;
@@ -48,7 +48,7 @@
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.verbDetailsEdit .form-control:focus {
+.verbDetailsForm .form-control:focus {
     color: #495057;
     background-color: #fff;
     border-color: #80bdff;
@@ -56,117 +56,117 @@
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.verbDetailsEdit .form-row {
+.verbDetailsForm .form-row {
     display: flex;
     flex-wrap: wrap;
     margin-right: -5px;
     margin-left: -5px;
 }
 
-.verbDetailsEdit .form-row > .col {
+.verbDetailsForm .form-row > .col {
     padding-right: 5px;
     padding-left: 5px;
 }
 
-.verbDetailsEdit .btn-primary {
+.verbDetailsForm .btn-primary {
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
 }
 
-.verbDetailsEdit .btn-primary:hover {
+.verbDetailsForm .btn-primary:hover {
     color: #fff;
     background-color: #0069d9;
     border-color: #0062cc;
 }
 
-.verbDetailsEdit .btn-primary:focus {
+.verbDetailsForm .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
-.verbDetailsEdit .table-container {
+.verbDetailsForm .table-container {
     display: flex;
     justify-content: space-between;
 }
 
-.verbDetailsEdit .table-wrapper {
+.verbDetailsForm .table-wrapper {
     width: 48%;
 }
 
-.verbDetailsEdit .table-wrapper label {
+.verbDetailsForm .table-wrapper label {
     display: flex;
     align-items: center;
 }
 
-.verbDetailsEdit .table-wrapper .add-btn {
+.verbDetailsForm .table-wrapper .add-btn {
     margin-left: 10px;
 }
 
-.verbDetailsEdit table {
+.verbDetailsForm table {
     margin-bottom: 20px;
 }
 
-.verbDetailsEdit table th,
-.verbDetailsEdit table td {
+.verbDetailsForm table th,
+.verbDetailsForm table td {
     vertical-align: middle;
 }
 
-.verbDetailsEdit table .form-control {
+.verbDetailsForm table .form-control {
     width: 100%;
 }
 
-.verbDetailsEdit .empty-row {
+.verbDetailsForm .empty-row {
     background-color: #f8f9fa;
     opacity: 0.5;
 }
 
-.verbDetailsEdit .empty-row input {
+.verbDetailsForm .empty-row input {
     pointer-events: none;
     opacity: 0.5;
 }
 
-.verbDetailsEdit .move-header {
+.verbDetailsForm .move-header {
     width: 30px;
 }
 
-.verbDetailsEdit .move-cell {
+.verbDetailsForm .move-cell {
     text-align: center;
     vertical-align: middle;
     cursor: move;
 }
 
-.verbDetailsEdit .move-cell i {
+.verbDetailsForm .move-cell i {
     color: #6c757d;
 }
 
 /* Остальные стили... */
 
-.verbDetailsEdit .translation-fields {
+.verbDetailsForm .translation-fields {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
 }
 
-.verbDetailsEdit .translation-row {
+.verbDetailsForm .translation-row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.verbDetailsEdit .translation-field {
+.verbDetailsForm .translation-field {
     display: flex;
     align-items: center;
     margin-right: 10px;
     margin-bottom: 10px;
 }
 
-.verbDetailsEdit .translation-field .form-control {
+.verbDetailsForm .translation-field .form-control {
     max-width: 200px;
     margin-right: 5px;
 }
 
-.verbDetailsEdit .translation-field .translation-remove-btn {
+.verbDetailsForm .translation-field .translation-remove-btn {
     margin-left: 5px;
 }
 
