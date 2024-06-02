@@ -3,7 +3,8 @@
 // Функция для загрузки глаголов по букве
 async function loadVerbsByLetter(letter, page = 1) {
     try {
-        const response = await fetch(`/verbs/${letter}/${page}`);
+        const url = getNamedRoute('verbs.letter', { letter, page });
+        const response = await fetch(url);
         const html = await response.text();
 
         const parser = new DOMParser();
@@ -37,7 +38,8 @@ async function loadVerbsByLetter(letter, page = 1) {
 // Функция для загрузки всех глаголов
 async function loadAllVerbs() {
     try {
-        const response = await fetch('/verbs');
+        const url = getNamedRoute('verbs.index');
+        const response = await fetch(url);
         const html = await response.text();
 
         const parser = new DOMParser();
@@ -81,7 +83,7 @@ function loadVerbs(url) {
     const letter = urlParts[urlParts.length - 2];
     const page = urlParts[urlParts.length - 1];
 
-    if (letter === 'verbs') {
+    if (url === getNamedRoute('verbs.index')) {
         loadAllVerbs();
     } else {
         loadVerbsByLetter(letter, page);
