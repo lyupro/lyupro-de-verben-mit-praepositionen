@@ -38,7 +38,7 @@ exports.updateVerb = async (req, res, next) => {
         const letter = req.params.letter.toLowerCase();
         const verb = req.params.verb.toLowerCase();
         const translation = req.body.translations || []; // Получаем перевод из req.body.translations
-        //console.log('PUT /verbs/:letter/:verb | translation: ', translation);
+        console.log('PUT /verbs/:letter/:verb | translation: ', translation);
         const conjugations = req.body.conjugations || {};
         //console.log('PUT /verbs/:letter/:verb | conjugations: ', conjugations);
 
@@ -88,13 +88,15 @@ exports.updateVerb = async (req, res, next) => {
             sentencesTranslation
         );
         //console.log('PUT /verbs/:letter/:verb | updatedVerbData: ', updatedVerbData);
+        console.log('PUT /verbs/:letter/:verb | translation: ', updatedVerbData.translation);
+        //console.log('PUT /verbs/:letter/:verb | conjugations: ', updatedVerbData.conjugations);
 
         if (!updatedVerbData) {
             return res.status(404).send('Глагол не найден');
         }
 
         res.render('verb', {
-            verb: verb,
+            verb,
             letter,
             translation: updatedVerbData.translation,
             conjugations: updatedVerbData.conjugations,

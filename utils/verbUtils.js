@@ -224,7 +224,7 @@ async function getVerbData(letter, verbText, random = false) {
         }
 
         const translation = await getVerbTranslation(letter, 'ru', verb.verb_id);
-        //console.log('translation: ', translation);
+        console.log('translation: ', translation);
         validateVerbTranslation(translation);
 
         const conjugations = {};
@@ -303,15 +303,15 @@ async function updateVerb(letter, verb, translation, conjugations, sentences, se
     try {
         validateLetter(letter);
         validateVerbText(verb);
-        console.log('updateVerb() | sentences: ', sentences);
-        console.log('updateVerb() | sentencesTranslation: ', sentencesTranslation);
+        //console.log('updateVerb() | sentences: ', sentences);
+        //console.log('updateVerb() | sentencesTranslation: ', sentencesTranslation);
 
         const verbData = await updateVerbData(letter, verb);
         //console.log('updateVerb() | verbData: ', verbData);
         const updatedTranslationData = await updateTranslationData(letter, verbData.verb_id, translation);
-        //console.log('updateVerb() | updatedTranslationData: ', updatedTranslationData);
+        console.log('updateVerb() | updatedTranslationData: ', updatedTranslationData);
         const updatedTensesData = await updateTensesData(letter, verbData.verb_id, conjugations);
-        console.log('updateVerb() | updatedTensesData: ', updatedTensesData);
+        //console.log('updateVerb() | updatedTensesData: ', updatedTensesData);
         const { newSentences, mergedSentences } = await updateSentencesData(letter, verbData.verb_id, sentences);
         const { newSentencesTranslation, mergedTranslations } = await updateSentencesTranslationData(letter, verbData.verb_id, sentencesTranslation);
 
@@ -322,7 +322,7 @@ async function updateVerb(letter, verb, translation, conjugations, sentences, se
 
         return {
             translation: updatedTranslationData,
-            conjugations: updatedTensesData.conjugations,
+            conjugations: updatedTensesData,
             sentences: mergedSentences,
             sentencesTranslation: mergedTranslations,
         };

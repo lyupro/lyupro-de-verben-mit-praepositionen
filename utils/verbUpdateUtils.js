@@ -19,33 +19,38 @@ async function updateVerbData(letter, verb) {
 }
 
 async function updateTranslationData(letter, verbId, translation) {
+    //console.log('//////////////////////////////////////////');
+    //console.log('updateTranslationData() | translation: ', translation);
     const translationModel = getVerbTranslationModel(letter, 'ru');
     const updatedTranslationData = await translationModel.findOneAndUpdate(
         { verb_id: verbId },
         { verb: translation },
         { new: true, upsert: true }
     );
+    //console.log('updateTranslationData() | updatedTranslationData: ', updatedTranslationData);
 
     return updatedTranslationData;
 }
 
 async function updateTensesData(letter, verbId, conjugations) {
-    const tensesModels = {};
+    //console.log('//////////////////////////////////////////');
+    //console.log('updateTensesData() | conjugations: ', conjugations);
     const updatedConjugations = {};
 
     for (const tense in conjugations) {
-        tensesModels[tense] = getVerbTensesModel(letter, tense);
-        const existingTensesData = await tensesModels[tense].findOne({ verb_id: verbId });
+        const tensesModel = getVerbTensesModel(letter, tense);
+        const existingTensesData = await tensesModel.findOne({ verb_id: verbId });
+        //console.log('updateTensesData() | existingTensesData: ', existingTensesData);
 
-        updatedConjugations[tense] = conjugations[tense] || (existingTensesData ? existingTensesData.conjugations[tense] : {});
+        updatedConjugations[tense] = conjugations[tense];
 
-        await tensesModels[tense].findOneAndUpdate(
+        await tensesModel.findOneAndUpdate(
             { verb_id: verbId },
-            { $set: { [`conjugations.${tense}`]: updatedConjugations[tense] } },
+            { $set: { conjugations: conjugations[tense] } },
             { new: true, upsert: true }
         );
     }
-    console.log('updateSentencesData() | updatedConjugations: ', updatedConjugations);
+    //console.log('updateTensesData() | updatedConjugations: ', updatedConjugations);
 
     return updatedConjugations;
 }
