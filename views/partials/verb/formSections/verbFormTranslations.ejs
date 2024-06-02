@@ -1,0 +1,28 @@
+<!-- views/partials/verb/formSections/verbTranslationsForm.ejs -->
+<div class="form-group">
+    <label>
+        Перевод:
+        <button class="btn btn-outline-secondary btn-sm" type="button" id="addTranslationBtn">
+            <i class="fas fa-plus-circle"></i>
+        </button>
+    </label>
+    <div class="translation-fields" id="translationFields">
+        <% if (translation && translation.translations && translation.translations.length > 0) { %>
+            <div class="translation-row">
+                <% translation.translations.forEach((translationVariant, index) => { %>
+                    <div class="translation-field">
+                        <input type="text" class="form-control" name="translations[]" value="<%= translationVariant %>" required>
+                        <% if (index > 0) { %>
+                            <button class="btn btn-outline-danger btn-sm translation-remove-btn" type="button" onclick="this.closest('.translation-field').remove()">
+                                <i class="fas fa-times-circle"></i>
+                            </button>
+                        <% } %>
+                    </div>
+                    <% if ((index + 1) % 3 === 0 && index < translation.translations.length - 1) { %>
+            </div><div class="translation-row">
+                <% } %>
+                <% }) %>
+            </div>
+        <% } %>
+    </div>
+</div>
