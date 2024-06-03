@@ -5,7 +5,7 @@
         <% if (Object.keys(conjugations).length > 0) { %>
             <% Object.keys(conjugations).forEach(tense => { %>
                 <h3><%= tense %></h3>
-                <%- include('./verbDisplayConjugation', { conjugations: conjugations[tense], tense: tense }) %>
+                <%- include('./verbDisplayConjugation', { conjugationData: conjugations[tense], tense: tense }) %>
             <% }) %>
         <% } else { %>
             <p>Данные о спряжениях отсутствуют.</p>

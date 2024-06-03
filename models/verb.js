@@ -27,7 +27,7 @@ const verbTranslationSchema = new mongoose.Schema({
         ref: 'Verb',
         required: true,
     },
-    verb: {
+    translations: {
         type: [String],
         required: true,
         trim: true,

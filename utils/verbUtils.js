@@ -65,17 +65,17 @@ async function getVerbTranslation(letter, language, verbId) {
         throw new Error(`Перевод для глагола с ID "${verbId}" не найден`);
     }
 
-    if (translation && translation.verb.length > 0) {
-        const translations = translation.verb;
+    if (translation && translation.translations.length > 0) {
+        const translations = translation.translations;
         //console.log('utils/verbUtils.js | getVerbTranslation() | translations: ', translations);
-        const firstTranslation = translation.verb[0];
+        const firstTranslation = translation.translations[0];
         //console.log('utils/verbUtils.js | getVerbTranslation() | firstTranslation: ', firstTranslation);
         const [mainTranslation, additionalInfo] = firstTranslation.split(/\s+(?=\()/);
         const displayTranslation = mainTranslation.trim();
         //console.log('utils/verbUtils.js | getVerbTranslation() | displayTranslation: ', displayTranslation);
         const tooltipText = additionalInfo ? additionalInfo.replace(/[()]/g, '').trim() : '';
         //console.log('utils/verbUtils.js | getVerbTranslation() | tooltipText: ', tooltipText);
-        return { displayTranslation, tooltipText, translations: translations };
+        return { displayTranslation, tooltipText, translations };
     } else {
         return { displayTranslation: 'Перевод недоступен', tooltipText: '', translations: [] };
     }
@@ -262,7 +262,7 @@ async function createVerb(verb, letter, translation, conjugations, sentences, se
         const translationModel = getVerbTranslationModel(letter, 'ru');
         await translationModel.create({
             verb_id: newVerb.verb_id,
-            verb: translation,
+            translations: translation,
         });
 
         const tensesModel = getVerbTensesModel(letter, 'present');
