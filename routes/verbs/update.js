@@ -14,7 +14,8 @@ exports.showEditForm = async (req, res, next) => {
         const verbData = await getVerbData(letter, verb);
         //console.log('/:letter/:verb/edit | verbData: ', verbData);
         const { translation, conjugations, sentences, sentencesTranslation } = verbData;
-        console.log('/:letter/:verb/edit | conjugations: ', conjugations);
+        //console.log('/:letter/:verb/edit | translation: ', translation);
+        //console.log('/:letter/:verb/edit | conjugations: ', conjugations);
 
         res.render('verb', {
             verb,
@@ -38,7 +39,7 @@ exports.updateVerb = async (req, res, next) => {
         const letter = req.params.letter.toLowerCase();
         const verb = req.params.verb.toLowerCase();
         const translation = req.body.translations || []; // Получаем перевод из req.body.translations
-        console.log('PUT /verbs/:letter/:verb | translation: ', translation);
+        //console.log('PUT /verbs/:letter/:verb | translation: ', translation);
         const conjugations = req.body.conjugations || {};
         //console.log('PUT /verbs/:letter/:verb | conjugations: ', conjugations);
 
@@ -88,7 +89,7 @@ exports.updateVerb = async (req, res, next) => {
             sentencesTranslation
         );
         //console.log('PUT /verbs/:letter/:verb | updatedVerbData: ', updatedVerbData);
-        console.log('PUT /verbs/:letter/:verb | translation: ', updatedVerbData.translation);
+        //console.log('PUT /verbs/:letter/:verb | translation: ', updatedVerbData.translation);
         //console.log('PUT /verbs/:letter/:verb | conjugations: ', updatedVerbData.conjugations);
 
         if (!updatedVerbData) {

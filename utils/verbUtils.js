@@ -213,18 +213,18 @@ async function getVerbData(letter, verbText, random = false) {
 
             const randomIndex = Math.floor(Math.random() * count);
             verb = await verbModel.findOne().skip(randomIndex);
-            //console.log('Selected Random verb:', verb);
+            //console.log('getVerbData() | Selected Random verb:', verb);
             validateVerb({ verb, verbText, letter });
         } else {
             validateVerbText(verbText);
 
             verb = await verbModel.findOne({ verb: verbText });
-            //console.log('Selected verb:', verb);
+            //console.log('getVerbData() | Selected verb:', verb);
             validateVerb({ verb, verbText});
         }
 
         const translation = await getVerbTranslation(letter, 'ru', verb.verb_id);
-        console.log('translation: ', translation);
+        //console.log('getVerbData() | translation: ', translation);
         validateVerbTranslation(translation);
 
         const conjugations = {};
@@ -238,9 +238,9 @@ async function getVerbData(letter, verbText, random = false) {
         //console.log('getVerbData() | conjugations: ', conjugations);
 
         const sentences = await getVerbSentences(letter, 'present', verb.verb_id);
-        //console.log('sentences: ', sentences);
+        //console.log('getVerbData() | sentences: ', sentences);
         const sentencesTranslation = await getVerbSentencesTranslation(letter, 'present', 'ru', verb.verb_id);
-        //console.log('sentencesTranslation: ', sentencesTranslation);
+        //console.log('getVerbData() | sentencesTranslation: ', sentencesTranslation);
 
         return {
             verb,
