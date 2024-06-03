@@ -18,13 +18,13 @@ async function updateVerbData(letter, verb) {
     return verbData;
 }
 
-async function updateTranslationData(letter, verbId, translation) {
+async function updateTranslationData(letter, verbId, translations) {
     //console.log('//////////////////////////////////////////');
-    //console.log('updateTranslationData() | translation: ', translation);
+    //console.log('updateTranslationData() | translations: ', translations);
     const translationModel = getVerbTranslationModel(letter, 'ru');
     const updatedTranslationData = await translationModel.findOneAndUpdate(
         { verb_id: verbId },
-        { verb: translation },
+        { translations: translations },
         { new: true, upsert: true }
     );
     //console.log('updateTranslationData() | updatedTranslationData: ', updatedTranslationData);
