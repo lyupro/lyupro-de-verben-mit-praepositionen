@@ -24,7 +24,7 @@ async function updateTranslationData(letter, verbId, translations) {
     const translationModel = getVerbTranslationModel(letter, 'ru');
     const updatedTranslationData = await translationModel.findOneAndUpdate(
         { verb_id: verbId },
-        { translations: translations },
+        { translations: translations || [] }, // Используем пустой массив, если translations не передано
         { new: true, upsert: true }
     );
     //console.log('updateTranslationData() | updatedTranslationData: ', updatedTranslationData);
@@ -37,12 +37,12 @@ async function updateTensesData(letter, verbId, conjugations) {
     //console.log('updateTensesData() | conjugations: ', conjugations);
     const updatedConjugations = {};
 
-    for (const tense in conjugations) {
+    for (const tense in conjugations || {}) { // Итерируемся по ключам conjugations или пустого объекта
         const tensesModel = getVerbTensesModel(letter, tense);
         const existingTensesData = await tensesModel.findOne({ verb_id: verbId });
         //console.log('updateTensesData() | existingTensesData: ', existingTensesData);
 
-        updatedConjugations[tense] = conjugations[tense];
+        updatedConjugations[tense] = conjugations[tense] || existingTensesData?.conjugations[tense] || {};
 
         await tensesModel.findOneAndUpdate(
             { verb_id: verbId },
@@ -60,7 +60,7 @@ async function updateSentencesData(letter, verbId, sentences) {
     //console.log('updateSentencesData() | sentencesModel: ', sentencesModel);
 
     // Удаляем пробелы в начале и конце каждого предложения
-    const trimmedSentences = sentences.map(sentenceObj => ({
+    const trimmedSentences = (sentences || []).map(sentenceObj => ({
         ...sentenceObj,
         sentence: sentenceObj.sentence.trim()
     }));
@@ -86,7 +86,7 @@ async function updateSentencesTranslationData(letter, verbId, sentencesTranslati
     //console.log('updateSentencesTranslationData() | sentencesTranslationModel: ', sentencesTranslationModel);
 
     // Удаляем пробелы в начале и конце каждого перевода предложения
-    const trimmedSentencesTranslation = sentencesTranslation.map(translationObj => ({
+    const trimmedSentencesTranslation = (sentencesTranslation || []).map(translationObj => ({
         ...translationObj,
         sentence: translationObj.sentence.trim()
     }));

@@ -5,12 +5,14 @@
         <input type="text" class="form-control" id="verb" name="verb" required>
     </div>
 
-    <div class="form-group">
-        <label for="letter">Буква:</label>
-        <input type="text" class="form-control" id="letter" name="letter" required>
-    </div>
+    <%- include('./formSections/verbFormTranslations', { translation }) %>
 
-    <!-- Остальной код формы создания глагола, аналогичный verbDetailsForm.ejs -->
+    <div class="form-group">
+        <label>Спряжения (Настоящее время):</label>
+        <% const presentConjugations = conjugations.present || {}; %>
+        <%- include('./formSections/verbDisplayConjugation', { conjugationData: presentConjugations, tense: 'present' }) %>
+    </div>
+    <%- include('./formSections/verbFormSentences', { sentences, sentencesTranslation }) %>
 
     <button type="submit" class="btn btn-primary">Создать глагол</button>
 </form>

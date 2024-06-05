@@ -19,10 +19,10 @@
                 </div>
             </div>
             <div class="verbCheckSentence">
-                ${include('../partials/verb/checkSentence', { verb: verb })}
+                ${typeof verb !== 'undefined' && verb !== null ? include('../partials/verb/checkSentence', { verb: verb }) : ''}
             </div>
             ` : ''}
-            ${editMode ? `
+            ${editMode && typeof verb !== 'undefined' && verb !== null ? `
             <div class="verbDetailsForm">
                 ${include('../partials/verb/verbDetailsForm', { verb, letter, translation, conjugations, sentences, sentencesTranslation })}
             </div>

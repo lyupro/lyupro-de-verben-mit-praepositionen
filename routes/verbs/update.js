@@ -6,14 +6,18 @@ const { validateLetter, validateVerbText } = require('../../utils/validationUtil
 exports.showEditForm = async (req, res, next) => {
     try {
         const letter = req.params.letter.toLowerCase();
+        //console.log('/:letter/:verb/edit | letter 1: ', letter);
         const verb = req.params.verb.toLowerCase();
 
         validateLetter(letter);
+        //console.log('/:letter/:verb/edit | letter 2: ', letter);
         validateVerbText(verb);
 
         const verbData = await getVerbData(letter, verb);
         //console.log('/:letter/:verb/edit | verbData: ', verbData);
         const { translation, conjugations, sentences, sentencesTranslation } = verbData;
+        //console.log('/:letter/:verb/edit | letter 3: ', letter);
+        //console.log('/:letter/:verb/edit | verb: ', verb);
         //console.log('/:letter/:verb/edit | translation: ', translation);
         //console.log('/:letter/:verb/edit | conjugations: ', conjugations);
 
@@ -37,6 +41,7 @@ exports.showEditForm = async (req, res, next) => {
 exports.updateVerb = async (req, res, next) => {
     try {
         const letter = req.params.letter.toLowerCase();
+        //console.log('PUT /:letter/:verb/edit | letter 1: ', letter);
         const verb = req.params.verb.toLowerCase();
         const translation = req.body.translations || []; // Получаем перевод из req.body.translations
         //console.log('PUT /verbs/:letter/:verb | translation: ', translation);

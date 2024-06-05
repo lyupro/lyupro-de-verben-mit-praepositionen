@@ -2,18 +2,18 @@
 <%- include('../../layouts/verbLayout', {
     title: pageTitle,
     pageHeader: pageHeader,
+    verb: null,
+    letter: null,
+    translation: { translations: [] },
+    conjugations: { present: {} },
+    sentences: [],
+    sentencesTranslation: [],
     editMode: editMode,
     verbStyles: true,
     verbScripts: true,
-    verb: null,
-    letter: null,
-    translation: null,
-    conjugations: null,
-    sentences: null,
-    sentencesTranslation: null,
     content: `
         <div class="verbDetailsForm">
-            ${include('../../partials/verb/verbCreateForm', { letter: '', translation: {}, conjugations: {}, sentences: [], sentencesTranslation: [] })}
+            ${include('../../partials/verb/verbCreateForm', { translation: { translations: [] }, conjugations: { present: {} }, sentences: [], sentencesTranslation: [] })}
         </div>
-    `
+`
 }) %>

@@ -18,12 +18,14 @@ exports.showCreateForm = async (req, res, next) => {
 // POST /verbs - Создание нового глагола
 exports.createVerb = async (req, res, next) => {
     try {
-        const { verb, letter, translation, conjugations, sentences, sentencesTranslation } = req.body;
+        const { verb, translations, conjugations, sentences, sentencesTranslation } = req.body;
 
-        validateLetter(letter);
         validateVerbText(verb);
 
-        const createdVerb = await createVerb(verb, letter, translation, conjugations, sentences, sentencesTranslation);
+        const letter = verb.charAt(0).toLowerCase();
+        validateLetter(letter);
+
+        const createdVerb = await createVerb(verb, letter, translations, conjugations, sentences, sentencesTranslation);
 
         if (!createdVerb) {
             return res.status(500).send('Не удалось создать глагол');
