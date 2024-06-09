@@ -8,6 +8,7 @@ const methodOverride = require('method-override');
 const { connectToDatabase } = require('./db');
 const { getNamedRoute } = require('./middleware/namedRoutes');
 const { createModels } = require('./models/verb');
+const apiRouter = require('./routes/api');
 const verbRoute = require('./routes/verb');
 const verbsRoute = require('./routes/verbs');
 
@@ -59,6 +60,9 @@ connectToDatabase()
 app.get('/', (req, res) => {
     res.render('index', { title: 'Онлайн тренажер по немецкому языку', indexStyles: true });
 });
+
+// Маршрут для работы с API
+app.use('/api', apiRouter);
 
 // Маршрут для работы с глаголами
 app.use('/verb', verbRoute);
