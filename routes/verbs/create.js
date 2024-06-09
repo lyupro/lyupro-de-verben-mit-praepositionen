@@ -8,7 +8,7 @@ exports.showCreateForm = async (req, res, next) => {
         res.render('partials/verb/verbCreate', {
             pageTitle: 'Создать новый глагол',
             pageHeader: 'Создать новый глагол',
-            editMode: true,
+            createMode: true,
         });
     } catch (error) {
         next(error);

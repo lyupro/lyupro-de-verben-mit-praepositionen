@@ -19,7 +19,7 @@
             <link rel="stylesheet" href="/stylesheets/verb/verbDetails.css">
             <link rel="stylesheet" href="/stylesheets/verb/games/verbLearningGame.css">
             <link rel="stylesheet" href="/stylesheets/verb/checkSentence.css">
-            <% if (typeof editMode !== 'undefined' && editMode) { %>
+            <% if (typeof editMode !== 'undefined' && editMode || typeof createMode !== 'undefined' && createMode) { %>
                 <link rel="stylesheet" href="/stylesheets/verb/verbDetailsForm.css">
             <% } %>
         <% } %>
@@ -47,11 +47,12 @@
         <% } %>
         <% if (typeof verbsScripts !== 'undefined' && verbsScripts) { %>
             <script src="/javascripts/dist/search.bundle.js"></script>
+            <script src="/javascripts/dist/alphabet.bundle.js"></script>
+            <script src="/javascripts/dist/namedRoutes.bundle.js"></script>
             <script src="/javascripts/pagination.js"></script>
             <script src="/javascripts/verbCard.js"></script>
-            <script src="/javascripts/alphabet.js"></script>
         <% } %>
-        <% if (typeof editMode !== 'undefined' && editMode) { %>
+        <% if (typeof editMode !== 'undefined' && editMode || typeof createMode !== 'undefined' && createMode) { %>
             <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
             <script src="/javascripts/verbs/addTranslationField.js"></script>
         <% } %>
