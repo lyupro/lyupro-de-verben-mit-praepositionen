@@ -1,19 +1,2 @@
 <!-- views/partials/verb/verbCreate.ejs -->
-<%- include('../../layouts/verbLayout', {
-    title: pageTitle,
-    pageHeader: pageHeader,
-    verb: null,
-    letter: null,
-    translation: { translations: [] },
-    conjugations: { present: {} },
-    sentences: [],
-    sentencesTranslation: [],
-    editMode: editMode,
-    verbStyles: true,
-    verbScripts: true,
-    content: `
-        <div class="verbDetailsForm">
-            ${include('../../partials/verb/verbCreateForm', { translation: { translations: [] }, conjugations: { present: {} }, sentences: [], sentencesTranslation: [] })}
-        </div>
-`
-}) %>
+<%- include('../../layouts/verbLayoutCreate') %>
