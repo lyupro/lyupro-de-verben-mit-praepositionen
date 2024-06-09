@@ -7,15 +7,14 @@
     </tr>
     </thead>
     <tbody>
-    <% if (conjugationData) { %>
-        <% Object.entries(conjugationData).forEach(([pronoun, conjugation]) => { %>
-            <tr>
-                <td><%= pronoun %></td>
-                <td>
-                    <input type="text" class="form-control" name="conjugations[<%= tense %>][<%= pronoun %>]" value="<%= conjugation %>">
-                </td>
-            </tr>
-        <% }) %>
-    <% } %>
+    <% const pronouns = ['ich', 'du', 'er/sie/es', 'wir', 'ihr', 'sie/Sie']; %>
+    <% pronouns.forEach(pronoun => { %>
+        <tr>
+            <td><%= pronoun %></td>
+            <td>
+                <input type="text" class="form-control" name="conjugations[<%= tense %>][<%= pronoun %>]" value="<%= conjugationData[pronoun] || '' %>">
+            </td>
+        </tr>
+    <% }) %>
     </tbody>
 </table>

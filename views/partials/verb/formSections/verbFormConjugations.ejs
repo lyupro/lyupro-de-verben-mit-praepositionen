@@ -1,16 +1,23 @@
-<!-- views/partials/verb/formSections/verbConjugationsForm.ejs -->
+<!-- views/partials/verb/formSections/verbFormConjugations.ejs -->
 <div class="form-group">
     <label>Спряжения:</label>
     <% if (typeof conjugations === 'object' && conjugations !== null) { %>
-        <% if (Object.keys(conjugations).length > 0) { %>
-            <% Object.keys(conjugations).forEach(tense => { %>
+        <% const tenses = Object.keys(conjugations); %>
+        <% if (tenses.length > 0) { %>
+            <% tenses.forEach(tense => { %>
                 <h3><%= tense %></h3>
                 <%- include('./verbDisplayConjugation', { conjugationData: conjugations[tense], tense: tense }) %>
             <% }) %>
         <% } else { %>
-            <p>Данные о спряжениях отсутствуют.</p>
+            <% ['present'].forEach(tense => { %>
+                <h3><%= tense %></h3>
+                <%- include('./verbDisplayConjugation', { conjugationData: {}, tense: tense }) %>
+            <% }) %>
         <% } %>
     <% } else { %>
-        <p>Ошибка: данные о спряжениях некорректны.</p>
+        <% ['present'].forEach(tense => { %>
+            <h3><%= tense %></h3>
+            <%- include('./verbDisplayConjugation', { conjugationData: {}, tense: tense }) %>
+        <% }) %>
     <% } %>
 </div>
