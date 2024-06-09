@@ -1,19 +1,23 @@
 // public/javascripts/search.js
 
 // Функция для отображения результатов поиска
-function displaySearchResults(verbs) {
+async function displaySearchResults(verbs) {
     const searchResults = document.getElementById('searchResults');
     searchResults.innerHTML = '';
     if (verbs.length > 0) {
         const resultList = document.createElement('ul');
-        verbs.forEach(verb => {
+        await Promise.all(verbs.map(async verb => {
             const listItem = document.createElement('li');
             const link = document.createElement('a');
-            link.href = `/verbs/${verb.verb.charAt(0).toLowerCase()}/${verb.verb}`;
+            //link.href = `/verbs/${verb.verb.charAt(0).toLowerCase()}/${verb.verb}`;
+            //link.href = `${window.getNamedRoute('verbs.show', { letter: verb.verb.charAt(0).toLowerCase(), verb: verb.verb })}`;
+            const letter = verb.verb.charAt(0).toLowerCase(); // Объявляем letter здесь
+            const url = await fetchNamedRoute('verbs.show', { letter, verb: verb.verb });
+            link.href = url;
             link.textContent = `${verb.verb} - ${verb.translation}`;
             listItem.appendChild(link);
             resultList.appendChild(listItem);
-        });
+        }));
         searchResults.appendChild(resultList);
     } else {
         searchResults.textContent = 'Ничего не найдено';
@@ -31,6 +35,7 @@ function addSearchEventListeners() {
         if (query) {
             // Если есть введенный текст, выполняем поиск
             const response = await fetch(`/verbs/search?q=${query}`);
+            //const response = await fetch(`${window.getNamedRoute('verbs.search')}?q=${query}`);
             const verbs = await response.json();
             displaySearchResults(verbs);
             // Показываем окно результатов при вводе текста
@@ -58,3 +63,18 @@ function addSearchEventListeners() {
         }
     });
 }
+
+async function fetchNamedRoute(name, params) {
+    const response = await fetch(`/api/named-routes?name=${name}&params=${JSON.stringify(params)}`);
+    const data = await response.json();
+
+    if (response.ok) {
+        return data.url;
+    } else {
+        throw new Error(data.error);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    addSearchEventListeners();
+});
