@@ -6,12 +6,7 @@
     </div>
 
     <%- include('./formSections/verbFormTranslations', { translation }) %>
-
-    <div class="form-group">
-        <label>Спряжения (Настоящее время):</label>
-        <% const presentConjugations = conjugations.present || {}; %>
-        <%- include('./formSections/verbDisplayConjugation', { conjugationData: presentConjugations, tense: 'present' }) %>
-    </div>
+    <%- include('./formSections/verbFormConjugations', { conjugations }) %>
     <%- include('./formSections/verbFormSentences', { sentences, sentencesTranslation }) %>
 
     <button type="submit" class="btn btn-primary">Создать глагол</button>
