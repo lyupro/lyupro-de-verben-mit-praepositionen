@@ -18,7 +18,7 @@ const verbSchema = new mongoose.Schema({
         trim: true,
         lowercase: true,
     },
-});
+}, { versionKey: false }); // Отключаем поле `__v`
 
 // Схема для модели VerbTranslation
 const verbTranslationSchema = new mongoose.Schema({
@@ -33,7 +33,7 @@ const verbTranslationSchema = new mongoose.Schema({
         trim: true,
         lowercase: true,
     },
-});
+}, { versionKey: false }); // Отключаем поле `__v`
 
 // Схема для модели VerbTenses
 const verbTensesSchema = new mongoose.Schema({
@@ -43,14 +43,14 @@ const verbTensesSchema = new mongoose.Schema({
         required: true,
     },
     conjugations: {
-        ich: { type: String, required: true },
-        du: { type: String, required: true },
-        'er/sie/es': { type: String, required: true },
-        wir: { type: String, required: true },
-        ihr: { type: String, required: true },
-        'sie/Sie': { type: String, required: true },
+        ich: { type: String },
+        du: { type: String },
+        'er/sie/es': { type: String },
+        wir: { type: String },
+        ihr: { type: String },
+        'sie/Sie': { type: String },
     },
-});
+}, { versionKey: false }); // Отключаем поле `__v`
 
 // Схема для модели VerbSentence
 const verbSentenceSchema = new mongoose.Schema({
@@ -63,11 +63,11 @@ const verbSentenceSchema = new mongoose.Schema({
         type: [{
             sentence_id: {
                 type: Number,
-                required: true,
+                //required: true,
             },
             sentence: {
                 type: String,
-                required: true,
+                //required: true,
             },
         }],
         required: true,
@@ -91,11 +91,11 @@ const verbSentenceTranslationSchema = new mongoose.Schema({
         type: [{
             sentence_id: {
                 type: Number,
-                required: true,
+                //required: true,
             },
             sentence: {
                 type: String,
-                required: true,
+                //required: true,
             },
         }],
         required: true,
