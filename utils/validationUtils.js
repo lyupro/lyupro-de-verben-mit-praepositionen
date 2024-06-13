@@ -66,12 +66,39 @@ function validateVerbText(verbText) {
     }
 }
 
+function validateVerbExistence(verb, existingVerb) {
+    if (existingVerb) {
+        const error = new Error(`Глагол "${verb}" уже существует`);
+        error.status = 400;
+        throw error;
+    }
+    return true;
+}
+
 function validateVerbTranslation(translation, verbText) {
     if (!translation) {
         const error = new Error(`Перевод для глагола "${verbText}" не найден.`);
         error.status = 404;
         throw error;
     }
+}
+
+function validateVerbTranslationExistence(verb, translation) {
+    if (!translation || translation.length === 0) {
+        const error = new Error(`Перевод для глагола "${verb}" отсутствует`);
+        error.status = 400;
+        throw error;
+    }
+    return true;
+}
+
+function validateConjugationsExistence(verb, conjugations) {
+    if (!conjugations || Object.keys(conjugations).length === 0) {
+        const error = new Error(`Спряжения для глагола "${verb}" отсутствуют`);
+        error.status = 400;
+        throw error;
+    }
+    return true;
 }
 
 function validateQuery(query) {
@@ -135,6 +162,24 @@ function validateVerbSentencesTranslationModel(params) {
     }
 }
 
+function validateSentencesExistence(verb, sentences) {
+    if (!sentences || sentences.length === 0) {
+        const error = new Error(`Предложения для глагола "${verb}" отсутствуют`);
+        error.status = 400;
+        throw error;
+    }
+    return true;
+}
+
+function validateSentencesTranslationExistence(verb, sentencesTranslation) {
+    if (!sentencesTranslation || sentencesTranslation.length === 0) {
+        const error = new Error(`Перевод предложений для глагола "${verb}" отсутствует`);
+        error.status = 400;
+        throw error;
+    }
+    return true;
+}
+
 function validateAvailableVerbs(availableAlphabetLetters) {
     if (availableAlphabetLetters.length === 0) {
         const error = new Error('Нет доступных глаголов в базе данных.');
@@ -168,4 +213,9 @@ module.exports = {
     validateVerbSentencesTranslationModel,
     validateAvailableVerbs,
     validateAvailableVerbsForLetter,
+    validateVerbExistence,
+    validateVerbTranslationExistence,
+    validateConjugationsExistence,
+    validateSentencesExistence,
+    validateSentencesTranslationExistence,
 };
