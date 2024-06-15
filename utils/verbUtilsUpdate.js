@@ -1,4 +1,4 @@
-// utils/verbUpdateUtils.js
+// utils/verbUtilsUpdate.js
 const {
     getVerbModel,
     getVerbTranslationModel,

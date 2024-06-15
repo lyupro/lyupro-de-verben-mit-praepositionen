@@ -33,7 +33,7 @@ const {
     updateTensesData,
     updateSentencesData,
     updateSentencesTranslationData,
-} = require('./verbUpdateUtils');
+} = require('./verbUtilsUpdate');
 
 async function getAlphabetWithAvailability() {
     try {
