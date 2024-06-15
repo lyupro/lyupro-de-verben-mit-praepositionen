@@ -1,9 +1,10 @@
 // public/javascripts/alphabet.js
+import { fetchNamedRoute } from './utils/namedRoutes.js';
 
 // Функция для загрузки глаголов по букве
 async function loadVerbsByLetter(letter, page = 1) {
     try {
-        const url = getNamedRoute('verbs.letter', { letter, page });
+        const url = await fetchNamedRoute('verbs.letter', { letter, page });
         const response = await fetch(url);
         const html = await response.text();
 
@@ -38,7 +39,7 @@ async function loadVerbsByLetter(letter, page = 1) {
 // Функция для загрузки всех глаголов
 async function loadAllVerbs() {
     try {
-        const url = getNamedRoute('verbs.index');
+        const url = await fetchNamedRoute('verbs.index');
         const response = await fetch(url);
         const html = await response.text();
 
