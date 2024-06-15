@@ -15,7 +15,15 @@ router.get('/', readController.showVerbsWithPagination);
 router.get('/search', readController.searchVerbs);
 router.get('/:letter/:verb/learn/visually', readController.getVerbDataForVisualLearning);
 router.get('/:letter/:verb', readController.showVerb);
-router.get('/:letter/:page?', readController.showVerbsByLetter);
+router.get('/:letter([a-z])/:page?', (req, res, next) => {
+    const { letter, page } = req.params;
+    console.log("ROUTE /:letter/:page? | req.params: ", req.params);
+    if (page === undefined) {
+        return readController.showVerbsByLetter(req, res, next);
+    } else {
+        next();
+    }
+}, readController.showVerbsByLetter);
 router.get('/:page', readController.showVerbsWithPagination);
 
 // Маршруты для обновления глаголов
