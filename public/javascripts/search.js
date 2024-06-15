@@ -1,4 +1,5 @@
 // public/javascripts/search.js
+import { fetchNamedRoute } from './utils/namedRoutes.js';
 
 // Функция для отображения результатов поиска
 async function displaySearchResults(verbs) {
@@ -9,8 +10,6 @@ async function displaySearchResults(verbs) {
         await Promise.all(verbs.map(async verb => {
             const listItem = document.createElement('li');
             const link = document.createElement('a');
-            //link.href = `/verbs/${verb.verb.charAt(0).toLowerCase()}/${verb.verb}`;
-            //link.href = `${window.getNamedRoute('verbs.show', { letter: verb.verb.charAt(0).toLowerCase(), verb: verb.verb })}`;
             const letter = verb.verb.charAt(0).toLowerCase(); // Объявляем letter здесь
             const url = await fetchNamedRoute('verbs.show', { letter, verb: verb.verb });
             link.href = url;
@@ -62,17 +61,6 @@ function addSearchEventListeners() {
             searchResults.classList.remove('hidden');
         }
     });
-}
-
-async function fetchNamedRoute(name, params) {
-    const response = await fetch(`/api/named-routes?name=${name}&params=${JSON.stringify(params)}`);
-    const data = await response.json();
-
-    if (response.ok) {
-        return data.url;
-    } else {
-        throw new Error(data.error);
-    }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
