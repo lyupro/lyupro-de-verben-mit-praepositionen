@@ -7,6 +7,7 @@ const {
     getVerbSentencesTranslationModel,
 } = require('../models/verb');
 const alphabetConfig = require('../config/alphabet');
+const verbTensesConfig = require('../config/verbTenses');
 const {
     validateLetter,
     validateLetterFilter,
@@ -34,6 +35,7 @@ const {
     updateSentencesData,
     updateSentencesTranslationData,
 } = require('./verbUtilsUpdate');
+const { deleteVerbData } = require('./verbUtilsDelete');
 
 async function getAlphabetWithAvailability() {
     try {
@@ -236,6 +238,7 @@ async function getVerbData(letter, verbText, random = false) {
         const requiredTenses = ['present']; // Добавьте другие времена в этот массив
 
         for (const tense of requiredTenses) {
+            console.log('getVerbData() | tense: ', tense);
             const tenseData = await getVerbTensesModel(letter, tense).findOne({ verb_id: verb.verb_id });
             //console.log('getVerbData() | tenseData: ', tenseData);
             conjugations[tense] = tenseData ? tenseData.conjugations : {};
@@ -276,7 +279,9 @@ async function createVerb(verb, letter, translation, conjugations, sentences, se
         newVerb = await verbModel.create({ verb_id: newVerbId, verb });
         console.log('verbUtils.js | createVerb() | newVerb 1: ', newVerb);
 
-        const translationAdded = translation ? validateVerbTranslationExistence(verb, translation) : false;
+        //console.log('verbUtils.js | createVerb() | translation: ', translation);
+        const translationAdded = validateVerbTranslationExistence(verb, translation);
+        //console.log('verbUtils.js | createVerb() | translationAdded: ', translationAdded);
         if (translationAdded) {
             const translationModel = getVerbTranslationModel(letter, 'ru');
             await translationModel.create({
@@ -285,21 +290,27 @@ async function createVerb(verb, letter, translation, conjugations, sentences, se
             });
         }
 
-        const conjugationsAdded = conjugations ? validateConjugationsExistence(verb, conjugations) : false;
-        if (conjugationsAdded) {
-            const tensesModel = getVerbTensesModel(letter, 'present');
-            await tensesModel.create({
-                verb_id: newVerb.verb_id,
-                conjugations,
-            });
+        //console.log('verbUtils.js | createVerb() | conjugations: ', conjugations);
+        const validConjugations = validateConjugationsExistence(verb, conjugations);
+        //console.log('verbUtils.js | createVerb() | validConjugations: ', validConjugations);
+        for (const tense of verbTensesConfig.tenses) {
+            if (validConjugations[tense] && Object.keys(validConjugations[tense]).length > 0) {
+                const tensesModel = getVerbTensesModel(letter, tense);
+                await tensesModel.create({
+                    verb_id: newVerb.verb_id,
+                    conjugations: validConjugations[tense],
+                });
+            }
         }
 
-        const sentencesAdded = sentences ? validateSentencesExistence(verb, sentences) : false;
+        console.log('verbUtils.js | createVerb() | sentences: ', sentences);
+        const sentencesAdded = validateSentencesExistence(verb, sentences);
         if (sentencesAdded) {
+            console.log('verbUtils.js | createVerb() | sentencesAdded: ', sentencesAdded);
             const sentencesModel = getVerbSentencesModel(letter, 'present');
             const newSentences = sentences.map((sentence, index) => ({
-                sentence_id: index + 1,
-                sentence: sentence.sentence,
+                sentence_id: index,
+                sentence: sentence,
             }));
             await sentencesModel.create({
                 verb_id: newVerb.verb_id,
@@ -308,12 +319,12 @@ async function createVerb(verb, letter, translation, conjugations, sentences, se
             });
         }
 
-        const sentencesTranslationAdded = sentencesTranslation ? validateSentencesTranslationExistence(verb, sentencesTranslation) : false;
+        const sentencesTranslationAdded = validateSentencesTranslationExistence(verb, sentencesTranslation);
         if (sentencesTranslationAdded) {
             const sentencesTranslationModel = getVerbSentencesTranslationModel(letter, 'present', 'ru');
             const newSentencesTranslation = sentencesTranslation.map((translation, index) => ({
-                sentence_id: index + 1,
-                sentence: translation.sentence,
+                sentence_id: index,
+                sentence: translation,
             }));
             await sentencesTranslationModel.create({
                 verb_id: newVerb.verb_id,
@@ -327,8 +338,7 @@ async function createVerb(verb, letter, translation, conjugations, sentences, se
         console.log('verbUtils.js | createVerb() | newVerb 2: ', newVerb);
         if (newVerb) {
             console.log('verbUtils.js | createVerb() | newVerb 3: ', newVerb);
-            const verbModel = getVerbModel(letter);
-            await verbModel.deleteOne({ _id: newVerb._id });
+            await deleteVerbData(letter, newVerb.verb_id);
             console.warn(`Глагол "${verb}" удален из-за ошибки: ${error.message}`);
         }
         console.error('Ошибка при создании глагола:', error);
@@ -375,23 +385,13 @@ async function deleteVerb(letter, verb) {
         validateVerbText(verb);
 
         const VerbModel = getVerbModel(letter);
-        const verbData = await VerbModel.findOneAndDelete({ verb });
+        const verbData = await VerbModel.findOne({ verb });
+
+        await deleteVerbData(letter, verbData.verb_id);
 
         if (!verbData) {
             throw new Error(`Глагол "${verb}" не найден.`);
         }
-
-        const translationModel = getVerbTranslationModel(letter, 'ru');
-        await translationModel.deleteOne({ verb_id: verbData.verb_id });
-
-        const tensesModel = getVerbTensesModel(letter, 'present');
-        await tensesModel.deleteOne({ verb_id: verbData.verb_id });
-
-        const sentencesModel = getVerbSentencesModel(letter, 'present');
-        await sentencesModel.deleteOne({ verb_id: verbData.verb_id });
-
-        const sentencesTranslationModel = getVerbSentencesTranslationModel(letter, 'present', 'ru');
-        await sentencesTranslationModel.deleteOne({ verb_id: verbData.verb_id });
 
         return verbData;
     } catch (error) {

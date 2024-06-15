@@ -83,24 +83,6 @@ function validateVerbTranslation(translation, verbText) {
     }
 }
 
-function validateVerbTranslationExistence(verb, translation) {
-    if (!translation || translation.length === 0) {
-        const error = new Error(`Перевод для глагола "${verb}" отсутствует`);
-        error.status = 400;
-        throw error;
-    }
-    return true;
-}
-
-function validateConjugationsExistence(verb, conjugations) {
-    if (!conjugations || Object.keys(conjugations).length === 0) {
-        const error = new Error(`Спряжения для глагола "${verb}" отсутствуют`);
-        error.status = 400;
-        throw error;
-    }
-    return true;
-}
-
 function validateQuery(query) {
     if (!query) {
         const error = new Error('Параметр запроса "q" отсутствует или пустой');
@@ -162,24 +144,6 @@ function validateVerbSentencesTranslationModel(params) {
     }
 }
 
-function validateSentencesExistence(verb, sentences) {
-    if (!sentences || sentences.length === 0) {
-        const error = new Error(`Предложения для глагола "${verb}" отсутствуют`);
-        error.status = 400;
-        throw error;
-    }
-    return true;
-}
-
-function validateSentencesTranslationExistence(verb, sentencesTranslation) {
-    if (!sentencesTranslation || sentencesTranslation.length === 0) {
-        const error = new Error(`Перевод предложений для глагола "${verb}" отсутствует`);
-        error.status = 400;
-        throw error;
-    }
-    return true;
-}
-
 function validateAvailableVerbs(availableAlphabetLetters) {
     if (availableAlphabetLetters.length === 0) {
         const error = new Error('Нет доступных глаголов в базе данных.');
@@ -194,6 +158,78 @@ function validateAvailableVerbsForLetter(letter, count) {
         error.status = 404;
         throw error;
     }
+}
+
+function validateVerbTranslationExistence(verb, translation) {
+    if (translation === undefined || (Array.isArray(translation) && translation.length === 0)) {
+        const error = new Error(`Перевод для глагола "${verb}" отсутствует`);
+        error.status = 400;
+        throw error;
+    }
+
+    return true;
+}
+
+// We could split it into 2 separate functions, but instead of copying the same code parts, I decided to let it in 1
+function validateConjugationsExistence(verb, conjugations) {
+    if (conjugations === undefined || (typeof conjugations === 'object' && Object.keys(conjugations).length === 0)) {
+        const error = new Error(`Спряжения для глагола "${verb}" отсутствуют`);
+        error.status = 400;
+        throw error;
+    }
+
+    const validConjugations = {};
+    let hasNonEmptyConjugation = false;
+
+    for (const tense in conjugations) {
+        const tenseConjugations = conjugations[tense];
+        if (
+            tenseConjugations === undefined ||
+            (typeof tenseConjugations === 'object' && Object.keys(tenseConjugations).length === 0)
+        ) {
+            continue;
+        }
+
+        validConjugations[tense] = {};
+
+        for (const pronoun in tenseConjugations) {
+            const conjugation = tenseConjugations[pronoun];
+            if (conjugation !== undefined && conjugation.trim() !== '') {
+                validConjugations[tense][pronoun] = conjugation;
+                hasNonEmptyConjugation = true;
+            }
+        }
+    }
+
+    if (!hasNonEmptyConjugation) {
+        const error = new Error(`Все поля спряжений для глагола "${verb}" пустые`);
+        error.status = 400;
+        throw error;
+    }
+
+    return validConjugations;
+}
+
+function validateSentencesExistence(verb, sentences) {
+    if (sentences === undefined || (Array.isArray(sentences) && sentences.length === 0)) {
+        //const error = new Error(`Предложения для глагола "${verb}" отсутствуют`);
+        //error.status = 400;
+        //throw error;
+        return false;
+    }
+
+    return true;
+}
+
+function validateSentencesTranslationExistence(verb, sentencesTranslation) {
+    if (sentencesTranslation === undefined || (Array.isArray(sentencesTranslation) && sentencesTranslation.length === 0)) {
+        //const error = new Error(`Перевод предложений для глагола "${verb}" отсутствует`);
+        //error.status = 400;
+        //throw error;
+        return false;
+    }
+
+    return true;
 }
 
 module.exports = {
