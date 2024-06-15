@@ -235,10 +235,9 @@ async function getVerbData(letter, verbText, random = false) {
         validateVerbTranslation(translation);
 
         const conjugations = {};
-        const requiredTenses = ['present']; // Добавьте другие времена в этот массив
 
-        for (const tense of requiredTenses) {
-            console.log('getVerbData() | tense: ', tense);
+        for (const tense of verbTensesConfig.tenses) {
+            //console.log('getVerbData() | tense: ', tense);
             const tenseData = await getVerbTensesModel(letter, tense).findOne({ verb_id: verb.verb_id });
             //console.log('getVerbData() | tenseData: ', tenseData);
             conjugations[tense] = tenseData ? tenseData.conjugations : {};
