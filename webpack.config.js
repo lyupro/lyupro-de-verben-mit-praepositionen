@@ -7,7 +7,9 @@ module.exports = {
     mode: isDevelopment ? 'development' : 'production',
     entry: {
         verbLearning: './public/javascripts/verb/verbLearning.js',
-        search: './public/javascripts/search.js', // Добавляем новый входной файл
+        search: './public/javascripts/search.js',
+        alphabet: './public/javascripts/alphabet.js',
+        namedRoutes: './public/javascripts/utils/namedRoutes.js',
     },
     output: {
         filename: '[name].bundle.js', // Используем [name] для создания отдельных бандлов
