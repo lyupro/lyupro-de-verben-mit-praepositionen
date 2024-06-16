@@ -24,6 +24,7 @@ const {
 exports.searchVerbs = async (req, res, next) => {
     try {
         const query = req.query.q.toLowerCase();
+        console.log('GET /verbs/search | query: ', query);
         validateQuery(query);
 
         const verbs = [];
