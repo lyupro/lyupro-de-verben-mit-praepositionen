@@ -17,12 +17,6 @@ function getNamedRoute(name, params = {}) {
     }
     //console.log('getNamedRoute() | url 2: ', url);
 
-    url = url.replace(/(:?\w+\?)/g, (match) => {
-        const param = url[match];
-        return param !== undefined ? param : '';
-    });
-    //console.log('getNamedRoute() | url 3: ', url);
-
     return url;
 }
 
