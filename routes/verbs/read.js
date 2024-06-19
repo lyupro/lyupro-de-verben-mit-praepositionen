@@ -100,21 +100,21 @@ exports.showVerb = async (req, res, next) => {
     }
 };
 
-// GET /verbs/:letter - Отображение глаголов по выбранной букве
 // GET /verbs/:letter/:page - Отображение глаголов по выбранной букве (указанная страница)
+// GET /verbs/:letter - Отображение глаголов по выбранной букве
 exports.showVerbsByLetter = async (req, res, next) => {
     const letter = req.params.letter.toLowerCase();
     validateLetter(letter);
 
     const page = parseInt(req.params.page) || 1;
 
-    renderVerbsByLetter(req, res, next, letter, page);
+    await renderVerbsByLetter(req, res, next, letter, page);
 };
 
-// GET /verbs - Отображение списка глаголов с пагинацией (по умолчанию - первая страница)
 // GET /verbs/:page - Отображение списка глаголов с пагинацией (указанная страница)
+// GET /verbs - Отображение списка глаголов с пагинацией (по умолчанию - первая страница)
 exports.showVerbsWithPagination = async (req, res, next) => {
     const page = parseInt(req.params.page) || 1;
 
-    renderVerbs(req, res, next, page);
+    await renderVerbs(req, res, next, page);
 };
