@@ -63,11 +63,11 @@ const verbSentenceSchema = new mongoose.Schema({
         type: [{
             sentence_id: {
                 type: Number,
-                //required: true,
+                required: false,
             },
             sentence: {
                 type: String,
-                //required: true,
+                required: false,
             },
         }],
         required: true,
@@ -91,11 +91,11 @@ const verbSentenceTranslationSchema = new mongoose.Schema({
         type: [{
             sentence_id: {
                 type: Number,
-                //required: true,
+                required: false,
             },
             sentence: {
                 type: String,
-                //required: true,
+                required: false,
             },
         }],
         required: true,
