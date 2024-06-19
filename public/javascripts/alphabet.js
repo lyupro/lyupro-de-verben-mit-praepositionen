@@ -4,7 +4,7 @@ import { fetchNamedRoute } from './utils/namedRoutes.js';
 // Функция для загрузки глаголов по букве
 async function loadVerbsByLetter(letter, page = 1) {
     try {
-        const url = await fetchNamedRoute('verbs.letter', { letter, page });
+        const url = await fetchNamedRoute('verbs.letter.page', { letter, page });
         const response = await fetch(url);
         const html = await response.text();
 
@@ -21,7 +21,7 @@ async function loadVerbsByLetter(letter, page = 1) {
             paginationContainer.innerHTML = doc.querySelector('.pagination').innerHTML;
             titleElement.textContent = doc.querySelector('title').textContent;
             headerElement.textContent = doc.querySelector('h1').textContent;
-            history.pushState(null, null, `/verbs/${letter}/${page}`);
+            history.pushState(null, null, url);
 
             // Обновляем обработчики событий для пагинации
             const paginationLinks = paginationContainer.querySelectorAll('a');
@@ -79,15 +79,15 @@ function paginationClickHandler(event) {
 }
 
 // Функция для загрузки глаголов по URL
-function loadVerbs(url) {
+async function loadVerbs(url) {
     const urlParts = url.split('/');
     const letter = urlParts[urlParts.length - 2];
     const page = urlParts[urlParts.length - 1];
 
-    if (url === getNamedRoute('verbs.index')) {
-        loadAllVerbs();
+    if (url === await fetchNamedRoute('verbs.index')) {
+        await loadAllVerbs();
     } else {
-        loadVerbsByLetter(letter, page);
+        await loadVerbsByLetter(letter, page);
     }
 }
 
@@ -97,14 +97,18 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentLetter = null;
 
     alphabetLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
+        link.addEventListener('click', async function(event) {
             event.preventDefault();
-            const letter = this.getAttribute('href').split('/').pop();
+            const letter = this.getAttribute('data-letter');
+            console.log('public/javascripts/alphabet.js | letter: ', letter);
 
             if (letter === currentLetter) {
-                loadAllVerbs();
+                const url = await fetchNamedRoute('verbs.index');
+                history.pushState(null, null, url);
+                await loadAllVerbs();
+                currentLetter = null; // Сбрасываем значение currentLetter
             } else {
-                loadVerbsByLetter(letter);
+                await loadVerbsByLetter(letter);
                 currentLetter = letter;
             }
         });
