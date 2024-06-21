@@ -5,9 +5,9 @@
         <div class="container">
             <h1>Ошибка</h1>
             <p>${message}</p>
-            <p>${error.status}</p>
-            <pre>${message}</pre>
-            <a href="/">Вернуться на главную страницу</a>
+            <p>Статус: ${statusCode}</p>
+            ${stack ? `<pre>${stack}</pre>` : ''}
+            <a href="/" class="btn btn-primary">Вернуться на главную страницу</a>
         </div>
     `
 }) %>
