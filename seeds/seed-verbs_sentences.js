@@ -1,20 +1,24 @@
 // seeds/seed-verbs_sentence.js
-const mongoose = require('mongoose');
-const fs = require('fs');
-const path = require('path');
+import mongoose from 'mongoose';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const { getVerbSentencesModel, getVerbSentencesTranslationModel, createModels } = require('../models/verb');
+import { getVerbSentencesModel, getVerbSentencesTranslationModel, createModels } from '../models/verb.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const letter = process.argv[2] || 'a';
 const tense = process.argv[3] || 'present';
 const language = process.argv[4] || 'ru';
 
-const seedDataPath = `../!db/de_verbs_${letter}_sentences_${tense}`;
-const seedDataTranslationPath = `../!db/de_verbs_${letter}_sentences_${tense}_${language}`;
+const seedDataPath = path.join(__dirname, `../!db/de_verbs_${letter}_sentences_${tense}.json`);
+const seedDataTranslationPath = path.join(__dirname, `../!db/de_verbs_${letter}_sentences_${tense}_${language}.json`);
 
 const seedData = {
-    sentences: require(`${seedDataPath}.json`),
-    sentencesTranslation: require(`${seedDataTranslationPath}.json`),
+    sentences: JSON.parse(fs.readFileSync(seedDataPath, 'utf8')),
+    sentencesTranslation: JSON.parse(fs.readFileSync(seedDataTranslationPath, 'utf8')),
 };
 
 mongoose.connect('mongodb://localhost/deVerbsApp', {
