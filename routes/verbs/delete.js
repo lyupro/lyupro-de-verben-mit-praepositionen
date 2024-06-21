@@ -1,11 +1,12 @@
-// routes/verbs/update.js
-const express = require('express');
+// routes/verbs/delete.js
+import express from 'express';
+import { deleteVerb } from '../../utils/verbUtils.js';
+import { validateLetter, validateVerbText } from '../../utils/validationUtils.js';
+
 const router = express.Router();
-const { deleteVerb } = require('../../utils/verbUtils');
-const { validateLetter, validateVerbText } = require('../../utils/validationUtils');
 
 // DELETE /verbs/:letter/:verb - Удаление глагола
-exports.deleteVerb = async (req, res, next) => {
+export const deleteVerbHandler = async (req, res, next) => {
     try {
         const letter = req.params.letter.toLowerCase();
         const verb = req.params.verb.toLowerCase();
@@ -25,4 +26,4 @@ exports.deleteVerb = async (req, res, next) => {
     }
 };
 
-module.exports = router;
+export default router;

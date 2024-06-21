@@ -1,9 +1,9 @@
 // db.js
-const mongoose = require('mongoose');
-const config = require('./config/database');
+import mongoose from 'mongoose';
+import config from './config/database.js';
 
 // Функция для подключения к базе данных
-async function connectToDatabase() {
+export async function connectToDatabase() {
     try {
         await mongoose.connect(config.mongoURI, {
             useNewUrlParser: true,
@@ -47,7 +47,3 @@ process.on('SIGINT', () => {
         process.exit(0);
     });
 });
-
-module.exports = {
-    connectToDatabase
-};

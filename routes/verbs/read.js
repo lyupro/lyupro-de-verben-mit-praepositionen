@@ -1,27 +1,27 @@
 // routes/verbs/read.js
-const {
+import {
     getVerbModel,
     getVerbTranslationModel,
     getVerbTensesModel,
     getVerbSentencesModel,
     getVerbSentencesTranslationModel,
-} = require('../../models/verb');
-const {
+} from '../../models/verb.js';
+import {
     getAlphabetWithAvailability,
     getVerbTranslation,
     renderVerbs,
     getVerbData,
-} = require('../../utils/verbUtils');
-const { renderVerbsByLetter } = require('../../utils/letterUtils');
-const alphabetConfig = require('../../config/alphabet');
-const {
+} from '../../utils/verbUtils.js';
+import { renderVerbsByLetter } from '../../utils/letterUtils.js';
+import alphabetConfig from '../../config/alphabet.js';
+import {
     validateLetter,
     validateQuery,
     validateVerbText,
-} = require('../../utils/validationUtils');
+} from '../../utils/validationUtils.js';
 
 // GET /verbs/search - Поиск глаголов
-exports.searchVerbs = async (req, res, next) => {
+export const searchVerbs = async (req, res, next) => {
     try {
         const query = req.query.q.toLowerCase();
         console.log('GET /verbs/search | query: ', query);
@@ -46,7 +46,7 @@ exports.searchVerbs = async (req, res, next) => {
 };
 
 // GET /verbs/:letter/:verb/learn/visually - Получение данных для визуального обучения глагола
-exports.getVerbDataForVisualLearning = async (req, res, next) => {
+export const getVerbDataForVisualLearning = async (req, res, next) => {
     try {
         const letter = req.params.letter.toLowerCase();
         const verbText = req.params.verb;
@@ -61,7 +61,7 @@ exports.getVerbDataForVisualLearning = async (req, res, next) => {
 };
 
 // GET /verbs/:letter/:verb - Отображение выбранного глагола
-exports.showVerb = async (req, res, next) => {
+export const showVerb = async (req, res, next) => {
     try{
         const letter = req.params.letter.toLowerCase();
         console.log('/:letter/:verb | letter: ', letter);
@@ -102,7 +102,7 @@ exports.showVerb = async (req, res, next) => {
 
 // GET /verbs/:letter/:page - Отображение глаголов по выбранной букве (указанная страница)
 // GET /verbs/:letter - Отображение глаголов по выбранной букве
-exports.showVerbsByLetter = async (req, res, next) => {
+export const showVerbsByLetter = async (req, res, next) => {
     const letter = req.params.letter.toLowerCase();
     validateLetter(letter);
 
@@ -113,7 +113,7 @@ exports.showVerbsByLetter = async (req, res, next) => {
 
 // GET /verbs/:page - Отображение списка глаголов с пагинацией (указанная страница)
 // GET /verbs - Отображение списка глаголов с пагинацией (по умолчанию - первая страница)
-exports.showVerbsWithPagination = async (req, res, next) => {
+export const showVerbsWithPagination = async (req, res, next) => {
     const page = parseInt(req.params.page) || 1;
 
     await renderVerbs(req, res, next, page);

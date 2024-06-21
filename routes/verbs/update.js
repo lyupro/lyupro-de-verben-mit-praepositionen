@@ -1,9 +1,9 @@
 // routes/verbs/update.js
-const { getVerbData, updateVerb } = require('../../utils/verbUtils');
-const { validateLetter, validateVerbText } = require('../../utils/validationUtils');
+import { getVerbData, updateVerb } from '../../utils/verbUtils.js';
+import { validateLetter, validateVerbText } from '../../utils/validationUtils.js';
 
 // GET /verbs/:letter/:verb/edit - Отображение формы редактирования глагола
-exports.showEditForm = async (req, res, next) => {
+export const showEditForm = async (req, res, next) => {
     try {
         const letter = req.params.letter.toLowerCase();
         //console.log('/:letter/:verb/edit | letter 1: ', letter);
@@ -38,7 +38,7 @@ exports.showEditForm = async (req, res, next) => {
 };
 
 // PUT /verbs/:letter/:verb - Обновление глагола
-exports.updateVerb = async (req, res, next) => {
+export const updateVerbHandler = async (req, res, next) => {
     try {
         const letter = req.params.letter.toLowerCase();
         //console.log('PUT /:letter/:verb/edit | letter 1: ', letter);

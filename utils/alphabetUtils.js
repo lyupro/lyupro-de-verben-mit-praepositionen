@@ -1,8 +1,8 @@
 // utils/alphabetUtils.js
-const { getVerbModel } = require('../models/verb');
-const alphabetConfig = require('../config/alphabet');
+import { getVerbModel } from '../models/verb.js';
+import alphabetConfig from '../config/alphabet.js';
 
-async function getAvailableAlphabetLetters() {
+export async function getAvailableAlphabetLetters() {
     const availableAlphabetLetters = [];
 
     for (const letter of alphabetConfig.letters) {
@@ -17,7 +17,3 @@ async function getAvailableAlphabetLetters() {
     //console.log('getAvailableAlphabetLetters() | availableAlphabetLetters: ', availableAlphabetLetters);
     return availableAlphabetLetters;
 }
-
-module.exports = {
-    getAvailableAlphabetLetters,
-};

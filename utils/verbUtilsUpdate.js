@@ -1,11 +1,11 @@
 // utils/verbUtilsUpdate.js
-const {
+import {
     getVerbModel,
     getVerbTranslationModel,
     getVerbTensesModel,
     getVerbSentencesModel,
     getVerbSentencesTranslationModel,
-} = require('../models/verb');
+} from '../models/verb.js';
 
 async function updateVerbData(letter, verb) {
     const VerbModel = getVerbModel(letter);
@@ -106,7 +106,7 @@ async function updateSentencesTranslationData(letter, verbId, sentencesTranslati
     return { newSentencesTranslation: trimmedSentencesTranslation, mergedTranslations: updatedTranslations?.sentences || [] };
 }
 
-module.exports = {
+export {
     updateVerbData,
     updateTranslationData,
     updateTensesData,

@@ -1,16 +1,21 @@
 // server.js
-require('dotenv').config();
+import 'dotenv/config';
 
-const express = require('express');
+import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import methodOverride from 'method-override';
+import { connectToDatabase } from './db.js';
+import { getNamedRoute } from './middleware/namedRoutes.js';
+import { createModels } from './models/verb.js';
+import apiRouter from './routes/api.js';
+import verbRoute from './routes/verb.js';
+import verbsRoute from './routes/verbs.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const app = express();
-const path = require('path');
-const methodOverride = require('method-override');
-const { connectToDatabase } = require('./db');
-const { getNamedRoute } = require('./middleware/namedRoutes');
-const { createModels } = require('./models/verb');
-const apiRouter = require('./routes/api');
-const verbRoute = require('./routes/verb');
-const verbsRoute = require('./routes/verbs');
 
 // Настройка MIME-типов для CSS и JavaScript файлов
 const mimeTypes = {

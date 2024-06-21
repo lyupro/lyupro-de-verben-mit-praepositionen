@@ -1,9 +1,9 @@
 // routes/verbs/create.js
-const { createVerb } = require('../../utils/verbUtils');
-const { validateLetter, validateVerbText } = require('../../utils/validationUtils');
+import { createVerb } from '../../utils/verbUtils.js';
+import { validateLetter, validateVerbText } from '../../utils/validationUtils.js';
 
 // GET /verbs/create - Отображение формы создания глагола
-exports.showCreateForm = async (req, res, next) => {
+export const showCreateForm = async (req, res, next) => {
     try {
         res.render('partials/verb/verbCreate', {
             pageTitle: 'Создать новый глагол',
@@ -16,7 +16,7 @@ exports.showCreateForm = async (req, res, next) => {
 };
 
 // POST /verbs - Создание нового глагола
-exports.createVerb = async (req, res, next) => {
+export const createVerbHandler = async (req, res, next) => {
     try {
         const { verb, translations, conjugations, sentences, sentencesTranslation } = req.body;
 

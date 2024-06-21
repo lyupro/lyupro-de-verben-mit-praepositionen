@@ -1,7 +1,6 @@
 // utils/validationUtils.js
-
-const alphabetConfig = require('../config/alphabet');
-const verbTensesConfig = require('../config/verbTenses');
+import alphabetConfig from '../config/alphabet.js';
+import verbTensesConfig from '../config/verbTenses.js';
 
 function validateLetter(letter) {
     if (!letter || !alphabetConfig.letters.includes(letter)) {
@@ -232,7 +231,7 @@ function validateSentencesTranslationExistence(verb, sentencesTranslation) {
     return true;
 }
 
-module.exports = {
+export {
     validateLetter,
     validateLetterFilter,
     validateTense,

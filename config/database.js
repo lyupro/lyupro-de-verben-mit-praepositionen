@@ -1,4 +1,4 @@
 // config/database.js
-module.exports = {
+export default {
     mongoURI: process.env.MONGO_URI || 'mongodb://localhost/deVerbsApp',
 };

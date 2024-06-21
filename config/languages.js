@@ -1,4 +1,4 @@
 // config/languages.js
-module.exports = {
+export default {
     languages: ['ru'], // Добавьте другие языки в этот массив по мере необходимости
 };

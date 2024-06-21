@@ -1,14 +1,14 @@
 // utils/verbUtils.js
-const {
+import {
     getVerbModel,
     getVerbTranslationModel,
     getVerbTensesModel,
     getVerbSentencesModel,
     getVerbSentencesTranslationModel,
-} = require('../models/verb');
-const alphabetConfig = require('../config/alphabet');
-const verbTensesConfig = require('../config/verbTenses');
-const {
+} from '../models/verb.js';
+import alphabetConfig from '../config/alphabet.js';
+import verbTensesConfig from '../config/verbTenses.js';
+import {
     validateLetter,
     validateLetterFilter,
     validateTense,
@@ -27,15 +27,15 @@ const {
     validateConjugationsExistence,
     validateSentencesExistence,
     validateSentencesTranslationExistence,
-} = require('./validationUtils');
-const {
+} from './validationUtils.js';
+import {
     updateVerbData,
     updateTranslationData,
     updateTensesData,
     updateSentencesData,
     updateSentencesTranslationData,
-} = require('./verbUtilsUpdate');
-const { deleteVerbData } = require('./verbUtilsDelete');
+} from './verbUtilsUpdate.js';
+import { deleteVerbData } from './verbUtilsDelete.js';
 
 async function getAlphabetWithAvailability() {
     try {
@@ -399,7 +399,7 @@ async function deleteVerb(letter, verb) {
     }
 }
 
-module.exports = {
+export {
     getAlphabetWithAvailability,
     getVerbTranslation,
     getVerbSentences,

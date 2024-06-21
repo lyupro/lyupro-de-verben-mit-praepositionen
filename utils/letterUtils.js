@@ -1,11 +1,10 @@
 // utils/letterUtils.js
-const { getVerbModel } = require('../models/verb');
-const alphabetConfig = require('../config/alphabet');
-const { getVerbsWithTranslations, getAlphabetWithAvailability } = require('./verbUtils');
-const { validateLetter, validateQuery, validateVerbText, validatePage } = require('../utils/validationUtils');
-const {validatePageRange} = require("./validationUtils");
+import { getVerbModel } from '../models/verb.js';
+import alphabetConfig from '../config/alphabet.js';
+import { getVerbsWithTranslations, getAlphabetWithAvailability } from './verbUtils.js';
+import { validateLetter, validateQuery, validateVerbText, validatePage, validatePageRange } from './validationUtils.js';
 
-async function renderVerbsByLetter(req, res, next, letter, page) {
+export async function renderVerbsByLetter(req, res, next, letter, page) {
     try {
         // Приводим букву к нижнему регистру
         const lowerCaseLetter = letter.toLowerCase();
@@ -41,7 +40,3 @@ async function renderVerbsByLetter(req, res, next, letter, page) {
         next(error);
     }
 }
-
-module.exports = {
-    renderVerbsByLetter
-};

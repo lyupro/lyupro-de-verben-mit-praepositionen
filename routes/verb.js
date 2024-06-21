@@ -1,11 +1,12 @@
 // routes/verb.js
-const express = require('express');
+import express from 'express';
+import { getVerbModel, getVerbTranslationModel, getVerbSentencesModel, getVerbSentencesTranslationModel } from '../models/verb.js';
+import alphabetConfig from '../config/alphabet.js';
+import { getAvailableAlphabetLetters } from '../utils/alphabetUtils.js';
+import { getVerbData } from '../utils/verbUtils.js';
+import { validateLetter, validateQuery, validateVerb, validateVerbText, validateVerbTextAndSentence, validateAvailableVerbs } from '../utils/validationUtils.js';
+
 const router = express.Router();
-const { getVerbModel, getVerbTranslationModel, getVerbSentencesModel, getVerbSentencesTranslationModel } = require('../models/verb');
-const alphabetConfig = require('../config/alphabet');
-const { getAvailableAlphabetLetters } = require('../utils/alphabetUtils');
-const { getVerbData } = require('../utils/verbUtils');
-const { validateLetter, validateQuery, validateVerb, validateVerbText, validateVerbTextAndSentence, validateAvailableVerbs } = require('../utils/validationUtils');
 
 // Маршрут для получения случайного глагола и предложений
 router.get('/', async (req, res, next) => {
@@ -63,4 +64,4 @@ router.post('/check', express.json(), async (req, res, next) => {
     }
 });
 
-module.exports = router;
+export default router;

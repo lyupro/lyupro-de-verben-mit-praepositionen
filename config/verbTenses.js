@@ -1,4 +1,4 @@
 // config/verbTenses.js
-module.exports = {
+export default {
     tenses: ['present', 'past_simple', 'past_perfect'],
 };

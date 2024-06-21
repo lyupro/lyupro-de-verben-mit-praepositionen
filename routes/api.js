@@ -1,9 +1,10 @@
 // routes/api.js
-const express = require('express');
+import express from 'express';
+import namedRoutesRouter from './api/namedRoutes.js';
+
 const router = express.Router();
-const namedRoutesRouter = require('./api/namedRoutes');
 
 // Маршруты для именованных маршрутов
 router.use('/named-routes', namedRoutesRouter);
 
-module.exports = router;
+export default router;

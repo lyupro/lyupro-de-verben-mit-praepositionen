@@ -1,7 +1,8 @@
 // routes/api/namedRoutes.js
-const express = require('express');
+import express from 'express';
+import { getNamedRoute } from '../../middleware/namedRoutes.js';
+
 const router = express.Router();
-const { getNamedRoute } = require('../../middleware/namedRoutes');
 
 // GET /verbs/create - Передача в AJAX ссылку
 router.get('/', (req, res) => {
@@ -19,4 +20,4 @@ router.get('/', (req, res) => {
     }
 });
 
-module.exports = router;
+export default router;

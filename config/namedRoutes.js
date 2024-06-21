@@ -1,5 +1,5 @@
 // config/namedRoutes.js
-module.exports = {
+export default {
     'verbs.create': '/verbs/create',
     'verbs.store': '/verbs',
     'verbs.index': '/verbs',

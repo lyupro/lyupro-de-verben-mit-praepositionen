@@ -1,7 +1,7 @@
 // middleware/namedRoutes.js
-const namedRoutes = require('../config/namedRoutes');
+import namedRoutes from '../config/namedRoutes.js';
 
-function getNamedRoute(name, params = {}) {
+export function getNamedRoute(name, params = {}) {
     let url = namedRoutes[name];
     //console.log('getNamedRoute() | url 1: ', url);
     //console.log('getNamedRoute() | params: ', params);
@@ -19,7 +19,3 @@ function getNamedRoute(name, params = {}) {
 
     return url;
 }
-
-module.exports = {
-    getNamedRoute,
-};

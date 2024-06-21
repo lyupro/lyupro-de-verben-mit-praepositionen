@@ -1,4 +1,4 @@
 // config/alphabet.js
-module.exports = {
+export default {
     letters: 'abcdefghijklmnopqrstuvwxyz'.split(''),
 };

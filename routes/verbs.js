@@ -1,8 +1,9 @@
 // routes/verbs.js
-const express = require('express');
+import express from 'express';
+import verbRoutes from './verbRoutes.js';
+
 const router = express.Router();
-const verbRoutes = require('./verbRoutes');
 
 router.use('/', verbRoutes);
 
-module.exports = router;
+export default router;

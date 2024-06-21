@@ -1,8 +1,8 @@
 // models/verb.js
-const mongoose = require('mongoose');
-const verbTensesConfig = require('../config/verbTenses');
-const alphabetConfig = require('../config/alphabet');
-const languagesConfig = require('../config/languages');
+import mongoose from 'mongoose';
+import verbTensesConfig from '../config/verbTenses.js';
+import alphabetConfig from '../config/alphabet.js';
+import languagesConfig from '../config/languages.js';
 
 // Схема для модели Verb
 const verbSchema = new mongoose.Schema({
@@ -116,7 +116,7 @@ const VerbSentenceModel = {};
 const VerbSentenceTranslationModel = {};
 
 // Функция для создания моделей Mongoose
-function createModels() {
+export function createModels() {
     alphabetConfig.letters.forEach((letter) => {
         //console.log(`Creating models for letter: ${letter}`);
         VerbModel[letter] = mongoose.model(
@@ -172,47 +172,37 @@ function createModels() {
 }
 
 // Функции для получения моделей Mongoose
-function getVerbModel(letter) {
+export function getVerbModel(letter) {
     if (!VerbModel[letter]) {
         throw new Error(`Модель глагола для буквы "${letter}" не найдена.`);
     }
     return VerbModel[letter];
 }
 
-function getVerbTranslationModel(letter, language) {
+export function getVerbTranslationModel(letter, language) {
     if (!VerbTranslationModel[letter] || !VerbTranslationModel[letter][language]) {
         throw new Error(`Модель перевода глагола для буквы "${letter}" и языка "${language}" не найдена.`);
     }
     return VerbTranslationModel[letter][language];
 }
 
-function getVerbTensesModel(letter, tense) {
+export function getVerbTensesModel(letter, tense) {
     if (!VerbTensesModel[letter] || !VerbTensesModel[letter][tense]) {
         throw new Error(`Модель спряжения глагола для буквы "${letter}" и времени "${tense}" не найдена.`);
     }
     return VerbTensesModel[letter][tense];
 }
 
-function getVerbSentencesModel(letter, tense) {
+export function getVerbSentencesModel(letter, tense) {
     if (!VerbSentenceModel[letter] || !VerbSentenceModel[letter][tense]) {
         throw new Error(`Модель предложения глагола для буквы "${letter}" и времени "${tense}" не найдена.`);
     }
     return VerbSentenceModel[letter][tense];
 }
 
-function getVerbSentencesTranslationModel(letter, tense, language) {
+export function getVerbSentencesTranslationModel(letter, tense, language) {
     if (!VerbSentenceTranslationModel[letter] || !VerbSentenceTranslationModel[letter][tense] || !VerbSentenceTranslationModel[letter][tense][language]) {
         throw new Error(`Модель перевода предложений для буквы "${letter}", времени "${tense}" и языка "${language}" не найдена.`);
     }
     return VerbSentenceTranslationModel[letter][tense][language];
 }
-
-// Экспорт функций и моделей
-module.exports = {
-    createModels,
-    getVerbModel,
-    getVerbTranslationModel,
-    getVerbTensesModel,
-    getVerbSentencesModel,
-    getVerbSentencesTranslationModel,
-};

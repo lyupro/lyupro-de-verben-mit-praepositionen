@@ -1,13 +1,13 @@
-// utils/verbUtilsUpdate.js
-const {
+// utils/verbUtilsDelete.js
+import {
     getVerbModel,
     getVerbTranslationModel,
     getVerbTensesModel,
     getVerbSentencesModel,
     getVerbSentencesTranslationModel,
-} = require('../models/verb');
+} from '../models/verb.js';
 
-async function deleteVerbData(letter, verbId) {
+export async function deleteVerbData(letter, verbId) {
     try {
         const VerbModel = getVerbModel(letter);
         await VerbModel.deleteOne({ verb_id: verbId });
@@ -28,7 +28,3 @@ async function deleteVerbData(letter, verbId) {
         throw error;
     }
 }
-
-module.exports = {
-    deleteVerbData,
-};
