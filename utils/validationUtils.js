@@ -3,7 +3,7 @@ import alphabetConfig from '../config/alphabet.js';
 import verbTensesConfig from '../config/verbTenses.js';
 
 function validateLetter(letter) {
-    if (!letter || !alphabetConfig.letters.includes(letter)) {
+    if (!letter || !alphabetConfig.getAll().includes(letter)) {
         const error = new Error(`Некорректная буква алфавита: "${letter}"`);
         error.status = 400;
         throw error;

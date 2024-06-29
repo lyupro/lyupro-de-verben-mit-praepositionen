@@ -5,7 +5,7 @@ import alphabetConfig from '../config/alphabet.js';
 export async function getAvailableAlphabetLetters() {
     const availableAlphabetLetters = [];
 
-    for (const letter of alphabetConfig.letters) {
+    for (const letter of alphabetConfig.getAll()) {
         const VerbModel = getVerbModel(letter);
         const count = await VerbModel.countDocuments();
 

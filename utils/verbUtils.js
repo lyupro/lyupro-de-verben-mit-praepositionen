@@ -46,19 +46,19 @@ async function getAlphabetWithAvailability() {
 
         if (enableLetterFilter) {
             // Проверяем доступность каждой буквы
-            for (const letter of alphabetConfig.letters) {
+            for (const letter of alphabetConfig.getAll()) {
                 const VerbModel = getVerbModel(letter);
                 const count = await VerbModel.countDocuments();
                 letterAvailability[letter] = count > 0;
             }
         } else {
             // Если фильтр отключен, помечаем все буквы как доступные
-            alphabetConfig.letters.forEach(letter => {
+            alphabetConfig.getAll().forEach(letter => {
                 letterAvailability[letter] = true;
             });
         }
 
-        return { alphabet: alphabetConfig.letters, letterAvailability };
+        return { alphabet: alphabetConfig.getAll(), letterAvailability };
     } catch (error) {
         console.error('Ошибка при получении доступности букв алфавита:', error);
         throw error;
@@ -163,7 +163,7 @@ async function renderVerbs(req, res, next, page = 1) {
         const verbs = [];
 
         const letterCounts = {};
-        for (const letter of alphabetConfig.letters) {
+        for (const letter of alphabetConfig.getAll()) {
             const VerbModel = getVerbModel(letter);
             const count = await VerbModel.countDocuments();
             letterCounts[letter] = count;
@@ -176,7 +176,7 @@ async function renderVerbs(req, res, next, page = 1) {
 
         let currentCount = 0;
         let currentSkip = skip;
-        for (const letter of alphabetConfig.letters) {
+        for (const letter of alphabetConfig.getAll()) {
             if (currentCount >= limit) {
                 break;
             }

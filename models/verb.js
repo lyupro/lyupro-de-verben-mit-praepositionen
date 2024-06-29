@@ -117,7 +117,7 @@ const VerbSentenceTranslationModel = {};
 
 // Функция для создания моделей Mongoose
 export function createModels() {
-    alphabetConfig.letters.forEach((letter) => {
+    alphabetConfig.getAll().forEach((letter) => {
         //console.log(`Creating models for letter: ${letter}`);
         VerbModel[letter] = mongoose.model(
             `Verb_${letter}`,

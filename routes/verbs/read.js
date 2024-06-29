@@ -29,7 +29,7 @@ export const searchVerbs = async (req, res, next) => {
 
         const verbs = [];
 
-        for (const letter of alphabetConfig.letters) {
+        for (const letter of alphabetConfig.getAll()) {
             const verbModel = getVerbModel(letter);
             const verbsForLetter = await verbModel.find({ verb: { $regex: `^${query}`, $options: 'i' } }).limit(5);
 
