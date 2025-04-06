@@ -56,3 +56,22 @@ npm-debug.log
 Dockerfile
 docker-compose.yml
 *.zip
+
+
+# =========================
+# Additional by Laravel
+# =========================
+/.phpunit.cache
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+.env.backup
+.env.production
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+yarn-error.log
+/.fleet
+/.vscode
