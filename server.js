@@ -92,6 +92,8 @@ app.use((err, req, res, next) => {
     res.render('error', {
         title: 'Ошибка',
         message: err.message,
+        statusCode: err.status || 500,
+        stack: process.env.APP_ENV === 'development' && process.env.APP_DEBUG === 'true' ? err.stack : '',
         error: process.env.APP_ENV === 'development' && process.env.APP_DEBUG === 'true' ? err : {},
     });
 });
