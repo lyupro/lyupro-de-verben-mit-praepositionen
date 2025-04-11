@@ -102,7 +102,7 @@ function validatePageRange(page, totalPages) {
     if (page < 1 || page > totalPages) {
         const error = new Error('Страница не найдена');
         error.status = 404;
-        throw error
+        throw error;
     }
 }
 
