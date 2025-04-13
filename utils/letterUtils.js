@@ -4,6 +4,8 @@ import alphabetConfig from '../config/alphabet.js';
 import { getVerbsWithTranslations, getAlphabetWithAvailability } from './verbUtils.js';
 import { validateLetter, validateQuery, validateVerbText, validatePage, validatePageRange } from './validationUtils.js';
 
+process.env.ENABLE_LETTER_FILTER = process.env.ENABLE_LETTER_FILTER || 'true';
+
 export async function renderVerbsByLetter(req, res, next, letter, page) {
     try {
         // Приводим букву к нижнему регистру
