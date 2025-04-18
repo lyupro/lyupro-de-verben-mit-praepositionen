@@ -1,14 +1,14 @@
 // db.js
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 import config from './config/database.js';
+
+dotenv.config();
 
 // Функция для подключения к базе данных
 export async function connectToDatabase() {
     try {
-        await mongoose.connect(config.mongoURI, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
+        await mongoose.connect(process.env.MONGO_URI);
 
         if (process.env.APP_ENV === 'development' && process.env.APP_DEBUG === 'true') {
             console.log('Mongoose connect to', config.mongoURI);
