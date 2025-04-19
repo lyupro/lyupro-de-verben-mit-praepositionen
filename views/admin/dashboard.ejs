@@ -1,0 +1,22 @@
+<%- include('../partials/header', { title: title }) %>
+
+<div class="admin-dashboard">
+    <h1>Административная панель</h1>
+    
+    <div class="admin-stats">
+        <div class="stat-card">
+            <h3>Пользователи</h3>
+            <p class="stat-number"><%= stats.usersCount %></p>
+            <a href="/admin/view/users" class="btn btn-primary">Управление</a>
+        </div>
+        
+        <div class="stat-card">
+            <h3>Глаголы</h3>
+            <p class="stat-number"><%= stats.verbsCount %></p>
+            <p class="stat-info">Непроверено: <strong><%= stats.unverifiedCount %></strong></p>
+            <a href="/admin/view/verbs" class="btn btn-primary">Управление</a>
+        </div>
+    </div>
+</div>
+
+<%- include('../partials/footer') %>
