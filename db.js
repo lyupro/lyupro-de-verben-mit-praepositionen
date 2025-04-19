@@ -1,20 +1,24 @@
 // db.js
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import config from './config/database.js';
 
 dotenv.config();
 
-// Функция для подключения к базе данных
+function logConnection(message) {
+    if (process.env.APP_ENV === 'development' && process.env.APP_DEBUG === 'true') {
+        console.log(message, process.env.MONGO_URI);
+    } else {
+        console.log(message);
+    }
+}
+
 export async function connectToDatabase() {
+    if (!process.env.MONGO_URI) {
+        throw new Error('MONGO_URI is not defined in environment variables');
+    }
     try {
         await mongoose.connect(process.env.MONGO_URI);
-
-        if (process.env.APP_ENV === 'development' && process.env.APP_DEBUG === 'true') {
-            console.log('Mongoose connect to', config.mongoURI);
-        } else {
-            console.log('Mongoose connected');
-        }
+        logConnection('Mongoose connected to');
     } catch (err) {
         console.error('Mongoose connection error:', err);
         throw err;
@@ -24,26 +28,18 @@ export async function connectToDatabase() {
 // Обработка событий подключения
 const db = mongoose.connection;
 
-db.on('connected', () => {
-    if(process.env.APP_ENV === 'development' && process.env.APP_DEBUG === 'true'){
-        console.log('Mongoose connected to', config.mongoURI);
-    }else{
-        console.log('Mongoose connected');
-    }
-});
-
-db.on('error', (err) => {
-    console.error('Mongoose connection error:', err);
-});
-
-db.on('disconnected', () => {
-    console.log('Mongoose disconnected');
-});
+db.on('connected', () => logConnection('Mongoose connected to'));
+db.on('error', (err) => console.error('Mongoose connection error:', err));
+db.on('disconnected', () => console.log('Mongoose disconnected'));
 
 // Обработка сигналов завершения процесса
-process.on('SIGINT', () => {
-    db.close(() => {
+process.on('SIGINT', async () => {
+    try {
+        await db.close();
         console.log('Mongoose disconnected through app termination');
         process.exit(0);
-    });
+    } catch (err) {
+        console.error('Error during mongoose disconnect:', err);
+        process.exit(1);
+    }
 });
