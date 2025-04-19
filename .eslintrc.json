@@ -16,5 +16,20 @@
     "no-console": "off",
     "semi": ["error", "always"],
     "quotes": ["error", "single"]
-  }
+  },
+  "globals": {
+    "Sortable": "readonly",
+    "alert": "readonly",
+    "localStorage": "readonly",
+    "DOMParser": "readonly",
+    "history": "readonly"
+  },
+  "overrides": [
+    {
+      "files": ["test/**/*.js"],
+      "env": {
+        "mocha": true
+      }
+    }
+  ]
 }
