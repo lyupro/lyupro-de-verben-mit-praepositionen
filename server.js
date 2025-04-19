@@ -13,7 +13,7 @@ import apiRouter from './routes/api.js';
 import verbRoute from './routes/verb.js';
 import authRoutes from './routes/auth/authRoutes.js';
 import verbRoutes from './routes/verbs/verbRoutes.js';
-import adminRoutes from './routes/admin/adminRoutes.js'
+import adminRoutes from './routes/admin/adminRoutes.js';
 import { authenticateJWT } from './middleware/auth/authenticateJWT.js';
 import { errorHandler } from './middleware/error/errorHandler.js';
 
