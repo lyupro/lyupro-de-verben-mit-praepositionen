@@ -10,7 +10,10 @@
     "dev": "nodemon server.js",
     "build": "webpack",
     "seed-verbs_sentences-a-present-ru": "node seeds/seed-verbs_sentences.js a present ru",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "import:full": "node seeds/fullDatabaseImporter.js",
+    "clean:db": "node seeds/dbCleaner.js",
+    "db:stats": "node -e \"import('./utils/dbSeederUtils.js').then(async ({connectToDatabase, disconnectFromDatabase, getDatabaseStats, formatStats}) => {await connectToDatabase(); const stats = await getDatabaseStats(); console.log(formatStats(stats)); await disconnectFromDatabase();})\""
   },
   "keywords": [],
   "author": "Maksym Lyubachevsky <m.lyubachevsky@gmail.com>",
