@@ -1,9 +1,19 @@
 <!-- views/partials/verbs/card.ejs -->
-<div class="card">
+<div class="card" data-verb="<%= verb.verb %>" data-letter="<%= verb.verb.charAt(0).toLowerCase() %>" data-verb-id="<%= verb.verb_id %>">
     <div class="card-front">
         <a href="<%= getNamedRoute('verbs.show', { letter: verb.verb.charAt(0).toLowerCase(), verb: verb.verb }) %>">
             <h2><%= verb.verb %></h2>
         </a>
+        
+        <!-- Кнопки пользователя (показываются только авторизованным) -->
+        <div class="card-user-actions" style="display: none;">
+            <button class="btn-favorite" data-action="toggle-favorite" title="Добавить в избранное">
+                <i class="fas fa-heart"></i>
+            </button>
+            <button class="btn-add-to-list" data-action="add-to-list" title="Добавить в список">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
     </div>
     <div class="card-back">
         <div class="translation-wrapper">
@@ -14,9 +24,23 @@
                 <span class="tooltip-icon" data-tooltip="<%= verb.tooltipText %>">?</span>
             <% } %>
         </div>
-        <a href="<%= getNamedRoute('verbs.edit', { letter: verb.verb.charAt(0).toLowerCase(), verb: verb.verb }) %>" class="btn btn-sm btn-primary mt-2">Редактировать</a>
-        <form action="<%= getNamedRoute('verbs.destroy', { letter: verb.verb.charAt(0).toLowerCase(), verb: verb.verb }) %>?_method=DELETE" method="POST" class="d-inline">
-            <button type="submit" class="btn btn-sm btn-danger mt-2">Удалить</button>
-        </form>
+        
+        <!-- Кнопки администратора -->
+        <div class="admin-actions">
+            <a href="<%= getNamedRoute('verbs.edit', { letter: verb.verb.charAt(0).toLowerCase(), verb: verb.verb }) %>" class="btn btn-sm btn-primary mt-2">Редактировать</a>
+            <form action="<%= getNamedRoute('verbs.destroy', { letter: verb.verb.charAt(0).toLowerCase(), verb: verb.verb }) %>?_method=DELETE" method="POST" class="d-inline">
+                <button type="submit" class="btn btn-sm btn-danger mt-2">Удалить</button>
+            </form>
+        </div>
+        
+        <!-- Кнопки пользователя на обратной стороне -->
+        <div class="card-user-actions-back" style="display: none;">
+            <button class="btn-favorite-back" data-action="toggle-favorite" title="Добавить в избранное">
+                <i class="fas fa-heart"></i> <span class="btn-text">В избранное</span>
+            </button>
+            <button class="btn-add-to-list-back" data-action="add-to-list" title="Добавить в список">
+                <i class="fas fa-plus"></i> <span class="btn-text">В список</span>
+            </button>
+        </div>
     </div>
 </div>
