@@ -26,6 +26,12 @@ import { getNamedRoute } from '../../middleware/namedRoutes.js';
 // GET /verbs/search - Поиск глаголов
 export const searchVerbs = async (req, res, next) => {
     try {
+        if (!req.query.q) {
+            return res.status(400).json({
+                message: 'Параметр запроса "q" отсутствует или пустой'
+            });
+        }
+        
         const query = req.query.q.toLowerCase();
         console.log('GET /verbs/search | query: ', query);
         validateQuery(query);
@@ -37,8 +43,13 @@ export const searchVerbs = async (req, res, next) => {
             const verbsForLetter = await verbModel.find({ verb: { $regex: `^${query}`, $options: 'i' } }).limit(5);
 
             for (const verb of verbsForLetter) {
-                const { displayTranslation } = await getVerbTranslation(letter, 'ru', verb.verb_id);
-                verbs.push({ ...verb.toObject(), translation: displayTranslation });
+                try {
+                    const { displayTranslation } = await getVerbTranslation(letter, 'ru', verb.verb_id);
+                    verbs.push({ ...verb.toObject(), translation: displayTranslation });
+                } catch (error) {
+                    console.warn(`Не удалось получить перевод для глагола ${verb.verb}:`, error.message);
+                    verbs.push({ ...verb.toObject(), translation: 'Перевод не найден' });
+                }
             }
         }
 
