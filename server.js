@@ -15,6 +15,7 @@ import authRoutes from './routes/auth/authRoutes.js';
 import verbRoutes from './routes/verbs/verbRoutes.js';
 import adminRoutes from './routes/admin/adminRoutes.js';
 import adminRoutesView from './routes/admin/adminRoutesView.js';
+import userRoutes from './routes/user/userRoutes.js';
 import { authenticateJWT } from './middleware/auth/authenticateJWT.js';
 import { errorHandler } from './middleware/error/errorHandler.js';
 
@@ -88,6 +89,7 @@ app.use('/verb', verbRoute);
 app.use('/api', apiRouter);
 app.use('/auth', authRoutes);
 app.use('/verbs', verbRoutes);
+app.use('/user', userRoutes);
 app.use('/admin', authenticateJWT, adminRoutes);
 app.use('/admin/view', authenticateJWT, adminRoutesView);
 
