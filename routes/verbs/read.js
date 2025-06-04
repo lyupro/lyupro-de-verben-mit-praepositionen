@@ -92,7 +92,7 @@ export const showVerb = async (req, res, next) => {
             return res.render('partials/verb/verbDetailsForm', {
                 verb: verb.verb,
                 letter,
-                translation: translation.translations,
+                translation: translation.verb,
                 conjugations: conjugations,
                 sentences,
                 sentencesTranslation,
@@ -117,14 +117,18 @@ export const showVerb = async (req, res, next) => {
 // GET /verbs/:letter/:page - Отображение глаголов по выбранной букве (указанная страница)
 // GET /verbs/:letter - Отображение глаголов по выбранной букве
 export const showVerbsByLetter = async (req, res, next) => {
-    const letter = req.params.letter.toLowerCase();
-    console.log('Requested letter:', letter);
-    validateLetter(letter);
+    try {
+        const letter = req.params.letter.toLowerCase();
+        console.log('Requested letter:', letter);
+        validateLetter(letter);
 
-    const page = parseInt(req.params.page) || 1;
-    console.log('Requested page:', page);
+        const page = parseInt(req.params.page) || 1;
+        console.log('Requested page:', page);
 
-    await renderVerbsByLetter(req, res, next, letter, page);
+        await renderVerbsByLetter(req, res, next, letter, page);
+    } catch (error) {
+        next(error);
+    }
 };
 
 // GET /verbs/:page - Отображение списка глаголов с пагинацией (указанная страница)

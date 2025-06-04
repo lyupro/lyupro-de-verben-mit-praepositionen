@@ -31,14 +31,14 @@ describe('VerbUtils', () => {
             // Подготавливаем тестовые данные
             const VerbModelA = getVerbModel('a');
             await VerbModelA.create({ 
-                verb_id: 1, 
+                verb_id: 0, 
                 verb: 'arbeiten' 
             });
 
             const VerbTranslationModelA = getVerbTranslationModel('a', 'ru');
             await VerbTranslationModelA.create({
-                verb_id: 1,
-                translations: ['работать']
+                verb_id: 0,
+                verb: ['работать']
             });
 
             const result = await getVerbData('a', 'arbeiten', false);
@@ -55,22 +55,22 @@ describe('VerbUtils', () => {
             // Подготавливаем тестовые данные
             const VerbModelA = getVerbModel('a');
             await VerbModelA.create({ 
-                verb_id: 1, 
+                verb_id: 0, 
                 verb: 'arbeiten' 
             });
             await VerbModelA.create({ 
-                verb_id: 2, 
+                verb_id: 1, 
                 verb: 'antworten' 
             });
 
             const VerbTranslationModelA = getVerbTranslationModel('a', 'ru');
             await VerbTranslationModelA.create({
-                verb_id: 1,
-                translations: ['работать']
+                verb_id: 0,
+                verb: ['работать']
             });
             await VerbTranslationModelA.create({
-                verb_id: 2,
-                translations: ['отвечать']
+                verb_id: 1,
+                verb: ['отвечать']
             });
 
             const result = await getVerbData('a', '', true);
@@ -102,7 +102,7 @@ describe('VerbUtils', () => {
             // Создаем глагол без перевода чтобы вызвать ошибку
             const VerbModelA = getVerbModel('a');
             await VerbModelA.create({ 
-                verb_id: 1, 
+                verb_id: 0, 
                 verb: 'test' 
             });
 

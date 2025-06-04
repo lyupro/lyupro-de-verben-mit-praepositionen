@@ -72,10 +72,10 @@ async function getVerbTranslation(letter, language, verbId) {
         throw new Error(`Перевод для глагола с ID "${verbId}" не найден`);
     }
 
-    if (translation && translation.translations.length > 0) {
-        const translations = translation.translations;
+    if (translation && translation.verb.length > 0) {
+        const translations = translation.verb;
         //console.log('utils/verbUtils.js | getVerbTranslation() | translations: ', translations);
-        const firstTranslation = translation.translations[0];
+        const firstTranslation = translation.verb[0];
         //console.log('utils/verbUtils.js | getVerbTranslation() | firstTranslation: ', firstTranslation);
         const [mainTranslation, additionalInfo] = firstTranslation.split(/\s+(?=\()/);
         const displayTranslation = mainTranslation.trim();

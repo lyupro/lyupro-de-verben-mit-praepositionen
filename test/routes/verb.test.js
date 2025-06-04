@@ -44,14 +44,14 @@ describe('Verb Routes', () => {
             // Добавляем тестовый глагол с переводом
             const VerbModelA = getVerbModel('a');
             await VerbModelA.create({ 
-                verb_id: 1, 
+                verb_id: 0, 
                 verb: 'arbeiten' 
             });
 
             const VerbTranslationModelA = getVerbTranslationModel('a', 'ru');
             await VerbTranslationModelA.create({
-                verb_id: 1,
-                translations: ['работать']
+                verb_id: 0,
+                verb: ['работать']
             });
 
             const response = await request(app)
@@ -67,7 +67,7 @@ describe('Verb Routes', () => {
             // Создаем глагол без перевода чтобы вызвать ошибку
             const VerbModelA = getVerbModel('a');
             await VerbModelA.create({ 
-                verb_id: 1, 
+                verb_id: 0, 
                 verb: 'test' 
             });
 
@@ -85,7 +85,7 @@ describe('Verb Routes', () => {
             // Добавляем тестовый глагол для проверки предложений
             const VerbModelA = getVerbModel('a');
             await VerbModelA.create({ 
-                verb_id: 1, 
+                verb_id: 0, 
                 verb: 'arbeiten' 
             });
         });

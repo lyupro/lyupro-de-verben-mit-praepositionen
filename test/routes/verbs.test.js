@@ -45,15 +45,15 @@ describe('Verbs Routes', () => {
             // Создаем тестовый глагол
             const VerbModelA = getVerbModel('a');
             const testVerb = await VerbModelA.create({
-                verb_id: 1,
+                verb_id: 0,
                 verb: 'arbeiten'
             });
 
             // Создаем перевод
             const VerbTranslationModelA = getVerbTranslationModel('a', 'ru');
             await VerbTranslationModelA.create({
-                verb_id: 1,
-                translations: ['работать']
+                verb_id: 0,
+                verb: ['работать']
             });
 
             const response = await request(app)
@@ -70,15 +70,15 @@ describe('Verbs Routes', () => {
             const VerbModelA = getVerbModel('a');
             const VerbTranslationModelA = getVerbTranslationModel('a', 'ru');
 
-            for (let i = 1; i <= 15; i++) {
+            for (let i = 0; i <= 14; i++) {
                 await VerbModelA.create({
                     verb_id: i,
-                    verb: `arbeiten${i.toString().padStart(2, '0')}`  // arbeiten01, arbeiten02, etc.
+                    verb: `arbeiten${i.toString().padStart(2, '0')}`  // arbeiten00, arbeiten01, etc.
                 });
 
                 await VerbTranslationModelA.create({
                     verb_id: i,
-                    translations: [`работать${i}`]
+                    verb: [`работать${i}`]
                 });
             }
 
@@ -87,23 +87,23 @@ describe('Verbs Routes', () => {
                 .get('/verbs')
                 .expect(200);
 
-            expect(response1.text).to.include('arbeiten01');
-            expect(response1.text).to.include('работать1');
+            expect(response1.text).to.include('arbeiten00');
+            expect(response1.text).to.include('работать0');
 
             // Тестируем вторую страницу
             const response2 = await request(app)
                 .get('/verbs/2')
                 .expect(200);
 
-            // На второй странице должны быть глаголы с номерами 11-15
-            expect(response2.text).to.include('arbeiten11');
+            // На второй странице должны быть глаголы с номерами 10-14
+            expect(response2.text).to.include('arbeiten10');
         });
 
         it('должен перенаправлять на первую страницу при неверном номере страницы', async () => {
             // Создаем тестовый глагол
             const VerbModelA = getVerbModel('a');
             await VerbModelA.create({
-                verb_id: 1,
+                verb_id: 0,
                 verb: 'arbeiten'
             });
 
@@ -121,16 +121,16 @@ describe('Verbs Routes', () => {
             const VerbModelA = getVerbModel('a');
             const VerbTranslationModelA = getVerbTranslationModel('a', 'ru');
 
-            await VerbModelA.create({ verb_id: 1, verb: 'arbeiten' });
-            await VerbModelA.create({ verb_id: 2, verb: 'antworten' });
+            await VerbModelA.create({ verb_id: 0, verb: 'arbeiten' });
+            await VerbModelA.create({ verb_id: 1, verb: 'antworten' });
 
             await VerbTranslationModelA.create({
-                verb_id: 1,
-                translations: ['работать']
+                verb_id: 0,
+                verb: ['работать']
             });
             await VerbTranslationModelA.create({
-                verb_id: 2,
-                translations: ['отвечать']
+                verb_id: 1,
+                verb: ['отвечать']
             });
 
             const response = await request(app)
@@ -165,10 +165,10 @@ describe('Verbs Routes', () => {
             const VerbModelA = getVerbModel('a');
             const VerbTranslationModelA = getVerbTranslationModel('a', 'ru');
 
-            await VerbModelA.create({ verb_id: 1, verb: 'arbeiten' });
+            await VerbModelA.create({ verb_id: 0, verb: 'arbeiten' });
             await VerbTranslationModelA.create({
-                verb_id: 1,
-                translations: ['работать']
+                verb_id: 0,
+                verb: ['работать']
             });
 
             const response = await request(app)
@@ -183,7 +183,7 @@ describe('Verbs Routes', () => {
             const response = await request(app)
                 .get('/verbs/invalid')
                 .timeout(5000) // 5 секунд timeout
-                .expect(500); // Ожидаем 500 т.к. это server error при валидации
+                .expect(400); // Ожидаем 400 т.к. это валидационная ошибка
         }).timeout(6000); // Увеличиваем timeout для теста
     });
 
@@ -192,10 +192,10 @@ describe('Verbs Routes', () => {
             const VerbModelA = getVerbModel('a');
             const VerbTranslationModelA = getVerbTranslationModel('a', 'ru');
 
-            await VerbModelA.create({ verb_id: 1, verb: 'arbeiten' });
+            await VerbModelA.create({ verb_id: 0, verb: 'arbeiten' });
             await VerbTranslationModelA.create({
-                verb_id: 1,
-                translations: ['работать']
+                verb_id: 0,
+                verb: ['работать']
             });
 
             const response = await request(app)
@@ -227,7 +227,7 @@ describe('Verbs Routes', () => {
         it('должен корректно обрабатывать отсутствие переводов', async () => {
             // Создаем глагол без перевода
             const VerbModelA = getVerbModel('a');
-            await VerbModelA.create({ verb_id: 1, verb: 'testverb' });
+            await VerbModelA.create({ verb_id: 0, verb: 'testverb' });
 
             const response = await request(app)
                 .get('/verbs')
