@@ -6,6 +6,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import methodOverride from 'method-override';
+import cookieParser from 'cookie-parser';
 import { connectToDatabase } from './db.js';
 import { getNamedRoute } from './middleware/namedRoutes.js';
 import { createModels } from './models/verb.js';
@@ -47,6 +48,9 @@ app.use(express.static(path.join(__dirname, 'public'), {
         }
     }
 }));
+
+// Парсинг cookies
+app.use(cookieParser());
 
 // Парсинг тела запроса (middleware for parsing) in verb.js line 16: 'const verb = req.body.verb;'
 app.use(express.urlencoded({ extended: true }));
