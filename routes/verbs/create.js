@@ -28,11 +28,31 @@ export const createVerbHandler = async (req, res, next) => {
         const createdVerb = await createVerb(verb, letter, translations, conjugations, sentences, sentencesTranslation);
 
         if (!createdVerb) {
-            return res.status(500).send('Не удалось создать глагол');
+            return res.status(500).json({
+                status: 'error',
+                message: 'Не удалось создать глагол'
+            });
         }
 
-        res.redirect(`/verbs/${letter}/${verb}`);
+        // Проверяем, является ли запрос AJAX
+        if (req.xhr || req.headers.accept.indexOf('json') > -1) {
+            res.status(201).json({
+                status: 'success',
+                message: 'Глагол успешно создан',
+                verb: createdVerb
+            });
+        } else {
+            // Если это обычный запрос, выполняем редирект
+            res.redirect(`/verbs/${letter}/${verb}`);
+        }
     } catch (error) {
+        if (error.name === 'ValidationError') {
+            return res.status(400).json({
+                status: 'error',
+                message: 'Ошибка валидации',
+                errors: error.errors
+            });
+        }
         next(error);
     }
 };
