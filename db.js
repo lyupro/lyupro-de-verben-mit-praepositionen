@@ -6,21 +6,38 @@ dotenv.config();
 
 function logConnection(message) {
     if (process.env.APP_ENV === 'development' && process.env.APP_DEBUG === 'true') {
-        console.log(message, process.env.MONGO_URI);
+        console.log(message, getMongoURI());
     } else {
         console.log(message);
     }
 }
 
+// Функция для получения URI базы данных (поддержка как MONGO_URI, так и MONGODB_URI)
+function getMongoURI() {
+    return process.env.MONGODB_URI || process.env.MONGO_URI;
+}
+
 export async function connectToDatabase() {
-    if (!process.env.MONGO_URI) {
-        throw new Error('MONGO_URI is not defined in environment variables');
+    const mongoURI = getMongoURI();
+    if (!mongoURI) {
+        throw new Error('MONGO_URI or MONGODB_URI is not defined in environment variables');
     }
     try {
-        await mongoose.connect(process.env.MONGO_URI);
+        await mongoose.connect(mongoURI);
         logConnection('Mongoose connected to');
     } catch (err) {
         console.error('Mongoose connection error:', err);
+        throw err;
+    }
+}
+
+// Функция для отключения от базы данных (для тестов)
+export async function disconnectFromDatabase() {
+    try {
+        await mongoose.disconnect();
+        console.log('Mongoose disconnected');
+    } catch (err) {
+        console.error('Error during mongoose disconnect:', err);
         throw err;
     }
 }
