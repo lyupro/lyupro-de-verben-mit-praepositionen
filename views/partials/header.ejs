@@ -15,6 +15,19 @@
                 <% if (locals.user && (locals.user.role === 'administrator' || locals.user.role === 'moderator')) { %>
                     <li><a href="/admin/view">Админ-панель</a></li>
                 <% } %>
+                
+                <!-- Пользовательское меню -->
+                <li class="user-menu">
+                    <span id="user-info" style="display: none;">
+                        Привет, <span id="username"></span>!
+                        <a href="/user/profile">Профиль</a>
+                        <button id="logout-btn" class="btn btn-secondary">Выйти</button>
+                    </span>
+                    <span id="guest-info">
+                        <a href="/auth/login" class="btn btn-primary">Вход</a>
+                        <a href="/auth/register" class="btn btn-secondary">Регистрация</a>
+                    </span>
+                </li>
             </ul>
             <div class="theme-switch-container">
                 <label class="theme-switch">
@@ -25,3 +38,5 @@
         </div>
     </nav>
 </header>
+
+<script src="/javascripts/auth/header.js"></script>
