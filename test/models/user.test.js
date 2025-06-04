@@ -177,8 +177,8 @@ describe('User Model', () => {
 
         it('should set createdAt timestamp', async () => {
             const savedUser = await testUser.save();
-            expect(savedUser.createdAt).to.be.a('date');
-            expect(savedUser.createdAt).to.be.closeTo(new Date(), 1000); // within 1 second
+            expect(savedUser.createdAt).to.be.instanceof(Date);
+            expect(savedUser.createdAt.getTime()).to.be.closeTo(Date.now(), 1000); // within 1 second
         });
     });
 }); 
