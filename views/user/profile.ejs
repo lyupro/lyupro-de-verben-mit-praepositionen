@@ -1,361 +1,376 @@
-<div class="user-container">
-    <!-- Заголовок профиля -->
-    <div class="user-header">
-        <div class="user-info">
-            <div class="user-avatar">
-                <%= user.username.charAt(0).toUpperCase() %>
-            </div>
-            <div>
-                <h1>Добро пожаловать, <%= user.username %>!</h1>
-                <p>Email: <%= user.email %> | Роль: <%= user.role %></p>
-                <p>Зарегистрирован: <%= new Date(user.createdAt).toLocaleDateString('ru-RU') %></p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Статистика -->
-    <div class="user-stats">
-        <div class="stat-card">
-            <div class="number" id="favorites-count">-</div>
-            <div class="label">Избранных глаголов</div>
-        </div>
-        <div class="stat-card">
-            <div class="number" id="lists-count">-</div>
-            <div class="label">Созданных списков</div>
-        </div>
-        <div class="stat-card">
-            <div class="number" id="total-verbs-count">-</div>
-            <div class="label">Глаголов в списках</div>
-        </div>
-    </div>
-
-    <!-- Основные секции -->
-    <div class="user-sections">
-        <!-- Избранное -->
-        <div class="section">
-            <div class="section-header">
-                <h2><i class="fas fa-heart"></i> Избранное</h2>
-                <a href="#" class="btn" id="view-all-favorites">Все</a>
-            </div>
-            <div class="section-content">
-                <div id="favorites-loading" class="loading">
-                    Загружаем избранное...
-                </div>
-                <div id="favorites-content" style="display: none;">
-                    <div id="favorites-list"></div>
+<%- include('../layout', {
+    title: 'Профиль пользователя - Deutsch Trainer',
+    userStyles: true,
+    content: `
+        <div class="user-container">
+            <!-- Заголовок профиля -->
+            <div class="user-header">
+                <div class="user-info">
+                    <div class="user-avatar">
+                        ${user.username.charAt(0).toUpperCase()}
+                    </div>
+                    <div>
+                        <h1>Добро пожаловать, ${user.username}!</h1>
+                        <p>Email: ${user.email} | Роль: ${user.role}</p>
+                        <p>Зарегистрирован: ${new Date(user.createdAt).toLocaleDateString('ru-RU')}</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Списки глаголов -->
-        <div class="section">
-            <div class="section-header">
-                <h2><i class="fas fa-list"></i> Мои списки</h2>
-                <button class="btn btn-success" id="create-list-btn">Создать</button>
-            </div>
-            <div class="section-content">
-                <div id="lists-loading" class="loading">
-                    Загружаем списки...
+            <!-- Статистика -->
+            <div class="user-stats">
+                <div class="stat-card">
+                    <div class="number" id="favorites-count">-</div>
+                    <div class="label">Избранных глаголов</div>
                 </div>
-                <div id="lists-content" style="display: none;">
-                    <div id="lists-list"></div>
+                <div class="stat-card">
+                    <div class="number" id="lists-count">-</div>
+                    <div class="label">Созданных списков</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number" id="total-verbs-count">-</div>
+                    <div class="label">Глаголов в списках</div>
+                </div>
+            </div>
+
+            <!-- Основные секции -->
+            <div class="user-sections">
+                <!-- Избранное -->
+                <div class="section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-heart"></i> Избранное</h2>
+                        <a href="#" class="btn" id="view-all-favorites">Все</a>
+                    </div>
+                    <div class="section-content">
+                        <div id="favorites-loading" class="loading">
+                            Загружаем избранное...
+                        </div>
+                        <div id="favorites-content" style="display: none;">
+                            <div id="favorites-list"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Списки глаголов -->
+                <div class="section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-list"></i> Мои списки</h2>
+                        <button class="btn btn-success" id="create-list-btn">Создать</button>
+                    </div>
+                    <div class="section-content">
+                        <div id="lists-loading" class="loading">
+                            Загружаем списки...
+                        </div>
+                        <div id="lists-content" style="display: none;">
+                            <div id="lists-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Модальное окно для создания списка -->
+            <div id="create-list-modal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Создать новый список</h3>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <form id="create-list-form">
+                            <div class="form-group">
+                                <label for="list-name">Название списка:</label>
+                                <input type="text" id="list-name" name="name" required maxlength="100">
+                            </div>
+                            <div class="form-group">
+                                <label for="list-description">Описание (необязательно):</label>
+                                <textarea id="list-description" name="description" maxlength="500" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" id="list-public" name="isPublic">
+                                    Сделать список публичным
+                                </label>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-success">Создать</button>
+                                <button type="button" class="btn btn-secondary" id="cancel-create">Отмена</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Модальное окно для создания списка -->
-    <div id="create-list-modal" class="modal" style="display: none;">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>Создать новый список</h3>
-                <span class="close">&times;</span>
-            </div>
-            <div class="modal-body">
-                <form id="create-list-form">
-                    <div class="form-group">
-                        <label for="list-name">Название списка:</label>
-                        <input type="text" id="list-name" name="name" required maxlength="100">
-                    </div>
-                    <div class="form-group">
-                        <label for="list-description">Описание (необязательно):</label>
-                        <textarea id="list-description" name="description" maxlength="500" rows="3"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label>
-                            <input type="checkbox" id="list-public" name="isPublic">
-                            Сделать список публичным
-                        </label>
-                    </div>
-                    <div class="form-actions">
-                        <button type="submit" class="btn btn-success">Создать</button>
-                        <button type="button" class="btn btn-secondary" id="cancel-create">Отмена</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<style>
-/* Модальное окно */
-.modal {
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background: white;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 500px;
-    max-height: 90vh;
-    overflow-y: auto;
-}
-
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid #e9ecef;
-}
-
-.modal-header h3 {
-    margin: 0;
-}
-
-.close {
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #aaa;
-}
-
-.close:hover {
-    color: #000;
-}
-
-.modal-body {
-    padding: 20px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px;
-    box-sizing: border-box;
-}
-
-.form-group input[type="checkbox"] {
-    width: auto;
-    margin-right: 8px;
-}
-
-.form-actions {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-}
-</style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const token = localStorage.getItem('token');
-    
-    if (!token) {
-        window.location.href = '/auth/login';
-        return;
-    }
-
-    // Загружаем данные профиля
-    loadUserStats();
-    loadFavorites();
-    loadLists();
-
-    // Обработчики событий
-    document.getElementById('create-list-btn').addEventListener('click', showCreateListModal);
-    document.getElementById('cancel-create').addEventListener('click', hideCreateListModal);
-    document.querySelector('.close').addEventListener('click', hideCreateListModal);
-    document.getElementById('create-list-form').addEventListener('submit', createList);
-
-    // Загрузка статистики
-    async function loadUserStats() {
-        try {
-            const [favoritesRes, listsRes] = await Promise.all([
-                fetch('/user/favorites?limit=1', {
-                    headers: { 'Authorization': `Bearer ${token}` }
-                }),
-                fetch('/user/lists', {
-                    headers: { 'Authorization': `Bearer ${token}` }
-                })
-            ]);
-
-            const favoritesData = await favoritesRes.json();
-            const listsData = await listsRes.json();
-
-            document.getElementById('favorites-count').textContent = favoritesData.pagination?.totalFavorites || 0;
-            document.getElementById('lists-count').textContent = listsData.lists?.length || 0;
-            
-            // Подсчитываем общее количество глаголов в списках
-            const totalVerbs = listsData.lists?.reduce((sum, list) => sum + (list.itemCount || 0), 0) || 0;
-            document.getElementById('total-verbs-count').textContent = totalVerbs;
-
-        } catch (error) {
-            console.error('Error loading stats:', error);
+        <style>
+        /* Модальное окно */
+        .modal {
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-    }
 
-    // Загрузка избранного
-    async function loadFavorites() {
-        try {
-            const response = await fetch('/user/favorites?limit=3', {
-                headers: { 'Authorization': `Bearer ${token}` }
-            });
-            const data = await response.json();
+        .modal-content {
+            background: white;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
 
-            document.getElementById('favorites-loading').style.display = 'none';
-            document.getElementById('favorites-content').style.display = 'block';
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
 
-            const favoritesContainer = document.getElementById('favorites-list');
+        .modal-header h3 {
+            margin: 0;
+        }
+
+        .close {
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #aaa;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+
+        .modal-body {
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .form-group input[type="checkbox"] {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        .form-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+        </style>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const token = localStorage.getItem('token');
             
-            if (data.favorites && data.favorites.length > 0) {
-                favoritesContainer.innerHTML = data.favorites.map(fav => `
-                    <div class="item-card">
-                        <div class="item-info">
-                            <h4>${fav.verbText}</h4>
-                            <p>${fav.translation || 'Нет перевода'}</p>
-                        </div>
-                        <div class="item-actions">
-                            <a href="/verbs/${fav.letter}/${fav.verbText}" class="btn btn-secondary">Открыть</a>
-                        </div>
-                    </div>
-                `).join('');
-            } else {
-                favoritesContainer.innerHTML = `
-                    <div class="empty-state">
-                        <i class="fas fa-heart-broken"></i>
-                        <p>У вас пока нет избранных глаголов</p>
-                    </div>
-                `;
+            if (!token) {
+                window.location.href = '/auth/login';
+                return;
             }
-        } catch (error) {
-            console.error('Error loading favorites:', error);
-            document.getElementById('favorites-loading').textContent = 'Ошибка загрузки избранного';
-        }
-    }
 
-    // Загрузка списков
-    async function loadLists() {
-        try {
-            const response = await fetch('/user/lists', {
-                headers: { 'Authorization': `Bearer ${token}` }
-            });
-            const data = await response.json();
+            // Загружаем данные профиля
+            loadUserStats();
+            loadFavorites();
+            loadLists();
 
-            document.getElementById('lists-loading').style.display = 'none';
-            document.getElementById('lists-content').style.display = 'block';
-
-            const listsContainer = document.getElementById('lists-list');
-            
-            if (data.lists && data.lists.length > 0) {
-                listsContainer.innerHTML = data.lists.slice(0, 3).map(list => `
-                    <div class="item-card">
-                        <div class="item-info">
-                            <h4>${list.name}</h4>
-                            <p>${list.itemCount} глаголов • ${new Date(list.createdAt).toLocaleDateString('ru-RU')}</p>
-                        </div>
-                        <div class="item-actions">
-                            <a href="#" class="btn btn-secondary" onclick="openList('${list._id}')">Открыть</a>
-                        </div>
-                    </div>
-                `).join('');
-            } else {
-                listsContainer.innerHTML = `
-                    <div class="empty-state">
-                        <i class="fas fa-list"></i>
-                        <p>У вас пока нет списков глаголов</p>
-                    </div>
-                `;
-            }
-        } catch (error) {
-            console.error('Error loading lists:', error);
-            document.getElementById('lists-loading').textContent = 'Ошибка загрузки списков';
-        }
-    }
-
-    // Модальное окно создания списка
-    function showCreateListModal() {
-        document.getElementById('create-list-modal').style.display = 'flex';
-    }
-
-    function hideCreateListModal() {
-        document.getElementById('create-list-modal').style.display = 'none';
-        document.getElementById('create-list-form').reset();
-    }
-
-    // Создание списка
-    async function createList(e) {
-        e.preventDefault();
-        
-        const formData = new FormData(e.target);
-        const data = {
-            name: formData.get('name'),
-            description: formData.get('description'),
-            isPublic: formData.get('isPublic') === 'on'
-        };
-
-        try {
-            const response = await fetch('/user/lists', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${token}`
-                },
-                body: JSON.stringify(data)
+            // Обработчики событий
+            document.getElementById('create-list-btn').addEventListener('click', showCreateListModal);
+            document.getElementById('cancel-create').addEventListener('click', hideCreateListModal);
+            document.querySelector('.close').addEventListener('click', hideCreateListModal);
+            document.getElementById('create-list-form').addEventListener('submit', handleCreateList);
+            document.getElementById('view-all-favorites').addEventListener('click', function(e) {
+                e.preventDefault();
+                window.location.href = '/user/favorites';
             });
 
-            const result = await response.json();
+            // Закрытие модального окна при клике вне его
+            window.addEventListener('click', function(event) {
+                const modal = document.getElementById('create-list-modal');
+                if (event.target === modal) {
+                    hideCreateListModal();
+                }
+            });
+        });
 
-            if (response.ok) {
-                hideCreateListModal();
-                loadLists();
-                loadUserStats();
-                alert('Список создан успешно!');
-            } else {
-                alert(result.message || 'Ошибка создания списка');
+        async function loadUserStats() {
+            try {
+                const token = localStorage.getItem('token');
+                
+                // Загружаем статистику избранного
+                const favoritesResponse = await fetch('/user/favorites', {
+                    headers: {
+                        'Authorization': 'Bearer ' + token
+                    }
+                });
+                
+                if (favoritesResponse.ok) {
+                    const favoritesData = await favoritesResponse.json();
+                    document.getElementById('favorites-count').textContent = favoritesData.pagination?.totalFavorites || 0;
+                }
+
+                // Загружаем статистику списков
+                const listsResponse = await fetch('/user/lists', {
+                    headers: {
+                        'Authorization': 'Bearer ' + token
+                    }
+                });
+                
+                if (listsResponse.ok) {
+                    const listsData = await listsResponse.json();
+                    document.getElementById('lists-count').textContent = listsData.lists?.length || 0;
+                    
+                    // Подсчитываем общее количество глаголов в списках
+                    const totalVerbs = listsData.lists?.reduce((sum, list) => sum + (list.itemCount || 0), 0) || 0;
+                    document.getElementById('total-verbs-count').textContent = totalVerbs;
+                }
+            } catch (error) {
+                console.error('Error loading user stats:', error);
             }
-        } catch (error) {
-            console.error('Error creating list:', error);
-            alert('Произошла ошибка при создании списка');
         }
-    }
 
-    // Функции для глобального доступа
-    window.openList = function(listId) {
-        // TODO: Открытие страницы списка
-        alert('Открытие списка: ' + listId);
-    };
-});
-</script> 
+        async function loadFavorites() {
+            try {
+                const token = localStorage.getItem('token');
+                const response = await fetch('/user/favorites?limit=5', {
+                    headers: {
+                        'Authorization': 'Bearer ' + token
+                    }
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    displayFavorites(data.favorites || []);
+                }
+            } catch (error) {
+                console.error('Error loading favorites:', error);
+            } finally {
+                document.getElementById('favorites-loading').style.display = 'none';
+                document.getElementById('favorites-content').style.display = 'block';
+            }
+        }
+
+        async function loadLists() {
+            try {
+                const token = localStorage.getItem('token');
+                const response = await fetch('/user/lists', {
+                    headers: {
+                        'Authorization': 'Bearer ' + token
+                    }
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    displayLists(data.lists || []);
+                }
+            } catch (error) {
+                console.error('Error loading lists:', error);
+            } finally {
+                document.getElementById('lists-loading').style.display = 'none';
+                document.getElementById('lists-content').style.display = 'block';
+            }
+        }
+
+        function displayFavorites(favorites) {
+            const container = document.getElementById('favorites-list');
+            
+            if (favorites.length === 0) {
+                container.innerHTML = '<p>У вас пока нет избранных глаголов</p>';
+                return;
+            }
+
+            container.innerHTML = favorites.slice(0, 5).map(favorite => 
+                '<div class="favorite-item">' +
+                    '<span class="verb-text">' + favorite.verbText + '</span>' +
+                    '<span class="verb-letter">' + favorite.letter.toUpperCase() + '</span>' +
+                '</div>'
+            ).join('');
+        }
+
+        function displayLists(lists) {
+            const container = document.getElementById('lists-list');
+            
+            if (lists.length === 0) {
+                container.innerHTML = '<p>У вас пока нет созданных списков</p>';
+                return;
+            }
+
+            container.innerHTML = lists.slice(0, 5).map(list => 
+                '<div class="list-item">' +
+                    '<h4>' + list.name + '</h4>' +
+                    '<p>' + (list.description || 'Без описания') + '</p>' +
+                    '<span class="item-count">' + (list.itemCount || 0) + ' глаголов</span>' +
+                '</div>'
+            ).join('');
+        }
+
+        function showCreateListModal() {
+            document.getElementById('create-list-modal').style.display = 'flex';
+        }
+
+        function hideCreateListModal() {
+            document.getElementById('create-list-modal').style.display = 'none';
+            document.getElementById('create-list-form').reset();
+        }
+
+        async function handleCreateList(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const listData = {
+                name: formData.get('name'),
+                description: formData.get('description'),
+                isPublic: formData.get('isPublic') === 'on'
+            };
+
+            try {
+                const token = localStorage.getItem('token');
+                const response = await fetch('/user/lists', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer ' + token
+                    },
+                    body: JSON.stringify(listData)
+                });
+
+                if (response.ok) {
+                    hideCreateListModal();
+                    loadLists(); // Перезагружаем списки
+                    loadUserStats(); // Обновляем статистику
+                } else {
+                    const error = await response.json();
+                    alert('Ошибка: ' + (error.message || 'Не удалось создать список'));
+                }
+            } catch (error) {
+                console.error('Error creating list:', error);
+                alert('Ошибка при создании списка');
+            }
+        }
+        </script>
+    `
+}) %> 
