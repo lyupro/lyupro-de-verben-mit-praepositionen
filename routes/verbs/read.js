@@ -18,7 +18,9 @@ import {
     validateLetter,
     validateQuery,
     validateVerbText,
+    validatePageRange,
 } from '../../utils/validationUtils.js';
+import { getNamedRoute } from '../../middleware/namedRoutes.js';
 
 // GET /verbs/search - Поиск глаголов
 export const searchVerbs = async (req, res, next) => {
@@ -96,7 +98,7 @@ export const showVerb = async (req, res, next) => {
             editMode: false, // Передаем editMode: false для отображения информации о глаголе
         });
     } catch (error) {
-        next(error)
+        next(error);
     }
 };
 
@@ -104,17 +106,59 @@ export const showVerb = async (req, res, next) => {
 // GET /verbs/:letter - Отображение глаголов по выбранной букве
 export const showVerbsByLetter = async (req, res, next) => {
     const letter = req.params.letter.toLowerCase();
+    console.log('Requested letter:', letter);
     validateLetter(letter);
 
     const page = parseInt(req.params.page) || 1;
+    console.log('Requested page:', page);
 
     await renderVerbsByLetter(req, res, next, letter, page);
 };
 
 // GET /verbs/:page - Отображение списка глаголов с пагинацией (указанная страница)
 // GET /verbs - Отображение списка глаголов с пагинацией (по умолчанию - первая страница)
-export const showVerbsWithPagination = async (req, res, next) => {
-    const page = parseInt(req.params.page) || 1;
+export async function showVerbsWithPagination(req, res, next) {
+    try {
+        const page = parseInt(req.params.page) || 1;
+        const limit = 10; // Assuming a default limit
 
-    await renderVerbs(req, res, next, page);
-};
+        const totalVerbs = await renderVerbs(req, res, next, page);
+        const totalPages = Math.ceil(totalVerbs / limit);
+        
+        try {
+            validatePageRange(page, totalPages);
+        } catch (error) {
+            if (totalPages > 0) {
+                return res.redirect(getNamedRoute('verbs.page', { page: 1 }));
+            } else {
+                return res.render('verbs', {
+                    verbs: [],
+                    currentPage: 1,
+                    totalPages: 0,
+                    alphabet: [],
+                    letterAvailability: {},
+                    noVerbs: true,
+                    pageTitle: 'Глаголы',
+                    title: 'Глаголы',
+                    verbsStyles: true,
+                    verbsScripts: true
+                });
+            }
+        }
+        
+        res.render('verbs', {
+            verbs: [],
+            currentPage: page,
+            totalPages: totalPages,
+            alphabet: [],
+            letterAvailability: {},
+            noVerbs: false,
+            pageTitle: 'Глаголы',
+            title: 'Глаголы',
+            verbsStyles: true,
+            verbsScripts: true
+        });
+    } catch (error) {
+        next(error);
+    }
+}
