@@ -115,12 +115,15 @@ describe('UserFavorites Model', () => {
             let savedFavorite = await testFavorite.save();
             expect(savedFavorite.letter).to.equal('a');
 
-            // Two letters (like 'ch', 'sch')
-            await UserFavorites.findByIdAndDelete(savedFavorite._id);
-            testFavorite.letter = 'ch';
-            testFavorite.verbId = 2; // Change to avoid unique constraint
-            savedFavorite = await testFavorite.save();
-            expect(savedFavorite.letter).to.equal('ch');
+            // Two letters (like 'ch', 'sch') - создаем новый объект
+            const testFavorite2 = new UserFavorites({
+                userId: testUser._id,
+                letter: 'ch',
+                verbId: 2, // Change to avoid unique constraint
+                verbText: 'schauen'
+            });
+            const savedFavorite2 = await testFavorite2.save();
+            expect(savedFavorite2.letter).to.equal('ch');
         });
 
         it('should convert letter to lowercase', async () => {
@@ -198,8 +201,8 @@ describe('UserFavorites Model', () => {
     describe('Default Values', () => {
         it('should set addedAt timestamp', async () => {
             const savedFavorite = await testFavorite.save();
-            expect(savedFavorite.addedAt).to.be.a('date');
-            expect(savedFavorite.addedAt).to.be.closeTo(new Date(), 1000); // within 1 second
+            expect(savedFavorite.addedAt).to.be.instanceof(Date);
+            expect(savedFavorite.addedAt.getTime()).to.be.closeTo(Date.now(), 1000); // within 1 second
         });
     });
 
