@@ -1,0 +1,52 @@
+<%- include('../layout', {
+    title: 'Избранные глаголы - Deutsch Trainer',
+    userStyles: true,
+    content: `
+        <div class="user-container">
+            <div class="user-header">
+                <h1><i class="fas fa-heart"></i> Избранные глаголы</h1>
+                <p>Здесь собраны все ваши избранные глаголы</p>
+            </div>
+
+            <!-- Фильтры и поиск -->
+            <div class="user-controls">
+                <div class="search-group">
+                    <input type="text" id="favorites-search" placeholder="Поиск по избранным глаголам...">
+                    <button id="search-btn" class="btn btn-secondary">Найти</button>
+                </div>
+                <div class="sort-group">
+                    <label for="sort-select">Сортировка:</label>
+                    <select id="sort-select">
+                        <option value="recent">Недавно добавленные</option>
+                        <option value="alphabetical">По алфавиту</option>
+                        <option value="oldest">Самые старые</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Загрузка -->
+            <div id="favorites-loading" class="loading" style="display: none;">
+                <i class="fas fa-spinner fa-spin"></i> Загружаем избранное...
+            </div>
+
+            <!-- Список избранного -->
+            <div id="favorites-content">
+                <div id="favorites-stats" class="stats-bar">
+                    Всего избранных: <span id="total-count">0</span>
+                </div>
+                <div id="favorites-list" class="favorites-grid"></div>
+                <div id="favorites-pagination" class="pagination-container"></div>
+            </div>
+
+            <!-- Пустое состояние -->
+            <div id="empty-favorites" class="empty-state" style="display: none;">
+                <i class="fas fa-heart-broken"></i>
+                <h3>У вас пока нет избранных глаголов</h3>
+                <p>Добавляйте глаголы в избранное на странице глаголов</p>
+                <a href="/verbs" class="btn btn-primary">Перейти к глаголам</a>
+            </div>
+        </div>
+
+        <script src="/javascripts/user/favorites.js"></script>
+    `
+}) %> 
