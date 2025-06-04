@@ -13,12 +13,16 @@ describe('User Workflow Integration Tests', () => {
     let authToken;
     let userId;
     let listId;
+    let uniqueId;
 
     before(async () => {
         await initTestDatabase();
         app = createTestApp();
+        // Создаем уникальный ID для этого запуска тестов
+        uniqueId = Date.now();
+        
         // Очищаем все тестовые данные
-        await User.deleteMany({ email: { $regex: /test.*@test\.com/ } });
+        await User.deleteMany({ email: { $regex: /.*@test\.com/ } });
         await UserFavorites.deleteMany({});
         await UserVerbLists.deleteMany({});
         await UserVerbListItems.deleteMany({});
@@ -26,29 +30,47 @@ describe('User Workflow Integration Tests', () => {
 
     after(async () => {
         // Очищаем все тестовые данные
-        await User.deleteMany({ email: { $regex: /test.*@test\.com/ } });
+        await User.deleteMany({ email: { $regex: /.*@test\.com/ } });
         await UserFavorites.deleteMany({});
         await UserVerbLists.deleteMany({});
         await UserVerbListItems.deleteMany({});
         await mongoose.connection.close();
     });
 
+    // Очищаем данные пользователя между тестами (кроме первого теста регистрации)
+    beforeEach(async function() {
+        // Пропускаем очистку для теста регистрации
+        if (this.currentTest.title === 'should complete full user registration and authentication flow') {
+            return;
+        }
+        
+        // Очищаем данные текущего пользователя для других тестов
+        if (userId) {
+            await UserFavorites.deleteMany({ userId });
+            await UserVerbListItems.deleteMany({});
+            await UserVerbLists.deleteMany({ userId });
+        }
+    });
+
     describe('Complete User Journey', () => {
         it('should complete full user registration and authentication flow', async () => {
             // 1. Register new user
             const userData = {
-                username: 'integrationuser',
-                email: 'integration@test.com',
+                username: `integrationuser${uniqueId}`,
+                email: `integration${uniqueId}@test.com`,
                 password: 'password123'
             };
 
             const registerResponse = await request(app)
                 .post('/auth/register')
-                .send(userData)
-                .expect(201);
-
+                .send(userData);
+                
+            console.log('Register response status:', registerResponse.status);
+            console.log('Register response body:', registerResponse.body);
+            
+            expect(registerResponse.status).to.equal(201);
             expect(registerResponse.body).to.have.property('message', 'Пользователь успешно зарегистрирован');
-            expect(registerResponse.body.user).to.have.property('username', 'integrationuser');
+            expect(registerResponse.body.user).to.have.property('username', `integrationuser${uniqueId}`);
             userId = registerResponse.body.user._id;
 
             // 2. Login with new user
@@ -57,9 +79,12 @@ describe('User Workflow Integration Tests', () => {
                 .send({
                     email: userData.email,
                     password: userData.password
-                })
-                .expect(200);
-
+                });
+                
+            console.log('Login response status:', loginResponse.status);
+            console.log('Login response body:', loginResponse.body);
+            
+            expect(loginResponse.status).to.equal(200);
             expect(loginResponse.body).to.have.property('token');
             authToken = loginResponse.body.token;
 
@@ -69,7 +94,7 @@ describe('User Workflow Integration Tests', () => {
                 .set('Authorization', `Bearer ${authToken}`)
                 .expect(200);
 
-            expect(profileResponse.text).to.include('integrationuser');
+            expect(profileResponse.text).to.include(`integrationuser${uniqueId}`);
         });
 
         it('should complete full favorites workflow', async () => {
@@ -300,6 +325,14 @@ describe('User Workflow Integration Tests', () => {
             // 1. Try to add duplicate favorite
             const favoriteData = { letter: 'a', verbId: 10, verbText: 'anfangen' };
             
+            // First add the favorite
+            await request(app)
+                .post('/user/favorites/add')
+                .set('Authorization', `Bearer ${authToken}`)
+                .send(favoriteData)
+                .expect(201);
+            
+            // Now try to add the same favorite again - should fail
             await request(app)
                 .post('/user/favorites/add')
                 .set('Authorization', `Bearer ${authToken}`)
