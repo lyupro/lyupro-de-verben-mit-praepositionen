@@ -19,6 +19,7 @@ import {
     validateQuery,
     validateVerbText,
     validatePageRange,
+    validatePage,
 } from '../../utils/validationUtils.js';
 import { getNamedRoute } from '../../middleware/namedRoutes.js';
 
@@ -120,45 +121,103 @@ export const showVerbsByLetter = async (req, res, next) => {
 export async function showVerbsWithPagination(req, res, next) {
     try {
         const page = parseInt(req.params.page) || 1;
-        const limit = 10; // Assuming a default limit
+        const limit = 10;
+        const skip = (page - 1) * limit;
 
-        const totalVerbs = await renderVerbs(req, res, next, page);
+        // Получаем общее количество глаголов и данные для пагинации
+        let totalVerbs = 0;
+        const verbs = [];
+
+        const letterCounts = {};
+        for (const letter of alphabetConfig.getAll()) {
+            const VerbModel = getVerbModel(letter);
+            const count = await VerbModel.countDocuments();
+            letterCounts[letter] = count;
+            totalVerbs += count;
+        }
+
         const totalPages = Math.ceil(totalVerbs / limit);
         
+        // Проверяем валидность страницы
         try {
             validatePageRange(page, totalPages);
         } catch (error) {
             if (totalPages > 0) {
                 return res.redirect(getNamedRoute('verbs.page', { page: 1 }));
             } else {
+                // Нет глаголов в базе данных
+                const { alphabet, letterAvailability } = await getAlphabetWithAvailability();
                 return res.render('verbs', {
                     verbs: [],
+                    alphabet,
+                    letterAvailability,
                     currentPage: 1,
                     totalPages: 0,
-                    alphabet: [],
-                    letterAvailability: {},
                     noVerbs: true,
                     pageTitle: 'Глаголы',
-                    title: 'Глаголы',
+                    pageHeader: 'Список глаголов',
                     verbsStyles: true,
                     verbsScripts: true
                 });
             }
         }
+
+        // Получаем глаголы для текущей страницы
+        let currentCount = 0;
+        let currentSkip = skip;
+        
+        for (const letter of alphabetConfig.getAll()) {
+            if (currentCount >= limit) {
+                break;
+            }
+
+            const VerbModel = getVerbModel(letter);
+            const verbsForLetter = await VerbModel.find({})
+                .sort({ verb: 1 })
+                .skip(currentSkip)
+                .limit(limit - currentCount);
+            
+            verbs.push(...verbsForLetter);
+            currentCount += verbsForLetter.length;
+            currentSkip = Math.max(0, currentSkip - letterCounts[letter]);
+        }
+
+        // Получаем переводы для глаголов
+        const verbsWithTranslations = [];
+        for (const verb of verbs) {
+            const letter = verb.verb.charAt(0).toLowerCase();
+            try {
+                const { displayTranslation } = await getVerbTranslation(letter, 'ru', verb.verb_id);
+                verbsWithTranslations.push({
+                    ...verb.toObject(),
+                    translation: displayTranslation
+                });
+            } catch (error) {
+                console.warn(`Не удалось получить перевод для глагола ${verb.verb}:`, error.message);
+                verbsWithTranslations.push({
+                    ...verb.toObject(),
+                    translation: 'Перевод не найден'
+                });
+            }
+        }
+
+        // Получаем данные об алфавите
+        const { alphabet, letterAvailability } = await getAlphabetWithAvailability();
         
         res.render('verbs', {
-            verbs: [],
+            verbs: verbsWithTranslations,
+            alphabet,
+            letterAvailability,
             currentPage: page,
-            totalPages: totalPages,
-            alphabet: [],
-            letterAvailability: {},
-            noVerbs: false,
-            pageTitle: 'Глаголы',
-            title: 'Глаголы',
+            totalPages,
+            noVerbs: verbsWithTranslations.length === 0,
+            pageTitle: 'Список глаголов',
+            pageHeader: 'Список глаголов',
             verbsStyles: true,
             verbsScripts: true
         });
     } catch (error) {
+        console.error('Error in showVerbsWithPagination:', error);
         next(error);
     }
 }
