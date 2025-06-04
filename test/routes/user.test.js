@@ -447,7 +447,7 @@ describe('User API', () => {
         describe('GET /user/favorites (view)', () => {
             it('should render favorites page', async () => {
                 const response = await request(app)
-                    .get('/user/favorites')
+                    .get('/user/favorites/view')
                     .set('Authorization', `Bearer ${authToken}`)
                     .expect(200);
 
@@ -459,7 +459,7 @@ describe('User API', () => {
         describe('GET /user/lists (view)', () => {
             it('should render lists page', async () => {
                 const response = await request(app)
-                    .get('/user/lists')
+                    .get('/user/lists/view')
                     .set('Authorization', `Bearer ${authToken}`)
                     .expect(200);
 
