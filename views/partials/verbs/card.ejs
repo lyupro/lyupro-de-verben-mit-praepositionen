@@ -37,7 +37,7 @@
         </div>
         
         <!-- Кнопки администратора (только для админов и модераторов) -->
-        <% if (locals.user && (locals.user.role === 'admin' || locals.user.role === 'moderator')) { %>
+        <% if (locals.user && (locals.user.role === 'administrator' || locals.user.role === 'moderator')) { %>
         <div class="card-admin-actions">
             <button class="btn-edit" data-action="edit-verb" title="Редактировать глагол">
                 <i class="fas fa-edit"></i>
