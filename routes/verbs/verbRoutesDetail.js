@@ -1,7 +1,8 @@
 // routes/verbs/verbRoutesDetail.js
 import express from 'express';
 import { checkRole } from '../../middleware/checkRole.js';
-import { authenticateJWT, optionalAuthenticateJWT } from '../../middleware/auth/authenticateJWT.js';
+import { authenticateJWT } from '../../middleware/auth/authenticateJWT.js';
+import { optionalAuthenticateJWT } from '../../middleware/optionalAuthJWT.js';
 import * as createController from './create.js';
 import * as readController from './read.js';
 import * as updateController from './update.js';

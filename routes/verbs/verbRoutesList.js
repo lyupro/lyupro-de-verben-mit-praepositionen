@@ -1,6 +1,6 @@
 // routes/verbs/verbRoutesList.js
 import express from 'express';
-import { optionalAuthenticateJWT } from '../../middleware/auth/authenticateJWT.js';
+import { optionalAuthenticateJWT } from '../../middleware/optionalAuthJWT.js';
 import * as readController from './read.js';
 import alphabet from '../../config/alphabet.js';
 

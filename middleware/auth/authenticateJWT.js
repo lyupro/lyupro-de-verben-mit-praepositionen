@@ -1,44 +1,44 @@
 // middleware/auth.js
 import jwt from 'jsonwebtoken';
+import User from '../../models/user.js';
 
-export const authenticateJWT = (req, res, next) => {
+export const authenticateJWT = async (req, res, next) => {
     const authHeader = req.headers.authorization;
 
-    if (authHeader) {
-        const token = authHeader.split(' ')[1];
-
-        jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
-            if (err) {
-                return res.sendStatus(403);
-            }
-
-            req.user = user;
-            next();
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+        return res.status(401).json({
+            message: 'Токен не предоставлен'
         });
-    } else {
-        res.sendStatus(401);
-    }
-};
-
-export const optionalAuthenticateJWT = (req, res, next) => {
-    console.log('optionalAuthenticateJWT middleware called');
-    const authHeader = req.headers.authorization;
-
-    if (authHeader) {
-        console.log('Authorization header found:', authHeader);
-        const token = authHeader.split(' ')[1];
-
-        jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
-            if (!err) {
-                console.log('JWT verified successfully');
-                req.user = user;
-            } else {
-                console.log('JWT verification failed:', err.message);
-            }
-        });
-    } else {
-        console.log('No authorization header found');
     }
 
-    next();
+    const token = authHeader.split(' ')[1];
+
+    try {
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+        
+        // Проверяем существование пользователя в базе данных
+        const user = await User.findById(decoded.id || decoded.userId);
+        
+        if (!user) {
+            return res.status(401).json({
+                message: 'Пользователь не найден'
+            });
+        }
+
+        // Добавляем информацию о пользователе в запрос
+        req.user = {
+            id: user._id,
+            userId: user._id, // для совместимости
+            username: user.username,
+            email: user.email,
+            role: user.role,
+            ...decoded
+        };
+        
+        next();
+    } catch (err) {
+        return res.status(401).json({
+            message: 'Недействительный токен'
+        });
+    }
 };
