@@ -101,8 +101,14 @@ router.post('/favorites/add', favoritesController.addToFavorites);
 // DELETE /user/favorites/remove - Удалить глагол из избранного
 router.delete('/favorites/remove', favoritesController.removeFromFavorites);
 
+// DELETE /user/favorites/bulk-remove - Массовое удаление из избранного
+router.delete('/favorites/bulk-remove', favoritesController.bulkRemoveFromFavorites);
+
 // GET /user/favorites/check - Проверить, в избранном ли глагол
 router.get('/favorites/check', favoritesController.checkFavorite);
+
+// GET /user/favorites/stats - Получить статистику избранного
+router.get('/favorites/stats', favoritesController.getFavoritesStats);
 
 // === СПИСКИ ГЛАГОЛОВ ===
 // GET /user/lists - Получить все списки пользователя (API)
