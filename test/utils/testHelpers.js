@@ -105,6 +105,34 @@ export async function cleanTestData() {
         UserVerbLists.deleteMany({}),
         UserVerbListItems.deleteMany({})
     ]);
+
+    // Очищаем тестовые глаголы для всех букв
+    try {
+        const { getVerbModel, getVerbTranslationModel } = await import('../../models/verb.js');
+        const alphabetConfig = (await import('../../config/alphabet.js')).default;
+        
+        const cleanupPromises = [];
+        
+        for (const letter of alphabetConfig.getAll()) {
+            try {
+                const VerbModel = getVerbModel(letter);
+                const VerbTranslationModel = getVerbTranslationModel(letter, 'ru');
+                
+                // Удаляем тестовые глаголы (содержащие номер времени в названии)
+                cleanupPromises.push(
+                    VerbModel.deleteMany({ verb: { $regex: /arbeiten\d+|test/ } }),
+                    VerbTranslationModel.deleteMany({ verb_id: { $in: [0, 1, 2, 3, 4, 5] } })
+                );
+            } catch (error) {
+                // Игнорируем ошибки для букв без глаголов
+                console.warn(`Warning: Could not clean verbs for letter ${letter}:`, error.message);
+            }
+        }
+        
+        await Promise.all(cleanupPromises);
+    } catch (error) {
+        console.warn('Warning: Could not clean verb collections:', error.message);
+    }
 }
 
 /**
