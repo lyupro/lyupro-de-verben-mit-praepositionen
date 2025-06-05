@@ -48,26 +48,25 @@
             <%- content %>
         </div>
         <%- include('partials/footer') %>
-        <script src="/javascripts/themeSwitch.js"></script>
+        <script src="/javascripts/dist/themeSwitch.bundle.js"></script>
         <% if (typeof verbScripts !== 'undefined' && verbScripts) { %>
-            <script src="/javascripts/checkSentence.js"></script>
+            <script src="/javascripts/dist/checkSentence.bundle.js"></script>
             <script src="/javascripts/dist/verbLearning.bundle.js"></script>
         <% } %>
         <% if (typeof verbsScripts !== 'undefined' && verbsScripts) { %>
             <!--<script src="/javascripts/search.js"></script>-->
             <script src="/javascripts/dist/search.bundle.js"></script>
-            <script src="/javascripts/utils/namedRoutes.js"></script>
-            <script src="/javascripts/alphabet.js"></script>
-            <!--<script src="/javascripts/dist/alphabet.bundle.js"></script>-->
             <script src="/javascripts/dist/namedRoutes.bundle.js"></script>
-            <script src="/javascripts/pagination.js"></script>
-            <script src="/javascripts/verbCard.js"></script>
+            <script src="/javascripts/dist/alphabet.bundle.js"></script>
+            <!--<script src="/javascripts/dist/alphabet.bundle.js"></script>-->
+            <script src="/javascripts/dist/pagination.bundle.js"></script>
+            <script src="/javascripts/dist/verbCard.bundle.js"></script>
             <!-- Подключаем взаимодействие с пользовательскими функциями -->
-            <script src="/javascripts/user/verbInteractions.js"></script>
+            <script src="/javascripts/dist/verbInteractions.bundle.js"></script>
         <% } %>
         <% if (typeof editMode !== 'undefined' && editMode || typeof createMode !== 'undefined' && createMode) { %>
             <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
-            <script src="/javascripts/verbs/addTranslationField.js"></script>
+            <script src="/javascripts/dist/addTranslationField.bundle.js"></script>
         <% } %>
     </body>
 </html>
