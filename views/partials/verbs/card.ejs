@@ -6,6 +6,16 @@
         </a>
         
         <!-- Кнопки пользователя (показываются только авторизованным) -->
+        <% if (locals.user) { %>
+        <div class="card-user-actions">
+            <button class="btn-favorite" data-action="toggle-favorite" title="Добавить в избранное">
+                <i class="fas fa-heart"></i>
+            </button>
+            <button class="btn-add-to-list" data-action="add-to-list" title="Добавить в список">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+        <% } else { %>
         <div class="card-user-actions" style="display: none;">
             <button class="btn-favorite" data-action="toggle-favorite" title="Добавить в избранное">
                 <i class="fas fa-heart"></i>
@@ -14,6 +24,7 @@
                 <i class="fas fa-plus"></i>
             </button>
         </div>
+        <% } %>
     </div>
     <div class="card-back">
         <div class="translation-wrapper">
@@ -25,15 +36,29 @@
             <% } %>
         </div>
         
-        <!-- Кнопки администратора -->
-        <div class="admin-actions">
-            <a href="<%= getNamedRoute('verbs.edit', { letter: verb.verb.charAt(0).toLowerCase(), verb: verb.verb }) %>" class="btn btn-sm btn-primary mt-2">Редактировать</a>
-            <form action="<%= getNamedRoute('verbs.destroy', { letter: verb.verb.charAt(0).toLowerCase(), verb: verb.verb }) %>?_method=DELETE" method="POST" class="d-inline">
-                <button type="submit" class="btn btn-sm btn-danger mt-2">Удалить</button>
-            </form>
+        <!-- Кнопки администратора (только для админов и модераторов) -->
+        <% if (locals.user && (locals.user.role === 'admin' || locals.user.role === 'moderator')) { %>
+        <div class="card-admin-actions">
+            <button class="btn-edit" data-action="edit-verb" title="Редактировать глагол">
+                <i class="fas fa-edit"></i>
+            </button>
+            <button class="btn-delete" data-action="delete-verb" title="Удалить глагол">
+                <i class="fas fa-trash-alt"></i>
+            </button>
         </div>
+        <% } %>
         
         <!-- Кнопки пользователя на обратной стороне -->
+        <% if (locals.user) { %>
+        <div class="card-user-actions-back">
+            <button class="btn-favorite-back" data-action="toggle-favorite" title="Добавить в избранное">
+                <i class="fas fa-heart"></i> <span class="btn-text">В избранное</span>
+            </button>
+            <button class="btn-add-to-list-back" data-action="add-to-list" title="Добавить в список">
+                <i class="fas fa-plus"></i> <span class="btn-text">В список</span>
+            </button>
+        </div>
+        <% } else { %>
         <div class="card-user-actions-back" style="display: none;">
             <button class="btn-favorite-back" data-action="toggle-favorite" title="Добавить в избранное">
                 <i class="fas fa-heart"></i> <span class="btn-text">В избранное</span>
@@ -42,5 +67,6 @@
                 <i class="fas fa-plus"></i> <span class="btn-text">В список</span>
             </button>
         </div>
+        <% } %>
     </div>
 </div>
