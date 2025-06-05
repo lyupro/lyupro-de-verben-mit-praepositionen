@@ -155,3 +155,148 @@
     text-align: center;
     word-wrap: break-word;
 }
+
+/* Кнопки администратора */
+.card-admin-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    pointer-events: none; /* Позволяет кликать сквозь контейнер */
+}
+
+.card-admin-actions .btn-edit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #007bff;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    pointer-events: all;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.card-admin-actions .btn-edit:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+.card-admin-actions .btn-delete {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #dc3545;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    pointer-events: all;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.card-admin-actions .btn-delete:hover {
+    background: #c82333;
+    transform: scale(1.1);
+}
+
+/* Кнопки пользователя */
+.card-user-actions {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.card-user-actions .btn-favorite,
+.card-user-actions .btn-add-to-list {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    color: #666;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.card-user-actions .btn-favorite:hover {
+    background: #ff6b6b;
+    color: white;
+    transform: scale(1.1);
+}
+
+.card-user-actions .btn-favorite.active {
+    background: #ff6b6b;
+    color: white;
+}
+
+.card-user-actions .btn-add-to-list:hover {
+    background: #4ecdc4;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Кнопки пользователя на обратной стороне */
+.card-user-actions-back {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-user-actions-back .btn-favorite-back,
+.card-user-actions-back .btn-add-to-list-back {
+    padding: 6px 12px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #666;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    white-space: nowrap;
+}
+
+.card-user-actions-back .btn-favorite-back:hover {
+    background: #ff6b6b;
+    color: white;
+}
+
+.card-user-actions-back .btn-favorite-back.active {
+    background: #ff6b6b;
+    color: white;
+}
+
+.card-user-actions-back .btn-add-to-list-back:hover {
+    background: #4ecdc4;
+    color: white;
+}
