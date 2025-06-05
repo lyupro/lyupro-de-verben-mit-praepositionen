@@ -172,7 +172,8 @@ export async function showVerbsWithPagination(req, res, next) {
                     pageTitle: 'Глаголы',
                     pageHeader: 'Список глаголов',
                     verbsStyles: true,
-                    verbsScripts: true
+                    verbsScripts: true,
+                    user: req.user
                 });
             }
         }
@@ -229,7 +230,8 @@ export async function showVerbsWithPagination(req, res, next) {
             pageTitle: 'Список глаголов',
             pageHeader: 'Список глаголов',
             verbsStyles: true,
-            verbsScripts: true
+            verbsScripts: true,
+            user: req.user
         });
     } catch (error) {
         console.error('Error in showVerbsWithPagination:', error);

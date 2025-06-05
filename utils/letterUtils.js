@@ -37,6 +37,7 @@ export async function renderVerbsByLetter(req, res, next, letter, page) {
             letterAvailability,
             pageTitle: `Список глаголов на букву ${lowerCaseLetter}`,
             pageHeader: `Список глаголов на букву ${lowerCaseLetter}`,
+            user: req.user
         });
     } catch (error) {
         console.error('Error in showVerbsByLetter:', error);
