@@ -1,5 +1,6 @@
 // public/javascripts/search.js
-import { fetchNamedRoute } from './utils/namedRoutes.js';
+// import { fetchNamedRoute } from './utils/namedRoutes.js';
+const { fetchNamedRoute } = window;
 
 // Функция для отображения результатов поиска
 async function displaySearchResults(verbs) {
@@ -21,7 +22,7 @@ async function displaySearchResults(verbs) {
     } else {
         searchResults.textContent = 'Ничего не найдено';
     }
-}
+} 
 
 // Функция для добавления обработчиков событий к полю поиска
 function addSearchEventListeners() {
