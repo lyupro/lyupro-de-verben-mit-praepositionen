@@ -44,6 +44,12 @@ npm-debug.*
 yarn-debug.*
 yarn-error.*
 
+# Webpack generated files
+public/javascripts/dist/
+*.bundle.js
+*.bundle.js.map
+*.LICENSE.txt
+
 # typescript
 *.tsbuildinfo
 
