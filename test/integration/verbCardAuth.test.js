@@ -121,8 +121,14 @@ describe('Verb Card Authentication Tests', () => {
                 .set('Authorization', `Bearer ${testToken}`)
                 .expect(200);
 
-            // При правильном токене кнопки должны быть видимы
-            expect(response.text).to.not.include('style="display: none;"');
+            // При правильном токене кнопки пользователя должны быть видимы (без style="display: none;")
+            expect(response.text).to.include('card-user-actions');
+            expect(response.text).to.include('btn-favorite');
+            expect(response.text).to.include('btn-add-to-list');
+            
+            // Проверяем что нет скрытых кнопок для авторизованного пользователя
+            const hiddenUserActionsRegex = /<div class="card-user-actions"[^>]*style="display:\s*none;"/;
+            expect(response.text).to.not.match(hiddenUserActionsRegex);
         });
 
         it('should handle missing Authorization header gracefully', async () => {
@@ -130,8 +136,9 @@ describe('Verb Card Authentication Tests', () => {
                 .get('/verbs')
                 .expect(200);
 
-            // Без токена кнопки должны быть скрыты
-            expect(response.text).to.include('style="display: none."');
+            // Без токена кнопки пользователя должны быть скрыты (style="display: none;")
+            const hiddenUserActionsRegex = /<div class="card-user-actions"[^>]*style="display:\s*none;"/;
+            expect(response.text).to.match(hiddenUserActionsRegex);
         });
 
         it('should handle invalid token gracefully', async () => {
@@ -140,8 +147,9 @@ describe('Verb Card Authentication Tests', () => {
                 .set('Authorization', 'Bearer invalid-token')
                 .expect(200);
 
-            // При неверном токене кнопки должны быть скрыты
-            expect(response.text).to.include('style="display: none."');
+            // При неверном токене кнопки пользователя должны быть скрыты (style="display: none;")
+            const hiddenUserActionsRegex = /<div class="card-user-actions"[^>]*style="display:\s*none;"/;
+            expect(response.text).to.match(hiddenUserActionsRegex);
         });
     });
 
@@ -152,16 +160,101 @@ describe('Verb Card Authentication Tests', () => {
                 .set('Authorization', `Bearer ${testToken}`)
                 .expect(200);
 
-            // Проверяем наличие всех необходимых атрибутов
+            // Проверяем наличие всех необходимых атрибутов - ищем карточки по классу
+            const cardElements = response.text.match(/<div class="card"[^>]*>/g);
             const cardMatches = response.text.match(/data-verb="[^"]+"/g);
             const letterMatches = response.text.match(/data-letter="[^"]+"/g);
             const idMatches = response.text.match(/data-verb-id="[^"]+"/g);
-
+            
             if (cardMatches) {
                 expect(cardMatches.length).to.be.greaterThan(0);
-                expect(letterMatches.length).to.equal(cardMatches.length);
-                expect(idMatches.length).to.equal(cardMatches.length);
+                
+                // Проверяем что количество уникальных атрибутов соответствует количеству карточек
+                if (cardMatches && idMatches) {
+                    expect(idMatches.length).to.equal(cardMatches.length,
+                        `ID attributes (${idMatches.length}) should match card attributes (${cardMatches.length})`);
+                }
+                
+                // Для data-letter может быть больше совпадений из-за двух сторон карточки
+                // Проверяем что есть хотя бы столько же letter атрибутов, сколько карточек
+                if (letterMatches) {
+                    expect(letterMatches.length).to.be.at.least(cardMatches.length,
+                        `Letter attributes (${letterMatches.length}) should be at least as many as card attributes (${cardMatches.length})`);
+                }
+                
+                // Каждая карточка должна иметь все необходимые атрибуты
+                console.log(`Found ${cardMatches.length} cards with complete data attributes`);
+            } else {
+                // Если нет карточек (пустая база), это тоже нормально для тестов
+                console.log('No verb cards found in response');
             }
+        });
+    });
+
+    describe('Admin/Moderator Card Buttons', () => {
+        it('should show admin buttons for admin users', async () => {
+            // Создаем админа
+            const timestamp = Date.now();
+            const adminData = await createTestUser({ 
+                username: `testadmin${timestamp}`, 
+                email: `admin${timestamp}@test.com`, 
+                role: 'administrator' 
+            });
+            
+            const response = await request(app)
+                .get('/verbs')
+                .set('Authorization', `Bearer ${adminData.token}`)
+                .expect(200);
+
+            // Проверяем что админские кнопки видимы
+            expect(response.text).to.include('card-admin-actions');
+            expect(response.text).to.include('btn-edit');
+            expect(response.text).to.include('btn-delete');
+            expect(response.text).to.include('data-action="edit-verb"');
+            expect(response.text).to.include('data-action="delete-verb"');
+        });
+
+        it('should show admin buttons for moderator users', async () => {
+            // Создаем модератора
+            const timestamp = Date.now();
+            const moderatorData = await createTestUser({ 
+                username: `testmoderator${timestamp}`, 
+                email: `moderator${timestamp}@test.com`, 
+                role: 'moderator' 
+            });
+            
+            const response = await request(app)
+                .get('/verbs')
+                .set('Authorization', `Bearer ${moderatorData.token}`)
+                .expect(200);
+
+            // Проверяем что админские кнопки видимы
+            expect(response.text).to.include('card-admin-actions');
+            expect(response.text).to.include('btn-edit');
+            expect(response.text).to.include('btn-delete');
+        });
+
+        it('should hide admin buttons for regular users', async () => {
+            const response = await request(app)
+                .get('/verbs')
+                .set('Authorization', `Bearer ${testToken}`)
+                .expect(200);
+
+            // Проверяем что админские кнопки скрыты
+            expect(response.text).to.not.include('card-admin-actions');
+            expect(response.text).to.not.include('btn-edit');
+            expect(response.text).to.not.include('btn-delete');
+        });
+
+        it('should hide admin buttons for unauthenticated users', async () => {
+            const response = await request(app)
+                .get('/verbs')
+                .expect(200);
+
+            // Проверяем что админские кнопки скрыты
+            expect(response.text).to.not.include('card-admin-actions');
+            expect(response.text).to.not.include('btn-edit');
+            expect(response.text).to.not.include('btn-delete');
         });
     });
 }); 
