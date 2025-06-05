@@ -1,7 +1,7 @@
 // Класс для работы с пользовательскими действиями на глаголах
 class VerbInteractions {
     constructor() {
-        this.token = localStorage.getItem('auth_token');
+        this.token = localStorage.getItem('token');
         this.isAuthenticated = !!this.token;
         this.favoriteStatuses = new Map(); // Кэш статусов избранного
         this.userLists = []; // Кэш списков пользователя
@@ -10,19 +10,37 @@ class VerbInteractions {
     }
 
     init() {
+        console.log('VerbInteractions init:', { 
+            token: this.token ? 'Present' : 'Missing', 
+            isAuthenticated: this.isAuthenticated 
+        });
+        
         if (this.isAuthenticated) {
             this.showUserActions();
             this.loadUserLists();
             this.bindEvents();
             this.loadFavoriteStatuses();
+        } else {
+            console.log('User not authenticated, hiding user actions');
+            this.hideUserActions();
         }
     }
 
     // Показать кнопки пользователя на всех карточках
     showUserActions() {
+        console.log('Showing user actions...');
         const userActionElements = document.querySelectorAll('.card-user-actions, .card-user-actions-back');
+        console.log('Found user action elements:', userActionElements.length);
         userActionElements.forEach(element => {
             element.style.display = 'block';
+        });
+    }
+
+    // Скрыть кнопки пользователя на всех карточках
+    hideUserActions() {
+        const userActionElements = document.querySelectorAll('.card-user-actions, .card-user-actions-back');
+        userActionElements.forEach(element => {
+            element.style.display = 'none';
         });
     }
 
@@ -395,6 +413,6 @@ class VerbInteractions {
 
 // Инициализируем при загрузке страницы
 document.addEventListener('DOMContentLoaded', () => {
-    const verbInteractions = new VerbInteractions();
-    verbInteractions.init();
+    console.log('DOM loaded, initializing VerbInteractions...');
+    window.verbInteractions = new VerbInteractions();
 }); 
