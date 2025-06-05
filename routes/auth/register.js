@@ -1,5 +1,4 @@
 // routes/auth/register.js
-import { hashPassword } from '../../utils/auth/hash.js';
 import { validateUser, sanitizeUser } from '../../utils/auth/validation.js';
 import User from '../../models/user.js';
 
@@ -13,7 +12,7 @@ export const register = async (req, res, next) => {
         if (validationErrors.length > 0) {
             return res.status(400).json({
                 status: 'error',
-                message: 'Validation failed',
+                message: 'Ошибка валидации',
                 errors: validationErrors
             });
         }
@@ -23,18 +22,15 @@ export const register = async (req, res, next) => {
         if (existingUser) {
             return res.status(400).json({
                 status: 'error',
-                message: 'User with this email or username already exists'
+                message: 'Пользователь с таким email или именем уже существует'
             });
         }
 
-        // Hash password
-        const hashedPassword = await hashPassword(password);
-
-        // Create new user
+        // Create new user (password will be hashed automatically by User model middleware)
         const newUser = new User({
             username,
             email,
-            password: hashedPassword
+            password // Не хешируем пароль вручную - это делает middleware модели
         });
 
         await newUser.save();
@@ -42,14 +38,14 @@ export const register = async (req, res, next) => {
         const sanitizedUser = sanitizeUser(newUser);
         res.status(201).json({
             status: 'success',
-            message: 'User registered successfully',
+            message: 'Пользователь успешно зарегистрирован',
             user: sanitizedUser
         });
     } catch (error) {
         if (error.code === 11000) {
             return res.status(400).json({
                 status: 'error',
-                message: 'User with this email or username already exists'
+                message: 'Пользователь с таким email или именем уже существует'
             });
         }
         next(error);
