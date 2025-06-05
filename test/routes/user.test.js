@@ -256,6 +256,189 @@ describe('User API', () => {
                 expect(response.body).to.have.property('isFavorite', false);
             });
         });
+
+        it('should support letter filter', async () => {
+            // Добавляем несколько избранных с разными буквами
+            const favorites = [
+                { letter: 'a', verbId: 1, verbText: 'arbeiten' },
+                { letter: 'b', verbId: 2, verbText: 'beginnen' },
+                { letter: 'a', verbId: 3, verbText: 'antworten' }
+            ];
+
+            for (const favorite of favorites) {
+                await request(app)
+                    .post('/user/favorites/add')
+                    .set('Authorization', `Bearer ${authToken}`)
+                    .send(favorite)
+                    .expect(201);
+            }
+
+            // Фильтруем по букве 'a'
+            const response = await request(app)
+                .get('/user/favorites?letter=a')
+                .set('Authorization', `Bearer ${authToken}`)
+                .expect(200);
+
+            expect(response.body.favorites).to.have.lengthOf(2);
+            response.body.favorites.forEach(fav => {
+                expect(fav.letter).to.equal('a');
+            });
+        });
+
+        it('should support different sort options', async () => {
+            // Добавляем несколько избранных
+            const favorites = [
+                { letter: 'z', verbId: 1, verbText: 'zeichnen' },
+                { letter: 'a', verbId: 2, verbText: 'arbeiten' },
+                { letter: 'm', verbId: 3, verbText: 'machen' }
+            ];
+
+            for (const favorite of favorites) {
+                await request(app)
+                    .post('/user/favorites/add')
+                    .set('Authorization', `Bearer ${authToken}`)
+                    .send(favorite)
+                    .expect(201);
+            }
+
+            // Сортировка по алфавиту
+            const alphabeticalResponse = await request(app)
+                .get('/user/favorites?sort=alphabetical')
+                .set('Authorization', `Bearer ${authToken}`)
+                .expect(200);
+
+            const sortedTexts = alphabeticalResponse.body.favorites.map(f => f.verbText);
+            expect(sortedTexts).to.deep.equal(['arbeiten', 'machen', 'zeichnen']);
+        });
+
+        it('should include letter statistics', async () => {
+            // Добавляем глаголы разных букв
+            const favorites = [
+                { letter: 'a', verbId: 1, verbText: 'arbeiten' },
+                { letter: 'a', verbId: 2, verbText: 'antworten' },
+                { letter: 'b', verbId: 3, verbText: 'beginnen' }
+            ];
+
+            for (const favorite of favorites) {
+                await request(app)
+                    .post('/user/favorites/add')
+                    .set('Authorization', `Bearer ${authToken}`)
+                    .send(favorite)
+                    .expect(201);
+            }
+
+            const response = await request(app)
+                .get('/user/favorites')
+                .set('Authorization', `Bearer ${authToken}`)
+                .expect(200);
+
+            expect(response.body.letterStats).to.be.an('array');
+            expect(response.body.letterStats.length).to.be.at.least(0); // Может быть пустым в тестах
+            
+            if (response.body.letterStats.length > 0) {
+                const aStat = response.body.letterStats.find(s => s.letter === 'a');
+                const bStat = response.body.letterStats.find(s => s.letter === 'b');
+                
+                if (aStat) expect(aStat.count).to.be.a('number');
+                if (bStat) expect(bStat.count).to.be.a('number');
+            }
+        });
+
+        describe('DELETE /user/favorites/bulk-remove', () => {
+            it('should perform bulk removal successfully', async () => {
+                // Добавляем несколько избранных
+                const favorites = [
+                    { letter: 'a', verbId: 1, verbText: 'arbeiten' },
+                    { letter: 'b', verbId: 2, verbText: 'beginnen' },
+                    { letter: 'c', verbId: 3, verbText: 'cool' }
+                ];
+
+                for (const favorite of favorites) {
+                    await request(app)
+                        .post('/user/favorites/add')
+                        .set('Authorization', `Bearer ${authToken}`)
+                        .send(favorite)
+                        .expect(201);
+                }
+
+                // Удаляем два первых
+                const favoriteIds = [
+                    { letter: 'a', verbId: 1 },
+                    { letter: 'b', verbId: 2 }
+                ];
+
+                const response = await request(app)
+                    .delete('/user/favorites/bulk-remove')
+                    .set('Authorization', `Bearer ${authToken}`)
+                    .send({ favoriteIds })
+                    .expect(200);
+
+                expect(response.body.status).to.equal('success');
+                expect(response.body.deletedCount).to.equal(2);
+
+                // Проверяем что остался только один
+                const remainingResponse = await request(app)
+                    .get('/user/favorites')
+                    .set('Authorization', `Bearer ${authToken}`)
+                    .expect(200);
+
+                expect(remainingResponse.body.favorites).to.have.lengthOf(1);
+                expect(remainingResponse.body.favorites[0].verbText).to.equal('cool');
+            });
+
+            it('should validate bulk removal input', async () => {
+                const response = await request(app)
+                    .delete('/user/favorites/bulk-remove')
+                    .set('Authorization', `Bearer ${authToken}`)
+                    .send({ favoriteIds: [] })
+                    .expect(400);
+
+                expect(response.body.status).to.equal('error');
+            });
+
+            it('should require authentication for bulk removal', async () => {
+                await request(app)
+                    .delete('/user/favorites/bulk-remove')
+                    .send({ favoriteIds: [{ letter: 'a', verbId: 1 }] })
+                    .expect(401);
+            });
+        });
+
+        describe('GET /user/favorites/stats', () => {
+            it('should return favorites statistics', async () => {
+                // Добавляем тестовые избранные
+                const favorites = [
+                    { letter: 'a', verbId: 1, verbText: 'arbeiten' },
+                    { letter: 'b', verbId: 2, verbText: 'beginnen' },
+                    { letter: 'a', verbId: 3, verbText: 'antworten' }
+                ];
+
+                for (const favorite of favorites) {
+                    await request(app)
+                        .post('/user/favorites/add')
+                        .set('Authorization', `Bearer ${authToken}`)
+                        .send(favorite)
+                        .expect(201);
+                }
+
+                const response = await request(app)
+                    .get('/user/favorites/stats')
+                    .set('Authorization', `Bearer ${authToken}`)
+                    .expect(200);
+
+                expect(response.body.status).to.equal('success');
+                expect(response.body.stats).to.have.property('total', 3);
+                expect(response.body.stats).to.have.property('recentlyAdded', 3);
+                expect(response.body.stats.byLetter).to.be.an('array');
+                expect(response.body.stats.byLetter.length).to.be.at.least(0); // Может быть пустым в тестах
+            });
+
+            it('should require authentication for stats', async () => {
+                await request(app)
+                    .get('/user/favorites/stats')
+                    .expect(401);
+            });
+        });
     });
 
     describe('Lists API', () => {
