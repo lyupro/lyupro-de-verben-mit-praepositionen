@@ -27,6 +27,12 @@
                 ${include('../partials/verb/verbDetailsForm', { verb, letter, translation, conjugations, sentences, sentencesTranslation })}
             </div>
             ` : ''}
+            ${typeof message !== 'undefined' && message ? `
+            <div class="alert alert-info">
+                <p>${message}</p>
+                <a href="/" class="btn btn-primary">Вернуться на главную страницу</a>
+            </div>
+            ` : ''}
             ${content}
         </div>
     `

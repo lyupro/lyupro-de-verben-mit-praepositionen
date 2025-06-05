@@ -1,0 +1,148 @@
+<%- include('../layout', {
+    title: 'Список глаголов - Deutsch Trainer',
+    userStyles: true,
+    content: `
+        <div class="user-container">
+            <!-- Хлебные крошки -->
+            <nav class="breadcrumb">
+                <a href="/user/profile">Профиль</a> /
+                <a href="/user/lists">Мои списки</a> /
+                <span id="current-list-name">Список</span>
+            </nav>
+
+            <div class="list-header">
+                <div class="list-info">
+                    <h1 id="list-title">Название списка</h1>
+                    <p id="list-description">Описание списка</p>
+                    <div class="list-meta">
+                        <span class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            Создан: <span id="created-date"></span>
+                        </span>
+                        <span class="meta-item">
+                            <i class="fas fa-edit"></i>
+                            Изменен: <span id="updated-date"></span>
+                        </span>
+                        <span class="meta-item">
+                            <i class="fas fa-list-ol"></i>
+                            Глаголов: <span id="verbs-count">0</span>
+                        </span>
+                        <span class="meta-item" id="visibility-badge">
+                            <i class="fas fa-eye"></i>
+                            <span id="visibility-text">Приватный</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="list-actions">
+                    <button id="edit-list-btn" class="btn btn-primary">
+                        <i class="fas fa-edit"></i> Редактировать
+                    </button>
+                    <button id="add-verb-btn" class="btn btn-success">
+                        <i class="fas fa-plus"></i> Добавить глагол
+                    </button>
+                    <button id="delete-list-btn" class="btn btn-danger">
+                        <i class="fas fa-trash"></i> Удалить список
+                    </button>
+                </div>
+            </div>
+
+            <!-- Поиск по глаголам в списке -->
+            <div class="user-controls">
+                <div class="search-group">
+                    <input type="text" id="verbs-search" placeholder="Поиск глаголов в списке...">
+                    <button id="search-btn" class="btn btn-secondary">Найти</button>
+                </div>
+                <div class="sort-group">
+                    <label for="sort-select">Сортировка:</label>
+                    <select id="sort-select">
+                        <option value="recent">Недавно добавленные</option>
+                        <option value="alphabetical">По алфавиту</option>
+                        <option value="oldest">Самые старые</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Загрузка -->
+            <div id="verbs-loading" class="loading" style="display: none;">
+                <i class="fas fa-spinner fa-spin"></i> Загружаем глаголы...
+            </div>
+
+            <!-- Список глаголов -->
+            <div id="verbs-content">
+                <div id="verbs-list" class="verbs-grid"></div>
+                <div id="verbs-pagination" class="pagination-container"></div>
+            </div>
+
+            <!-- Пустое состояние -->
+            <div id="empty-verbs" class="empty-state" style="display: none;">
+                <i class="fas fa-list"></i>
+                <h3>В списке пока нет глаголов</h3>
+                <p>Добавьте глаголы в этот список</p>
+                <button class="btn btn-primary" onclick="document.getElementById('add-verb-btn').click()">
+                    Добавить первый глагол
+                </button>
+            </div>
+        </div>
+
+        <!-- Модальное окно редактирования списка -->
+        <div id="edit-list-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Редактировать список</h3>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <form id="edit-list-form">
+                        <div class="form-group">
+                            <label for="edit-list-name">Название списка:</label>
+                            <input type="text" id="edit-list-name" name="name" required maxlength="100">
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-list-description">Описание:</label>
+                            <textarea id="edit-list-description" name="description" maxlength="500" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="edit-list-public" name="isPublic">
+                                <span class="checkmark"></span>
+                                Публичный список
+                            </label>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-success">Сохранить</button>
+                            <button type="button" class="btn btn-secondary cancel-edit">Отмена</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно добавления глагола -->
+        <div id="add-verb-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Добавить глагол в список</h3>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="search-verb-section">
+                        <div class="form-group">
+                            <label for="verb-search">Найти глагол:</label>
+                            <input type="text" id="verb-search" placeholder="Введите немецкий глагол..." autocomplete="off">
+                        </div>
+                        <div id="verb-suggestions" class="suggestions-list"></div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary cancel-add">Отмена</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Передаем ID списка в JavaScript
+            window.listId = '<%= locals.listId || "" %>';
+        </script>
+        <script src="/javascripts/dist/userListDetail.bundle.js"></script>
+    `
+}) %> 

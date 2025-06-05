@@ -10,24 +10,50 @@ const router = express.Router();
 
 // Маршрут для получения случайного глагола и предложений
 router.get('/', async (req, res, next) => {
-    try{
-        const availableAlphabetLetters  = await getAvailableAlphabetLetters();
-        validateAvailableVerbs(availableAlphabetLetters);
+    try {
+        const verbs = await getAvailableAlphabetLetters();
+        
+        try {
+            const validVerbs = validateAvailableVerbs(verbs);
+            if (validVerbs.length === 0) {
+                // Если нет глаголов, показываем сообщение пользователю
+                return res.render('verb', {
+                    pageTitle: 'Глаголы не найдены',
+                    pageHeader: 'Глаголы не найдены',
+                    editMode: false,
+                    verbStyles: true,
+                    verbScripts: false,
+                    verb: null,
+                    translation: null,
+                    sentences: [],
+                    sentencesTranslation: [],
+                    message: 'В базе данных пока нет глаголов. Попробуйте позже или добавьте новые глаголы.'
+                });
+            }
+            
+            const randomLetter = validVerbs[Math.floor(Math.random() * validVerbs.length)];
+            const verbData = await getVerbData(randomLetter, '', true);
 
-        const randomLetter = availableAlphabetLetters [Math.floor(Math.random() * availableAlphabetLetters .length)];
-        const verbData = await getVerbData(randomLetter, '', true);
+            const { verb, translation, sentences, sentencesTranslation } = verbData;
 
-        const { verb, translation, sentences, sentencesTranslation } = verbData;
-
-        res.render('verb', {
-            verb,
-            translation,
-            sentences,
-            sentencesTranslation: sentencesTranslation,
-            pageTitle: `Случайный глагол: ${verb.verb}`,
-            pageHeader: `Случайный глагол: ${verb.verb}`,
-            editMode: false, // Передаем editMode: false для отображения информации о глаголе
-        });
+            res.render('verb', {
+                verb,
+                translation,
+                sentences,
+                sentencesTranslation: sentencesTranslation,
+                pageTitle: `Случайный глагол: ${verb.verb}`,
+                pageHeader: `Случайный глагол: ${verb.verb}`,
+                editMode: false, // Передаем editMode: false для отображения информации о глаголе
+            });
+        } catch (error) {
+            // Этот блок теперь не должен выполняться, но оставим на всякий случай
+            console.error('Error validating verbs:', error);
+            return res.render('error', { 
+                message: error.message,
+                statusCode: 500,
+                stack: process.env.NODE_ENV === 'development' ? error.stack : null
+            });
+        }
     } catch (error) {
         next(error);
     }

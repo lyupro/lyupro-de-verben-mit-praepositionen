@@ -72,10 +72,10 @@ async function getVerbTranslation(letter, language, verbId) {
         throw new Error(`Перевод для глагола с ID "${verbId}" не найден`);
     }
 
-    if (translation && translation.translations.length > 0) {
-        const translations = translation.translations;
+    if (translation && translation.verb.length > 0) {
+        const translations = translation.verb;
         //console.log('utils/verbUtils.js | getVerbTranslation() | translations: ', translations);
-        const firstTranslation = translation.translations[0];
+        const firstTranslation = translation.verb[0];
         //console.log('utils/verbUtils.js | getVerbTranslation() | firstTranslation: ', firstTranslation);
         const [mainTranslation, additionalInfo] = firstTranslation.split(/\s+(?=\()/);
         const displayTranslation = mainTranslation.trim();
@@ -209,11 +209,11 @@ async function renderVerbs(req, res, next, page = 1) {
 }
 
 async function getVerbData(letter, verbText, random = false) {
+    let verb;
     try {
         const verbModel = getVerbModel(letter);
         validateVerbModel(verbModel, letter);
 
-        let verb;
         if (random) {
             const count = await verbModel.countDocuments();
             validateAvailableVerbsForLetter(letter, count);
@@ -221,7 +221,8 @@ async function getVerbData(letter, verbText, random = false) {
             const randomIndex = Math.floor(Math.random() * count);
             verb = await verbModel.findOne().skip(randomIndex);
             //console.log('getVerbData() | Selected Random verb:', verb);
-            validateVerb({ verb, verbText, letter });
+            // Для случайного глагола проверяем только сам verb и letter
+            validateVerb({ verb, letter });
         } else {
             validateVerbText(verbText);
 
@@ -257,7 +258,9 @@ async function getVerbData(letter, verbText, random = false) {
             sentencesTranslation,
         };
     } catch (error) {
-        throw new Error(`Ошибка при получении данных для глагола "${verbText}": ${error.message}`);
+        // Для случайного глагола показываем verb.verb вместо пустого verbText
+        const displayText = random && verb ? verb.verb : verbText;
+        throw new Error(`Ошибка при получении данных для глагола "${displayText}": ${error.message}`);
     }
 }
 

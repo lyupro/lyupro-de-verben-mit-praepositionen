@@ -5,8 +5,8 @@
         <div class="container">
             <h1>Ошибка</h1>
             <p>${message}</p>
-            <p>Статус: ${statusCode}</p>
-            ${stack ? `<pre>${stack}</pre>` : ''}
+            <p>Статус: ${typeof statusCode !== 'undefined' ? statusCode : 500}</p>
+            ${typeof stack !== 'undefined' && stack ? `<pre>${stack}</pre>` : ''}
             <a href="/" class="btn btn-primary">Вернуться на главную страницу</a>
         </div>
     `

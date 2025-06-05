@@ -1,5 +1,11 @@
 {
+  "require": ["dotenv/config"],
+  "timeout": 10000,
+  "recursive": true,
+  "exit": true,
+  "slow": 2000,
+  "reporter": "spec",
+  "grep": "",
   "extension": ["js"],
-  "spec": "test/**/*.test.js",
-  "require": "esm"
+  "spec": "test/**/*.test.js"
 }

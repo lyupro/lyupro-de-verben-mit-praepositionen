@@ -1,0 +1,95 @@
+<%- include('../layout', {
+    title: 'Мои списки глаголов - Deutsch Trainer',
+    userStyles: true,
+    content: `
+        <div class="user-container">
+            <div class="user-header">
+                <div class="header-content">
+                    <div class="header-text">
+                        <h1><i class="fas fa-list"></i> Мои списки глаголов</h1>
+                        <p>Управляйте своими коллекциями глаголов</p>
+                    </div>
+                    <button id="create-list-btn" class="btn btn-success">
+                        <i class="fas fa-plus"></i> Создать список
+                    </button>
+                </div>
+            </div>
+
+            <!-- Фильтры -->
+            <div class="user-controls">
+                <div class="search-group">
+                    <input type="text" id="lists-search" placeholder="Поиск по названию списка...">
+                    <button id="search-btn" class="btn btn-secondary">Найти</button>
+                </div>
+                <div class="filter-group">
+                    <label for="visibility-filter">Видимость:</label>
+                    <select id="visibility-filter">
+                        <option value="all">Все списки</option>
+                        <option value="private">Только приватные</option>
+                        <option value="public">Только публичные</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Загрузка -->
+            <div id="lists-loading" class="loading" style="display: none;">
+                <i class="fas fa-spinner fa-spin"></i> Загружаем списки...
+            </div>
+
+            <!-- Список глаголов -->
+            <div id="lists-content">
+                <div id="lists-stats" class="stats-bar">
+                    Всего списков: <span id="total-lists">0</span> | 
+                    Всего глаголов: <span id="total-verbs">0</span>
+                </div>
+                <div id="lists-grid" class="lists-grid"></div>
+            </div>
+
+            <!-- Пустое состояние -->
+            <div id="empty-lists" class="empty-state" style="display: none;">
+                <i class="fas fa-list"></i>
+                <h3>У вас пока нет списков глаголов</h3>
+                <p>Создайте свой первый список для организации изучения</p>
+                <button class="btn btn-primary" onclick="document.getElementById('create-list-btn').click()">
+                    Создать первый список
+                </button>
+            </div>
+        </div>
+
+        <!-- Модальное окно создания/редактирования списка -->
+        <div id="list-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modal-title">Создать список</h3>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <form id="list-form">
+                        <input type="hidden" id="list-id">
+                        <div class="form-group">
+                            <label for="list-name">Название списка:</label>
+                            <input type="text" id="list-name" name="name" required maxlength="100">
+                        </div>
+                        <div class="form-group">
+                            <label for="list-description">Описание (необязательно):</label>
+                            <textarea id="list-description" name="description" maxlength="500" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="list-public" name="isPublic">
+                                <span class="checkmark"></span>
+                                Сделать список публичным
+                            </label>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-success" id="save-list-btn">Создать</button>
+                            <button type="button" class="btn btn-secondary" id="cancel-list-btn">Отмена</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="/javascripts/dist/userLists.bundle.js"></script>
+    `
+}) %> 

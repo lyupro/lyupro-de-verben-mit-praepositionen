@@ -40,7 +40,40 @@ vendor*
 # Node Build Artifacts
 # =========================
 node_modules*
-npm-debug.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# Webpack generated files
+public/javascripts/dist/
+*.bundle.js
+*.bundle.js.map
+*.LICENSE.txt
+
+# typescript
+*.tsbuildinfo
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# macOS
+.DS_Store
+*.pem
 
 # =========================
 # Local Development
@@ -48,6 +81,9 @@ npm-debug.log
 *.env
 *.dev
 .DS-Store
+
+# local env files
+.env*.local
 
 
 # =========================
@@ -66,12 +102,20 @@ docker-compose.yml
 /public/hot
 /public/storage
 /storage/*.key
+/storage/pail
 .env.backup
 .env.production
+.phpactor.json
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
 auth.json
 yarn-error.log
 /.fleet
+/.nova
 /.vscode
+/.zed
+agent_programmer_php_laravel.md
+agent_programmer_php_laravel_explainer.md
+agent_programmer_nodejs.md
+agent_programmer_nodejs_explainer.md

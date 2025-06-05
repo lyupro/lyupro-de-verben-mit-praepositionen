@@ -18,6 +18,10 @@ const verbSchema = new mongoose.Schema({
         trim: true,
         lowercase: true,
     },
+    verified: {
+        type: Boolean,
+        default: false  // По умолчанию глаголы не проверены
+    }
 }, { versionKey: false }); // Отключаем поле `__v`
 
 // Схема для модели VerbTranslation
@@ -27,7 +31,7 @@ const verbTranslationSchema = new mongoose.Schema({
         ref: 'Verb',
         required: true,
     },
-    translations: {
+    verb: {
         type: [String],
         required: true,
         trim: true,

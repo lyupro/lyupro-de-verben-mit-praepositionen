@@ -10,9 +10,17 @@
             ${include('../partials/verbs/search')}
             ${include('../partials/verbs/alphabet')}
             <div class="verbs">
-                ${verbs.map(verb => include('../partials/verbs/card', { verb: verb })).join('')}
+                ${(locals.noVerbs || verbs.length === 0) ? `
+                    <div class="no-verbs-message">
+                        <h2>Глаголы не найдены</h2>
+                        <p>В базе данных пока нет глаголов. Попробуйте позже или добавьте новые глаголы.</p>
+                        ${locals.user && (locals.user.role === 'administrator' || locals.user.role === 'moderator') ? `
+                            <a href="/admin/view/verbs" class="btn">Управление глаголами</a>
+                        ` : ''}
+                    </div>
+                ` : verbs.map(verb => include('../partials/verbs/card', { verb: verb })).join('')}
             </div>
-            ${include('../partials/verbs/pagination', { currentPage: currentPage, totalPages: totalPages, letter: letter })}
+            ${(!locals.noVerbs && verbs.length > 0) ? include('../partials/verbs/pagination', { currentPage: currentPage, totalPages: totalPages, letter: letter }) : ''}
         </div>
     `
 }) %>

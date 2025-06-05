@@ -1,0 +1,67 @@
+<%- include('../partials/header', { title: title }) %>
+
+<div class="admin-verbs">
+    <h1>Управление глаголами</h1>
+    
+    <% if (verbs.length === 0) { %>
+        <p class="no-verbs">Нет непроверенных глаголов</p>
+    <% } else { %>
+        <table class="verb-table">
+            <thead>
+                <tr>
+                    <th>Глагол</th>
+                    <th>Буква</th>
+                    <th>ID</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% verbs.forEach(verb => { %>
+                    <tr>
+                        <td><%= verb.verb %></td>
+                        <td><%= verb.letter %></td>
+                        <td><%= verb.verb_id %></td>
+                        <td>
+                            <button class="btn btn-success verify-verb" data-verb-id="<%= verb._id %>" data-letter="<%= verb.letter %>">Подтвердить</button>
+                        </td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    <% } %>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Обработчик подтверждения глагола
+        document.querySelectorAll('.verify-verb').forEach(button => {
+            button.addEventListener('click', async function() {
+                const verbId = this.dataset.verbId;
+                const letter = this.dataset.letter;
+                
+                try {
+                    const response = await fetch(`/admin/verbs/${verbId}/verify`, {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': `Bearer ${localStorage.getItem('token')}`
+                        },
+                        body: JSON.stringify({ letter })
+                    });
+                    
+                    if (response.ok) {
+                        alert('Глагол успешно подтвержден');
+                        this.closest('tr').remove();
+                    } else {
+                        alert('Ошибка при подтверждении глагола');
+                    }
+                } catch (error) {
+                    console.error('Error verifying verb:', error);
+                    alert('Ошибка при подтверждении глагола');
+                }
+            });
+        });
+    });
+</script>
+
+<%- include('../partials/footer') %>

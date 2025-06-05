@@ -69,6 +69,56 @@ nav ul li .theme-switch-container {
     margin-left: 10px;
 }
 
+/* Стили для пользовательского меню */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-menu #user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    font-weight: 500;
+}
+
+.user-menu #user-info a {
+    font-size: 14px;
+    padding: 6px 12px;
+}
+
+.user-menu #logout-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+    background-color: #6c757d;
+    border: none;
+    cursor: pointer;
+}
+
+.user-menu #logout-btn:hover {
+    background-color: #5a6268;
+}
+
+.user-menu #guest-info {
+    display: flex;
+    gap: 8px;
+}
+
+.user-menu #guest-info a {
+    font-size: 14px;
+    padding: 6px 12px;
+}
+
+.user-menu #guest-info a.btn-secondary {
+    background-color: #6c757d;
+}
+
+.user-menu #guest-info a.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
 .theme-switch-container {
     margin-left: 10px;
 }

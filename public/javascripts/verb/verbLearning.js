@@ -2,6 +2,11 @@
 
 import { startGame, hideGameContainer, showVerbDetails, hideVerbDetails, showGameContainer, resetGameContainer, showGameSettings } from './games/verbLearningGameVisually.js';
 
+function fetchVerbData(letter, verb) {
+    return fetch(`/verbs/${letter}/${verb}/learn/visually`)
+        .then(response => response.json());
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const startLearningBtn = document.getElementById('startLearningBtn');
     const verbDetails = document.querySelector('.verbDetails');
@@ -15,11 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetchVerbData(letter, verb)
                     .then(data => {
                         console.log('verbLearning.js | data: ', data);
-                        if (data.translation && data.translation.translations) {
+                        if (data.translation && data.translation.verb) {
                             hideVerbDetails();
                             showGameContainer();
                             resetGameContainer();
-                            showGameSettings(data.verb, data.translation.translations);
+                            showGameSettings(data.verb, data.translation.verb);
                         } else {
                             console.error('Отсутствует перевод или варианты перевода');
                         }
@@ -31,10 +36,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error('Элемент .verbDetails не найден');
             }
         });
-
-        function fetchVerbData(letter, verb) {
-            return fetch(`/verbs/${letter}/${verb}/learn/visually`)
-                .then(response => response.json());
-        }
     }
 });

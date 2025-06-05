@@ -50,8 +50,22 @@ function validateVerb(params) {
 }
 
 function validateVerbId(verbId) {
-    if (!verbId) {
+    if (verbId === undefined || verbId === null || verbId === '') {
         const error = new Error('Идентификатор глагола не указан');
+        error.status = 400;
+        throw error;
+    }
+    
+    // Проверяем что это число (включая 0)
+    if (typeof verbId !== 'number' && !Number.isInteger(Number(verbId))) {
+        const error = new Error('Идентификатор глагола должен быть числом');
+        error.status = 400;
+        throw error;
+    }
+    
+    // Проверяем что это не отрицательное число
+    if (Number(verbId) < 0) {
+        const error = new Error('Идентификатор глагола не может быть отрицательным');
         error.status = 400;
         throw error;
     }
@@ -99,11 +113,15 @@ function validatePage(page) {
 }
 
 function validatePageRange(page, totalPages) {
-    if (page < 1 || page > totalPages) {
-        const error = new Error('Страница не найдена');
-        error.status = 404;
-        throw error;
+    if (totalPages === 0) {
+        return true;
     }
+    
+    if (page < 1 || page > totalPages) {
+        throw new Error('Страница не найдена');
+    }
+    
+    return true;
 }
 
 function validateVerbTextAndSentence(verbText, sentence) {
@@ -143,12 +161,12 @@ function validateVerbSentencesTranslationModel(params) {
     }
 }
 
-function validateAvailableVerbs(availableAlphabetLetters) {
-    if (availableAlphabetLetters.length === 0) {
-        const error = new Error('Нет доступных глаголов в базе данных.');
-        error.status = 404;
-        throw error;
+function validateAvailableVerbs(verbs) {
+    if (!verbs || verbs.length === 0) {
+        return [];
     }
+    
+    return verbs;
 }
 
 function validateAvailableVerbsForLetter(letter, count) {

@@ -4,13 +4,24 @@ import 'dotenv/config';
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
 import methodOverride from 'method-override';
+import cookieParser from 'cookie-parser';
 import { connectToDatabase } from './db.js';
 import { getNamedRoute } from './middleware/namedRoutes.js';
 import { createModels } from './models/verb.js';
 import apiRouter from './routes/api.js';
 import verbRoute from './routes/verb.js';
-import verbsRoute from './routes/verbs.js';
+import authRoutes from './routes/auth/authRoutes.js';
+import verbRoutes from './routes/verbs/verbRoutes.js';
+import adminRoutes from './routes/admin/adminRoutes.js';
+import adminRoutesView from './routes/admin/adminRoutesView.js';
+import userRoutes from './routes/user/userRoutes.js';
+import { authenticateJWT } from './middleware/auth/authenticateJWT.js';
+import { errorHandler } from './middleware/error/errorHandler.js';
+
+// Adds founded variables to the process.env object
+dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -38,8 +49,12 @@ app.use(express.static(path.join(__dirname, 'public'), {
     }
 }));
 
+// Парсинг cookies
+app.use(cookieParser());
+
 // Парсинг тела запроса (middleware for parsing) in verb.js line 16: 'const verb = req.body.verb;'
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // Middleware для обработки методов PUT и DELETE через форму
 // Позволяет использовать _method=PUT или _method=DELETE в качестве параметра запроса
@@ -66,37 +81,26 @@ app.get('/', (req, res) => {
     res.render('index', { title: 'Онлайн тренажер по немецкому языку', indexStyles: true });
 });
 
-// Маршрут для работы с API
-app.use('/api', apiRouter);
-
-// Маршрут для работы с глаголами
-app.use('/verb', verbRoute);
-
-// Маршрут для работы со списком глаголов
-app.use('/verbs', verbsRoute);
-
 app.get('/about', (req, res) => {
     res.render('about', { title: 'О Нас!', aboutStyles: true });
 });
 
 
+// Маршрут для работы с глаголами
+app.use('/verb', verbRoute);
+
+// Маршрут для работы с API
+app.use('/api', apiRouter);
+app.use('/auth', authRoutes);
+app.use('/verbs', verbRoutes);
+app.use('/user', userRoutes);
+app.use('/admin', authenticateJWT, adminRoutes);
+app.use('/admin/view', authenticateJWT, adminRoutesView);
+
+
 // Обработка ошибок try/catch и next(error) с помощью middleware после всех маршрутов
 // Блок catch получает ошибку в параметре error и передает ее в middleware обработки ошибок с помощью next(error)
-app.use((err, req, res, next) => {
-    console.error(err.stack);
-
-    // Устанавливаем код состояния ошибки
-    res.status(err.status || 500);
-
-    // Рендерим страницу ошибки и передаем информацию об ошибке
-    res.render('error', {
-        title: 'Ошибка',
-        message: err.message,
-        statusCode: err.status || 500,
-        stack: process.env.APP_ENV === 'development' && process.env.APP_DEBUG === 'true' ? err.stack : '',
-        error: process.env.APP_ENV === 'development' && process.env.APP_DEBUG === 'true' ? err : {},
-    });
-});
+app.use(errorHandler);
 
 
 // Запуск сервера
